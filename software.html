@@ -80,6 +80,7 @@ h6 {
 </style>
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -335,12 +336,22 @@ $(document).ready(function () {
     Blog
   </a>
 </li>
-<li>
-  <a href="MRP.html">
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fas fa-user-graduate"></span>
      
-    MRP
+    PLE 2020.2
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="ACA228.html">ACA228</a>
+    </li>
+    <li>
+      <a href="MAD211.html">MAD211</a>
+    </li>
+  </ul>
 </li>
       </ul>
     </div><!--/.nav-collapse -->
@@ -356,60 +367,15 @@ $(document).ready(function () {
 </div>
 
 
-<style type="text/css">
-.nav.navbar-nav.navbar-right a {
-    color: white;
-}
-.navbar {
-  background-color: #00695c;
-  border-color:black;
-  icon-color:white;
-}
-.navbar-brand {
-color:black!important;
-}
-body{ /* Normal  */
-      font-size: 15px;
-  }
-h1.title {
-  font-size: 32px;
-}
-h3 { /* Header 3 */
-  font-size: 24px;
-  color: darkgreen;
-}
-</style>
-<style>
-a:link {
-    color: darkgreen;
-}
-a:visited {
-    color: darkgreen;
-}
-a:hover {
-    color: blue;
-}
-.column-f1{
-  float: left;
-  width: 20%;
-  text-align: left;
-}
-.column-f2{
-  float: right;
-  width: 20%;
-  text-align: right;
-}
-</style>
-<hr />
 <div id="r-packages" class="section level3">
 <h3><strong>R packages</strong></h3>
-<i class="fa fa-code" aria-hidden="true"></i> <a href="https://github.com/ctruciosm/Robpvc">Robpvc:</a> Robust Principal Volatility Components 
+<i class="fa fa-code" aria-hidden="true"></i> <a href="https://github.com/ctruciosm/Robpvc"><code>Robpvc</code>:</a> Robust Principal Volatility Components 
 </li>
-</br> <i class="fa fa-code" aria-hidden="true"></i> <a href="https://cran.r-project.org/web/packages/RobGARCHBoot/index.html">RobGARCHBoot:</a> Robust Bootstrap Forecast Densities for GARCH Models 
+</br> <i class="fa fa-code" aria-hidden="true"></i> <a href="https://cran.r-project.org/web/packages/RobGARCHBoot/index.html"><code>RobGARCHBoot</code>:</a> Robust Bootstrap Forecast Densities for GARCH Models 
 </li>
-</br> <i class="fa fa-code" aria-hidden="true"></i> <a href="https://cran.r-project.org/web/packages/RM2006/index.html">RM2006:</a> RiskMetrics 2006 Methodology. 
+</br> <i class="fa fa-code" aria-hidden="true"></i> <a href="https://cran.r-project.org/web/packages/RM2006/index.html"><code>RM2006</code>:</a> RiskMetrics 2006 Methodology. 
 </li>
-</br> <i class="fa fa-code" aria-hidden="true"></i> <a href="https://cran.r-project.org/web/packages/StatPerMeCo/index.html">StatPermeco:</a> Performance Measures to Evaluate Covariance Matrix. 
+</br> <i class="fa fa-code" aria-hidden="true"></i> <a href="https://cran.r-project.org/web/packages/StatPerMeCo/index.html"><code>StatPermeco</code>:</a> Performance Measures to Evaluate Covariance Matrix. 
 </li>
 <p></br></p>
 </ol>

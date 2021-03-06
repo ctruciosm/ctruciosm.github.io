@@ -1,0 +1,48 @@
+---
+title: "MAD211: Estatística para Administração"
+subtitle: PLE 2020.2
+output:
+  html_document:
+    fig_width: 1
+    toc_float: false    
+---
+
+
+**Material de R**
+
+[Livro](http://leg.ufpr.br/Rpira/Rpira.pdf) 
+
+
+**Links importantes**
+
+[Plano de Ensino](MRP/PlanoEnsino.pdf) 
+
+[YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkDnnNuVz4FEKXoM6nDqxrgu) 
+
+[Google Classroom](https://classroom.google.com/c/MjUwMTAwMjUyOTcy?cjc=pad4hj5)  (Código da Turma caso precisarem: gde3vhhxvi)
+
+
+**Horários**
+
+Terças e Quintas das 16:40 às 18:20 
+
+
+**Monitorias**
+
+Monitor: Estamos sem monitor no momento
+
+
+----
+
+### **Material e Aulas**
+
+
+| Aula   | Assunto                           | Data       | Video | Slides | Extras |
+|--------|-----------------------------------|------------|-------|--------|--------|
+|1       |   |   |   |   |   |
+
+
+
+
+
+---- 

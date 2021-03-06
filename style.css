@@ -1,0 +1,125 @@
+
+
+.nav.navbar-nav.navbar-right a {
+    color: white;
+    background-color: #00691c;
+    border-color: white;
+}
+
+
+.navbar {
+  background-color: #00691c;
+  border-color:black;
+}
+
+
+body{ /* Normal  */
+    font-size: 13px;
+    background-color: white;
+}
+
+h1.title {
+  font-size: 26px;
+}
+
+h2 { /* Header 2 */
+    font-size: 24px;
+    color: DarkGreen;
+}
+
+h3 { /* Header 3*/
+    font-size: 20px;
+    color: DarkGreen;
+}
+
+h4 { /* Header 4*/
+    font-size: 14px;
+}
+
+a:link {
+    color: darkgreen;
+  }
+a:visited {
+  color: darkgreen;
+}
+a:hover {
+  color: green;
+}
+
+.column-left{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.column-right{
+  float: right;
+  width: 75%;
+  text-align: left;
+}
+.column-center2{
+  float: left;
+  width: 33.3%;
+  text-align: left;
+}
+
+.column-left2{
+  float: left;
+  width: 33.3%;
+  text-align: left;
+}
+
+.column-right2{
+  float: left;
+  width: 33.3%;
+  text-align: left;
+}
+.column{
+  float: left;
+  width: 100%;
+  text-align: left;
+} 
+.column-f1{
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+.column-f2{
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+p.outset {border-style: outset;}
+p.groove {border-style: groove;
+          border-color: DarkRed;
+}
+
+p.bor {
+  border-bottom: 1px solid lightgrey;
+  border-left: 1px solid lightgrey;
+  background-color: white;
+}
+
+hr{
+  border: 0.5px solid DarkGreen;
+}
+
+hr.new{
+  border: 5px solid DarkGreen;
+  border-radius: 5px;
+}
+
+hr.new1{
+  border: 0.5px solid #00691c;
+}
+
+.cc {
+  font-family: "Lucida Console", Courier;
+  font-size: 13px;
+}
+
+.cc3 {
+  font-size: 11px;
+}
+
+.ptitle{line-height: 0.5em;}

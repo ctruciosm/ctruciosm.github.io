@@ -6,64 +6,16 @@ output:
     toc_float: false    
 ---
 
-<style type="text/css">
-.nav.navbar-nav.navbar-right a {
-    color: white;
-}
-.navbar {
-  background-color: #00695c;
-  border-color:black;
-  icon-color:white;
-}
-.navbar-brand {
-color:black!important;
-}
-body{ /* Normal  */
-      font-size: 15px;
-  }
-h1.title {
-  font-size: 32px;
-}
-h3 { /* Header 3 */
-  font-size: 24px;
-  color: darkgreen;
-}
-</style>
-
-<style>
-a:link {
-    color: darkgreen;
-}
-a:visited {
-    color: darkgreen;
-}
-a:hover {
-    color: blue;
-}
-.column-f1{
-  float: left;
-  width: 20%;
-  text-align: left;
-}
-.column-f2{
-  float: right;
-  width: 20%;
-  text-align: right;
-}
-</style>
-
-----
-
 ### **R packages**
 
 
-<i class="fa fa-code" aria-hidden="true"></i>  [Robpvc:](https://github.com/ctruciosm/Robpvc) Robust Principal Volatility Components  \medskip </li>
+<i class="fa fa-code" aria-hidden="true"></i>  [`Robpvc`:](https://github.com/ctruciosm/Robpvc) Robust Principal Volatility Components  \medskip </li>
 </br>
-<i class="fa fa-code" aria-hidden="true"></i>  [RobGARCHBoot:](https://cran.r-project.org/web/packages/RobGARCHBoot/index.html) Robust Bootstrap Forecast Densities for GARCH Models  \medskip </li>
+<i class="fa fa-code" aria-hidden="true"></i>  [`RobGARCHBoot`:](https://cran.r-project.org/web/packages/RobGARCHBoot/index.html) Robust Bootstrap Forecast Densities for GARCH Models  \medskip </li>
 </br>
-<i class="fa fa-code" aria-hidden="true"></i>  [RM2006:](https://cran.r-project.org/web/packages/RM2006/index.html)  RiskMetrics 2006 Methodology. \medskip </li>
+<i class="fa fa-code" aria-hidden="true"></i>  [`RM2006`:](https://cran.r-project.org/web/packages/RM2006/index.html)  RiskMetrics 2006 Methodology. \medskip </li>
 </br>
-<i class="fa fa-code" aria-hidden="true"></i>  [StatPermeco:](https://cran.r-project.org/web/packages/StatPerMeCo/index.html) Performance Measures to Evaluate Covariance Matrix.  \medskip </li>
+<i class="fa fa-code" aria-hidden="true"></i>  [`StatPermeco`:](https://cran.r-project.org/web/packages/StatPerMeCo/index.html) Performance Measures to Evaluate Covariance Matrix.  \medskip </li>
 
 </br>
 

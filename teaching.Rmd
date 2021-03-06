@@ -6,62 +6,13 @@ output:
     fig_width: 1
 ---
 
-<style type="text/css">
-.nav.navbar-nav.navbar-right a {
-    color: white;
-}
-.navbar {
-  background-color: #00695c;
-  border-color:black;
-  icon-color:white;
-}
-.navbar-brand {
-color:black!important;
-}
-body{ /* Normal  */
-      font-size: 15px;
-  }
-h1.title {
-  font-size: 32px;
-}
-h3 { /* Header 3 */
-  font-size: 24px;
-  color: darkgreen;
-}
-</style>
-
-<style>
-a:link {
-    color: darkgreen;
-}
-a:visited {
-    color: darkgreen;
-}
-a:hover {
-    color: blue;
-}
-.column-f1{
-  float: left;
-  width: 20%;
-  text-align: left;
-}
-.column-f2{
-  float: right;
-  width: 20%;
-  text-align: right;
-}
-</style>
-
-----
-
 
 ### **Undergraduate**
 
-* 2021-II:
-  - Forecasting and Regression Models (in Portuguese), UFRJ
-  - Statistics for Business 
-* 2021-I:
-  - [Forecasting and Regression Models (in Portuguese), UFRJ](MRP.html)
+* 2021:
+  - Forecasting and Regression Models (in Portuguese), UFRJ (PLE 2020.2)
+  - Statistics for Business (in Portuguese), UFRJ (PLE 2020.2)
+  - [Forecasting and Regression Models (in Portuguese), UFRJ](MRP.html) (PLE 2020.1)
 * 2020:
   - [Introduction to Probability and Statistics (in Portuguese), UFABC](IPE.html)
 * 2018:

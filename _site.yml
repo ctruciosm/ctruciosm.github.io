@@ -24,14 +24,19 @@ navbar:
     - text: Blog
       icon: fa-pencil-alt
       href: https://ctruciosm.github.io/statblog/ 
-    - text: MRP
+    - text: PLE 2020.2
       icon: fa-user-graduate
-      href: MRP.html  
+      menu:
+        - text: ACA228
+          href: ACA228.html 
+        - text: MAD211
+          href: MAD211.html
 output_dir: "."
 output:
   html_document:
     theme: lumen  # cosmo
     highlight: textmate
+    css: style.css
 #    include:
 #      after_body: footer.html
 

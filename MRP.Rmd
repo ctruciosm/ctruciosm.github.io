@@ -6,53 +6,7 @@ output:
     toc_float: false    
 ---
 
-<style type="text/css">
-.nav.navbar-nav.navbar-right a {
-    color: white;
-}
-.navbar {
-  background-color: #00695c;
-  border-color:black;
-  icon-color:white;
-}
-.navbar-brand {
-color:black!important;
-}
-body{ /* Normal  */
-      font-size: 15px;
-  }
-h1.title {
-  font-size: 32px;
-}
-h3 { /* Header 3 */
-  font-size: 24px;
-  color: darkgreen;
-}
-</style>
 
-<style>
-a:link {
-    color: darkgreen;
-}
-a:visited {
-    color: darkgreen;
-}
-a:hover {
-    color: blue;
-}
-.column-f1{
-  float: left;
-  width: 20%;
-  text-align: left;
-}
-.column-f2{
-  float: right;
-  width: 20%;
-  text-align: right;
-}
-</style>
-
-----
 
 **Notas da P1 + Seminário liberadas!**
 [Notas](MRP/NOTAS_MRP.xlsx) 
