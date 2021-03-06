@@ -21,6 +21,9 @@ navbar:
     - text: Awards
       icon: fa-award
       href: awards.html  
+    - text: Blog
+      icon: fa-pencil-alt
+      href: https://ctruciosm.github.io/statblog/ 
     - text: MRP
       icon: fa-user-graduate
       href: MRP.html  

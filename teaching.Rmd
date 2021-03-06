@@ -57,7 +57,10 @@ a:hover {
 
 ### **Undergraduate**
 
-* 2021:
+* 2021-II:
+  - Forecasting and Regression Models (in Portuguese), UFRJ
+  - Statistics for Business 
+* 2021-I:
   - [Forecasting and Regression Models (in Portuguese), UFRJ](MRP.html)
 * 2020:
   - [Introduction to Probability and Statistics (in Portuguese), UFABC](IPE.html)

@@ -54,8 +54,8 @@ a:hover {
 
 ----
 
-**Notas da P1 liberadas!**
-[Notas](MRP/NOTAS_MRP_2021-I.xlsx) 
+**Notas da P1 + Seminário liberadas!**
+[Notas](MRP/NOTAS_MRP.xlsx) 
 
 
 **Lista 2 Liberada!**
