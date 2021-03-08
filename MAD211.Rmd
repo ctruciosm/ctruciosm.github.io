@@ -15,11 +15,12 @@ output:
 
 **Links importantes**
 
-[Plano de Ensino](MRP/PlanoEnsino.pdf) 
+[Plano de Ensino](PLE_2020-2/Plano_MAD211_2020_2.pdf) 
 
-[YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkDnnNuVz4FEKXoM6nDqxrgu) 
 
-[Google Classroom](https://classroom.google.com/c/MjUwMTAwMjUyOTcy?cjc=pad4hj5)  (Código da Turma caso precisarem: gde3vhhxvi)
+[YouTube Channel]() 
+
+[Google Classroom](https://classroom.google.com/c/Mjg2NDkyNDYyMzg0?cjc=oowppsb)  (Código da Turma caso precisarem: oowppsb)
 
 
 **Horários**
@@ -40,6 +41,21 @@ Monitor: Estamos sem monitor no momento
 | Aula   | Assunto                           | Data       | Video | Slides | Extras |
 |--------|-----------------------------------|------------|-------|--------|--------|
 |1       |   |   |   |   |   |
+|2       |   |   |   |   |   |
+|3       |   |   |   |   |   |
+|4       |   |   |   |   |   |
+|5       |   |   |   |   |   |
+|6       |   |   |   |   |   |
+|7       |   |   |   |   |   |
+|8       |   |   |   |   |   |
+|9       |   |   |   |   |   |
+|10       |   |   |   |   |   |
+|11       |   |   |   |   |   |
+|12       |   |   |   |   |   |
+|13       |   |   |   |   |   |
+|14       |   |   |   |   |   |
+|15       |   |   |   |   |   |
+|16       |   |   |   |   |   |
 
 
 
