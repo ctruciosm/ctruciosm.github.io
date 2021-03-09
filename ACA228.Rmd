@@ -55,8 +55,8 @@ Terças e Quintas das 18:30 às 20:10
 |12     | MRLM: verificação das hipóteses  | 06-05-2021  |   |   |   |
 |13     | MRLM: verificação das hipóteses II  | 11-05-2021  |   |   |   |
 |14     | **Lab:** Análide de Regressão com R | 13-05-2021  |   |   |   |
-|15     | Séries Temporais I  | 15-05-2021 |   |   |   |
-|16     | $P_1$^[A $P_1$ cobre os tópicos até a aula 10 e Aula 14.]  | **18-05-2021**  |   |   |   |
+|15     | $P_1$ | **18-05-2021**  |   |   |   |
+|16     | Séries Temporais I  | 15-05-2021 |   |   |   |
 |17     | Séries Temporais II  | 20-05-2021  |   |   |   |
 |18     | Séries Temporais III| 25-05-2021  |   |   |   |
 |19     | **Lab**: Séries Temporais com R  | 27-05-2021  |   |   |   |
