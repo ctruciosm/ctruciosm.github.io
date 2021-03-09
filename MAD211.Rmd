@@ -38,24 +38,30 @@ Monitor: Estamos sem monitor no momento
 ### **Material e Aulas**
 
 
-| Aula   | Assunto                           | Data       | Video | Slides | Extras |
-|--------|-----------------------------------|------------|-------|--------|--------|
-|1       |   |   |   |   |   |
-|2       |   |   |   |   |   |
-|3       |   |   |   |   |   |
-|4       |   |   |   |   |   |
-|5       |   |   |   |   |   |
-|6       |   |   |   |   |   |
-|7       |   |   |   |   |   |
-|8       |   |   |   |   |   |
-|9       |   |   |   |   |   |
-|10       |   |   |   |   |   |
-|11       |   |   |   |   |   |
-|12       |   |   |   |   |   |
-|13       |   |   |   |   |   |
-|14       |   |   |   |   |   |
-|15       |   |   |   |   |   |
-|16       |   |   |   |   |   |
+| Aula  | Assunto                           | Data       | Video | Slides | Extras |
+|:-----:|:-----------------------|:----------:|-------|--------|--------|
+|01     | Introdução: Estatística, Aplicações e Conceitos Básicos | 23-03-2021  |   |   |   |
+|02     | Lab: Introdução ao R  | 25-03-2021  |   |   |   |
+|03     | Estatística Descritiva: Tabelas de Frequencia e Gráficos   | 06-04-2021  |   |   |   |
+|04     | Lab: Gráficos com R  | 08-04-2021  |   |   |   |
+|05     | Estatística Descritiva: Medidas Resumo  | 13-04-2021  |   |   |   |
+|06     | Lab: Medidas Resumo e Tabelas de Frequencia  | 15-04-2021  |   |   |   |
+|07     | Análise Combinatória  | 20-04-2021  |   |   |   |
+|08     | Introdução à Probabilidade  | 22-04-2021  |   |   |   |
+|09     | Distribuições Discretas  | 27-04-2021  |   |   |   |
+|10     | Distribuições Continuas  | 29-04-2021  |   |   |   |
+|11     | Esperança e Variância  | 04-05-2021  |   |   |   |
+|12     | $P_1$  | **06-05-2021**  |   |   |   |
+|13     | Amostragem  | 11-05-2021  |   |   |   |
+|14     | Intervalos de Confiança  | 13-05-2021  |   |   |   |
+|15     | Teste de Hipóteses I  | 15-05-2021 |   |   |   |
+|16     | Teste de Hipóteses II  | 18-05-2021  |   |   |   |
+|17     | Teste de Hipóteses III  | 20-05-2021  |   |   |   |
+|18     | Introdução à Regressão Linear Simples  | 25-05-2021  |   |   |   |
+|19     | Lab: Casos de Estudo com R  | 27-05-2021  |   |   |   |
+|20     | $P_2$ | **01-06-2021**  |   |   |   |
+|21     | Exame de recuperação  | 08-06-2021  |   |   |   |
+
 
 
 
