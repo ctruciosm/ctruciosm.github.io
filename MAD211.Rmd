@@ -40,7 +40,7 @@ Monitor: Estamos sem monitor no momento
 
 | Aula  | Assunto                           | Data       | Video | Slides | Extras |
 |:-----:|:-----------------------|:----------:|-------|--------|--------|
-|01     | Introdução: Estatística, Aplicações e Conceitos Básicos | 23-03-2021  |   |   |   |
+|01     | Introdução: Estatística, Aplicações e Conceitos Básicos | 23-03-2021  |   | [Link](PLE_2020-2/MAD211_Aula01.pdf)  |   |
 |02     | Lab: Introdução ao R  | 25-03-2021  |   |   |   |
 |03     | Estatística Descritiva: Tabelas de Frequencia e Gráficos   | 06-04-2021  |   |   |   |
 |04     | Lab: Gráficos com R  | 08-04-2021  |   |   |   |
