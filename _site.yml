@@ -28,9 +28,9 @@ navbar:
       icon: fa-user-graduate
       menu:
         - text: ACA228
-          href: aca228.html 
+          href: ACA228.html 
         - text: MAD211
-          href: mad211.html
+          href: MAD211.html
 output_dir: "."
 output:
   html_document:
