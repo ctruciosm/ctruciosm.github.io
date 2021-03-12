@@ -1,9 +1,9 @@
 name: “Carlos Trucios”
 navbar:
   title: 
-  left:
+  left: 
   right:
-    - text: Home 
+    - text: Home
       icon: fa-home
       href: index.html  
     - text: Research 
