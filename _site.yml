@@ -31,6 +31,8 @@ navbar:
           href: ACA228.html 
         - text: MAD211
           href: MAD211.html
+        - text: DASSOS
+          href: DASSOS.html
 output_dir: "."
 output:
   html_document:

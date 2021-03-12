@@ -1,0 +1,69 @@
+---
+pagetitle: DASSOS
+#title: "DASSOS"
+output:
+  html_document:
+    fig_width: 1
+    toc_float: false    
+---
+
+\
+\
+
+<center>
+
+# **DASSOS:** **Da**ta **S**cience for **So**cial **S**cience 
+
+\
+
+Olá, seja bemvindo(a)s ao Grupo **DASSOS**, um grupo de estudos/seminários em métodos quantitativos e ciência de dados aplicados às ciências sociais. O grupo foi fundado a finais do PLE 2020.1, após finalizar minha primeira turma como professor de *modelos de regressão e previsão* na FACC/UFRJ. 
+
+A ideia do grupo é reunir alunos da FACC/UFRJ interessados em métodos quantitativos e análise de dados para estudarmos tópicos relacionados com o Software [R](https://www.r-project.org), análise de dados, Statistical/Machine Learnig, Econometria, _Marketing Analytics_, _People Analytics_... _i.e._ com Métodos Quantitativos. O interesse do grupo vá além de entender como os métodos funcionam, mas como eles podem e são utilizados nas ciências sociais. 
+
+
+</center>
+
+
+### <span style="color:black"> <b> *Quando e onde?*  </b></span> </br>  
+
+- Sextas feiras (a cada quince dias) das 17hrs às 18hrs (ver cronograma).
+- As reuniões acontecem via **Google Meets**
+- O link das reuniões será enviado por email unicamente aos participantes
+
+
+### <span style="color:black"> <b> *Quem pode participar?*  </b></span> </br>  
+
+- Todos e qualquer aluno(a) da FACC/UFRJ^[Sempre e quando não tenha aula nos dias/horarios das reuniões.] com desejo de aprender e ensinar pode participar.
+- Para participar, envie-me um email a <carlos.trucios _at_ facc _dot_ ufrj _dot_ br>, subtitua _at_ por `@` e _dot_ por `.`
+
+
+### <span style="color:black"> <b> *Como funciona o grupo?*  </b></span> </br>
+
+- As primeiras reuniões serão aulas sobre o Software [R](https://www.r-project.org) e serão ministradas por mim. (no curso as aulas serão semanais) 
+- Após o curso de [R](https://www.r-project.org), começaremos a discutir tópicos selecionados com métodos quantitativos. 
+- Os tópicos selecionados serão ministrados por mim e pelos próprios participantes tendo estes últimos minha ajuda.
+
+
+###  <span style="color:black"> <b> *Cronograma*^[Tópicos e datas podem mudar] </b></span> </br>
+
+
+| Reunião  | Tópico                          | Data       |  
+|:------:|:---------------------|------------|
+|01       | Intro e Visualização de Dados com R  | 26/03/2021  |  
+|02       | Visualização de Dados com R   | 09/04/2021  | 
+|03       | Manipulação de dados  | 16/04/2021  |  
+|04       | Importação de dados e criação da ABT^[ABT: Analytical Base Table]  | 23/04/2021  |    
+|05       | Introdução à Programação com R  |  20/04/2021 |    
+|06       | Introdução à Programação com R  | 07/05/2021  |    
+|07       | Machine/Statistical Learning: Introdução   | 21/05/2021  |     
+|08       | Redução de dimensão: Análise de Componentes Principais  | 04/06/2021  |     
+|09       | Classificação: Regressão Logistica  | 18/06/2021  |      
+|10       | Clusterização: K-means  | 02/07/2021  |     
+|11       | Classificação: KNN  | 16/07/2021  |     
+|12       | Regras de Associação: Algoritmo Apriori  | 30/07/2021  |     
+.
+.
+.
+
+
+
