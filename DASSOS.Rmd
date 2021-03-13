@@ -40,7 +40,7 @@ A ideia do grupo é reunir alunos da FACC/UFRJ interessados em métodos quantita
 ### <span style="color:black"> <b> *Como funciona o grupo?*  </b></span> </br>
 
 - As primeiras reuniões serão aulas sobre o Software _R_ ministradas por mim. (as aulas serão semanais) 
-- Após o curso de _R_, começaremos a discutir tópicos selecionados com métodos quantitativos. 
+- Após finalizar o curso de _R_, começaremos a discutir tópicos selecionados sobre métodos quantitativos. 
 - Os tópicos selecionados serão ministrados por mim e pelos próprios participantes tendo estes últimos minha ajuda.
 
 
