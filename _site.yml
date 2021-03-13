@@ -1,6 +1,6 @@
 name: “Carlos Trucios”
 navbar:
-  title: 
+  title: <span style="color:white">  Carlos Trucíos  </span>
   left: 
   right:
     - text: Home
