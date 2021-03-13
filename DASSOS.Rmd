@@ -30,6 +30,10 @@ Olá, seja bem-vindo(a)s ao Grupo **DASSOS**, um grupo de estudos/seminários em
 
 A ideia do grupo é reunir alunos da FACC/UFRJ interessados em métodos quantitativos e análise de dados para estudarmos tópicos relacionados com o Software [R](https://www.r-project.org), análise de dados, Statistical/Machine Learnig, Econometria, _Marketing Analytics_, _People Analytics_, Python, ... _i.e._ com Métodos Quantitativos. O interesse do grupo vai além de entender como os métodos funcionam, mas como eles podem e são utilizados nas ciências sociais. 
 
+<span style="color:black"> <b> `Primeira Reunião 26/03/2021` </b></span>   
+
+
+\
 
 </center>
 
