@@ -1967,7 +1967,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   /* Theme */
   :root {
-    --primary: #388e00;
+    --primary: #000000; /*#388e00; */
   }
 
   html {
@@ -1994,7 +1994,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article,
   d-appendix,
   body {
-    background-color: var(--nord5);
+    background-color: var(--nord5); /* var(--nord5); */
     color: var(--nord0);
   }
 
@@ -2027,8 +2027,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --title-size:       18px;
     --text-color:       rgba(0, 0, 0, 0.8);
     --text-size:        17px;
-    --hover-color:      var(--primary);
-    --bkgd-color:       rgba(210, 210, 210, 0.8); #0F2E3D; */
+    --hover-color:      var(--node03);
+    --bkgd-color:       rgba(210, 210, 210, 0.6); 
   }
 
   .distill-site-footer {
@@ -2038,57 +2038,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --bkgd-color:       rgba(210, 210, 210, 0.8);
   }
 
-  .distill-site-footer a {
-    text-decoration: underline;
-  }
+
 
   /*-- Additional custom styles --*/
   /* Add any additional CSS rules below                      */
 
-  .profile {
-      text-align: center;
-      padding: 30px 10px;
-      position: relative;
-  }
-
-  .profile .profile-circle{
-    border-radius: 50%;
-    width: 270px;
-    height: 270px;
-    margin: 0 auto;
-    object-fit: cover;
-  }
-
-  .profile a {
-    text-decoration: none;
-    border-style: none;
-  }
-
-  .profile a, .footer a {
-    font-size: 2rem;
-  }
-
-  a, i, svg {
-    transition: all .2s ease-in-out;
-  }
-
-  .profile a:hover {
-    transform: scale(1.2);
-    color: var(--primary);
-    border-style: none;
-  }
-
-  .profile svg:hover {
-    transform: scale(1.2);
-    color: var(--primary);
-    border-style: none;
-  }
-
-
-  /* Code */
-  d-article div.sourceCode {
-    background-color: var(--nord5);
-  }
 
 
   /* Code Folding by Thomas Mock https://themockup.blog/about.html */
@@ -2142,50 +2096,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     line-height: inherit;
   }
 
-  /* border, padding, margin, width */
-  #fs-frm input,
-  #fs-frm select,
-  #fs-frm textarea,
-  #fs-frm #card-element {
-    border: 1px solid rgba(0,0,0,0.2);
-    background-color: rgba(255,255,255,0.9);
-    padding: .75em 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  #fs-frm input:focus,
-  #fs-frm select:focus,
-  #fs-frm textarea:focus {
-    background-color: var(--nord1);
-    outline-style: solid;
-    outline-width: thin;
-    outline-color: gray;
-    outline-offset: -1px;
-  }
-
-  #fs-frm [type="text"],
-  #fs-frm [type="email"] {
-    width: 100%;
-  }
-  #fs-frm [type="button"],
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-    width: auto;
-    cursor: pointer;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-  }
-  #fs-frm [type="button"]:focus,
-  #fs-frm [type="submit"]:focus,
-  #fs-frm [type="reset"]:focus {
-    outline: none;
-  }
-  #fs-frm [type="submit"],
-  #fs-frm [type="reset"] {
-    margin-bottom: 0;
-  }
-
 
   .btn-outline-dark {
       background-color: var(--nord4); /* #aaaaaa; */
@@ -2203,7 +2113,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   /* Works on Firefox */
   * {
     scrollbar-width: thin;
-    scrollbar-color: var(--primary) var(--nord1);
+    scrollbar-color: var(--primary);  var(--nord1);
   }
 
   /* Works on Chrome, Edge, and Safari */
@@ -2211,14 +2121,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     width: 12px;
   }
 
-  *::-webkit-scrollbar-track {
-    background: var(--nord1);
-  }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
-    border-radius: 20px;
-    border: 3px solid var(--nord1);
+    background-color: var(--nord1);
+    border-radius: 12px;
+    border: 1px solid var(--nord5);
   }
 
   /* Listing Pages */
@@ -2664,7 +2571,7 @@ darkmodeToggle.addEventListener('click', switchTheme)
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Website created on <a href="https://www.rstudio.com"><strong>Rstudio</strong></a> using the R packages <a href="https://rstudio.github.io/distill/"><strong>distill</strong></a>, <a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a href="https://github.com/seankross/postcards"><strong>postcards</strong></a>, <a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a> and <a href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
+<p>Website created using <a href="https://www.rstudio.com"><strong>Rstudio</strong></a> and the R packages <a href="https://rstudio.github.io/distill/"><strong>distill</strong></a>, <a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a href="https://github.com/seankross/postcards"><strong>postcards</strong></a>, <a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a> and <a href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
 <p>Content licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
