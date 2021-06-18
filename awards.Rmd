@@ -1,0 +1,23 @@
+---
+title: "Awards"
+output:
+  distill::distill_article:
+    toc: false
+---
+
+
+
+- **2021:** 
+  -   Scholarship 5th Latin American Conference for Statistical Computing (LACSC2021).
+- **2019:** 
+  -   [Best LACSC 2019 Paper Award in the 4th Latin American Conference for Statistical Computing](https://iasc-isi.org/2019/06/27/best-lacsc-2019-paper-award/) with the paper entitled **A general dynamic factor approach to forecast conditional covariance matrices in high-dimensional data** (LACSC2019).
+  -   Scholarship 4th Latin American Conference for Statistical Computing (LACSC2019).
+  -   International Symposium on Forecasting Travel Award (declined).
+- **2018:** 
+  -   [IASC-ERS Young Researchers Award](https://iasc-isi.org/2019/06/27/iasc-ers-young-researchers-award-2018-at-compstat-2018/) with the paper entitled  **Robust principal volatility components** (COMPSTAT2018). 
+- **2016:** 
+  -   [Second place prize y-BIS Best Paper Award](https://www.ime.unicamp.br/destaques/carlos-trucios-maza-recebe-premio-asaniss-best-bis-paper-awards-2016) with the paper entitled **Measuring the Effect of the Uncertainty in the Estimation of the Conditional Covariance Matrix in Portfolio Selection and Portfolio Risk Measures** (ISBIS2016).
+  -   ISBIS 2016 Travel Award
+
+
+

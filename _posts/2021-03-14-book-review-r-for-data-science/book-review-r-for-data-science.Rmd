@@ -1,0 +1,72 @@
+---
+title: "Book Review: R for Data Science"
+description: |
+  Minhas impressões do livro R for data science: import, tidy, transform, visualize, and model data do Hadley Wickham e Garrett Grolemund.
+categories:
+  - Book Review
+  - R 
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 03-14-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    self_contained: false
+bibliography: statblog.bib
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Introdução
+
+Quem me conhece um pouco, sabe que eu não sou um grande fã de livros do tipo _Hands-On blah blah_, mas recentemente, buscando ajudar aos meus alunos na sua caminhada acadêmica, resolvi incluir alguns deles na minha lista de leitura. Espero que estes comentários sejam de ajuda, principalmente, para meus (ex-/atuais/futuros) alunos.
+
+
+### _Overview_ do livro
+
+<center>
+```{r echo = FALSE, out.width = "45%"}
+knitr::include_graphics("cover.png")
+```
+</center>
+
+
+_R_ tem evoluído bastante desde que foi oficialmente lançado em 2001 e o livro _R for data science: import, tidy, transform, visualize, and model data_ [@R4DS] faz um bom papel apresentando uma introdução ao _R_ e à _filosofia_ `tidyverse`^[Conjunto de pacotes que seguem a mesma _filosofia_ _tidy_, para mais detalhes veja [tidyverse.org](https://www.tidyverse.org)] de forma clara e direta. O pacote (ou, na verdade o conjunto de pacotes) `tidyverse` é sem dúvida a tendência hoje em dia, e qualquer pessoa que trabalha com dados o utilizará com frequência.
+
+Sugiro que à medida que você for lendo o livro implemente os códigos que forem aparecendo,  dessa forma você poderá ir mexendo gradualmente no código para ver *o que acontece se...* o que lhe ajudara no processo de aprendizagem.
+
+Um dos capítulos que mais gostei foi o capítulo 3, que apresenta de forma bem leve uma introdução ao pacote `ggplot2` para visualização de dados. Um bom complemento para esse capítulo aparece quase no final do livro, no capítulo 28, onde se apresentam alguns detalhes sobre títulos, _captions_ e nomes nos eixos. Se você tiver interesse em se aprofundar no `ggplot2`, a melhor fonte é o livro _ggplot2: Elegant Graphics for Data Analysis_ [@ggplot2] que está disponível online e de graça [aqui](https://ggplot2-book.org).
+
+
+Os capítulos 9 -- 16 apresentam bastante material sobre manipulação de dados, super útil para construir nossa ABT^[ABT: Analytical Base Table]. Contudo, creio que quem não está muito acostumado com o _R_ ou com manipulação de dados pode ter uma _overdose_ de informação. Não se preocupe tanto por entender tudo que está no livro, mas por entender o que pode ser feito com o _R_ e com os pacotes `dplyr`,`readr`, `lubridate`, etc, incluidos no `tidyverse`. Existem diversos [Cheatsheets](https://rstudio.com/resources/cheatsheets/) que ajudam a lembrar como cada umas das funções discutidos nos capítos 9--16 funcionam, salve eles no computador e tenha-os sempre por perto. 
+
+
+Outro capítulo que achei muito interessante é o capítulo 25 (mas para quem está iniciando eu recomendaria pular esse capitulo e voltar nele quando for um usuário de _R_ mais frequente), ele apresenta informação valiosa para quem tem interesse em comparar vários modelos e colocar modelos em produção. 
+
+
+### O que menos gostei
+
+Embora eu tenha desfrutado bastante meu tempo lendo o livro, achei os capítulos 22--24 meio confussos, principalmente para quem está iniciando. Quando se trata de modelagem , eu  prefiro uma abordagem mais clássica onde se explica como o modelo é construido e quais são os princípios por tras dele, mas entendo que isso está completamente fora do escopo do livro. 
+
+Para quem está começando, eu leria o capítulo 21 apenas até a seção 21.3. As seções 21.4 -- 21.9 são importantes, mas eu deixaria elas para uma segunda leitura ou para quando estiver mais familiarizado com o _R_ e com programação.
+
+
+### Comentários Finais
+
+
+- Resumindo, _R for data science: import, tidy, transform, visualize, and model data_ [@R4DS] é um bom livro, completo e didático. Eu gostei da maioria de capítulos, com algumas poucas exceções. 
+- O livro tem uma [versão em português](https://www.amazon.com.br/Para-Data-Science-Hadley-Wickham/dp/8550803243/ref=sr_1_2?__mk_pt_BR=ÅMÅŽÕÑ&crid=3EXZ2HQW9O6Q5&dchild=1&keywords=r+para+data+science&qid=1615733367&sprefix=R+para%2Caps%2C289&sr=8-2), mas eu li a versão em inglês (que é [disponibilizada gratuitamente pelos autores](https://r4ds.had.co.nz)).
+- Se tiver com dificuldade em resolver os exercícios do livro, Jeffrey B. Arnold providenciou [um solucionário](https://jrnold.github.io/r4ds-exercise-solutions/) (eu não o li).
+
+
+
+
+
+
+

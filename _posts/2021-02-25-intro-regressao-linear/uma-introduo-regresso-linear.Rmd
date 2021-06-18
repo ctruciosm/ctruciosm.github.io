@@ -1,0 +1,170 @@
+---
+title: "Intro à Regressão Linear"
+description: |
+  Uma breve introdução à Análise de Regressão Linear: interpretação e implementação no R (e no Python).
+categories:
+  - Linear Regression
+  - R
+  - Python
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 02-25-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    self_contained: false
+draft: false
+---
+
+
+
+### Introdução
+
+
+Uma das técnicas mais conhecidas e difundidas no mundo de *statistical/machine learning* é a Análise de Regressão Linear (ARL). Ela é útil quando estamos interessados em explicar/predizer a variável dependente $y$ utilizando um conjunto de $k$ variaveis explicativas $x_1, \ldots, x_k$.
+
+Basicamente, utilizamos as $k$ variáveis explicativas para entender o comportamento de $y$ e, num contexto de regressão linear, assumimos que a relação entre $y$ e as $x$'s é dada por uma função linear da forma:
+
+
+$$y = \underbrace{\beta_0 + \beta_1 x_1 + \ldots + \beta_k x_k}_{f(x_1, \ldots, x_k)} + u,$$ em que $u$ é o termo de erro.
+
+
+### Estimação por MQO
+
+Na prática, nunca conhecemos $\beta = [\beta_0, \beta_1, \ldots, \beta_k]'$ e temos que estima esses valores utilizando os dados. Existem diferentes métodos de estimação, sendo o método de *mínimos quadraros ordinários* (MQO) um dos mais comumente utilizados^[A ideia básica deste método é encontrar os valores $\hat{\beta}$'s que minimizam a soma de quadrados dos residuos.].
+
+O estimador de MQO é dado por $$\hat{\beta} = (X'X)^{-1}X'Y,$$ e sua respectiva matriz de covariância (condicional em $X$) é dada por $$V(\hat{\beta}|X) = \sigma^2(X'X)^{-1}$$ em que $Y = [y_1, \ldots, y_n]'$ e $X = \begin{bmatrix} 
+1 & x_{1,1} & \cdots & x_{1,k} \\ 
+\vdots & \vdots & \cdots & \vdots \\ 
+1 & x_{n,1} & \cdots & x_{n,k} \end{bmatrix}$
+
+- $\sigma^2$ nunca é conhecido, então utilizamos $\hat{\sigma}^2 = \dfrac{ \sum_{i=1}^n \hat{u}_i^2}{n-k-1}$, que é um estimador não viesado de $\sigma^2$ ($E(\hat{\sigma}^2) = \sigma^2$).
+- Assim, na prática nós sempre utilizamos $\widehat{V}(\hat{\beta}|X) = \hat{\sigma}^2(X'X)^{-1}$ no lugar de $V(\hat{\beta}|X)$.
+- O desvio padrão, geralmente reportados pelos softwares estatísticos/econométricos, é a raiz quadrada dos elementos na diagonal de $\widehat{V}(\hat{\beta}|X)$.
+
+O [Teorema de Gaus--Markov](https://en.wikipedia.org/wiki/Gauss–Markov_theorem) estabelece que, sob algumas hipóteses (conhecidas como as hipóteses de Gauss-Markov), $\hat{\beta}$ é o melhor estimador linear não viesado (**BLUE** em inglês: *Best Linear Unbiased Estimator*), ou seja, para qualquer outro estimador linear^[Um estimador linear é um estimador da forma $\tilde{\beta} = A'Y$ em que a matrix $A$ é uma matriz de dimensão $n \times k+1$ função de $X$] $\tilde{\beta}$, $$V(\tilde{\beta}|X) \geq V(\hat{\beta}|X).$$
+
+
+A Figura 1 mostra um exemplo de uma reta de regressão  $\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x$ obtida pelo método de MQO.
+
+```{r  echo=FALSE, fig.height=4, fig.width=8, message=FALSE, warning=FALSE, fig.cap= "OLS regression line example"}
+library(ggplot2)
+data(cars)
+cars = na.omit(cars)
+ggplot(data=cars) + geom_point(aes(x = speed, y = dist)) + geom_smooth(aes(x = speed, y = dist), method = "lm", se = FALSE) + ylab("y") + xlab("x")
+```
+
+
+### Implementação no R
+
+
+Realizar uma regressão linear no R não é difícil, para ver como faze-lo utilizaremos o conjunto de dados *hprice1* disponível no pacote *wooldridge* do R.
+
+
+Se assumirmos que o modelo populacional é da forma $$price = \beta_0 + \beta_1 bdrms + \beta_2 lotsize +  \beta_3 sqrft + \beta_4 colonial + u,$$ utilizamos o seguintes comandos
+
+
+```{r}
+library(wooldridge)
+modelo = lm(price~bdrms+lotsize+sqrft+colonial, data = hprice1)
+modelo
+```
+
+
+
+
+
+O output anterior apenas mostra os $\hat{\beta}$'s, um output mais completo, que inclui o desvio padrão dos $\hat{\beta}$'s, o teste T, teste F, $R^2$ e p-valores pode ser facilmente obtido utilizando a função summary( ).
+
+```{r}
+summary(modelo)
+```
+
+### Interpretação
+
+
+Antes de interpretar os resultados é importante e necessário conhecer os dados e saber quais as unidades de medida das nossas variáveis^[Na prática, antes de ajustar a reta de regressão é feita uma análise exploratória de dados (EDA em inglês). Nessa EDA já conheceremos melhor as variáveis com as que estamos trabalhando, bem como as unidades de medida.]. 
+
+Para darmos uma olhada nos dados utilizaremos as funções select( ) e glimpse( ) do pacote *dplyr*.
+
+
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+hprice1 %>% select(price, bdrms, lotsize, sqrft, colonial) %>% glimpse()
+```
+
+<aside>
+O pacote *dplyr*  é utilizado para manipulação de dados. A função select( ) seleciona algumas das variaveis contidas em *hprice1* e a função glimpse ( ) nos permite ver rapidamente a estrutura dos dados.
+</aside>
+
+
+A descrição das variáveis é apresentada a seguir e ela pode ser obtida utilizando diretamente os comandos *help(hprice1)* ou *?hprice1*. 
+
+| Variável |      Descrição        |
+|:---------|:------------------|
+| price    | preço da casa (em milhares de dólares) |
+| bdrms    | número de quartos  |
+| lotsize  | tamanho do lote da casa (em pés$^2$) |
+| sqrft    | tamanho da casa (em pés$^2$)|
+| colonial | Dummy (=1 se a casa for de estilo colonial) |
+
+Conhecendo melhor os dados, vamos então interpretar os resultados:
+
+- $\approx 66\%$ da variabilidade do preço (price) é explicada pelo nosso modelo^[Geralmente, preferimos o $R^2_{Adjusted}$ ao $R^2$].
+- Utilizando as estatísticas T ($H_0: \beta_i = 0 \quad \text{vs.} \quad H_1: \beta_i \neq 0$) apenas *lotsize* e *sqrft* são estatísticamente significativas (*i.e.* rejeitamos $H_0$) ao nível de significância de 5\%.
+- O incremento em 481 pés$^2$ (pés quadrados) no lote da casa, implica, em média, um incremento de mil dólares^[$2.076e-03*481 = 0.998556 \approx 1$] no preço da casa (permanecendo fixos os outros fatores).
+- O incremente em 8 pés$^2$ no tamanho da casa, implica, em édia, um incremento de mil dólares^[$0.1242*8 = 0.9936 \approx 1$] no preço da casa (permanecendo fixos os outros fatores).
+
+
+Finalmente, summary( ) também fornece informação para testar conjuntamente $$H_0: \beta_{bdrms}=0,\beta_{lotsize}=0,\beta_{sqrft}=0,\beta_{colonial}=0$$ vs. $$H_1: H_0 \text{ is not true. }$$
+Utilizando o teste F, rejeitamos $H_0$ (p-valor $\approx$ 0, F-statistics = 43.25)
+
+
+> Obviamente, nossa interpretação foi realizada assumindo que as [hipóteses do modelo linear clássico](https://economictheoryblog.com/2015/04/01/ols_assumptions/) são satisfeitas. Se as hipóteses não são satisfeitas, precisamos melhoras/corrigir nosso modelo e apenas interpretar os resultados quando as hipóteses do modelo linear clássico forem verificadas.
+
+No livro do Wooldridge^[Wooldridge, J. M. (2016). Introdução à Econometria: Uma abordagem moderna. Cengage.] encontramos uma interessante discussão sobre como interpretar os $\beta$'s quando utilizamos ou não transformações logaritmicas. A seguinte Tabela apresenta um resumo dessa discussão e fornece uma guia para melhor interpretarmos os resultados
+
+
+|  Variável dependente | Variável independente | Interpretação do  $\beta$   |
+|:-------:|:--------:|:---------------------------:|
+|$y$  | $x$ | $\Delta y = \beta \Delta x$     |
+|$y$  | $\log(x)$ | $\Delta y = \big(\beta/100 \big) \% \Delta x$     |
+|$\log(y)$  | $x$ | $\% \Delta y = 100\beta \Delta x$     |
+|$\log(y)$  | $\log(x)$ | $\% \Delta y = \beta \% \Delta x$     |
+
+
+
+### Conclusões
+
+- ARL é um métodos estatístico (econométrico, de machine/statiscal learning) poderoso e facil de implementar, ele pode fornecer *insights* importantes sobre nossos dados (e consequentemente sobre nosso negócio).
+- R fornece uma forma facil de utilizar regressão linear e fornece também informação útil para sua interpretação. Contudo, é importante tomar cuidado sobre as hipóteses assumidas no modelo (que é o tópico do nosso próximo post), a não verificação das hipóteses pode ter um forte impacto nos resultados obtidos.
+
+
+### Bonus
+
+
+#### Implementação em Python
+
+```{python}
+import statsmodels.api as sm
+import pandas as pd
+from patsy import dmatrices
+
+url = "https://raw.githubusercontent.com/ctruciosm/statblog/master/datasets/hprice1.csv"
+hprice1 = pd.read_csv(url)
+
+y, X = dmatrices('price ~ bdrms + lotsize + sqrft + colonial', 
+                  data = hprice1, return_type = 'dataframe')
+# Definir o modelo
+modelo = sm.OLS(y, X)
+# Ajustar (fit) o modelo
+modelo_fit = modelo.fit()
+# Resultados completos do modelo
+print(modelo_fit.summary())
+```
+
+
+

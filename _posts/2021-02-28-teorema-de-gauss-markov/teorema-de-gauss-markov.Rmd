@@ -1,0 +1,130 @@
+---
+title: "Teorema de Gauss-Markov"
+description: |
+  Uma das propriedades mais interessentes dos estimadores MQO é fornecida pelo Teorema de Gauss-Markov. Neste post discutimos a importância, significado e fornecemos uma demostração passo a passo do Teorema.
+categories:
+  - Linear Regression
+  - Proof
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 02-28-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    self_contained: false
+header-includes:
+- \newcommand{\argmin}{\mathop{\mathrm{argmin}}\limits}
+- \usepackage{amsmath}
+bibliography: statblog.bib
+---
+
+
+### Introdução
+
+
+```{r, echo=FALSE}
+knitr::include_graphics("teorema_proof.jpg")
+```
+
+
+O estimador de mínimos quadrados ordinários (MQO) é um dos métodos de estimação mais utilizados quanto à analise de regressão se refere. Ele é atrativo pela sua simplicidade e boas propriedades. 
+
+
+Sejam $\{(y_i, x_{i,1}, \ldots, x_{i,k})  \}_{i=1, \ldots, n}$ tais que: 
+
+
+\begin{align}
+\begin{split}\label{eq:1}
+    y_1 &= \beta_0 + \beta_1 x_{1,1}  + \cdots + \beta_k x_{1,k} + u_1 \\
+    \vdots \\
+    y_n &= \beta_0 + \beta_1 x_{n,1}  + \cdots + \beta_k x_{n,k} + u_n \\
+\end{split}
+\end{align}
+
+ou equivalentemente
+
+$$ \underbrace{\left[ \begin{array}{c} y_1 \\ \vdots \\ y_n \end{array} \right]}_{Y} = \underbrace{\begin{bmatrix} 
+1 & x_{1,1} & \cdots & x_{1,k} \\ 
+\vdots & \vdots & \cdots & \vdots \\ 
+1 & x_{n,1} & \cdots & x_{n,k} \end{bmatrix}}_{X} \times \underbrace{\left[ \begin{array}{c} \beta_0 \\ \vdots \\ \beta_k \end{array} \right]}_{\beta} + \underbrace{\left[ \begin{array}{c} u_1 \\ \vdots \\ u_n \end{array} \right]}_{u}$$
+
+então, o estimador MQO de $\beta$ é dado por $\hat{\beta} = (X'X)^{-1}X'Y$. 
+
+
+
+Sob certas *condições*, o Teorema de Gauss-Markov nos diz que $\hat{\beta}$ é o **melhor estimador linear não viesado** (**BLUE** em Inglês):
+
+- Ele é linear^[Um estimador linear é um estimador da forma $\tilde{\beta} = A'Y$ para uma matriz $A$ de dimensão $n \times k+1$ função de $X$.] pois $\hat{\beta} = (X'X)^{-1}X'Y$ (basta fazer $A' = (X'X)^{-1}X'$).
+- Ele é não viesado pois $\mathbb{E}(\hat{\beta}) = \beta$ e
+- Ele é o melhor, pois possui a menor variância entre todos os outros estimadores lineares não viesados.
+
+
+
+### Teorema
+
+
+Seja $Y = X \beta + u$ com $X$ de posto completo, $\mathbb{E}(u|X) = 0$ e $\mathbb{V}(u|X) = \sigma^2 I$. Então $\hat{\beta}$, o estimador MQO de $\beta$, é o melhor estimador linear não viesado (**BLUE**) de $\beta$.
+
+
+Note que o Teorema requer que:
+
+- O modelo populacional seja da forma $Y = X \beta + u$ 
+- $X$ seja de posto completo (ou seja não existe colineariedade perfeita)
+- $\mathbb{E}(u|X) = 0$
+- $\mathbb{V}(u|X) = \sigma^2 I$
+
+Essas condições são às vezes conhecidas como as **hipóteses de Gauss--Markov**. Se alguma das *hipóteses de Gauss--Markov* não for valida, então $\hat{\beta}$ não será mais **BLUE**.
+
+
+
+> Ou seja  Teorema de Gauss-Markov nos diz que se as condições do Teorema forem satisfeitas, não adianta buscar por algum outro estimador linear não viesado, pois $\hat{\beta}$ será o melhor (de menor variância).
+
+
+### Demostração
+
+Seja $\tilde{\beta}$ qualquer outro estimador linear não viesado de $\beta$.
+
+1. Como $\tilde{\beta}$ é um estimador linear, ele é da forma $\tilde{\beta} = A'Y$ (para qualquer matriz $A$ de dimensão $n \times k+1$ função de $X$.).
+2. Como $\tilde{\beta}$ é não viesado, temos que $A'X = I$ pois \begin{equation}
+\begin{aligned}
+\mathbb{E}(\tilde{\beta} | X)  & =  \mathbb{E}(A'Y | X)\\
+                      & =  \mathbb{E}(A' (X\beta + u) | X) \\
+                      & =  \mathbb{E}(A'X\beta|X) + \mathbb{E}(u|X) \\
+                      & =  \mathbb{E}(A'X\beta|X) \quad \text{pois } \mathbb{E}(u|X) = 0 \\
+                      & =  A'X \beta, 
+\end{aligned}
+\end{equation} que é não viesado se e somente se $A'X = I$
+3. A variância de $\tilde{\beta}$ (condicional em $X$) é \begin{equation}
+\begin{aligned}
+\mathbb{V}(\tilde{\beta}|X) & =  \mathbb{V}(A'Y|X) \\
+                   & =  A'\mathbb{V}(Y|X)A \\
+                   & =  A'\mathbb{V}(X \beta + u|X)A \\
+                   & =  A'\mathbb{V}(u|X)A \\
+                   & =  A'\sigma^2 I A \\
+                   & =  \sigma^2 A'A \\
+\end{aligned}
+\end{equation}
+4. Definamos $C = A - X(X'X)^{-1}$, então $X'C = \underbrace{X'A}_{I}-\underbrace{X'X(X'X)^{-1}}_{I} = 0$
+5. Sabemos que $\mathbb{V}(\hat{\beta}|X) = \sigma^2 (X'X)^{-1}$. Então basta provar que $\mathbb{V}(\tilde{\beta}|X) - \mathbb{V}(\hat{\beta}|X)$ é semi-definida positiva, ou seja $$A'A-(X'X)^{-1} \geq 0.$$ Para provar isto vejamos que \begin{equation}
+\begin{aligned}
+A'A-(X'X)^{-1} & =  [C+X(X'X)^{-1}]'[C+X(X'X)^{-1}] -(X'X)^{-1} \\
+               & =  [C'+ (X'X)^{-1} X'] [C+X(X'X)^{-1}] -(X'X)^{-1} \\
+               & =  C'C +  \underbrace{C' X}_{0}(X'X)^{-1} + (X'X)^{-1} \underbrace{X'C}_{0} \\ &  + (X'X)^{-1} \underbrace{X' X(X'X)^{-1}}_{I} -(X'X)^{-1}\\
+               & =  C'C + (X'X)^{-1} -(X'X)^{-1} \\
+               & =  C'C \geq 0.\\
+\end{aligned}
+\end{equation}
+
+Com isso temos provado que $A'A \geq (X'X)^{-1}$ ou equivalentemente, $$\underbrace{\sigma^2 A'A}_{\mathbb{V}(\tilde{\beta}|X)} \geq \underbrace{\sigma^2 (X'X)^{-1}}_{\mathbb{V}(\hat{\beta}|X)},$$ que é o que queremos demostrar.
+
+<aside>
+$C'C$ é de fato semi-definida positiva, veja Teorema A.4 em [@Hansen2020] ou 10.10 em [@seber2008matrix].
+</aside>
+
+
+### Conclusão
+
+Sob as hipóteses de Gauss-Markov, temos demostrado que o estimador de MQO, $\hat{\beta}$, amplamente utilizado em análise de regressão é o melhor estimador linear não viesdado. Isto significa que se as hipóteses de Gauss-Markov são verificadas, não conseguiremos um estimador linear que seja melhor (menor variância) do que $\hat{\beta}$.

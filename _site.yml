@@ -1,0 +1,43 @@
+name: "Carlos Trucíos"
+title: "Carlos Trucíos"
+base_url: https://ctruciosm.github.io/
+theme: theme_dark.css
+output_dir: "site"
+navbar:
+  search: false
+  right:
+    - text: 'Home'
+      href: index.html
+    - text: 'Research'
+      href: research.html
+    - text: 'Teaching'
+      href: teaching.html
+    - text: 'Talks'
+      href: talks.html
+    - text: 'Software'
+      href: software.html
+    - text: 'Awards'
+      href: awards.html
+    - text: 'Blog'
+      href: statblog.html
+    - text: 2021.1
+      menu:
+        - text: ACA228
+          href: ACA228.html 
+        - text: MAD211
+          href: MAD211.html
+        - text: CIA
+          href: CIA.html
+    - icon: fas fa-adjust
+output: 
+  distill::distill_article:
+    includes:
+      in_header: "header.html"
+      after_body: "_afterbody.html"
+collections:
+  posts:
+    categories: TRUE
+    categories_metadata: TRUE
+    authors_metadata: TRUE
+    disqus: statistical-data-science
+    share: [facebook, twitter, linkedin]

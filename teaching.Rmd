@@ -1,0 +1,56 @@
+---
+title: "Teaching"
+output:
+  distill::distill_article:
+    toc: false
+---
+
+
+```{r panelset, layout='l-page', echo=FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3D")
+```
+
+
+
+::::: {.panelset}
+
+::: {.panel}
+
+#### Undergraduate {.panel-name}
+
+- **2021:**
+  - Forecasting and Regression Models (in Portuguese), UFRJ (PL 2021.1)
+  - Statistics for Business (in Portuguese), UFRJ (PL 2021.1)
+  - Forecasting and Regression Models (in Portuguese), UFRJ (PL 2020.2)
+  - Statistics for Business (in Portuguese), UFRJ (PL 2020.2)
+  - Forecasting and Regression Models (in Portuguese), UFRJ (PL 2020.1)
+- **2020:**
+  - Introduction to Probability and Statistics (in Portuguese), UFABC
+- **2018:**
+  - Probability (in Portuguese), EESP-FGV  (T.A.)
+- **2015:**
+  - Statistics for experimentalist (in Portuguese), UNICAMP (T.A.)
+  - Elementar Statistics (in Portuguese), UNICAMP (T.A.)
+* **2012:**
+  - Statistics for experimentalist (in Portuguese), UNICAMP (T.A.)
+  - Introduction to probability models (in Portuguese), UNICAMP (T.A.)
+- **2010:**
+  - Statistical Computing (in Spanish), UNMSM (T.A.)
+
+:::
+
+::: {.panel}
+
+#### Short Courses {.panel-name}
+
+- Modelling and forecasting financial risk measures, II Symposium on Mathematics and Applied Mathematics. Arequipa-Perú, 2019.
+- Special topics in R software: Graduate program, National University of San Marcos. Lima-Perú, 2016.
+- Special topics in R software: Ricardo Palma University. Lima-Perú, 2016.
+- Data manipulation and data visualization in R: 17th Statistics week, University of Campinas. Campinas-Brazil, 2015.
+
+:::
+
+
+:::::
+

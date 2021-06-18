@@ -1,0 +1,159 @@
+---
+title: "Mínimos Quadrados Ordinários"
+description: |
+  Quando trabalhamos com modelos de regressão é necessário estimar os parâmetros do modelo. Um dos métodos de estimação mais conhecidos é o estimador de mínimos quadrados ordinários (ou MQO para os amigos). Em este post discutiremos a necessidade de estimar os parâmetros, entendermos a intuição por trás do método e derivaremos, passo a passo, o estimador MQO no modelo de regressão linear simples.
+categories:
+  - Linear Regression
+  - Proof
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 04-01-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    self_contained: false
+header-includes:
+- \newcommand{\argmin}{\mathop{\mathrm{argmin}}\limits}
+- \usepackage{amsmath}
+bibliography: statblog.bib
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Introdução
+
+O modelo de regressão linear simples é um dos modelos mais simples de _Statistical Learning_ / Econometria. O modelo assume que a relação entre as variáveis $Y$ e $X$ é dada por: 
+\begin{equation}\label{RLS}
+Y = \beta_0 + \beta_1 X + u
+\end{equation} em que $\beta_0$ e $\beta_1$ são os parâmetros do modelo e $u$ é um termo aleatório.
+
+Se conhecermos $\beta_0$ e $\beta_1$, basta utilizar o modelo para um determinado valor de $X$, digamos $x$, e saberemos o valor esperado de $Y$ dado $x$^[Assumindo que $\mathbb{E}(u|X) = 0$, $\mathbb{E}(Y|x) = \beta_0 + \beta_1 x$].
+
+Infelizmente, nunca conhecemos $\beta_0$ e $\beta_1$ e então precisamos estimar esses valores utilizando os dados da nossa amostra. 
+
+
+Existem vários métodos de estimação, mas hoje discutiremos o estimador de mínimos quadrados ordinários (MQO).
+
+
+### A intuição por trás do estimador MQO
+
+Sejam $(y_1, x_1), \ldots, (y_n, x_n)$ os elementos de uma amostra aleaatória (a.a) de tamanho $n$ extraida de $(Y,X)$. Estamos interessados em estimar os parâmetros $\beta_0$ e $\beta_1$ na reta de regressão, mas...qual reta escolher?
+
+
+A Figura \@ref(fig:MQO1) apresenta o gráfico de dispersão de _educação_ ($x$) vs. _renda_ ($y$). Como podemos ver, existem várias retas (na verdade existem infinitas retas) que podemos tracejar na nossa tentativa de estimar $\beta_0$ e $\beta_1$. 
+
+
+```{r MQO1, echo=FALSE, fig.cap='Gráfico de dispersão education vs. income'}
+library(ggplot2)
+library(car)
+ggplot(Prestige) + geom_point(aes(x = education, y = income)) + 
+  geom_smooth(aes(x = education, y = income), method = "lm", se = FALSE) + ylab("Renda") + xlab("Educação") +
+  geom_abline(intercept = -2000, slope = 915, color = "red") + 
+  geom_abline(intercept = -2853.6 + 500, slope = 898.8 + 30, color = "red") +
+  geom_abline(intercept = -2853.6 - 500, slope = 898.8 -40, color = "green") +
+  geom_abline(intercept = -2853.6 - 1000, slope = 898.8 + 200, color = "orange") +
+  geom_abline(intercept = -2853.6 - 1300, slope = 898.8 +150, color = "violet") +
+  geom_abline(intercept = -2853.6 + 732, slope = 898.8 + 22, color = "gray") +
+  geom_abline(intercept = -2853.6 -900, slope = 898.8 + 200, color = "yellow") +
+  geom_abline(intercept = -2853.6 + 60, slope = 898.8 + 10, color = "green4") + 
+  geom_abline(intercept = -2853.6 - 1500, slope = 898.8 + 100, color = "black") 
+```
+
+Entre os vários critérios que poderíamos escolher para escolher a reta, vamos escolher a reta que _minimiza a soma de quadrados dos resíduos_. Mas... quem são esses resíduos? os resíduos, denotados por $\hat{u}_i$, são definidos como $\hat{u}_i = y_i - \hat{y_i}$ com $\hat{y}_i = b_0 + b_1x_i$. Ou seja, independente dos valores $b_0$ e $b_1$ que escolhermos, os resíduos são a diferença entre o valor verdadeiro ($y_i$) e o estimado ($\hat{y}_i$).
+
+
+Os valores $b_0$ e $b_1$ que minimizem a SQR vamos denotá-los como $\hat{\beta}_0$ e $\hat{\beta}_1$.  Em termos matemáticos, queremos $b_0$ e $b_1$ tal que $$\hat{\beta}_0, \hat{\beta}_1 = \argmin_{b_0, b_1} SQR$$ em que $$SQR := \displaystyle \sum_{i=1}^n \hat{u}_i^2 \equiv \displaystyle \sum_{i=1}^n (y_i - \hat{y}_i)^2 \equiv \displaystyle \sum_{i=1}^n (y_i - b_0 - b_1 x_i)^2$$
+
+
+### Derivando o estimador MQO
+
+Nosso problema de encontrar $\hat{\beta}_0$ e $\hat{\beta}_1$ resume-se, então, a um problema de minimização, onde a função a minimizar é $$SQR := \displaystyle \sum_{i=1}^n (\underbrace{y_i - b_0 - b_1 x_i}_{\hat{u}_i})^2$$
+
+Para resolver nosso problema de minimização vamos a lembrar um pouco das aulas de cálculo. Vamos a calcular a primeira derivada, igualar a zero para obter os valores candidatos e finalmente, vamos a calcular a segunda derivada para verificar que efetivamente os valores encontrados são valores que minimizam a função. 
+
+
+#### Primeira derivada
+
+
+Derivando SQR em relação a $b_0$ temos
+
+
+\begin{equation}
+\dfrac{\partial SQR}{\partial b_0}   = -2 \displaystyle \sum_{i=1}^n (y_i - b_0 - b_1 x_i)  = -2 n \big( \bar{y} - b_0 - b_1 \bar{x} \big).
+\end{equation}
+
+Derivando SQR em relação a $b_1$ temos
+
+
+\begin{equation}
+\dfrac{\partial SQR}{\partial b_1}= -2 \displaystyle \sum_{i=1}^n x_i (y_i - b_0 - b_1 x_i) = -2  \Big( \displaystyle \sum_{i=1}^n x_i y_i - b_0 \displaystyle \sum_{i=1}^n x_i - b_1 \displaystyle \sum_{i=1}^n x_i^2 \Big).
+\end{equation}
+
+
+#### Igualando a zero
+
+Fazendo $\frac{\partial SQR}{\partial b_0} = 0$ e $\frac{\partial SQR}{\partial b_1} = 0$ temos:
+
+$$\underbrace{\bar{y} = \hat{\beta}_0 + \hat{\beta}_1 \bar{x}}_{A} \quad e \quad \underbrace{\displaystyle \sum_{i=1}^n x_i (y_i - \hat{\beta}_0 - \hat{\beta}_1 x_i) = 0}_{B}$$
+<aside>
+Quando igualamos a zero, substituimos $b_0$ por $\hat{\beta}_0$ e $b_1$ por $\hat{\beta}_1$ pois $\hat{\beta}_0$ e $\hat{\beta}_1$ são a solução do sistema.
+</aside>
+
+Vamos então resolver o sistema de equações para obter $\hat{\beta}_0$ e $\hat{\beta}_1$. 
+
+De $A$ temos que $\hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}$. Agora vamos substituir  $\hat{\beta}_0$ em $B$, 
+
+
+$$\displaystyle \sum_{i=1}^n x_i (y_i - \underbrace{(\bar{y} - \hat{\beta}_1 \bar{x})}_{\hat{\beta}_0} - \hat{\beta}_1 x_i) = 0$$
+$$\displaystyle \sum_{i=1}^n x_i(y_i-\bar{y}) - \hat{\beta}_1 \sum_{i=1}^n x_i (x_i - \bar{x}) = 0$$
+
+$$\displaystyle \sum_{i=1}^n x_i(y_i-\bar{y}) = \hat{\beta}_1 \sum_{i=1}^n x_i (x_i - \bar{x}),$$
+Então, $$\hat{\beta}_1 = \dfrac{\displaystyle \sum_{i=1}^n x_i(y_i-\bar{y})}{\displaystyle \sum_{i=1}^n x_i (x_i - \bar{x})}.$$
+Provavelmente, a fórmula não se parece muito com as fórmulas que você está acostumado a ver nos livros. Vamos trabalhar um pouco com as expressões no numerador e denominador para chegarmos a uma fórmula um pouco mais conhecida.
+
+
+No denominador:
+
+$$\displaystyle \sum_{i=1}^n x_i (x_i-\bar{x}) = \sum_{i=1}^n (x_i - \bar{x} + \bar{x})(x_i-\bar{x}) = \underbrace{\sum_{i=1}^n (x_i - \bar{x})(x_i-\bar{x})}_{\displaystyle \sum_{i=1}^n (x_i - \bar{x})^2} + \underbrace{\sum_{i=1}^n  \bar{x}(x_i-\bar{x})}_{\bar{x} \displaystyle \sum_{i=1}^n  (x_i-\bar{x})},$$ e como $\displaystyle \sum_{i=1}^n (x_i - \bar{x}) = \underbrace{\sum_{i=1}^n x_i}_{n\bar{x}} - n \bar{x} = 0,$ temos que $$\displaystyle \sum_{i=1}^n x_i (x_i-\bar{x}) = \displaystyle \sum_{i=1}^n (x_i-\bar{x})^2.$$
+No numerador: 
+
+$$\displaystyle \sum_{i=1}^n x_i(y_i-\bar{y}) = \displaystyle \sum_{i=1}^n (x_i - \bar{x} + \bar{x})(y_i-\bar{y}) = \displaystyle \sum_{i=1}^n (x_i - \bar{x})(y_i-\bar{y}) + \underbrace{\displaystyle \sum_{i=1}^n \bar{x}(y_i-\bar{y})}_{\bar{x} \underbrace{\displaystyle \sum_{i=1}^n (y_i-\bar{y})}_{0}}$$
+Então temos que, $$\hat{\beta}_1 = \dfrac{\displaystyle \sum_{i=1}^n (x_i - \bar{x})(y_i-\bar{y})}{\displaystyle \sum_{i=1}^n (x_i-\bar{x})^2} \quad e \quad \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}.$$
+
+#### Verificando que é ponto de mínimo
+
+Para verificar que a solução obtida é ponto de mínimo, precisamos que a matriz Hessiana $$\begin{bmatrix} 
+\dfrac{\partial^2 SQR}{\partial b_0^2} & \dfrac{\partial^2 SQR}{\partial b_0 \partial b_1}  \\
+\dfrac{\partial^2 SQR}{\partial b_1 \partial b_0} & \dfrac{\partial^2 SQR}{\partial b_1^2}  \\
+\end{bmatrix}$$ seja definida positiva.
+
+- $\dfrac{\partial^2 SQR}{\partial b_0^2} = \dfrac{\partial}{\partial b_0}\dfrac{\partial SQR}{\partial b_0} = 2n$
+- $\dfrac{\partial^2 SQR}{\partial b_0 \partial b_1} = \dfrac{\partial}{\partial b_0}\dfrac{\partial SQR}{\partial b_1} = 2n \bar{x}$
+- $\dfrac{\partial^2 SQR}{\partial b_1 \partial b_0} = \dfrac{\partial}{\partial b_1}\dfrac{\partial SQR}{\partial b_0} = 2n \bar{x}$
+- $\dfrac{\partial^2 SQR}{\partial b_1^2} = \dfrac{\partial}{\partial b_1}\dfrac{\partial SQR}{\partial b_1} = 2 \displaystyle \sum_{i=1}^n x_i^2$
+
+Logo, a matriz Hessiana $$\begin{bmatrix} 
+2n & 2n \bar{x} \\
+2n \bar{x} & 2 \displaystyle \sum_{i=1}^n x_i^2  \\
+\end{bmatrix},$$ é definida positiva pois os elementos da diagonal são positivos e o determinante $4n\displaystyle \sum_{i=1}^n x_i^2 - 4n^2\bar{x}^2 = 4n \Big( \sum_{i=1}^n x_i^2 - n\bar{x}^2\Big) = 4n \displaystyle \sum_{i=1}^n(x_i - \bar{x})^2$ é também positivo.
+
+#### Estimador MQO
+
+Assim, temos mostrado que os estimadores MQO para $\beta_0$ e $\beta_1$ no modelo de regressão linear simples são $$\hat{\beta}_1 = \dfrac{\displaystyle \sum_{i=1}^n (x_i - \bar{x})(y_i-\bar{y})}{\displaystyle \sum_{i=1}^n (x_i-\bar{x})^2} \quad e \quad \hat{\beta}_0 = \bar{y} - \hat{\beta}_1 \bar{x}.$$
+
+
+
+### Conclusões
+
+- O estimador MQO consiste em encontrar $\hat{\beta}_0$ e $\hat{\beta}_1$ que minimizm a soma de quadrados dos resíduos.
+- Utilizando os critérios da primeira e segunda derivada temos  obtido os estimadore MQO.
+- Sob algumas hipóteses, os estimadores MQO são o melhor estimador linear não viesado [ver Teorem de Gauss-Markov](https://ctruciosm.github.io/statblog/posts/2021-02-28-teorema-de-gauss-markov/)
+- Se quiser saber como implementar este modelo em R e Python pode ver [este post.](https://ctruciosm.github.io/statblog/posts/2021-02-25-intro-regressao-linear/)
+
+

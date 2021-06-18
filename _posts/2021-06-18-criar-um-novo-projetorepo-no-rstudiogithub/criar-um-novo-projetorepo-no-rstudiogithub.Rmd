@@ -1,0 +1,108 @@
+---
+title: "Criar um novo projeto/repo no Rstudio/GitHub"
+description: |
+  Passo a passo para criar um novo projeto no Rstudio e vinculá-lo ao GitHub. 
+categories:
+  - Rstudio
+  - Git
+  - GitHub
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 06-18-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r echo=FALSE, out.width = '50%'}
+knitr::include_graphics("im/original.png")
+```
+
+
+
+
+### Introdução
+
+No meu post anterior, falei um pouco de como configurar o Rstudio para ele estar vinculado ao nosso Github. Hoje explicarei como criar um novo projeto no Rstudio e vinculá-lo ao GitHub (sem precisar clonar um repositório existente como vimos no post anterior).
+
+### Pré-requisitos.
+
+- Ter sua conta do Git/GitHub configurada com o Rstudio.
+
+
+### Criando um novo projeto.
+
+Para criar um novo projeto:
+
+```{r}
+usethis::create_project("/Volumes/CTRUCIOS_SD/Research/repo_teste")
+```
+
+repare que `/Volumes/CTRUCIOS_SD/Research/` é o local onde quero criar o novo projeto e `repo_teste` é o nome do novo projeto.
+
+Assim que rodar o código acima, aparecerá algo parecido com:
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./im/006.png")
+```
+
+Logo após, o Rstudio abrirá outra sessão com o novo projeto. Se não abriu, vá na pasta onde criou o projeto, no meu caso `/Volumes/CTRUCIOS_SD/Research/`, e encontrará uma pasta com o nome `repo_teste` onde encontrará o projeto do Rstudio (arquivo `repo_teste.Rproj`).
+
+
+Nessa nova sessão do Rstudio, repare que o nome do novo projeto aparece no canto superior direito. (Aqui já pode fechar todas as outras sessões abertas do Rstudio e ficar apenas com a do nosso novo projeto).
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./im/007.png")
+```
+
+
+Agora precisamos vincular esse novo projeto ao Git/GitHub. Primeiro vincularemos o projetoco Git.
+
+```{r}
+usethis::use_git() 
+```
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./im/008.png")
+```
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./im/009.png")
+```
+
+Uma vez vinculado o projeto ao Git, vinculamos ele ao GitHub.
+
+```{r, eval=FALSE}
+usethis::use_github()
+```
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./im/010.png")
+```
+
+Se tudo de certo, vá no teu Github e terá o repositório lá.
+
+```{r echo=FALSE, out.width = '100%'}
+knitr::include_graphics("./im/011.png")
+```
+
+
+Pronto! Seu novo projeto foi criado, e vinculado com o Git/GitHub. 
+
+**Happy Coding!**
+
+
+
+
+
+
