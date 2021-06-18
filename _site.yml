@@ -2,7 +2,7 @@ name: "Carlos Trucíos"
 title: "Carlos Trucíos"
 base_url: https://ctruciosm.github.io/
 theme: theme_dark.css
-output_dir: "site"
+output_dir: "."
 navbar:
   search: false
   right:
