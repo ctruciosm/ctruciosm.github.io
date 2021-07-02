@@ -33,7 +33,7 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 ### *Quem pode participar?*
 
 - `r emo::ji("student")` Qualquer aluno(a) da FACC/UFRJ^[Sempre e quando não tenha aula nos dias/horarios das reuniões.] com desejo de aprender e ensinar.
-- `r emo::ji("pencil")` Para participar,preencha o seguinte [**formulário**](https://forms.gle/FhDufKK2qUNiTkgw8). 
+- `r emo::ji("pencil")` Para participar,preencha o seguinte [**formulário**](https://forms.gle/1Np4NEGbDKMSb9WN9). 
 
 
 ### *Como funciona o grupo?*
@@ -66,7 +66,7 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 |08       | [KNN (ISLR Chapter 2)](http://ctruciosm.github.io/ISL/ISL_02)  | 11/06/2021  |     
 |09       | [Linear Regression (ISLR Chapter 3)](http://ctruciosm.github.io/ISL/ISL_03)   | 18/06/2021  |   
 |         |  **Fim do Período 2020.2**  |   |
-|10       | Classification Part I (ISLR Chapter 4)  | 02/07/2021  |     
+|10       | [Classification Part I (ISLR Chapter 4)](http://ctruciosm.github.io/ISL/ISL_04)   | 02/07/2021  |     
 |11       | Classification Part II (ISLR Chapter 4)  | 16/07/2021  |     
 |12       | Resampling Part I (ISLR Chapter 5)  | 30/07/2021  |     
 |13       | Resampling Part II (ISLR Chapter 5)  | 13/08/2021  |     
