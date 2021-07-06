@@ -1,0 +1,89 @@
+---
+title: "ACA228"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Modelos de Regressão e Previsão
+
+## 2021.1
+
+</center>
+
+</br>
+
+`r emo::ji("pencil")` [Plano de Ensino](2021-1/Plano_ACA228_2021-1.pdf) 
+
+`r emo::ji("pause")` [YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj) 
+
+`r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/MzY5NTE4NzM0NjIy?cjc=ecu6idw)  (Código da Turma caso precisarem: ecu6idw)
+
+</br>
+
+**Horários**    
+
+`r emo::ji("calendar")` Terças e Quintas das 18:30 às 20:10 
+
+
+**Monitorias**
+
+- **Monitora:** Brenda Barros Fabricio
+- **Horario:** Segundas-feiras das 18:00 até as 20:00.
+- **Email:** brendabf04 _at_ gmail _dot_ com (substitua _at_ com `@` e _dot_ com `.`)
+- Mais detalhes da monitoria no Google Class.
+
+
+### **Material e Aulas**
+
+- [Livro de R em português](http://leg.ufpr.br/Rpira/Rpira.pdf) 
+- [Livro Online: R for Data Science](https://r4ds.had.co.nz) 
+- [Apêndice do livro texto](MRP/Apendice_Livro.pdf) 
+
+
+### **Cronograma**
+
+
+| Data  | Assunto                | Slides      | Video |
+|:-----:|:-----------------------|:----------:|--------|
+| 13-07-2021     | Intro + EDA  |  |   | 
+| 15-07-2021     | **Lab:** Introdução ao R  |  |   | 
+| 20-07-2021     | Regressão Linear Simples (RLS)   |  |   | 
+| 22-07-2021     | **Lab:** Gráficos com R e RLS |  |   | 
+| 27-07-2021     | RLS: Interpretação e Propriedades  |  |   | 
+| 29-07-2021     | **Lab:** RLS, Medidas Resumo e Tabelas de Frequencia com R |  |   | 
+| 03-08-2021     | Regressão Linear Multipla (RLM)  |  |   | 
+| 05-08-2021     | MRLM: Inferência  |  |   | 
+| 10-08-2021     | **Lab:** Manipulação de dados e Análide de Regressão com R  |  |   |
+| 12-08-2021     | MRLM: Tópicos adicionais   |  |   | 
+| 17-08-2021     | MRLM: variáveis qualitativas e efeito de interação |  |   | 
+| 19-08-2021     | **Lab:** Análide de Regressão com R  |  |   | 
+| 24-08-2021     | MRLM: verificação das hipóteses  |  |   | 
+| 26-08-2021     | MRLM: verificação das hipóteses II  |  |   | 
+| 31-08-2021     | MRLM: medidas de influência  |  |   | 
+| 02-09-2021     | **Lab:** Análide de Regressão com R |  |   | 
+| 09-09-2021     | $P_1$ |  |   | 
+| 14-09-2021     | Séries Temporais: Fundamentos   |  |   | 
+| 16-09-2021     | Séries Temporais: Estacionariedade  |  |   | 
+| 21-09-2021     | Séries Temporais: Modelos ARIMA I |  |   | 
+| 23-09-2021     | **Lab:** Séries Temporais com R |  |   | 
+| 28-09-2021     | Séries Temporais: Modelos GARCH I |    |   | 
+| 30-09-2021     | Séries Temporais: Modelos GARCH II |  |   | 
+| 05-10-2021     | **Lab:** Séries Temporais com R|  |   | 
+| 07-10-2021     | $P_2$ |  |   | 
+| 14-10-2021     | Apresentação de trabalhos |  |   | 
+| 19-10-2021     | Exame de recuperação |  |   | 
+
+
+<center>
+
+> Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for,  pode contar comigo. 
+
+</center>
+
+
+
+---- 

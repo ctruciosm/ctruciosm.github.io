@@ -1,0 +1,81 @@
+---
+title: "MAD211"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Estatística para Administração
+
+## 2021.1
+
+</center>
+
+</br>
+
+`r emo::ji("pencil")` [Plano de Ensino](2021-1/Plano_MAD211_2021_1.pdf) 
+
+`r emo::ji("pause")` [YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho) 
+
+`r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/MzY5NTMxODI0MjY5?cjc=z24sflu)  (Código da Turma caso precisarem: z24sflu)
+
+</br>
+
+**Horários**    
+
+`r emo::ji("calendar")` Terças e Quintas das 16:40 às 18:20 
+
+
+### **Material e Aulas**
+
+- [Livro de R em português](http://leg.ufpr.br/Rpira/Rpira.pdf) 
+- [Livro Online: R for Data Science](https://r4ds.had.co.nz) 
+
+
+### **Cronograma**
+
+
+| Data  | Assunto                | Slides      | Video |
+|:-----:|:-----------------------|:----------:|--------|
+| 13-07-2021      | Introdução: Estatística, Aplicações e Conceitos Básicos  |  |   | 
+| 15-07-2021      | **Lab:** Introdução ao R  |  |   | 
+| 20-07-2021      | Estatística Descritiva: Tabelas de Frequencia e Gráficos   |  |   | 
+| 22-07-2021      | **Lab:** Tabelas e e Gráficos no R |  |   | 
+| 27-07-2021      | Estatística Descritiva: Medidas Resumo  |  |   | 
+| 29-07-2021      | **Lab:** Medidas Resumo e Manipulação de dados |  |   | 
+| 03-08-2021      | Análise Combinatória   |  |   | 
+| 05-08-2021      | Introdução à Probabilidade  |  |   | 
+| 10-08-2021      | Probabilidade Condicional   |  |   |
+| 12-08-2021      | Distribuições Discretas   |  |   | 
+| 17-08-2021      | Distribuições Continuas |  |   | 
+| 19-08-2021      | **Lab:** Distribuições de probabilidade  |  |   | 
+| 24-08-2021      | Exercícios  |  |   | 
+| **26-08-2021**  | $P_1$  |  |   | 
+| 31-08-2021      | Amostragem |  |   | 
+| 02-09-2021      | Intervalos de Confiança |  |   | 
+| 09-09-2021      | Teste de Hipóteses: média populacinal  |  |   | 
+| 14-09-2021      | Teste de Hipóteses: comparação de médias   |  |   | 
+| 16-09-2021      | Teste de Hipóteses: $p$-valor  |  |   | 
+| 21-09-2021      | **Lab:** Testes de hipóteses |  |   | 
+| 23-09-2021      | Teste de Hipóteses: ANOVA   |  |   | 
+| 28-09-2021      | Teste de Hipóteses: Comparação de proporções |    |   | 
+| 30-09-2021      | Teste de Hipóteses: Testes não paramétricos I |  |   | 
+| 05-10-2021      | Teste de Hipóteses: Testes não paramétricos II |  |   | 
+| 07-10-2021      | **Lab:** Testes de hipóteses |  |   | 
+| **14-10-2021**  | $P_2$ |  |   | 
+| 19-10-2021      | Exame de recuperação |  |   | 
+| 21-10-2021      | Exame de recuperação |  |   | 
+
+
+<center>
+
+> Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for,  pode contar comigo. 
+
+</center>
+
+
+
+---- 
