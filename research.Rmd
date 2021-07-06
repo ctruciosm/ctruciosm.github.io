@@ -75,9 +75,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 ::: {.panel}
 
-#### Work in progress {.panel-name}
+#### Ongoing Work {.panel-name}
 
-#### WORK IN PROGRESS
+#### ONGOING WORK
 
 
 <ol reversed>

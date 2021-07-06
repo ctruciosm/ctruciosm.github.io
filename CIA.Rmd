@@ -12,6 +12,25 @@ output:
 knitr::include_graphics("imagens/CIA.png")
 ```
 
+```{r}
+library(metathis)
+meta() %>%
+  meta_description(
+    "Grupo de Estudos CIA: Causal Inference and Analytics"
+  ) %>% 
+  meta_name("github-repo" = "ctruciosm.github.io/CIA") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "Grupo de Estudos CIA",
+    url = "https://ctruciosm.github.io/CIA",
+    image = "imagens/CIA.png",
+    image_alt = "Gráficos relacionados com análise de dados",
+    og_author = "Carlos Trucíos",
+    og_type = "website",
+    og_locale = "pt_BR",
+    twitter_card_type = "summary"
+  )
+```
 
 
 Bem-vindo(a)s ao grupo de estudos **CIA**. O grupo foi fundado ao final do 2020.1 (remoto), após finalizar minha primeira turma como professor de *modelos de regressão e previsão* na FACC/UFRJ. 
@@ -19,7 +38,9 @@ Bem-vindo(a)s ao grupo de estudos **CIA**. O grupo foi fundado ao final do 2020.
 A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quantitativos e análise de dados para estudarmos tópicos relacionados com o Software [R](https://www.r-project.org), Statistical/Machine Learnig, Econometria, _Marketing Analytics_, _People Analytics_, Python, Inferência Causal, etc... _i.e._ com Métodos Quantitativos. O interesse do grupo é entender como os diversos métodos funcionam e como eles são aplicados em diversas áreas.
 
 
-\
+> `r emo::ji("pencil")` Para participar, preencha o seguinte [**formulário**](https://forms.gle/1Np4NEGbDKMSb9WN9). `r emo::ji("pencil")`
+
+
 
 </center>
 
@@ -33,8 +54,6 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 ### *Quem pode participar?*
 
 - `r emo::ji("student")` Qualquer aluno(a) da FACC/UFRJ^[Sempre e quando não tenha aula nos dias/horarios das reuniões.] com desejo de aprender e ensinar.
-- `r emo::ji("pencil")` Para participar,preencha o seguinte [**formulário**](https://forms.gle/1Np4NEGbDKMSb9WN9). 
-
 
 ### *Como funciona o grupo?*
 
