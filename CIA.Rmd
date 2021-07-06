@@ -27,6 +27,7 @@ meta() %>%
     image_alt = "Gráficos relacionados com análise de dados",
     og_author = "Carlos Trucíos",
     og_type = "website",
+    og_site_name = "Grupo de Estudos CIA: Causal Inference and Analytics",
     og_locale = "pt_BR",
     twitter_card_type = "summary"
   )
