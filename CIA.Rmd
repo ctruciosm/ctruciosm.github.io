@@ -12,7 +12,7 @@ output:
 knitr::include_graphics("imagens/CIA.png")
 ```
 
-```{r}
+```{r, echo = FALSE}
 library(metathis)
 meta() %>%
   meta_description(
