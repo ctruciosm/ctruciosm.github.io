@@ -16,7 +16,7 @@ output:
 
 </br>
 
-`r emo::ji("pencil")` [Plano de Ensino](2021-1/Plano_MAD211_2021_1.pdf) 
+`r emo::ji("pencil")` [Plano de Ensino](2021-1/Plano_MAD211_2021-1.pdf) 
 
 `r emo::ji("pause")` [YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho) 
 
@@ -67,7 +67,6 @@ output:
 | 07-10-2021      | **Lab:** Testes de hipóteses |  |   | 
 | **14-10-2021**  | $P_2$ |  |   | 
 | 19-10-2021      | Exame de recuperação |  |   | 
-| 21-10-2021      | Exame de recuperação |  |   | 
 
 
 <center>
