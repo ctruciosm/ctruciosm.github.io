@@ -16,7 +16,7 @@ knitr::include_graphics("imagens/CIA.png")
 library(metathis)
 meta() %>%
   meta_description(
-    "CIA (Causal Inference and Analytics) é um grupo de estudos que reune aluno(a)s da FACC/UFRJ interessados em métodos quantitativos e análise de dados. Discutimos tópicos relacionados com o Software R, Statistical/Machine Learnig, Econometria, Marketing Analytics, People Analytics, Python, Inferência Causal, etc…."
+    "CIA (Causal Inference and Analytics) é um grupo de estudos para aluno(a)s da FACC/UFRJ interessados em métodos quantitativos e análise de dados. Discutimos tópicos relacionados com o Software R, Statistical/Machine Learnig, Econometria, Marketing Analytics, People Analytics, Python, Inferência Causal, Finanças Quantitativas, e temas relacionados."
   ) %>% 
   meta_name("github-repo" = "ctruciosm.github.io/CIA") %>% 
   meta_viewport() %>% 
