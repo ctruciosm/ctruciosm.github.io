@@ -40,7 +40,7 @@ output:
 
 | Data  | Assunto                | Slides      | Video |
 |:-----:|:-----------------------|:----------:|--------|
-| 13-07-2021      | Introdução: Estatística, Aplicações e Conceitos Básicos  | [Link](2021-1/MAD211_Aula01.pdf) |   | 
+| 13-07-2021      | Introdução: Estatística, Aplicações e Conceitos Básicos  | [Link](2021-1/MAD211_Aula01.pdf) | [Link](https://youtu.be/AB9RF0TsaP0)  | 
 | 15-07-2021      | **Lab:** Introdução ao R  |  |   | 
 | 20-07-2021      | Estatística Descritiva: Tabelas de Frequencia e Gráficos   |  |   | 
 | 22-07-2021      | **Lab:** Tabelas e e Gráficos no R |  |   | 

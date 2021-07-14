@@ -49,7 +49,7 @@ output:
 
 | Data  | Assunto                | Slides      | Video |
 |:-----:|:-----------------------|:----------:|--------|
-| 13-07-2021     | Intro + EDA  | [Link](https://ctruciosm.github.io/ACA-228/ACA228_01) |   | 
+| 13-07-2021     | Intro + EDA  | [Link](https://ctruciosm.github.io/ACA-228/ACA228_01) | [Link](https://youtu.be/9hag-Be7E7A)  | 
 | 15-07-2021     | **Lab:** Introdução ao R  |  |   | 
 | 20-07-2021     | Regressão Linear Simples (RLS)   |  |   | 
 | 22-07-2021     | **Lab:** Gráficos com R e RLS |  |   | 
