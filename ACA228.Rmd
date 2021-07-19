@@ -51,7 +51,7 @@ output:
 |:-----:|:-----------------------|:----------:|--------|
 | 13-07-2021     | Intro + EDA  | [Link](https://ctruciosm.github.io/ACA-228/ACA228_01) | [Link](https://youtu.be/9hag-Be7E7A)  | 
 | 15-07-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-1/LabR_01.pdf)  | [Link](https://youtu.be/zbsk2on-evc)  | 
-| 20-07-2021     | Regressão Linear Simples (RLS)   |  |   | 
+| 20-07-2021     | Regressão Linear Simples (RLS)   | [Link](2021-1/ACA228_03.pdf)  |   | 
 | 22-07-2021     | **Lab:** Gráficos com R e RLS |  |   | 
 | 27-07-2021     | RLS: Interpretação e Propriedades  |  |   | 
 | 29-07-2021     | **Lab:** RLS, Medidas Resumo e Tabelas de Frequencia com R |  |   | 
