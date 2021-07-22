@@ -53,15 +53,15 @@ output:
 | 15-07-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-1/LabR_01.pdf)  | [Link](https://youtu.be/zbsk2on-evc)  | 
 | 20-07-2021     | Regressão Linear Simples (RLS)   | [Link](2021-1/ACA228_03.pdf)  | [Link](https://youtu.be/OjXDryyIeNg)  | 
 | 22-07-2021     | **Lab:** [Tabelas, Gráficos e RLS](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-1/LabR_02.pdf)  |   | 
-| 27-07-2021     | RLS: Interpretação e Propriedades  |  |   | 
+| 27-07-2021     | RLS: Interpretação e Propriedades  | [Link](2021-1/ACA228_05.pdf) |   | 
 | 29-07-2021     | **Lab:** [Visualização de dados e RLS](https://ctruciosm.github.io/ACA-228/LabR_03) | [Link](2021-1/LabR_03.pdf)  |   | 
-| 03-08-2021     | Regressão Linear Multipla (RLM)  |  |   | 
-| 05-08-2021     | MRLM: Inferência  |  |   | 
+| 03-08-2021     | Regressão Linear Multipla (RLM)  | [Link](2021-1/ACA228_07.pdf) |   | 
+| 05-08-2021     | MRLM: Inferência  | [Link](2021-1/ACA228_08.pdf) |   | 
 | 10-08-2021     | **Lab:** Manipulação de dados e Análide de Regressão com R  |  |   |
-| 12-08-2021     | MRLM: Tópicos adicionais   |  |   | 
-| 17-08-2021     | MRLM: variáveis qualitativas e efeito de interação |  |   | 
+| 12-08-2021     | MRLM: Tópicos adicionais   | [Link](2021-1/ACA228_10.pdf) |   | 
+| 17-08-2021     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-1/ACA228_11.pdf) |   | 
 | 19-08-2021     | **Lab:** Análide de Regressão com R  |  |   | 
-| 24-08-2021     | MRLM: verificação das hipóteses  |  |   | 
+| 24-08-2021     | MRLM: verificação das hipóteses  | [Link](2021-1/ACA228_13.pdf) |   | 
 | 26-08-2021     | MRLM: verificação das hipóteses II  |  |   | 
 | 31-08-2021     | MRLM: medidas de influência  |  |   | 
 | 02-09-2021     | **Lab:** Análide de Regressão com R |  |   | 
