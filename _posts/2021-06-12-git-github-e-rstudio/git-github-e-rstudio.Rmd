@@ -4,6 +4,7 @@ description: |
   Tutorial de como configurar o Git/GitHub no Rstudio.
 categories:
   - Rstudio
+  - rstats
   - Git
   - GitHub
 author:

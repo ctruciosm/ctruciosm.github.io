@@ -6,6 +6,7 @@ categories:
   - Rstudio
   - Git
   - GitHub
+  - rstats
 author:
   - name: Carlos Trucíos
     url: https://ctruciosm.github.io

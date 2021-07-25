@@ -6,6 +6,7 @@ categories:
   - Linear Regression
   - R
   - Python
+  - rstats
 author:
   - name: Carlos Trucíos
     url: https://ctruciosm.github.io

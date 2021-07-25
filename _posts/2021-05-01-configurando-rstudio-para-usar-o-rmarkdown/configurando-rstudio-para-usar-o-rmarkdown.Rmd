@@ -5,6 +5,7 @@ description: |
 categories:
   - Rstudio
   - Rmarkdown
+  - rstats
 author:
   - name: Carlos Trucíos
     url: https://ctruciosm.github.io

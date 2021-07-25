@@ -1,0 +1,117 @@
+---
+title: "Utilizando o R para ler tabelas em PDF"
+description: |
+  É possível trazer para o R dados/tabelas vindos de um arquivo em PDF?  Neste post eu compartilho minha experiência com o pacote `tabulizer`, que nos ajudará a extrair tabelas em PDF e importá-las como _datasets_ no R.
+categories:
+  - Rstudio
+  - Git
+  - GitHub
+  - rstats
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 07-24-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    self_contained: false
+bibliography: statblog.bib
+---
+
+
+```{r, echo=FALSE}
+knitr::include_graphics("pexels-artem-podrez-6779714.jpg")
+```
+
+
+### Introdução
+
+Recentemente, alguns alun\@s me perguntaram se era possível importar no R dados vindos de um arquivo PDF. Honestamente, nunca tive a necessidade de fazer isso, mas sabia que certamente existia algum pacote para isso no R. 
+
+Pesquisando pela internet encontrei algumas opções, entre elas, o pacote `tabulizer` [@tabulizer].
+
+
+### Configuração
+
+O processo de extração será feito com o pacote `tabulizer`, que precisa do pacote `rJava`, que por sua vez, precisa ter o JDK (Java Developer Kit) instalado. 
+
+Para instalar o necessário, siga os seguintes passos: 
+
+1. Instalar o Java Developer Kit (Link para baixar [aqui](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html))
+2. Para usuários do Mac, digitar no terminal `sudo R CMD javareconf` 
+(se você utilizar windos, talvez [este post](https://cimentadaj.github.io/blog/2018-05-25-installing-rjava-on-windows-10/installing-rjava-on-windows-10/) ajude)
+3. Instalar no R os pacotes `rJava`, `tabulizerjars` e `tabulizer`,
+
+
+```{r, eval=FALSE}
+install.packages("rJava")
+install.packages("tabulizerjars")
+install.packages("tabulizer")
+```
+
+
+### Extraindo a tabela do PDF
+
+Após a configuração, carregamos os pacotes `rJava`, `tabulizerjars` e `tabulizer` no R. Se a configuração anterior foi bem sucedida, os pacotes carregarão sem nenhum problema.
+
+```{r}
+library(rJava)
+library(tabulizerjars)
+library(tabulizer)
+```
+
+Para extrair as tabelas, utilizaremos a função `extract_tables()`. Por padrão, esta função tem o argumento `guess = TRUE` o que significa que a função vai _adivinhar_ a localização da tabela no PDF (mas se quisermos ser mais específicos, teremos que mudar alguns dos parâmetros. Para mais detalhes ver `help(extract_tables)`).
+
+A maneira de exemplo, utilizaremos  o seguinte [PDF](https://www.math.arizona.edu/~jwatkins/normal-table.pdf) e para importar os dados contidos nas tabelas, utilizaremos os seguintes comandos.
+
+
+```{r}
+endereco_arquivo <- "https://www.math.arizona.edu/~jwatkins/normal-table.pdf"
+tabelas <- extract_tables(file   = endereco_arquivo, output = "data.frame")
+```
+
+Note que o objeto `tabelas` é uma lista com dois elementos, um por cada tabela.
+
+```{r}
+class(tabelas)
+length(tabelas)
+```
+
+Se quisermos acessar a alguma das tabelas, basta fazer
+
+```{r}
+library(dplyr)
+library(purrr)
+tabelas %>% pluck(1) %>% as_tibble()  # Primeira tabela
+tabelas %>% pluck(2) %>% as_tibble()  # Segunda tabela
+```
+
+ou equivalentemente (sem utilizar o `tidyway`)
+
+```{r}
+tabelas[[1]]   # Primeira tabela
+tabelas[[1]]   # Segunda tabela
+```
+
+e **pronto!**, nossos dados do PDF estão agora no R!.
+
+
+### Comentários finais
+
+- Se você tiver uma versão do JDK mais recente, provavelmemte o Rstudio vai travar quando tentar utilizar a função `extract_tables()`. 
+- Para corrigir o problema, basta desinstalar a versão mais recente e instalar a [versão 11]((https://www.oracle.com/java/technologies/javase-jdk11-downloads.html))
+- Se não quiser desinstalar a versão mais atual do JDK, instale a versão 11 sem desinstalar a outra versão e no terminal do R escreva 
+
+```{r, eval=FALSE}
+Sys.setenv(JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home')
+```
+
+em que `/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk` é o endereço onde a versão 11.0.12 foi instalada.
+
+> **Nota:** Ainda não testei a função com outras tabelas, então não sei que tão bem funciona com tabelas mais complexas.
+
+**Happy Coding!**
+
+
