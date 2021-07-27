@@ -17,8 +17,11 @@ output:
     toc: true
     toc_depth: 3
     self_contained: false
-bibliography: statblog.bib
 ---
+
+```{r, echo=FALSE}
+knitr::include_graphics("rmarkdown.png")
+```
 
 
 ### Introdução
@@ -36,16 +39,15 @@ Para poder fazer os relatórios, precisa de configurar o Rstudio primeiro. Se nu
 Uma vez configurado o Rstudio, assista este video onde explico passo a passo como fazer os relatórios.
 
 
-```{r, echo=FALSE}
-knitr::include_url("https://youtu.be/Yed1beLAQtM")
-```
+<iframe width="560" height="315" src="https://youtu.be/Yed1beLAQtM" frameborder="0" allowfullscreen></iframe>
+
 
 
 
 Como pode ver, a forma de escrever é muito fácil e simples, basta escrever da mesma forma que escrevemos em qulquer editor de texto e incluir alguns pequenos detalhes para aquelas coisas que são um pouco mais complexas.
 
 
-Recomendo que imprima e tenha sempre por perto o seguinte [Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), que é um resumo das coisas básicas que precisa saber para fazer seus relatórios. Se precisar de coisas mais avançadas, tem esse outro [Cheat Sheet](https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/rmarkdown-cheatsheet1.pdf) que pode lhe ajudar. 
+Recomendo que imprima e tenha sempre por perto o seguinte [Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), que é um resumo das coisas básicas que precisa saber para fazer seus relatórios. Se precisar de coisas mais avançadas, tem esse outro [Cheat Sheet](https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/rmarkdown-cheatsheet1.pdf) que pode lhe ajudar.  Para uma guia completa do Rmarkdown, entre [aqui](https://rmarkdown.rstudio.com/docs/).
 
 > Em um próximo post explicarei algumas outras coisas (incluir código, figuras, tabelas, etc).
 

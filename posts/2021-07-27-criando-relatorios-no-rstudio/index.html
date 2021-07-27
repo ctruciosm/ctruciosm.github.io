@@ -102,14 +102,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."/>
 <meta property="og:url" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"/>
+<meta property="og:image" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/rmarkdown.png"/>
+<meta property="og:image:width" content="400"/>
+<meta property="og:image:height" content="257"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Carlos Trucíos"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
-<meta property="twitter:card" content="summary"/>
+<meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:title" content="Carlos Trucíos: Criando relatorios no Rstudio"/>
 <meta property="twitter:description" content="Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."/>
 <meta property="twitter:url" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"/>
+<meta property="twitter:image" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/rmarkdown.png"/>
+<meta property="twitter:image:width" content="400"/>
+<meta property="twitter:image:height" content="257"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
 <meta name="citation_title" content="Carlos Trucíos: Criando relatorios no Rstudio"/>
@@ -127,7 +133,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["criando-relatorios-no-rstudio_files/anchor-4.2.2/anchor.min.js","criando-relatorios-no-rstudio_files/bowser-1.9.3/bowser.min.js","criando-relatorios-no-rstudio_files/distill-2.2.21/template.v2.js","criando-relatorios-no-rstudio_files/header-attrs-2.9/header-attrs.js","criando-relatorios-no-rstudio_files/jquery-1.11.3/jquery.min.js","criando-relatorios-no-rstudio_files/popper-2.6.0/popper.min.js","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy-bundle.umd.min.js","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy-light-border.css","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy.css","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy.umd.min.js","criando-relatorios-no-rstudio_files/webcomponents-2.0.0/webcomponents.js","statblog.bib"]}
+  {"type":"character","attributes":{},"value":["criando-relatorios-no-rstudio_files/anchor-4.2.2/anchor.min.js","criando-relatorios-no-rstudio_files/bowser-1.9.3/bowser.min.js","criando-relatorios-no-rstudio_files/distill-2.2.21/template.v2.js","criando-relatorios-no-rstudio_files/header-attrs-2.9/header-attrs.js","criando-relatorios-no-rstudio_files/jquery-1.11.3/jquery.min.js","criando-relatorios-no-rstudio_files/popper-2.6.0/popper.min.js","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy-bundle.umd.min.js","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy-light-border.css","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy.css","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy.umd.min.js","criando-relatorios-no-rstudio_files/webcomponents-2.0.0/webcomponents.js","rmarkdown.png","statblog.bib"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2544,6 +2550,9 @@ d-appendix d-footnote-list a.footnote-backlink {
 </ul>
 </nav>
 </div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="rmarkdown.png" width="200" /></p>
+</div>
 <h3 id="introdução">Introdução</h3>
 <p>Escrever relatórios e artigos científicos são tarefas que fazem parte da vida de todo pesquisador. Alguns preferem utilizar word, que é um editor de texto amplamente conhecido. Já outros, como eu, preferem utilizar que nos permite escrever fórmulas matemáticas de forma fácil e elegante.</p>
 <p>Contudo, essas duas opções não são as únicas no mercado. Se você gostar do R/Rstudio, quer utilizar um formato elegante, quer a flexibilidade de trocar entre pdf e word facilmente e ainda quer facilitar sua vida editando tabelas e gráficos… você <strong>precisa utilizar o Rmarkdown!</strong> 🕺.</p>
@@ -2551,12 +2560,10 @@ d-appendix d-footnote-list a.footnote-backlink {
 <p>Para poder fazer os relatórios, precisa de configurar o Rstudio primeiro. Se nunca fez isto antes, <a href="https://ctruciosm.github.io/posts/2021-05-01-configurando-rstudio-para-usar-o-rmarkdown/">leia este post aqui</a></p>
 <h3 id="primeiros-passos">Primeiros passos</h3>
 <p>Uma vez configurado o Rstudio, assista este video onde explico passo a passo como fazer os relatórios.</p>
-<div class="layout-chunk" data-layout="l-body">
-<iframe src="https://youtu.be/Yed1beLAQtM" width="624" height="400px">
+<iframe width="560" height="315" src="https://youtu.be/Yed1beLAQtM" frameborder="0" allowfullscreen>
 </iframe>
-</div>
 <p>Como pode ver, a forma de escrever é muito fácil e simples, basta escrever da mesma forma que escrevemos em qulquer editor de texto e incluir alguns pequenos detalhes para aquelas coisas que são um pouco mais complexas.</p>
-<p>Recomendo que imprima e tenha sempre por perto o seguinte <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">Cheat Sheet</a>, que é um resumo das coisas básicas que precisa saber para fazer seus relatórios. Se precisar de coisas mais avançadas, tem esse outro <a href="https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/rmarkdown-cheatsheet1.pdf">Cheat Sheet</a> que pode lhe ajudar.</p>
+<p>Recomendo que imprima e tenha sempre por perto o seguinte <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">Cheat Sheet</a>, que é um resumo das coisas básicas que precisa saber para fazer seus relatórios. Se precisar de coisas mais avançadas, tem esse outro <a href="https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/rmarkdown-cheatsheet1.pdf">Cheat Sheet</a> que pode lhe ajudar. Para uma guia completa do Rmarkdown, entre <a href="https://rmarkdown.rstudio.com/docs/">aqui</a>.</p>
 <blockquote>
 <p>Em um próximo post explicarei algumas outras coisas (incluir código, figuras, tabelas, etc).</p>
 </blockquote>
