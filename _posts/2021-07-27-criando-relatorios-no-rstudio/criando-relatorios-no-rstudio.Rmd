@@ -1,0 +1,58 @@
+---
+title: "Criando relatorios no Rstudio"
+description: "Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."
+categories:
+  - Rstudio
+  - Rmarkdown
+  - Latex
+  - Relatorios
+  - rstats
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 07-27-2021
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    self_contained: false
+bibliography: statblog.bib
+---
+
+
+### Introdução
+
+Escrever relatórios e artigos científicos são tarefas que fazem parte da vida de todo pesquisador. Alguns preferem utilizar word, que é um editor de texto amplamente conhecido.  Já outros, como eu, preferem utilizar \LaTex que nos permite escrever fórmulas matemáticas de forma fácil e elegante.
+
+Contudo, essas duas opções não são as únicas no mercado. Se você gostar do R/Rstudio, quer utilizar um formato elegante, quer a flexibilidade de trocar entre pdf e word facilmente e ainda quer facilitar sua vida editando tabelas e gráficos... você **precisa utilizar o Rmarkdown!** `r emo::ji("dance")`.
+
+### Configuração
+
+Para poder fazer os relatórios, precisa de configurar o Rstudio primeiro. Se nunca fez isto antes, [leia este post aqui](https://ctruciosm.github.io/posts/2021-05-01-configurando-rstudio-para-usar-o-rmarkdown/)
+
+### Primeiros passos
+
+Uma vez configurado o Rstudio, assista este video onde explico passo a passo como fazer os relatórios.
+
+
+```{r, echo=FALSE}
+knitr::include_url("https://youtu.be/Yed1beLAQtM")
+```
+
+
+
+Como pode ver, a forma de escrever é muito fácil e simples, basta escrever da mesma forma que escrevemos em qulquer editor de texto e incluir alguns pequenos detalhes para aquelas coisas que são um pouco mais complexas.
+
+
+Recomendo que imprima e tenha sempre por perto o seguinte [Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), que é um resumo das coisas básicas que precisa saber para fazer seus relatórios. Se precisar de coisas mais avançadas, tem esse outro [Cheat Sheet](https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/rmarkdown-cheatsheet1.pdf) que pode lhe ajudar. 
+
+> Em um próximo post explicarei algumas outras coisas (incluir código, figuras, tabelas, etc).
+
+
+**Happy Coding!**
+
+
+
+
+
