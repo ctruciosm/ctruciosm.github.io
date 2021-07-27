@@ -39,7 +39,6 @@ Para poder fazer os relatórios, precisa de configurar o Rstudio primeiro. Se nu
 Uma vez configurado o Rstudio, assista este video onde explico passo a passo como fazer os relatórios (basta fazer clic na imagem). 
 
 
-
 [![Escrevendo relatórios no Rstudio](youtube.png)](https://youtu.be/Yed1beLAQtM "Escrevendo relatórios no Rstudio")
 
 
