@@ -45,7 +45,7 @@ output:
 | 20-07-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-1/MAD211_Aula03.pdf) | [Link](https://youtu.be/nqjy8IWjX3U) | 
 | 22-07-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-1/LabR_02.pdf)  | [Link](https://youtu.be/1p42QQgcDzQ)  |
 | 27-07-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-1/MAD211_Aula05.pdf)  | [Link](https://youtu.be/rDfQ28ZVFiA) | 
-| 29-07-2021      | **Lab:** Medidas Resumo e Manipulação de dados |  |   | 
+| 29-07-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-1/LabR_04.pdf)  |   | 
 | 03-08-2021      | Análise Combinatória   | [Link](2021-1/MAD211_Aula07.pdf)  |   | 
 | 05-08-2021      | Introdução à Probabilidade  | [Link](2021-1/MAD211_Aula08.pdf)  |   | 
 | 10-08-2021      | Probabilidade Condicional   |  |   |
