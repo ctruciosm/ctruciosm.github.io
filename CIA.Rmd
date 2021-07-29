@@ -88,7 +88,7 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 |         |  **Fim do Período 2020.2**  |   |
 |10       | [Classification Part I (ISLR Chapter 4)](http://ctruciosm.github.io/ISL/ISL_04)   | 02/07/2021  |     
 |11       | [Classification Part II (ISLR Chapter 4)](http://ctruciosm.github.io/ISL/ISL_05)   | 16/07/2021  |     
-|12       | Resampling Part I (ISLR Chapter 5)  | 30/07/2021  |     
+|12       | [Resampling Part I (ISLR Chapter 5)](http://ctruciosm.github.io/ISL/ISL_06)  | 30/07/2021  |     
 |13       | Resampling Part II (ISLR Chapter 5)  | 13/08/2021  |     
 |14       | Model Selection (ISLR Chapter 6)  | 27/08/2021  |     
 |15       | Regularization (ISLR Chapter 6)  | 10/09/2021  |     
