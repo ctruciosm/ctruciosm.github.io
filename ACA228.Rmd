@@ -54,7 +54,7 @@ output:
 | 20-07-2021     | Regressão Linear Simples (RLS)   | [Link](2021-1/ACA228_03.pdf)  | [Link](https://youtu.be/OjXDryyIeNg)  | 
 | 22-07-2021     | **Lab:** [Tabelas, Gráficos e RLS](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-1/LabR_02.pdf)  | [Link](https://youtu.be/heXv6U69C1s)  | 
 | 27-07-2021     | RLS: Interpretação e Propriedades  | [Link](2021-1/ACA228_05.pdf) |  [Link](https://youtu.be/hoXfen8FBaI) | 
-| 29-07-2021     | **Lab:** [Visualização de dados e RLS](https://ctruciosm.github.io/ACA-228/LabR_03) | [Link](2021-1/LabR_03.pdf)  |   | 
+| 29-07-2021     | **Lab:** [Visualização de dados e RLS](https://ctruciosm.github.io/ACA-228/LabR_03) | [Link](2021-1/LabR_03.pdf)  | [Link](https://youtu.be/O_5xYMZ7ZdA)  | 
 | 03-08-2021     | Regressão Linear Multipla (RLM)  | [Link](2021-1/ACA228_07.pdf) |   | 
 | 05-08-2021     | MRLM: Inferência  | [Link](2021-1/ACA228_08.pdf) |   | 
 | 10-08-2021     | **Lab:** Manipulação de dados e Análide de Regressão com R  |  |   |
