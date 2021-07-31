@@ -25,23 +25,23 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> [*Forecasting Value-at-Risk and Expected Shortfall in Large Portfolios: a General Dynamic Factor Model Approach*](https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563). **Econometrics and Statistics** (2021). [with Marc Hallin]  </li> \medskip
+<li> [*Forecasting Value-at-Risk and Expected Shortfall in Large Portfolios: a General Dynamic Factor Model Approach*](https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563). **Econometrics and Statistics** (2021). [with Marc Hallin]  [`CODES`](https://github.com/ctruciosm/GDFM-CHF-VaRES) </li> \medskip
 
 <li> [*Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting*](https://www.sciencedirect.com/science/article/pii/S0169207020301540). **International Journal of Forecasting** (2020). [with João Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]  </li> \medskip
 
-<li> [*Value-at-Risk and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine Copula–based Approach*](https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20). **Applied Economics** (2020). [with Aviral Tiwari and Faisal Alqahtani] </li> \medskip
+<li> [*Value-at-Risk and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine Copula–based Approach*](https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20). **Applied Economics** (2020). [with Aviral Tiwari and Faisal Alqahtani] [`CODES`](https://github.com/ctruciosm/CryptoCopVaRES) </li>  \medskip
 
 <li> [*Covariance prediction in large portfolio allocation*](https://www.mdpi.com/2225-1146/7/2/19). **Econometrics** (2019). [with Mauticio Zevallos, Luiz Hotta and André P. Santos]  </li> \medskip
 
-<li> [*On the robustness of the principal volatility components*](https://www.sciencedirect.com/science/article/abs/pii/S0927539819300386). **Journal of Empirical Finance** (2019). [with Luiz Hotta and Pedro Valls]  </li> \medskip
+<li> [*On the robustness of the principal volatility components*](https://www.sciencedirect.com/science/article/abs/pii/S0927539819300386). **Journal of Empirical Finance** (2019). [with Luiz Hotta and Pedro Valls]  [`R PACKAGE`](https://github.com/ctruciosm/Robpvc) </li> \medskip
 
-<li> [*Forecasting Bitcoin risk measures: A robust approach*](https://www.sciencedirect.com/science/article/abs/pii/S0169207019300184). **International Journal of Forecasting** (2019). </li> \medskip
+<li> [*Forecasting Bitcoin risk measures: A robust approach*](https://www.sciencedirect.com/science/article/abs/pii/S0169207019300184). **International Journal of Forecasting** (2019). [`R PACKAGE`](https://cran.r-project.org/package=RobGARCHBoot) </li> \medskip
 
 <li> [*Inference in (M)GARCH Models in the Presence of Additive Outliers: Specification, Estimation and Prediction*](https://link.springer.com/chapter/10.1007/978-3-319-94015-1_8). In Lavor, C. and Neto, F. A. M. G., editors, Advances in Mathematics and Applications. **Springer**. (2018). [with Luiz Hotta] </li> \medskip
 
 <li> [*Robust Bootstrap Densities for Dynamic Conditional Correlations: Implications for Portfolio Selection and Value-at-Risk*](https://www.tandfonline.com/doi/abs/10.1080/00949655.2018.1462811?journalCode=gscs20). **Journal of Statistical Computing and Simulation** (2018). [with Luiz Hotta and Esther Ruiz] </li> \medskip
 
-<li> [*Robust bootstrap forecast densities for GARCH returns and volatilities*](https://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1359601?journalCode=gscs20). **Journal of Statistical Computing and Simulation** (2017). [with Luiz Hotta and Esther Ruiz] </li> \medskip
+<li> [*Robust bootstrap forecast densities for GARCH returns and volatilities*](https://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1359601?journalCode=gscs20). **Journal of Statistical Computing and Simulation** (2017). [with Luiz Hotta and Esther Ruiz] [`R PACKAGE`](https://cran.r-project.org/package=RobGARCHBoot) </li> \medskip
 
 <li> [*Bootstrap prediction in univariate volatility models with leverage effect*](https://www.sciencedirect.com/science/article/abs/pii/S03784754150013303). **Mathematics and Computers in Simulation** (2016). [with Luiz Hotta] </li> \medskip
 
@@ -67,6 +67,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <li> *Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies using Combinations based on Jump-Robust and Regime-Switching Models.* **Submitted** (2020) [with James W. Taylor] \medskip </li>
 
+
+<li> *Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies using Combinations based on Jump-Robust and Regime-Switching Models.* **Submitted** (2020) [with James W. Taylor] \medskip </li>
+
 <li> *Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach.* **Submitted** (2021) [with João Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
 
 </ol>
@@ -81,6 +84,12 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 
 <ol reversed>
+
+
+<li> *Risk-based portfolio allocation strategies in the Brazilian stock market: from classical to machine learning approaches* [with Beatriz Galino] \medskip </li>
+
+<li> *Forecasting risk measures in Brazilian stocks* [with Guilherme Batista] \medskip </li>
+
 
 <li> *Estimating Value-at-Risk and Expected Shortfall in emerging markets: An empirical comparison of volatility models* [with Pinar Kaya Soylu] \medskip </li>
 
