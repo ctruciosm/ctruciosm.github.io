@@ -48,7 +48,7 @@ output:
 | 29-07-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-1/LabR_04.pdf)  | [Link](https://youtu.be/KjjDLw0o_Rg)  | 
 | 03-08-2021      | Análise Combinatória   | [Link](2021-1/MAD211_Aula07.pdf)  | [Link](https://youtu.be/ynSAfa5MaAc)  | 
 | 05-08-2021      | Introdução à Probabilidade  | [Link](2021-1/MAD211_Aula08.pdf)  | [Link](https://youtu.be/PWtN_tLdrQ8)  | 
-| 10-08-2021      | Probabilidade Condicional   |  |   |
+| 10-08-2021      | Probabilidade Condicional   | [Link](2021-1/MAD211_Aula09.pdf)  |   |
 | 12-08-2021      | Distribuições Discretas   |  |   | 
 | 17-08-2021      | Distribuições Continuas |  |   | 
 | 19-08-2021      | **Lab:** Distribuições de probabilidade  |  |   | 
