@@ -57,7 +57,7 @@ output:
 | 29-07-2021     | **Lab:** [Visualização de dados e RLS](https://ctruciosm.github.io/ACA-228/LabR_03) | [Link](2021-1/LabR_03.pdf)  | [Link](https://youtu.be/O_5xYMZ7ZdA)  | 
 | 03-08-2021     | Regressão Linear Multipla (RLM)  | [Link](2021-1/ACA228_07.pdf) | [Link](https://youtu.be/-vMQeekv2I4)  | 
 | 05-08-2021     | MRLM: Inferência  | [Link](2021-1/ACA228_08.pdf) | [Link](https://youtu.be/yBT2KrIGtLA)  | 
-| 10-08-2021     | **Lab:** [Manipulação de dados e Análide de Regressão com R](https://ctruciosm.github.io/ACA-228/LabR_04)  | [Link](2021-1/LabR_04.pdf)  |   |
+| 10-08-2021     | **Lab:** [Manipulação de dados e Análide de Regressão com R](https://ctruciosm.github.io/ACA-228/LabR_04)  | [Link](2021-1/LabR_04.pdf)  | [Link](https://youtu.be/HoYS35tJlEs)  |
 | 12-08-2021     | MRLM: Tópicos adicionais   | [Link](2021-1/ACA228_10.pdf) |   | 
 | 17-08-2021     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-1/ACA228_11.pdf) |   | 
 | 19-08-2021     | **Lab:** Análide de Regressão com R  |  |   | 
