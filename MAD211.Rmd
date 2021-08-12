@@ -49,7 +49,7 @@ output:
 | 03-08-2021      | Análise Combinatória   | [Link](2021-1/MAD211_Aula07.pdf)  | [Link](https://youtu.be/ynSAfa5MaAc)  | 
 | 05-08-2021      | Introdução à Probabilidade  | [Link](2021-1/MAD211_Aula08.pdf)  | [Link](https://youtu.be/PWtN_tLdrQ8)  | 
 | 10-08-2021      | Probabilidade Condicional   | [Link](2021-1/MAD211_Aula09.pdf)  | [Link](https://youtu.be/_JX8nYBchR0)  |
-| 12-08-2021      | Distribuições Discretas   |  |   | 
+| 12-08-2021      | Distribuições Discretas   |[Link](2021-1/MAD211_Aula10.pdf)  |   | 
 | 17-08-2021      | Distribuições Continuas |  |   | 
 | 19-08-2021      | **Lab:** Distribuições de probabilidade  |  |   | 
 | 24-08-2021      | Exercícios  |  |   | 
