@@ -51,7 +51,7 @@ output:
 | 10-08-2021      | Probabilidade Condicional   | [Link](2021-1/MAD211_Aula09.pdf)  | [Link](https://youtu.be/_JX8nYBchR0)  |
 | 12-08-2021      | Distribuições Discretas   |[Link](2021-1/MAD211_Aula10.pdf)  | [Link](https://youtu.be/XWofjlFzilQ)  | 
 | 17-08-2021      | Distribuições Continuas | [Link](2021-1/MAD211_Aula11.pdf) | [Link](https://youtu.be/PQHyXpBbsD8)  | 
-| 19-08-2021      | **Lab:** Distribuições de probabilidade  |  |   | 
+| 19-08-2021      | **Lab:** Distribuições de probabilidade  |  | [Link](https://youtu.be/2B4lkkOiIj0)  | 
 | 24-08-2021      | Exercícios  |  |   | 
 | **26-08-2021**  | $P_1$  |  |   | 
 | 31-08-2021      | Amostragem |  |   | 

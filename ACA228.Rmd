@@ -60,19 +60,19 @@ output:
 | 10-08-2021     | **Lab:** [Manipulação de dados e Análide de Regressão com R](https://ctruciosm.github.io/ACA-228/LabR_04)  | [Link](2021-1/LabR_04.pdf)  | [Link](https://youtu.be/HoYS35tJlEs)  |
 | 12-08-2021     | MRLM: Tópicos adicionais   | [Link](2021-1/ACA228_10.pdf) | [Link](https://youtu.be/f8bVw-Kj69A)  | 
 | 17-08-2021     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-1/ACA228_11.pdf) | [Link](https://youtu.be/7T135j3foPM)  | 
-| 19-08-2021     | **Lab:** Análide de Regressão com R  |  |   | 
+| 19-08-2021     | **Lab:** Análide de Regressão com R  |  | [Link](https://youtu.be/nxDhayvnQU4)  | 
 | 24-08-2021     | MRLM: verificação das hipóteses  | [Link](2021-1/ACA228_13.pdf) |   | 
 | 26-08-2021     | MRLM: verificação das hipóteses II  |  |   | 
 | 31-08-2021     | MRLM: medidas de influência  |  |   | 
 | 02-09-2021     | **Lab:** Análide de Regressão com R |  |   | 
 | 09-09-2021     | $P_1$ |  |   | 
-| 14-09-2021     | Séries Temporais: Fundamentos   |  |   | 
-| 16-09-2021     | Séries Temporais: Estacionariedade  |  |   | 
-| 21-09-2021     | Séries Temporais: Modelos ARIMA I |  |   | 
-| 23-09-2021     | **Lab:** Séries Temporais com R |  |   | 
-| 28-09-2021     | Séries Temporais: Modelos GARCH I |    |   | 
-| 30-09-2021     | Séries Temporais: Modelos GARCH II |  |   | 
-| 05-10-2021     | **Lab:** Séries Temporais com R|  |   | 
+| 14-09-2021     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01)   |  |   | 
+| 16-09-2021     | [Séries Temporais: Fundamentos](https://ctruciosm.github.io/ACA-228/ACA228_ST_02)  |  |   | 
+| 21-09-2021     | ST: Avaliando modelos |  |   | 
+| 23-09-2021     | Regressão e séries temporais |  |   | 
+| 28-09-2021     | Suavização exponencial |    |   | 
+| 30-09-2021     | Modelos ARIMA |  |   | 
+| 05-10-2021     | Modelos de regressão dinâmica|  |   | 
 | 07-10-2021     | $P_2$ |  |   | 
 | 14-10-2021     | Apresentação de trabalhos |  |   | 
 | 19-10-2021     | Exame de recuperação |  |   | 
