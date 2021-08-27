@@ -62,7 +62,7 @@ output:
 | 17-08-2021     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-1/ACA228_11.pdf) | [Link](https://youtu.be/7T135j3foPM)  | 
 | 19-08-2021     | **Lab:** Análide de Regressão com R  |  | [Link](https://youtu.be/nxDhayvnQU4)  | 
 | 24-08-2021     | MRLM: verificação das hipóteses  | [Link](2021-1/ACA228_13.pdf) | [Link](https://youtu.be/YfmrhVDZrko) | 
-| 26-08-2021     | MRLM: verificação das hipóteses II  | [Link](2021-1/ACA228_14.pdf) |   | 
+| 26-08-2021     | MRLM: verificação das hipóteses II  | [Link](2021-1/ACA228_14.pdf) | [Link](https://youtu.be/a2gh_DRyxGU)  | 
 | 31-08-2021     | MRLM: medidas de influência  | [Link](2021-1/ACA228_15.pdf) |   | 
 | 02-09-2021     | **Lab:** Análide de Regressão com R |  |   | 
 | 09-09-2021     | $P_1$ |  |   | 
