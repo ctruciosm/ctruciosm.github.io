@@ -54,16 +54,16 @@ output:
 | 19-08-2021      | **Lab:** Distribuições de probabilidade  |  | [Link](https://youtu.be/2B4lkkOiIj0)  | 
 | 24-08-2021      | Exercícios  |  | [Link](https://youtu.be/BFDOJf9Q88I)   | 
 | **26-08-2021**  | $P_1$  |  |   | 
-| 31-08-2021      | Amostragem |  |   | 
-| 02-09-2021      | Intervalos de Confiança |  |   | 
-| 09-09-2021      | Teste de Hipóteses: média populacinal  |  |   | 
-| 14-09-2021      | Teste de Hipóteses: comparação de médias   |  |   | 
-| 16-09-2021      | Teste de Hipóteses: $p$-valor  |  |   | 
-| 21-09-2021      | **Lab:** Testes de hipóteses |  |   | 
-| 23-09-2021      | Teste de Hipóteses: ANOVA   |  |   | 
-| 28-09-2021      | Teste de Hipóteses: Comparação de proporções |    |   | 
-| 30-09-2021      | Teste de Hipóteses: Testes não paramétricos I |  |   | 
-| 05-10-2021      | Teste de Hipóteses: Testes não paramétricos II |  |   | 
+| 31-08-2021      | Gabarito da P1 |  |   | 
+| 02-09-2021      | Amostragem |  |   | 
+| 09-09-2021      | Intervalos de Confiança |  |   | 
+| 14-09-2021     | Teste de Hipóteses: média populacinal  |  |   | 
+| 16-09-2021      | Teste de Hipóteses: comparação de médias   |  |   | 
+| 21-09-2021       | Teste de Hipóteses: $p$-valor  |  |   | 
+| 23-09-2021      | **Lab:** Testes de hipóteses |  |   | 
+| 28-09-2021     | Teste de Hipóteses: ANOVA   |  |   | 
+| 30-09-2021      | Teste de Hipóteses: Comparação de proporções |    |   |
+| 05-10-2021      | Teste de Hipóteses: Testes não paramétricos  |  |   | 
 | 07-10-2021      | **Lab:** Testes de hipóteses |  |   | 
 | **14-10-2021**  | $P_2$ |  |   | 
 | 19-10-2021      | Exame de recuperação |  |   | 
