@@ -64,7 +64,7 @@ output:
 | 24-08-2021     | MRLM: verificação das hipóteses  | [Link](2021-1/ACA228_13.pdf) | [Link](https://youtu.be/YfmrhVDZrko) | 
 | 26-08-2021     | MRLM: verificação das hipóteses II  | [Link](2021-1/ACA228_14.pdf) | [Link](https://youtu.be/a2gh_DRyxGU)  | 
 | 31-08-2021     | MRLM: medidas de influência  | [Link](2021-1/ACA228_15.pdf) | [Link](https://youtu.be/1TOMnsWba2Y)  | 
-| 02-09-2021     | **Lab:** Análide de Regressão com R |  |   | 
+| 02-09-2021     | **Lab:** Análide de Regressão com R |  | [Link](https://youtu.be/NydVTtabjjs)  | 
 | 09-09-2021     | $P_1$ |  |   | 
 | 14-09-2021     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01)   |  |   | 
 | 16-09-2021     | [Séries Temporais: Fundamentos](https://ctruciosm.github.io/ACA-228/ACA228_ST_02)  |  |   | 
