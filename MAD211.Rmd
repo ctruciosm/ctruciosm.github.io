@@ -56,7 +56,7 @@ output:
 | **26-08-2021**  | $P_1$  |  |   | 
 | 31-08-2021      | Gabarito da P1 |  |   |
 | 02-09-2021      | Amostragem | [Link](2021-1/MAD211_Aula12.pdf) | [Link](https://youtu.be/bfnpRb7V8yc)  | 
-| 09-09-2021      | Intervalos de Confiança | [Link](2021-1/MAD211_Aula13.pdf)  |   | 
+| 09-09-2021      | Intervalos de Confiança | [Link](2021-1/MAD211_Aula13.pdf)  | [Link](https://youtu.be/8fxiP6UqVr4)  | 
 | 14-09-2021     | Teste de Hipóteses: média populacinal  |  |   | 
 | 16-09-2021      | Teste de Hipóteses: comparação de médias   |  |   | 
 | 21-09-2021       | Teste de Hipóteses: $p$-valor  |  |   | 
