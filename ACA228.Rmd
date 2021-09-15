@@ -66,7 +66,7 @@ output:
 | 31-08-2021     | MRLM: medidas de influência  | [Link](2021-1/ACA228_15.pdf) | [Link](https://youtu.be/1TOMnsWba2Y)  | 
 | 02-09-2021     | **Lab:** Análide de Regressão com R |  | [Link](https://youtu.be/NydVTtabjjs)  | 
 | 09-09-2021     | $P_1$ |  |   | 
-| 14-09-2021     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01)   |  |   | 
+| 14-09-2021     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01)   |  | [Link](https://youtu.be/0tDvFLhCqPs)  | 
 | 16-09-2021     | [Séries Temporais: Fundamentos](https://ctruciosm.github.io/ACA-228/ACA228_ST_02)  |  |   | 
 | 21-09-2021     | [ST: Avaliando modelos](https://ctruciosm.github.io/ACA-228/ACA228_ST_03) |  |   | 
 | 23-09-2021     | [Regressão e séries temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_04) |  |   | 
