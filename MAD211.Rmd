@@ -58,8 +58,8 @@ output:
 | 02-09-2021      | Amostragem | [Link](2021-1/MAD211_Aula12.pdf) | [Link](https://youtu.be/bfnpRb7V8yc)  | 
 | 09-09-2021      | Intervalos de Confiança | [Link](2021-1/MAD211_Aula13.pdf)  | [Link](https://youtu.be/8fxiP6UqVr4)  | 
 | 14-09-2021     | Teste de Hipóteses: média populacinal  | [Link](2021-1/MAD211_Aula14.pdf) | [Link](https://youtu.be/TsWec7-2PXE)  | 
-| 16-09-2021      | Teste de Hipóteses: comparação de médias   | [Link](2021-1/MAD211_Aula15.pdf) |   | 
-| 21-09-2021       | Teste de Hipóteses: $p$-valor  |  |   | 
+| 16-09-2021      | Teste de Hipóteses: comparação de médias   | [Link](2021-1/MAD211_Aula15.pdf) | [Link](https://youtu.be/WQS8DGZBtYU)  | 
+| 21-09-2021       | Teste de Hipóteses: comparação de médias II  |  |   | 
 | 23-09-2021      | **Lab:** Testes de hipóteses |  |   | 
 | 28-09-2021     | Teste de Hipóteses: ANOVA   |  |   | 
 | 30-09-2021      | Teste de Hipóteses: Comparação de proporções |    |   |
