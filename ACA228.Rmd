@@ -71,7 +71,7 @@ output:
 | 23-09-2021     | [ST: Avaliando modelos](https://ctruciosm.github.io/ACA-228/ACA228_ST_03) |  | [Link](https://youtu.be/1cHnf0jAj9E) | 
 | 28-09-2021     | [Regressão e séries temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_04) |  |  [Link](https://youtu.be/Cs8iqxccdqI) | 
 | 30-09-2021     | [Regressão e séries temporais II](https://ctruciosm.github.io/ACA-228/ACA228_ST_05) |    | [Link](https://youtu.be/xiviIGjNp-8)  | 
-| 05-09-2021     | Suavização exponencial |  |   | 
+| 05-09-2021     | [Suavização exponencial](https://ctruciosm.github.io/ACA-228/ACA228_ST_06) |  |   | 
 | 07-10-2021     | $P_2$ |  |   | 
 | 14-10-2021     | Apresentação de trabalhos |  |   | 
 | 19-10-2021     | Exame de recuperação |  |   | 
