@@ -92,13 +92,12 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 |13       | [Resampling Part II (ISLR Chapter 5)](http://ctruciosm.github.io/ISL/ISL_07)  | 13/08/2021  |     
 |14       | [Model Selection (ISLR Chapter 6)](http://ctruciosm.github.io/ISL/ISL_08)  | 27/08/2021  |     
 |15       | [Regularization (ISLR Chapter 6)](http://ctruciosm.github.io/ISL/ISL_09)  | 10/09/2021  |     
-|16       | Beyond Linearity Part I (ISLR Chapter 7)  | 24/09/2021  |     
-|17       | Beyond Linearity Part II (ISLR Chapter 7)   | 08/10/2021  |     
-|18       | Tree-Based Methods Part I (ISLR Chapter 8)   | 22/10/2021  |     
-|19       | Tree-Based Methods Part II (ISLR Chapter 8)   | 05/11/2021  |     
-|20       | Support Vector Machines (ISLR Chapter 9)   | 19/11/2021  |     
-|21       | Principal Component Analysis (ISLR Chapter 10)   | 03/12/2021  |     
-|22       | Clustering Methods (ISLR Chapter 10)   | 17/12/2021  |     
+|16       | [Tree-Based Methods Part I (ISLR Chapter 8)](http://ctruciosm.github.io/ISL/ISL_10)   | 08/10/2021  |     
+|17       | Tree-Based Methods Part II (ISLR Chapter 8)  | 22/10/2021  |     
+|18       | Support Vector Machines (ISLR Chapter 9)   | 05/11/2021  |     
+|19       | Principal Component Analysis (ISLR Chapter 10)    | 19/11/2021  |     
+|20       | Clustering Methods (ISLR Chapter 10)   | 03/12/2021  |     
+ 
 
 
 #### Nota
