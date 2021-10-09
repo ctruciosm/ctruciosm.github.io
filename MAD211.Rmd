@@ -64,7 +64,7 @@ output:
 | 28-09-2021     | Teste de Hipóteses: ANOVA   | [Link](2021-1/MAD211_Aula16.pdf)  | [Link](https://youtu.be/a6bD3zAKytM)  | 
 | 30-09-2021      | Teste de Hipóteses: Comparação de proporções |  [Link](2021-1/MAD211_Aula17.pdf)   | [Link](https://youtu.be/cC9fQRjFicg)  |
 | 05-10-2021      | **Lab:** Testes de hipóteses  |  | [Link](https://youtu.be/RhY8rd0AOkE)  | 
-| 07-10-2021      | **Lab:** Testes de hipóteses |  |   | 
+| 07-10-2021      | **Lab:** Testes de hipóteses |  |  [Link](https://youtu.be/qKeYBU7K19M) | 
 | **14-10-2021**  | $P_2$ |  |   | 
 | 19-10-2021      | Exame de recuperação |  |   | 
 
