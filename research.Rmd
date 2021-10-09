@@ -25,7 +25,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach.* **Acepted: Journal of Business and Economic Statistics** (2021) [with João Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
+<li> *Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach.* **Accepted: Journal of Business and Economic Statistics** (2021) [with João Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
 
 
 
