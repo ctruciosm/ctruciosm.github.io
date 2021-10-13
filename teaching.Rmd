@@ -44,6 +44,8 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 #### Short Courses {.panel-name}
 
+
+- [Introdução à mineração de texto com R](https://ctruciosm.github.io/IMTR/IMTR#1). RJ-BR, 2021.
 - Modelling and forecasting financial risk measures, II Symposium on Mathematics and Applied Mathematics. Arequipa-Perú, 2019.
 - Special topics in R software: Graduate program, National University of San Marcos. Lima-Perú, 2016.
 - Special topics in R software: Ricardo Palma University. Lima-Perú, 2016.
