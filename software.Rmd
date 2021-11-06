@@ -8,6 +8,8 @@ output:
 ### **R packages**
 
 
+
+*   <i class="fa fa-code" aria-hidden="true"></i>  [`HierPortfolios`:](https://github.com/ctruciosm/HierPorfolios/blob/master/README.md) Hierarchical Clustering-Based Portfolio Allocation Strategies  \medskip </li>
 *   <i class="fa fa-code" aria-hidden="true"></i>  [`Robpvc`:](https://github.com/ctruciosm/Robpvc) Robust Principal Volatility Components  \medskip </li>
 *   <i class="fa fa-code" aria-hidden="true"></i>  [`RobGARCHBoot`:](https://cran.r-project.org/web/packages/RobGARCHBoot/index.html) Robust Bootstrap Forecast Densities for GARCH Models  \medskip </li>
 *   <i class="fa fa-code" aria-hidden="true"></i>  [`RM2006`:](https://cran.r-project.org/web/packages/RM2006/index.html)  RiskMetrics 2006 Methodology. \medskip </li>
