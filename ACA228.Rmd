@@ -71,7 +71,7 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 16-12-2021     | MRLM: Tópicos adicionais   | [Link](2021-2/ACA228_10.pdf) |  | 
 | `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`   |    **Feliz Natal e Ótimo 2022!**     |  |  | 
 | 04-01-2022     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-2/ACA228_11.pdf) |   | 
-| 06-01-2022     | **Lab:** Análide de Regressão com R  |  | [Link](https://youtu.be/nxDhayvnQU4)  | 
+| 06-01-2022     | **Lab:** Análide de Regressão com R  |  |  | 
 | 11-01-2022     | MRLM: verificação das hipóteses  | [Link](2021-2/ACA228_13.pdf) |  | 
 | 13-01-2022     | MRLM: verificação das hipóteses II  | [Link](2021-2/ACA228_14.pdf) | | 
 | 18-01-2022     | MRLM: medidas de influência  | [Link](2021-2/ACA228_15.pdf) |  | 
