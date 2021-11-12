@@ -10,17 +10,24 @@ output:
 
 # Estatística para Administração
 
-## 2021.1
+## 2021.2
 
 </center>
 
+As datas das provas já estão definidas. Programe-se com antecedência. 
+
+- $P_1$: **13-01-2022**
+- $P_2$: **03-03-2022** 
+
+
+
 </br>
 
-`r emo::ji("pencil")` [Plano de Ensino](2021-1/Plano_MAD211_2021-1.pdf) 
+`r emo::ji("pencil")` [Plano de Ensino](2021-2/Plano_MAD211_2021-2.pdf) 
 
-`r emo::ji("pause")` [YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho) 
+`r emo::ji("pause")` [YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkDc3zIhA0-Lk-M12FnReWwa) 
 
-`r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/MzY5NTMxODI0MjY5?cjc=z24sflu)  (Código da Turma caso precisarem: z24sflu)
+`r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NDI5NTM4Njk3ODg1?cjc=bc2jc5v)  (Código da Turma caso precisarem: bc2jc5v)
 
 </br>
 
@@ -40,33 +47,34 @@ output:
 
 | Data  | Assunto                | Slides      | Video |
 |:-----:|:-----------------------|:----------:|--------|
-| 13-07-2021     | Introdução  | [Link](2021-1/MAD211_Aula01.pdf) | [Link](https://youtu.be/AB9RF0TsaP0) | 
-| 15-07-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-1/LabR_01.pdf)  | [Link](https://youtu.be/4tQEvWZdDz4)  | 
-| 20-07-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-1/MAD211_Aula03.pdf) | [Link](https://youtu.be/nqjy8IWjX3U) | 
-| 22-07-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-1/LabR_02.pdf)  | [Link](https://youtu.be/1p42QQgcDzQ)  |
-| 27-07-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-1/MAD211_Aula05.pdf)  | [Link](https://youtu.be/rDfQ28ZVFiA) | 
-| 29-07-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-1/LabR_04.pdf)  | [Link](https://youtu.be/KjjDLw0o_Rg)  | 
-| 03-08-2021      | Análise Combinatória   | [Link](2021-1/MAD211_Aula07.pdf)  | [Link](https://youtu.be/ynSAfa5MaAc)  | 
-| 05-08-2021      | Introdução à Probabilidade  | [Link](2021-1/MAD211_Aula08.pdf)  | [Link](https://youtu.be/PWtN_tLdrQ8)  | 
-| 10-08-2021      | Probabilidade Condicional   | [Link](2021-1/MAD211_Aula09.pdf)  | [Link](https://youtu.be/_JX8nYBchR0)  |
-| 12-08-2021      | Distribuições Discretas   |[Link](2021-1/MAD211_Aula10.pdf)  | [Link](https://youtu.be/XWofjlFzilQ)  | 
-| 17-08-2021      | Distribuições Continuas | [Link](2021-1/MAD211_Aula11.pdf) | [Link](https://youtu.be/PQHyXpBbsD8)  | 
-| 19-08-2021      | **Lab:** Distribuições de probabilidade  |  | [Link](https://youtu.be/2B4lkkOiIj0)  | 
-| 24-08-2021      | Exercícios  |  | [Link](https://youtu.be/BFDOJf9Q88I)   | 
-| **26-08-2021**  | $P_1$  |  |   | 
-| 31-08-2021      | Gabarito da P1 |  |   |
-| 02-09-2021      | Amostragem | [Link](2021-1/MAD211_Aula12.pdf) | [Link](https://youtu.be/bfnpRb7V8yc)  | 
-| 09-09-2021      | Intervalos de Confiança | [Link](2021-1/MAD211_Aula13.pdf)  | [Link](https://youtu.be/8fxiP6UqVr4)  | 
-| 14-09-2021     | Teste de Hipóteses: média populacional  | [Link](2021-1/MAD211_Aula14.pdf) | [Link](https://youtu.be/TsWec7-2PXE)  | 
-| 16-09-2021      | Teste de Hipóteses: comparação de médias   | [Link](2021-1/MAD211_Aula15.pdf) | [Link](https://youtu.be/WQS8DGZBtYU)  | 
-| 21-09-2021       | Teste de Hipóteses: comparação de médias II  | [Link](2021-1/MAD211_Aula15.pdf)  | [Link](https://youtu.be/6NzgrBuOTr4)  | 
-| 23-09-2021      | **Lab:** Testes de hipóteses |  |  [Link](https://youtu.be/1uDUq_Dnars) | 
-| 28-09-2021     | Teste de Hipóteses: ANOVA   | [Link](2021-1/MAD211_Aula16.pdf)  | [Link](https://youtu.be/a6bD3zAKytM)  | 
-| 30-09-2021      | Teste de Hipóteses: Comparação de proporções |  [Link](2021-1/MAD211_Aula17.pdf)   | [Link](https://youtu.be/cC9fQRjFicg)  |
-| 05-10-2021      | **Lab:** Testes de hipóteses  |  | [Link](https://youtu.be/RhY8rd0AOkE)  | 
-| 07-10-2021      | **Lab:** Testes de hipóteses |  |  [Link](https://youtu.be/qKeYBU7K19M) | 
-| **14-10-2021**  | $P_2$ |  |   | 
-| 19-10-2021      | Exame de recuperação |  |   | 
+| 16-11-2021     | Introdução  | [Link](2021-2/MAD211_Aula01.pdf) |  | 
+| 18-11-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-2/LabR_01.pdf)  |  | 
+| 23-11-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-2/MAD211_Aula03.pdf) | | 
+| 25-11-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-2/LabR_02.pdf)  |   |
+| 30-11-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-2/MAD211_Aula05.pdf)  |  | 
+| 02-12-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-2/LabR_04.pdf)  |  | 
+| 07-12-2021      | Análise Combinatória   | [Link](2021-2/MAD211_Aula07.pdf)  |  | 
+| 09-12-2021      | Introdução à Probabilidade  | [Link](2021-2/MAD211_Aula08.pdf)  |   | 
+| 14-12-2021      | Probabilidade Condicional   | [Link](2021-2/MAD211_Aula09.pdf)  |   |
+| 16-12-2021      | Distribuições Discretas   |[Link](2021-2/MAD211_Aula10.pdf)  |  | 
+| `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`   |    **Feliz Natal e Ótimo 2022!**     |  |  | 
+| 04-01-2022      | Distribuições Continuas | [Link](2021-2/MAD211_Aula11.pdf) |   | 
+| 06-01-2022      | **Lab:** Distribuições de probabilidade  |  |   | 
+| 11-01-2022      | Exercícios  |  |   | 
+| **13-01-2022**  | $P_1$  |  |   | 
+| 18-01-2022      | Gabarito da P1 |  |   |
+| 20-01-2022      | Amostragem | [Link](2021-2/MAD211_Aula12.pdf) |  | 
+| 25-01-2022      | Intervalos de Confiança | [Link](2021-2/MAD211_Aula13.pdf)  |  | 
+| 27-01-2022     | Teste de Hipóteses: média populacional  | [Link](2021-2/MAD211_Aula14.pdf) |  | 
+| 01-02-2022      | Teste de Hipóteses: comparação de médias   | [Link](2021-2/MAD211_Aula15.pdf) |  | 
+| 03-02-2022       | Teste de Hipóteses: comparação de médias II  | [Link](2021-2/MAD211_Aula15.pdf)  | | 
+| 08-02-2022      | **Lab:** Testes de hipóteses |  |   | 
+| 10-02-2022     | Teste de Hipóteses: ANOVA   | [Link](2021-2/MAD211_Aula16.pdf)  |   | 
+| **SIAc**     | [**Semana da Integração Acadêmica**](https://siac.ufrj.br) Participe! `r emo::ji("student")`  `r emo::ji("student")` |   |  | 
+| 22-02-2022      | Teste de Hipóteses: Comparação de proporções |  [Link](2021-2/MAD211_Aula17.pdf)   |  |
+| 24-02-2022      | **Lab:** Testes de hipóteses  |  |   | 
+| **03-03-2022**      | $P_2$  |  |   | 
+| 08-03-2022      | Exame de recuperação |  |   | 
 
 
 

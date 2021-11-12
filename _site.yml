@@ -20,7 +20,7 @@ navbar:
       href: awards.html
     - text: 'Blog'
       href: statblog.html
-    - text: 2021.1
+    - text: 2021.2
       menu:
         - text: ACA228
           href: ACA228.html 
