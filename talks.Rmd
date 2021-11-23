@@ -7,7 +7,7 @@ output:
 
 <ol reversed>
 
-<li> Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach. Conference at *5to Congreso Internacionald Misciplinario de Matemática*. November 3 to 5, 2021. Online version. (Peru) ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
+<li> Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach. Conference at *5to Congreso Internacional Multidisciplinario de Matemática*. November 3 to 5, 2021. Online version. (Peru) ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
 
 
 <li> Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A general dynamic factor approach. Oral presentation at *41st International Symposium on Forecasting*. June 27 to 30, 2021. Online version. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
@@ -16,7 +16,7 @@ output:
 
 <li> Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A general dynamic factor approach. *Seminar at the Department of Statistics - PUCP*. March 30, 2021. Lima (Peru).![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% }  </li>
 
-<li> Forecasting risk measures in cryptocurrency data. Conference at *4to Congreso Internacionald Misciplinario de Matemática*. November 4 to 6, 2020. Online version. (Peru) ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
+<li> Forecasting risk measures in cryptocurrency data. Conference at *4to Congreso Internacional Multidisciplinario de Matemática*. November 4 to 6, 2020. Online version. (Peru) ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
 
 
 <li> Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting. Prerecorded talk at *International Symposium on Forecasting (ISF2020)*. October 26 to 28, 2020. Online version. (Brazil).![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
