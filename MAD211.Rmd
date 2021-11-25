@@ -50,7 +50,7 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 | Data  | Assunto                | Slides      | Video |
 |:-----:|:-----------------------|:----------:|--------|
 | 23-11-2021     | Introdução  | [Link](2021-2/MAD211_Aula01.pdf) | [Link](https://youtu.be/Kw9vC_yU4qU) | 
-| 23-11-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-2/LabR_01.pdf)  |  | 
+| 23-11-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-2/LabR_01.pdf)  | [Link](https://youtu.be/5SMJsKamuSQ) | 
 | 25-11-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-2/MAD211_Aula03.pdf) | | 
 | 25-11-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-2/LabR_02.pdf)  |   |
 | 30-11-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-2/MAD211_Aula05.pdf)  |  | 
