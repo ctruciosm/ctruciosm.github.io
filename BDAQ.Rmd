@@ -1,0 +1,62 @@
+---
+title: 'Grupo de Pesquisa BDAQ'
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+
+
+```{r, echo = FALSE}
+library(metathis)
+meta() %>%
+  meta_description(
+    "Grupo de Pesquisa BDAQ: Big Data e Análise Quantitativa"
+  ) %>% 
+  meta_name("github-repo" = "ctruciosm.github.io/BDAQ") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "Grupo de Pesquisa BDAQ",
+    og_type = "website",
+    og_site_name = "Grupo de Pesquisa BDAQ: Big Data e Análise Quantitativa",
+    og_locale = "pt_BR",
+    twitter_card_type = "summary"
+  )
+```
+
+
+> Esta mensagem foi enviada aos alunos da FACC/UFRJ através do SIGA na quinta-feira 25 de novembro do 2021.
+
+<br>
+
+Prezados(as) Alunos(as) da FACC:
+
+O grupo de pesquisa em [Big Data e Análise Quantitativa (BDAQ)](http://dgp.cnpq.br/dgp/espelhogrupo/764775) formado pelos professores do Departamento de Administração Boris Asrilhant, Carlos Trucíos, Cristina Pimenta, Laura Valencia e Marcelo Castañeda busca alunos(as) interessados(as) em desenvolver pesquisa em temas relacionados com métodos quantitativos e análise de dados.
+
+Os atuais temas de interesse do grupo de pesquisa são:
+
+
+- Mineração de texto
+- Aprendizado de máquina aplicado a finanças
+- Risco no mercado de energia
+- Precificação de derivativos
+- Política nas plataformas digitais
+
+Outros temas poderão ser incorporados, inclusive por sugestão dos(as) alunos(as) participantes.      
+
+Os(as) alunos(as) interessados(a) deverão, pelo menos:
+
+- ter sido aprovado(a) na disciplina Estatística para Administração - MAD211 (ou equivalente);
+- ter alguma familiaridade com métodos quantitativos;
+- conhecer ou interesse em aprender alguma linguagem de programação;
+- ter responsabilidade e comprometimento no desenvolvimento da pesquisa; e
+- ter disponibilidade de, pelo menos, 4 horas semanais para reuniões e dedicação à pesquisa.
+
+Para os(as) alunos(as) participantes será oferecido um curso introdutório à linguagem R.
+
+Até o momento não temos como oferecer bolsas, mas assim que os editais das agências de fomento sejam abertos, serão solicitadas bolsas de iniciação científica para, caso as bolsas sejam concedidas, serem alocadas aos(as) alunos(as) participantes segundo critérios objetivos para a indicação do(a) bolsista(a).       
+
+Caso tenha interesse em participar, preencha até o dia **10/12/2021** o [seguinte formulário](https://docs.google.com/forms/d/e/1FAIpQLSeHwoU-lW6AyKsOyaAiIZy2VaENV0kM7dJIh0aWUg7D12NAbA/viewform?usp=sf_link), a fim de marcarmos um primeiro encontro entre os dias 15 e 17 de dezembro deste ano.
+
+Dúvidas podem ser encaminhadas para carlos.trucios@facc.ufrj.br.
