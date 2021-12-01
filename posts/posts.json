@@ -1,5 +1,27 @@
 [
   {
+    "path": "posts/2021-12-01-r-como-importar-dados-do-excel/",
+    "title": "R: como importar dados do Excel?",
+    "description": "No R é muito comum importar dados em formato .txt ou .csv. Contudo, muitas vezes estamos interessados em importar arquivos salvos em excel (.xls ou .xlsx). Neste post, apresento duas formas de ler dados vindos do Excel.",
+    "author": [
+      {
+        "name": "Carlos Trucíos",
+        "url": "https://ctruciosm.github.io"
+      }
+    ],
+    "date": "2021-12-01",
+    "categories": [
+      "R",
+      "rstats"
+    ],
+    "contents": "\n\nContents\nIntrodução\nO pacote readxl\nO pacote xlsx\n\nIntrodução\nA forma mais fácil de importar dados do Excel é salvando os arquivos como .csv e depois importando esse dataset como usual.\n\n\n\n\n\n\n\n\n\nContudo, fazer isso não sempre é confortável (e se tiver muitos arquivos pode ser um pouco tedioso). Por isso, existem várias formas de importar os dados em excel, aqui veremos apenas duas formas.\n\nO pacote readxl\nO pacote readxl é uma ótima forma de importar dados em formato .xls ou .xlsx. Se quisermos importar um arquivo .xls utilizamos a função read_xls(), já se o arquivo tem extensão .xlsx utilizamos a função read_xlsx().\n\n\nlibrary(readxl)\narquivo_xls <- read_xls(\"nome_do_arquivo.xls\")\narquivo_xlsx <- read_xlsx(\"nome_do_outro_arquivo.xlsx\")\n\n\n\nSe tivermos um arquivo com várias abas, basta utilizar o argumento sheet (disponível em ambas as funções).\nNo seguinte exemplo, utilizaremos o arquivo NotasMAD211.xls, que contem duas abas (uma chamada P1 e outra chamada P2).\n\n\n\n\n\n\n\nlibrary(readxl)\nnotas_p1 <- read_xlsx(\"NotasMAD211.xlsx\", sheet = 1)\nhead(notas_p1)\n\n\n# A tibble: 6 × 2\n  ALUNO      Nota\n  <chr>     <dbl>\n1 Carlos      7.1\n2 Jose        7  \n3 Maria       6.6\n4 João       10  \n5 Beatriz     9  \n6 Guilherme   7  \n\n\n\n\n\n\n\n\nnotas_p2 <- read_xlsx(\"NotasMAD211.xlsx\", sheet = \"P2\")\nhead(notas_p2)\n\n\n# A tibble: 6 × 2\n  ALUNO      Nota\n  <chr>     <dbl>\n1 Carlos      7.1\n2 Jose        9  \n3 Maria      10  \n4 João        4  \n5 Beatriz     8.8\n6 Guilherme   9  \n\nO argumento sheet permite especificar ou posição da aba (na ordem em que ela aparece no arquivo) ou o nome da aba que queremos importar (o nome precisa estar entre aspas).\nO pacote xlsx\nAlgumas vezes, os arquivos com os quais trabalhamos estão protegidos por senha. Nesses casos, a função read.xlsx do pacote xlsx nos ajudará a importar os dados. read.xlsx funciona de forma parecida com as funções read_xls e read_xlsx.\nVamos supor que o arquivo NotasMAD211.xlsx esteja protegido por uma senha e que a senha seja BatatinhaFrita_123.\n\n\nlibrary(xlsx)\nnotas_p2 <- read.xlsx(\"NotasMAD211.xlsx\", sheetIndex = 2, password = \"BatatinhaFrita_123\")\n\n\n\nPronto! Os dados estão importados 🆒.\nObservações\nO argumento sheetIndex da função read.xlsx permite especificar a ordem da aba que queremos importar. Se quiser especificar o nome da aba, basta usar o argumento sheetName em lugar de sheetIndex.\nCuidado com arquivos de excel com filtros ativos. Já tive problemas carregando arquivos de excel quando tinha filtros ativos, a solução foi remover os filtros antes de importar o arquivo para o excel.\nHappy Coding!\n\n\n\n",
+    "preview": "posts/2021-12-01-r-como-importar-dados-do-excel/ascsv001.png",
+    "last_modified": "2021-12-01T10:18:45-03:00",
+    "input_file": "r-como-importar-dados-do-excel.knit.md",
+    "preview_width": 289,
+    "preview_height": 483
+  },
+  {
     "path": "posts/2021-07-27-criando-relatorios-no-rstudio/",
     "title": "Criando relatorios no Rstudio",
     "description": "Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio.",
