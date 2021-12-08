@@ -19,9 +19,7 @@ output:
 As datas das provas já estão definidas. Programe-se com antecedência. 
 
 - $P_1$: **13-01-2022**
-- $P_2$: **03-03-2022** 
-
-
+- $P_2$: **24-02-2022** 
 
 </br>
 
@@ -50,14 +48,14 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 | Data  | Assunto                | Slides      | Video |
 |:-----:|:-----------------------|:----------:|--------|
 | 23-11-2021     | Introdução  | [Link](2021-2/MAD211_Aula01.pdf) | [Link](https://youtu.be/Kw9vC_yU4qU) | 
-| 23-11-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-2/LabR_01.pdf)  | [Link](https://youtu.be/5SMJsKamuSQ) | 
-| 25-11-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-2/MAD211_Aula03.pdf) | [Link](https://youtu.be/W45bVRU6gF0) | 
-| 25-11-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-2/LabR_02.pdf)  | [Link](https://youtu.be/s-pcmRTyZFk) |
-| 30-11-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-2/MAD211_Aula05.pdf)  |  | 
-| 02-12-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-2/LabR_04.pdf)  |  | 
-| 07-12-2021      | Análise Combinatória   | [Link](2021-2/MAD211_Aula07.pdf)  |  | 
-| 09-12-2021      | Introdução à Probabilidade  | [Link](2021-2/MAD211_Aula08.pdf)  |   | 
-| 14-12-2021      | Probabilidade Condicional   | [Link](2021-2/MAD211_Aula09.pdf)  |   |
+| 25-11-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-2/LabR_01.pdf)  | [Link](https://youtu.be/5SMJsKamuSQ) | 
+| 30-11-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-2/MAD211_Aula03.pdf) | [Link](https://youtu.be/W45bVRU6gF0) | 
+| 02-12-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-2/LabR_02.pdf)  | [Link](https://youtu.be/s-pcmRTyZFk) |
+| 07-12-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-2/MAD211_Aula05.pdf)  | [Link](https://www.youtube.com/watch?v=rDfQ28ZVFiA&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=5)  | 
+| 07-12-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-2/LabR_04.pdf)  | [Link](https://www.youtube.com/watch?v=KjjDLw0o_Rg&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=6) | 
+| 09-12-2021      | Análise Combinatória   | [Link](2021-2/MAD211_Aula07.pdf)  |  | 
+| 14-12-2021      | Introdução à Probabilidade  | [Link](2021-2/MAD211_Aula08.pdf)  |   | 
+| 16-12-2021      | Probabilidade Condicional   | [Link](2021-2/MAD211_Aula09.pdf)  |   |
 | 16-12-2021      | Distribuições Discretas   |[Link](2021-2/MAD211_Aula10.pdf)  |  | 
 | `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`   |    **Feliz Natal e Ótimo 2022!**     |  |  | 
 | 04-01-2022      | Distribuições Continuas | [Link](2021-2/MAD211_Aula11.pdf) |   | 
@@ -74,9 +72,8 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 | 10-02-2022     | Teste de Hipóteses: ANOVA   | [Link](2021-2/MAD211_Aula16.pdf)  |   | 
 | **SIAc**     | [**Semana da Integração Acadêmica**](https://siac.ufrj.br) Participe! `r emo::ji("student")`  `r emo::ji("student")` |   |  | 
 | 22-02-2022      | Teste de Hipóteses: Comparação de proporções |  [Link](2021-2/MAD211_Aula17.pdf)   |  |
-| 24-02-2022      | **Lab:** Testes de hipóteses  |  |   | 
-| **03-03-2022**      | $P_2$  |  |   | 
-| 08-03-2022      | Exame de recuperação |  |   | 
+| **24-02-2022**      | $P_2$  |  |   | 
+| 10-03-2022      | Exame de recuperação |  |   | 
 
 
 

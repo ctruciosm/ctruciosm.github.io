@@ -34,6 +34,11 @@ meta() %>%
 ```
 
 
+```{r panelset, layout='l-page', echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+
 Bem-vindo(a)s ao grupo de estudos **CIA**. O grupo foi fundado ao final do 2020.1 (remoto), após finalizar minha primeira turma como professor de *modelos de regressão e previsão* na FACC/UFRJ. 
 
 A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quantitativos e análise de dados para estudarmos tópicos relacionados com o Software [R](https://www.r-project.org), Statistical/Machine Learnig, Econometria, _Marketing Analytics_, _People Analytics_, Python, Inferência Causal, etc... _i.e._ com Métodos Quantitativos. O interesse do grupo é entender como os diversos métodos funcionam e como eles são aplicados em diversas áreas.
@@ -73,6 +78,38 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 ###  **Cronograma**^[Tópicos e datas podem mudar] 
 
 
+
+::::: {.panelset}
+
+
+::: {.panel}
+
+#### 2022 {.panel-name}
+
+
+| Reunião  | Tópico                          | Data       |  
+|:------:|:--------------------|:----------:|
+|21       |   |   |  
+|22       |   |   |  
+|23       |   |   |  
+|24       |   |   |  
+|25       |   |   |     
+|26       |   |   |    
+|27       |   |   |  
+|28       |   |   |    
+|29       |   |   |     
+|30       |   |   |      
+
+
+
+:::
+
+::: {.panel}
+
+#### 2021 {.panel-name}
+
+
+
 | Reunião  | Tópico                          | Data       |  
 |:------:|:--------------------|:----------:|
 |01       | Intro e comandos básicos  | 26/03/2021  |  
@@ -98,6 +135,10 @@ A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quant
 |19       | [Principal Component Analysis (ISLR Chapter 10)](http://ctruciosm.github.io/ISL/ISL_13)    | 03/12/2021 |     
 |20       | Clustering Methods (ISLR Chapter 10)   | 19/12/2021  |     
  
+
+:::
+
+:::::
 
 
 #### Nota
