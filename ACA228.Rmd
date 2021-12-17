@@ -67,9 +67,9 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 07-12-2021     | RLS: Interpretação e Propriedades  | [Link](2021-2/ACA228_05.pdf) | [Link](https://www.youtube.com/watch?v=hoXfen8FBaI&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=5)  | 
 | 09-12-2021     | **Lab:** [Visualização de dados e RLS](https://ctruciosm.github.io/ACA-228/LabR_03) | [Link](2021-2/LabR_03.pdf)  | [Link](https://youtu.be/Smz5fP06A-k) | 
 | 14-12-2021     | Regressão Linear Multipla (RLM)  | [Link](2021-2/ACA228_07.pdf) | [Link](https://www.youtube.com/watch?v=p_lwwEX2wF8&list=PLrqJCLOY0EkC9fccnL-a2c0hF5sarIVwm&index=7)  | 
-| 16-12-2021     | MRLM: Inferência  | [Link](2021-2/ACA228_08.pdf) |   | 
+| 16-12-2021     | MRLM: Inferência  | [Link](2021-2/ACA228_08.pdf) | [Link](https://youtu.be/6jUdkL1EcN4)  | 
 | `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`   |    **Feliz Natal e Ótimo 2022!**     |  |  | 
-| 04-01-2022     | **Lab:** [Manipulação de dados e Análide de Regressão com R](https://ctruciosm.github.io/ACA-228/LabR_04)  | [Link](2021-2/LabR_04.pdf)  |  |
+| 04-01-2022     | **Lab:** [Manipulação de dados e Análide de Regressão com R](https://ctruciosm.github.io/ACA-228/LabR_04)  | [Link](2021-2/LabR_04.pdf)  | [Link](https://youtu.be/HoYS35tJlEs) |
 | 06-01-2022     | MRLM: Tópicos adicionais   | [Link](2021-2/ACA228_10.pdf) |  | 
 | 11-01-2022     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-2/ACA228_11.pdf) |   | 
 | 13-01-2022     | **Lab:** Análide de Regressão com R  |  |  | 
