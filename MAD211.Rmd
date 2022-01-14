@@ -60,8 +60,8 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 | 04-01-2022      | Distribuições Discretas   |[Link](2021-2/MAD211_Aula10.pdf)  |  [Link](https://youtu.be/XWofjlFzilQ)| 
 | 06-01-2022      | Distribuições Continuas | [Link](2021-2/MAD211_Aula11.pdf) | [Link](https://youtu.be/izrsmOQQzY0)  | 
 | 11-01-2022      | **Lab:** Distribuições de probabilidade  |  | [Link](https://www.youtube.com/watch?v=2B4lkkOiIj0&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=11)  | 
-| 13-01-2022      | Exercícios de revisão |  |   | 
-| 18-01-2022      | Amostragem | [Link](2021-2/MAD211_Aula12.pdf) |  | 
+| 13-01-2022      | Exercícios de revisão |  | [Link](https://youtu.be/BJMeehoOmak)  | 
+| 18-01-2022      | Amostragem | [Link](2021-2/MAD211_Aula12.pdf) | [Link](https://www.youtube.com/watch?v=bfnpRb7V8yc&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=13) | 
 | 25-01-2022      | Intervalos de Confiança | [Link](2021-2/MAD211_Aula13.pdf)  |  | 
 | **27-01-2022**  | $P_1$  |  |   | 
 | 01-02-2022      | Gabarito da P1 |  |   |
