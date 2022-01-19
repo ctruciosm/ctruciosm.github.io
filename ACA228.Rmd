@@ -74,7 +74,7 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 11-01-2022     | MRLM: variáveis qualitativas e efeito de interação | [Link](2021-2/ACA228_11.pdf) | [Link](https://www.youtube.com/watch?v=7T135j3foPM&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=10)  | 
 | 13-01-2022     | **Lab:** Análide de Regressão com R  |  | [Link](https://youtu.be/9F13w3LO_VI) | 
 | 18-01-2022     | MRLM: verificação das hipóteses  | [Link](2021-2/ACA228_13.pdf) | [Link](https://www.youtube.com/watch?v=YfmrhVDZrko&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=12) | 
-| 25-01-2022     | MRLM: verificação das hipóteses II  | [Link](2021-2/ACA228_14.pdf) | | 
+| 25-01-2022     | MRLM: verificação das hipóteses II  | [Link](2021-2/ACA228_14.pdf) | [Link](https://www.youtube.com/watch?v=a2gh_DRyxGU&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=13) | 
 | 27-01-2022     | **Lab:** Análide de Regressão com R  |  |  | 
 | 01-02-2022     | Feriado São Sebastião |  |   | 
 | 03-02-2022     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01) |  |   | 
