@@ -75,7 +75,7 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 13-01-2022     | **Lab:** Análide de Regressão com R  |  | [Link](https://youtu.be/9F13w3LO_VI) | 
 | 18-01-2022     | MRLM: verificação das hipóteses  | [Link](2021-2/ACA228_13.pdf) | [Link](https://www.youtube.com/watch?v=YfmrhVDZrko&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=12) | 
 | 25-01-2022     | MRLM: verificação das hipóteses II  | [Link](2021-2/ACA228_14.pdf) | [Link](https://www.youtube.com/watch?v=a2gh_DRyxGU&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=13) | 
-| 27-01-2022     | **Lab:** Análide de Regressão com R  |  |  | 
+| 27-01-2022     | **Lab:** Análide de Regressão com R  |  | [Link](https://www.youtube.com/watch?v=NydVTtabjjs&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=15&t=2s) | 
 | 01-02-2022     | Feriado São Sebastião |  |   | 
 | 03-02-2022     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01) |  |   | 
 | **08-02-2022**     | $P_1$   |  |  | 
