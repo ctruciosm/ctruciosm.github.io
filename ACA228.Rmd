@@ -76,15 +76,14 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 18-01-2022     | MRLM: verificação das hipóteses  | [Link](2021-2/ACA228_13.pdf) | [Link](https://www.youtube.com/watch?v=YfmrhVDZrko&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=12) | 
 | 25-01-2022     | MRLM: verificação das hipóteses II  | [Link](2021-2/ACA228_14.pdf) | [Link](https://www.youtube.com/watch?v=a2gh_DRyxGU&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=13) | 
 | 27-01-2022     | **Lab:** Análide de Regressão com R  |  | [Link](https://www.youtube.com/watch?v=NydVTtabjjs&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=15&t=2s) | 
-| 01-02-2022     | Feriado São Sebastião |  |   | 
-| 03-02-2022     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01) |  |   | 
+| 01-02-2022     | [Intro às Séries Temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_01) |  | [Link](https://www.youtube.com/watch?v=0tDvFLhCqPs&list=PLrqJCLOY0EkD6oErQRlAN6gkviRjvyVTj&index=16&t=3031s)  | 
+| 03-02-2022     | [Séries Temporais: Fundamentos](https://ctruciosm.github.io/ACA-228/ACA228_ST_02) |  |   | 
 | **08-02-2022**     | $P_1$   |  |  | 
-| 10-02-2022     | [Séries Temporais: Fundamentos](https://ctruciosm.github.io/ACA-228/ACA228_ST_02)  |  |   | 
-| 15-02-2022     | [ST: Avaliando modelos](https://ctruciosm.github.io/ACA-228/ACA228_ST_03) |  | | 
-| 17-02-2022     | [Regressão e séries temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_04) |  |   | 
-| 22-02-2022     | [Regressão e séries temporais II](https://ctruciosm.github.io/ACA-228/ACA228_ST_05) |    |  | 
+| 10-02-2022     | [ST: Avaliando modelos](https://ctruciosm.github.io/ACA-228/ACA228_ST_03)  |  |   | 
+| 15-02-2022     | [Regressão e séries temporais](https://ctruciosm.github.io/ACA-228/ACA228_ST_04) |  | | 
+| 17-02-2022     | [Regressão e séries temporais II](https://ctruciosm.github.io/ACA-228/ACA228_ST_05) |  |   | 
+| 22-02-2022     | [Suavização exponencial](https://ctruciosm.github.io/ACA-228/ACA228_ST_06) |    |  | 
 | **SIAc**     | [**Semana da Integração Acadêmica**](https://siac.ufrj.br) Participe! `r emo::ji("student")`  `r emo::ji("student")` |   |  | 
-| 22-02-2022     | [Suavização exponencial](https://ctruciosm.github.io/ACA-228/ACA228_ST_06) |  |  | 
 | **24-02-2022**     | $P_2$ |  |   | 
 | 10-03-2022    | Exame de recuperação|  |   | 
 
