@@ -69,7 +69,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies using Combinations based on Jump-Robust and Regime-Switching Models.* **Submitted** (2020) [with James W. Taylor] \medskip </li>
+<li> *A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.* **Submitted** (2022) [with James W. Taylor] \medskip </li>
 
 
 
