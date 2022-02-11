@@ -67,10 +67,10 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 | 01-02-2022      | Gabarito da P1 |  |   |
 | 03-02-2022     | Teste de Hipóteses: média populacional  | [Link](2021-2/MAD211_Aula14.pdf) | [Link](https://youtu.be/M5yMl3kRn08) | 
 | 08-02-2022     | Teste de Hipóteses: comparação de médias   | [Link](2021-2/MAD211_Aula15.pdf) |  [Link](https://www.youtube.com/watch?v=WQS8DGZBtYU&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=16) | 
-| 10-02-2022       | Teste de Hipóteses: comparação de médias II  | [Link](2021-2/MAD211_Aula15.pdf)  | | 
+| 10-02-2022       | Teste de Hipóteses: comparação de médias II  | [Link](2021-2/MAD211_Aula15.pdf)  | [Link](https://youtu.be/Aii3Quo7VJ8) | 
 | **SIAc**     | [**Semana da Integração Acadêmica**](https://siac.ufrj.br) Participe! `r emo::ji("student")`  `r emo::ji("student")` |   |  | 
 | 15-02-2022      | **Lab:** Testes de hipóteses |  | [Link](https://www.youtube.com/watch?v=1uDUq_Dnars&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=18)  | 
-| 17-02-2022     | Teste de Hipóteses: ANOVA   | [Link](2021-2/MAD211_Aula16.pdf)  |   | 
+| 17-02-2022     | Teste de Hipóteses: ANOVA   |   |   | 
 | 22-02-2022      | Teste de Hipóteses: Comparação de proporções |  [Link](2021-2/MAD211_Aula17.pdf)   | [Link](https://www.youtube.com/watch?v=cC9fQRjFicg&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=20) |
 | **24-02-2022**      | $P_2$  |  |   | 
 | 10-03-2022      | Exame de recuperação |  |   | 
