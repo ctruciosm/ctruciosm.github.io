@@ -1,13 +1,13 @@
 V1	grupo
-165	Grupo 1
-149	Grupo 1
-156	Grupo 1
-142	Grupo 1
-174	Grupo 2
-164	Grupo 2
-180	Grupo 2
-158	Grupo 2
-169	Grupo 3
-154	Grupo 3
-161	Grupo 3
-148	Grupo 3
+165	Grupo1
+149	Grupo1
+156	Grupo1
+142	Grupo1
+174	Grupo2
+164	Grupo2
+180	Grupo2
+158	Grupo2
+169	Grupo3
+154	Grupo3
+161	Grupo3
+148	Grupo3
