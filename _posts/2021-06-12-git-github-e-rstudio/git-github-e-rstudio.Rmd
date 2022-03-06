@@ -197,6 +197,15 @@ knitr::include_graphics("./im/024.png")
 knitr::include_graphics("./im/016.png")
 ```
 
+
+### EDIT:
+
+Caso Rstudio peça seu usuário e senha constantemente, tente com a função `gitcreds_set()` do pacote `gitcreds`. 
+
+```{r, eval=FALSE}
+gitcreds::gitcreds_set()
+```
+
+Após rodar o comando, basta seguir os passos e inserir seu token.
+
 Espero ter ajudado. _Happy Coding!_
-
-

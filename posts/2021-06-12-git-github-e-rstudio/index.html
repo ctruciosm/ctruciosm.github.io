@@ -132,7 +132,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["git-github-e-rstudio_files/anchor-4.2.2/anchor.min.js","git-github-e-rstudio_files/bowser-1.9.3/bowser.min.js","git-github-e-rstudio_files/distill-2.2.21/template.v2.js","git-github-e-rstudio_files/header-attrs-2.8/header-attrs.js","git-github-e-rstudio_files/jquery-1.11.3/jquery.min.js","git-github-e-rstudio_files/popper-2.6.0/popper.min.js","git-github-e-rstudio_files/tippy-6.2.7/tippy-bundle.umd.min.js","git-github-e-rstudio_files/tippy-6.2.7/tippy-light-border.css","git-github-e-rstudio_files/tippy-6.2.7/tippy.css","git-github-e-rstudio_files/tippy-6.2.7/tippy.umd.min.js","git-github-e-rstudio_files/webcomponents-2.0.0/webcomponents.js","im/001.png","im/002.png","im/003.jpeg","im/004.png","im/005.png","im/006.png","im/007.png","im/008.png","im/009.png","im/010.png","im/011.png","im/012.png","im/013.png","im/014.png","im/015.png","im/016.png","im/017.png","im/018.png","im/0185.png","im/019.png","im/020.png","im/021.png","im/022.png","im/023.png","im/024.png","im/025.png"]}
+  {"type":"character","attributes":{},"value":["git-github-e-rstudio_files/anchor-4.2.2/anchor.min.js","git-github-e-rstudio_files/bowser-1.9.3/bowser.min.js","git-github-e-rstudio_files/distill-2.2.21/template.v2.js","git-github-e-rstudio_files/header-attrs-2.8/header-attrs.js","git-github-e-rstudio_files/header-attrs-2.9/header-attrs.js","git-github-e-rstudio_files/jquery-1.11.3/jquery.min.js","git-github-e-rstudio_files/popper-2.6.0/popper.min.js","git-github-e-rstudio_files/tippy-6.2.7/tippy-bundle.umd.min.js","git-github-e-rstudio_files/tippy-6.2.7/tippy-light-border.css","git-github-e-rstudio_files/tippy-6.2.7/tippy.css","git-github-e-rstudio_files/tippy-6.2.7/tippy.umd.min.js","git-github-e-rstudio_files/webcomponents-2.0.0/webcomponents.js","im/001.png","im/002.png","im/003.jpeg","im/004.png","im/005.png","im/006.png","im/007.png","im/008.png","im/009.png","im/010.png","im/011.png","im/012.png","im/013.png","im/014.png","im/015.png","im/016.png","im/017.png","im/018.png","im/0185.png","im/019.png","im/020.png","im/021.png","im/022.png","im/023.png","im/024.png","im/025.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2549,6 +2549,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <li><a href="#iniciando-a-configuração">Iniciando a configuração</a></li>
 <li><a href="#vinculando-um-repositório-ao-rstudio">Vinculando um repositório ao Rstudio</a></li>
 <li><a href="#bonus-commit-and-push">Bonus: commit and push</a></li>
+<li><a href="#edit">EDIT:</a></li>
 </ul>
 </nav>
 </div>
@@ -2672,6 +2673,15 @@ d-appendix d-footnote-list a.footnote-backlink {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="im/016.png" width="100%" /></p>
 </div>
+<h3 id="edit">EDIT:</h3>
+<p>Caso Rstudio peça seu usuário e senha constantemente, tente com a função <code>gitcreds_set()</code> do pacote <code>gitcreds</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>gitcreds</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/gitcreds/man/gitcreds_get.html'>gitcreds_set</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
+<p>Após rodar o comando, basta seguir os passos e inserir seu token.</p>
 <p>Espero ter ajudado. <em>Happy Coding!</em></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
