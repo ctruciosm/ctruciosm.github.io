@@ -1,5 +1,30 @@
 [
   {
+    "path": "posts/2022-03-14-book-review-text-mining-with-r/",
+    "title": "Book Review: Text Mining with R",
+    "description": "Minhas impressões do livro \"Text Mining with R: a tidy approach\" da Julia Silge and David Robinson.",
+    "author": [
+      {
+        "name": "Carlos Trucíos",
+        "url": "https://ctruciosm.github.io"
+      }
+    ],
+    "date": "2022-03-14",
+    "categories": [
+      "Book Review",
+      "R",
+      "rstats",
+      "Text Mining",
+      "NLP"
+    ],
+    "contents": "\n\nContents\nIntrodução\nOverview do livro\nSobre os capítulos do livro\n\nO que mais/menos gostei\nComentários Finais\n\n\nIntrodução\nMineração de texto (ou text mining) e PLN (processamento da linguagem natural) não são minhas linhas de pesquisa, mas a raíz de um dos projetos do grupo de pesquisa BDAQ fiquei ainda mais curioso sobre como analisar texto.\nFoi assim que resolvi ler alguns livros sobre o assunto, sendo o primeiro deles o livro Text Mining with R: a tidy approach de Silge and Robinson (2017), que pode ser livremence acessado aqui e do qual trago algumas pequenas impressões para os alunos interessados no assunto.\nOverview do livro\n\n\n\n\n\nO livro possui uma versão impressa e pode ser adquirido aqui, mas os autores gentilmente disponibilizaram a versão online para ser acessada de forma gratuita aqui (sim, eu fui na gratuita!).\nO livro é uma introdução rápida e prática à mineração de texto, traz vários exemplos que podem ser facilmente reproduzidos através do código disponibilizado no próprio livro e apresenta diversos exemplos nos quais mineração de texto pode ser utilizada. Isto todo, utilizando o software R e alguns pacotes tais como tidytext, wordcloud, ggraph, entre muitos outros.\nSobre os capítulos do livro\nO livro possui 9 capítulos mais um de referências bibliográficas e a leitura é bastante fluida e rápida.\nOs quatro primeiros capítulos correspondem a conceitos básicos e são fundamentais para todo aquele que queira analisar texto.\nO capitulo 6 apresenta um tema mais avançado mas sem entrar no rigor matemático, apresentando apenas como e em que situações o método pode ser utilizado. Acredito que os leitores pouco familiarizados com machine learning ou análise multivariada terão maiores dificuldades para entender (pelo menos intuitivamente) como o método funciona, mas nada que atrapalhe a leitura do capítulo.\nComo não tudo no R pertence ao mundo tidyverse, o capítulo 5 apresenta como transitar entre os diferentes formatos utilizados para armazenar dados de texto de forma fácil e simples. Isto permite que seja possível utilizar diferentes pacotes destinados à análise de texto sem maiores preocupações.\nOs capítulos finais (7, 8 e 9) apresentam casos de estudo, onde tudo o visto no livro pode ser aplicado passo a passo em datasets reais.\nO que mais/menos gostei\nO ponto forte do livro é que ele pode ser lido, compreendido e aplicado ao mesmo tempo através dos códigos disponibilizados logo após a explicação de cada conceito. Isso faz com que ler o livro seja muito mais didático e agradável.\nO ponto negativo (embora não seja o foco do livro) é que os lexicos utilizados estão em inglês, o que faz com que sejam necessárias algumas adaptações para poder trabalhar com texto em português. Eu tentei contextualizar um pouco isso nesses slides que preparei para os alunos envolvidos no projeto de pesquisa que o Prof. Marcelo Castañeda (FACC/UFRJ) coordena.\nComentários Finais\nEm geral, o livro é muito bom (prático, direto, didático) e bastante útil para começar com análise de texto.\nO objetivo do livro é aprensentar os conceitos básicos, então não pense que após a leitura o livro será um Guru em mineração de texto.\nAlguns outros livros para se aprofundar no assunto são: Supervised Machine Learning for Text Analysis in R (Hvitfeldt and Silge 2021) que está disponibilizado livremente aqui e Textual Data Science with R (Bécue-Bertaut 2019)\n\nSe você gostar do R assim como eu, os códigos no livro serão muito úteis. Contudo, se você preferir alguma outra linguagem como Python ou Julia, o livro continua sendo útil e você pode focar em entender os conceitos e os exemplos de aplicação, bastando apenas como implementar os métodos na linguagem de preferência (devem existir diversas fontes onde pode encontrar isso.)\n\nHappy Coding!\n\n\n\n\nBécue-Bertaut, Monica. 2019. Textual Data Science with r. CRC Press.\n\n\nHvitfeldt, Emil, and Julia Silge. 2021. Supervised Machine Learning for Text Analysis in r. Chapman; Hall/CRC.\n\n\nSilge, Julia, and David Robinson. 2017. Text Mining with r: A Tidy Approach. O’Reilly Media, Inc.\n\n\n\n\n",
+    "preview": "posts/2022-03-14-book-review-text-mining-with-r/tmwR.png",
+    "last_modified": "2022-03-14T11:52:44-03:00",
+    "input_file": {},
+    "preview_width": 2100,
+    "preview_height": 2756
+  },
+  {
     "path": "posts/2021-12-01-r-como-importar-dados-do-excel/",
     "title": "R: como importar dados do Excel?",
     "description": "No R é muito comum importar dados em formato .txt ou .csv. Contudo, muitas vezes estamos interessados em importar arquivos salvos em excel (.xls ou .xlsx). Neste post, apresento duas formas de ler dados vindos do Excel.",

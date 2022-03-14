@@ -1,0 +1,81 @@
+---
+title: "Book Review: Text Mining with R"
+description: |
+  Minhas impressões do livro "Text Mining with R: a tidy approach" da Julia Silge and David Robinson.
+categories:
+  - Book Review
+  - R 
+  - rstats
+  - Text Mining
+  - NLP
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 03-14-2022
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    self_contained: false
+bibliography: statblog.bib
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Introdução
+
+Mineração de texto (ou text mining) e PLN (processamento da linguagem natural) não são minhas linhas de pesquisa, mas a raíz de um dos projetos do grupo de pesquisa [BDAQ](http://dgp.cnpq.br/dgp/espelhogrupo/764775) fiquei ainda mais curioso sobre como analisar texto.
+
+Foi assim que resolvi ler alguns livros sobre o assunto, sendo o primeiro deles o livro `Text Mining with R: a tidy approach` de @silge2017text, que pode ser livremence acessado [aqui](https://www.tidytextmining.com/) e do qual trago algumas pequenas impressões para os alunos interessados no assunto.
+
+
+### _Overview_ do livro
+
+<center>
+```{r echo = FALSE, out.width = "45%"}
+knitr::include_graphics("tmwR.png")
+```
+</center>
+
+O livro possui uma versão impressa e pode ser adquirido [aqui](https://www.amazon.com.br/Text-Mining-R-Julia-Silge/dp/1491981652/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=Text+Mining+with+R&qid=1647266628&sr=8-1&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678), mas os autores gentilmente disponibilizaram a versão online para ser acessada de forma gratuita [aqui](https://www.tidytextmining.com/) (sim, eu fui na gratuita!).
+
+
+O livro é uma introdução rápida e prática à mineração de texto, traz vários exemplos que podem ser facilmente reproduzidos através do código disponibilizado no próprio livro e apresenta diversos exemplos nos quais  mineração de texto pode ser utilizada. Isto todo, utilizando o software `R` e alguns pacotes tais como `tidytext`, `wordcloud`, `ggraph`, entre muitos outros.
+
+
+#### Sobre os capítulos do livro
+
+- O livro possui 9 capítulos mais um de referências bibliográficas e a leitura é bastante fluida e rápida.
+- Os quatro primeiros capítulos correspondem a conceitos básicos e são fundamentais para todo aquele que queira analisar texto. 
+- O capitulo 6 apresenta um tema mais avançado mas sem entrar no rigor matemático, apresentando apenas como e em que situações o método pode ser utilizado. Acredito que os leitores pouco familiarizados com _machine learning_ ou análise multivariada terão maiores dificuldades para entender (pelo menos intuitivamente) como o método funciona, mas nada que atrapalhe a leitura do capítulo. 
+- Como não tudo no `R` pertence ao mundo `tidyverse`, o capítulo 5 apresenta como transitar entre os diferentes formatos utilizados para armazenar dados de texto de forma fácil e simples. Isto permite que seja possível utilizar diferentes pacotes destinados à análise de texto sem maiores preocupações.
+- Os capítulos finais (7, 8 e 9) apresentam casos de estudo, onde tudo o visto no livro pode ser aplicado passo a passo em _datasets_ reais.
+
+
+
+### O que mais/menos gostei
+
+- O ponto forte do livro é que ele pode ser lido, compreendido e aplicado ao mesmo tempo através dos códigos disponibilizados logo após a explicação de cada conceito. Isso faz com que ler o livro seja muito mais didático e agradável.
+- O ponto negativo (embora não seja o foco do livro) é que os lexicos utilizados estão em inglês, o que faz com que sejam necessárias algumas adaptações para poder trabalhar com texto em português. Eu tentei contextualizar um pouco isso [nesses slides](https://ctruciosm.github.io/teaching.html?panelset=short-courses) que preparei para os alunos envolvidos no projeto de pesquisa que o Prof. Marcelo Castañeda (FACC/UFRJ) coordena. 
+
+
+### Comentários Finais
+
+- Em geral, o livro é muito bom (prático, direto, didático) e bastante útil para começar com análise de texto.
+- O objetivo do livro é aprensentar os conceitos básicos, então não pense que após a leitura o livro será um `Guru` em mineração de texto.
+- Alguns outros livros para se aprofundar no assunto são: `Supervised Machine Learning for Text Analysis in R` [@hvitfeldt2021supervised] que está disponibilizado livremente [aqui](https://smltar.com/) e `Textual Data Science with R ` [@becue2019textual]
+
+> Se você gostar do R assim como eu, os códigos no livro serão muito úteis. Contudo, se você preferir alguma outra linguagem como Python ou Julia, o livro continua sendo útil e você pode focar em entender os conceitos e os exemplos de aplicação, bastando apenas como implementar os métodos na linguagem de preferência (devem existir diversas fontes onde pode encontrar isso.)
+
+**Happy Coding!**
+
+
+###
+
+
+
+
