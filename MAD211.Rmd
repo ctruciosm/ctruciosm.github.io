@@ -10,20 +10,19 @@ output:
 
 # Estatística para Administração
 
-## 2021.2
-
-**ATENÇÃO: as aulas começarão no dia 23 de novembro**
+## 2022.2
 
 </center>
 
 As datas das provas já estão definidas. Programe-se com antecedência. 
 
-- $P_1$: **27-01-2022**
-- $P_2$: **24-02-2022** 
+- $P_1$: **26-05-2022**
+- $P_2$: **14-07-2022** 
+- Exame: **26-07-2022**
 
 </br>
 
-`r emo::ji("pencil")` [Plano de Ensino](2021-2/Plano_MAD211_2021-2.pdf) 
+`r emo::ji("pencil")` [Plano de Ensino](2021-2/Plano_MAD211_2022_1.pdf) 
 
 `r emo::ji("pause")` [YouTube Channel](https://www.youtube.com/playlist?list=PLrqJCLOY0EkDc3zIhA0-Lk-M12FnReWwa) 
 
@@ -44,36 +43,38 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 
 ### **Cronograma**
 
+O cronograma dos tópicos a serem abordados na discplina está definido embaixo (pequenas alterações poderão ser feitas). No título do tópico encontra-se o link do video das turmas anteriores (que não necessáriamente será o mesmo mas serve de ajuda para poderem estudar), bem como slides e adicionais das turmas anteriores.
 
-| Data  | Assunto                | Slides      | Video |
-|:-----:|:-----------------------|:----------:|--------|
-| 23-11-2021     | Introdução  | [Link](2021-2/MAD211_Aula01.pdf) | [Link](https://youtu.be/Kw9vC_yU4qU) | 
-| 25-11-2021     | **Lab:** [Introdução ao R](https://ctruciosm.github.io/ACA-228/LabR_01)  | [Link](2021-2/LabR_01.pdf)  | [Link](https://youtu.be/5SMJsKamuSQ) | 
-| 30-11-2021      | Est. Descritiva: Tabelas de Frequência e Gráficos   | [Link](2021-2/MAD211_Aula03.pdf) | [Link](https://youtu.be/W45bVRU6gF0) | 
-| 02-12-2021      | **Lab:** [Tabelas e Gráficos no R](https://ctruciosm.github.io/ACA-228/LabR_02) | [Link](2021-2/LabR_02.pdf)  | [Link](https://youtu.be/s-pcmRTyZFk) |
-| 07-12-2021      | Estatística Descritiva: Medidas Resumo  | [Link](2021-2/MAD211_Aula05.pdf)  | [Link](https://www.youtube.com/watch?v=rDfQ28ZVFiA&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=5)  | 
-| 07-12-2021      | **Lab:** [Medidas Resumo e Manipulação de dados](https://ctruciosm.github.io/ACA-228/LabR_04) | [Link](2021-2/LabR_04.pdf)  | [Link](https://www.youtube.com/watch?v=KjjDLw0o_Rg&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=6) | 
-| 09-12-2021      | Análise Combinatória   | [Link](2021-2/MAD211_Aula07.pdf)  | [Link](https://youtu.be/92r6xprL1D4) | 
-| 14-12-2021      | Introdução à Probabilidade  | [Link](2021-2/MAD211_Aula08.pdf)  | [Link](https://www.youtube.com/watch?v=PWtN_tLdrQ8&list=PLrqJCLOY0EkDsfP4n9UD91-Gh1cMjceRP&index=8)  | 
-| 16-12-2022      | Probabilidade Condicional   | [Link](2021-2/MAD211_Aula09.pdf)  | [Link](https://youtu.be/r_1xJvrlAkI)  |
-| `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`   |    **Feliz Natal e Ótimo 2022!**     |  |  | 
-| 04-01-2022      | Distribuições Discretas   |[Link](2021-2/MAD211_Aula10.pdf)  |  [Link](https://youtu.be/XWofjlFzilQ)| 
-| 06-01-2022      | Distribuições Continuas | [Link](2021-2/MAD211_Aula11.pdf) | [Link](https://youtu.be/izrsmOQQzY0)  | 
-| 11-01-2022      | **Lab:** Distribuições de probabilidade  |  | [Link](https://www.youtube.com/watch?v=2B4lkkOiIj0&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=11)  | 
-| 13-01-2022      | Exercícios de revisão |  | [Link](https://youtu.be/BJMeehoOmak)  | 
-| 18-01-2022      | Amostragem | [Link](2021-2/MAD211_Aula12.pdf) | [Link](https://www.youtube.com/watch?v=bfnpRb7V8yc&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=13) | 
-| 25-01-2022      | Intervalos de Confiança | [Link](2021-2/MAD211_Aula13.pdf)  | [Link](https://www.youtube.com/watch?v=8fxiP6UqVr4&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=14) | 
-| **27-01-2022**  | $P_1$  |  |   | 
-| 01-02-2022      | Gabarito da P1 |  |   |
-| 03-02-2022     | Teste de Hipóteses: média populacional  | [Link](2021-2/MAD211_Aula14.pdf) | [Link](https://youtu.be/M5yMl3kRn08) | 
-| 08-02-2022     | Teste de Hipóteses: comparação de médias   | [Link](2021-2/MAD211_Aula15.pdf) |  [Link](https://www.youtube.com/watch?v=WQS8DGZBtYU&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=16) | 
-| 10-02-2022       | Teste de Hipóteses: comparação de médias II  | [Link](2021-2/MAD211_Aula15.pdf)  | [Link](https://youtu.be/Aii3Quo7VJ8) | 
-| **SIAc**     | [**Semana da Integração Acadêmica**](https://siac.ufrj.br) Participe! `r emo::ji("student")`  `r emo::ji("student")` |   |  | 
-| 15-02-2022      | **Lab:** Testes de hipóteses |  | [Link](https://www.youtube.com/watch?v=1uDUq_Dnars&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=18)  | 
-| 17-02-2022     | Teste de Hipóteses: ANOVA   | [Link](2021-2/MAD211_Aula16.pdf)  | [Link](https://youtu.be/OcXd0FBy790)  | 
-| 22-02-2022      | Teste de Hipóteses: Comparação de proporções |  [Link](2021-2/MAD211_Aula17.pdf)   | [Link](https://www.youtube.com/watch?v=cC9fQRjFicg&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=20) |
-| **24-02-2022**      | $P_2$  |  |   | 
-| 10-03-2022      | Exame de recuperação |  |   | 
+
+| Data  | Tópico                 | Slides | Adicional  |
+|:-----:|:-----------------------|--------|------------|
+| 12-04-2022     | [Introdução](https://youtu.be/Kw9vC_yU4qU)  | [Link](2021-2/MAD211_Aula01.pdf) | [Link](https://youtu.be/5SMJsKamuSQ)
+| 14-04-2022     | [Est. Descritiva](https://youtu.be/W45bVRU6gF0) | [Link](2021-2/MAD211_Aula03.pdf) | [Link](https://youtu.be/s-pcmRTyZFk)
+| 19-04-2022     | [Estatística Descritiva: Medidas Resumo](https://www.youtube.com/watch?v=rDfQ28ZVFiA&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=5)  | [Link](2021-2/MAD211_Aula05.pdf)  | [Link](https://www.youtube.com/watch?v=KjjDLw0o_Rg&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=6)
+| 26-04-2022     | [Análise Combinatória](https://youtu.be/92r6xprL1D4)   | [Link](2021-2/MAD211_Aula07.pdf)  |  | 
+| 28-04-2022     | [Análise Combinatória](https://youtu.be/92r6xprL1D4)   | [Link](2021-2/MAD211_Aula07.pdf)  |  | 
+| 03-05-2022     |  [Introdução à Probabilidade](https://www.youtube.com/watch?v=PWtN_tLdrQ8&list=PLrqJCLOY0EkDsfP4n9UD91-Gh1cMjceRP&index=8)  | [Link](2021-2/MAD211_Aula08.pdf)  |  | 
+| 05-05-2022     | [Probabilidade Condicional](https://youtu.be/r_1xJvrlAkI)   | [Link](2021-2/MAD211_Aula09.pdf)  |  |
+| 10-05-2022     | [Distribuições Discretas](https://youtu.be/XWofjlFzilQ)   |[Link](2021-2/MAD211_Aula10.pdf)  | | 
+| 12-05-2022     | [Distribuições Continuas](https://youtu.be/izrsmOQQzY0) | [Link](2021-2/MAD211_Aula11.pdf) |   | 
+| 17-05-2022     | Dist. Discretas e Continuas  |   | [Link](https://www.youtube.com/watch?v=2B4lkkOiIj0&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=11)
+| 19-05-2022     | [Amostragem](https://www.youtube.com/watch?v=bfnpRb7V8yc&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=13) | [Link](2021-2/MAD211_Aula12.pdf) | | 
+| 24-05-2022     | Exercícios de revisão  |  | [Link](https://youtu.be/BJMeehoOmak)
+| 26-05-2022     | $P_1$ | 
+| 31-05-2022     | Gabarito da $P_1$ |   | | 
+| 02-06-2022     | [Intervalos de Confiança](https://www.youtube.com/watch?v=8fxiP6UqVr4&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=14) | [Link](2021-2/MAD211_Aula13.pdf)  | | 
+| 07-06-2022     | [Intervalos de Confiança](https://www.youtube.com/watch?v=8fxiP6UqVr4&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=14) | [Link](2021-2/MAD211_Aula13.pdf)  | | 
+| 09-06-2022     | [Teste de Hipóteses: média populacional](https://youtu.be/M5yMl3kRn08)  | [Link](2021-2/MAD211_Aula14.pdf) |  | 
+| 14-06-2022     | [Teste de Hipóteses: comparação de médias](https://www.youtube.com/watch?v=WQS8DGZBtYU&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=16)   | [Link](2021-2/MAD211_Aula15.pdf) |   | 
+| 21-06-2022     | [Teste de Hipóteses: comparação de médias II](https://youtu.be/Aii3Quo7VJ8)  | [Link](2021-2/MAD211_Aula15.pdf)  |  | 
+| 23-06-2022     | Exercícios | |  | [Link](https://www.youtube.com/watch?v=1uDUq_Dnars&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=18)  |
+| 28-06-2022     | [Teste de Hipóteses: ANOVA](https://youtu.be/OcXd0FBy790)   | [Link](2021-2/MAD211_Aula16.pdf)  |  | 
+| 30-06-2022     | [Teste de Hipóteses: ANOVA](https://youtu.be/OcXd0FBy790)   | [Link](2021-2/MAD211_Aula16.pdf)  |  | 
+| 05-07-2022     | [Teste de Hipóteses: Comparação de proporções](https://www.youtube.com/watch?v=cC9fQRjFicg&list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&index=20) |  [Link](2021-2/MAD211_Aula17.pdf)   |  | 
+| 07-07-2022     | Exercícios | |  |
+| 12-07-2022     | Revisão | |  |  
+| 14-07-2022     | $P_2$ | |  |
+| 26-07-2022     | Exame de recuperação | |  |  
 
 
 

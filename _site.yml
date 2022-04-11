@@ -20,12 +20,14 @@ navbar:
       href: awards.html
     - text: 'Blog'
       href: statblog.html
-    - text: 2021.2
+    - text: 2022.2
       menu:
-        - text: ACA228
-          href: ACA228.html 
         - text: MAD211
           href: MAD211.html
+        - text: ACA124
+          href: ACA124.html
+        - text: ACA228
+          href: ACA228.html 
         - text: CIA
           href: CIA.html
         - text: BDAQ

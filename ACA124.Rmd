@@ -1,0 +1,81 @@
+---
+title: "ACA124"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Métodos Quantitativos em Administração
+
+## 2022.1
+
+
+</center>
+
+As datas das provas já estão definidas. Programe-se com antecedência. 
+
+- $P_1$: **26-05-2022**
+- $P_2$: **14-07-2022** 
+- Exame: **26-07-2022**
+
+</br>
+
+`r emo::ji("pencil")` [Plano de Ensino](2021-2/Plano_ACA124_2022_1.pdf) 
+
+`r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NDk0NDgyODA3MjM0?cjc=uf66a3o)  (Código da Turma caso precisarem: uf66a3o)
+
+</br>
+
+**Horários**    
+
+`r emo::ji("calendar")` Terças e Quintas das 14:50 às 16:30 (T2) na sala **BINGO6**
+
+
+### **Cronograma**
+
+
+| Data  | Assunto                |
+|:-----:|:-----------------------|
+| 12-04-2022     | Instruções e Introdução  | 
+| 14-04-2022     | Atividade 1 |
+| 19-04-2022     | Programação Linear   | 
+| 26-04-2022     | Hipóteses da Programação Linear | 
+| 28-04-2022     | Exercícios |
+| 03-05-2022     | O Método Simplex  |
+| 05-05-2022     | Exercícios   |  
+| 10-05-2022     | O Método Simplex  |
+| 12-05-2022     | O Método Simplex  |
+| 17-05-2022     | O Método Simplex  |
+| 19-05-2022     | Exercícios | 
+| 24-05-2022     | Dualidade e Análise de Sensibilidade  |
+| 26-05-2022     | $P_1$ | 
+| 31-05-2022     | Dualidade e Análise de Sensibilidade | 
+| 02-06-2022     | Exercícios |
+| 07-06-2022     | Outros algoritmos para programação linear   | 
+| 09-06-2022     | Problemas de Transporte e da Designação  |  
+| 14-06-2022     | Problemas de Transporte e da Designação  | 
+| 21-06-2022     | Exercícios  |
+| 23-06-2022     | Otimização de Redes |
+| 28-06-2022     | Otimização de Redes | 
+| 30-06-2022     | Exercícios   | 
+| 05-07-2022     | Teoria de Jogos | 
+| 07-07-2022     | Teoria de Jogos   | 
+| 12-07-2022     | Exercícios |  
+| 14-07-2022     | $P_2$ |
+| 26-07-2022     | Exame de recuperação |  
+
+
+
+
+<center>
+
+> Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for,  pode contar comigo. 
+
+</center>
+
+
+
+---- 
