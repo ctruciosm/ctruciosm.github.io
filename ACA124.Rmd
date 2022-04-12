@@ -23,7 +23,7 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 
 </br>
 
-`r emo::ji("pencil")` [Plano de Ensino](2021-2/Plano_ACA124_2022_1.pdf) 
+`r emo::ji("pencil")` [Plano de Ensino](2021-2/Plano_ACA124_2022-1.pdf) 
 
 `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NDk0NDgyODA3MjM0?cjc=uf66a3o)  (Código da Turma caso precisarem: uf66a3o)
 

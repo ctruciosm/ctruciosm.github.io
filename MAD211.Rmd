@@ -32,7 +32,8 @@ As datas das provas já estão definidas. Programe-se com antecedência.
 
 **Horários**    
 
-`r emo::ji("calendar")` Terças e Quintas das 16:40 às 18:20 
+`r emo::ji("calendar")` Terças e Quintas das 16:40 às 18:20 (T3) na sala **MOD35**
+
 
 
 ### **Material e Aulas**
