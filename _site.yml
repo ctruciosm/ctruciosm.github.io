@@ -20,6 +20,8 @@ navbar:
       href: awards.html
     - text: 'Blog'
       href: statblog.html
+    - text: 'Links'
+      href: links.html
     - text: 2022.2
       menu:
         - text: MAD211

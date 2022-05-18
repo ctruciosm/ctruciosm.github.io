@@ -1,0 +1,27 @@
+---
+title: "Links"
+output:
+  distill::distill_article:
+    toc: false
+---
+
+
+## Brazilian funding 
+
+Here, a list of Brazilian funding agencies that support/supported me and/or my students:
+
+- [São Paulo Research Foundation (FAPESP)](https://fapesp.br/)
+- [Rio de Janeiro Research Foundation (FAPERJ)](https://www.faperj.br/)
+- [Coordination for the Improvement of Higher Education Personnel (CAPES)](https://www.gov.br/capes/pt-br)
+
+## Tutorials
+
+- Copulas in R: [Part 1](https://www.r-bloggers.com/2016/03/how-to-fit-a-copula-model-in-r-heavily-revised-part-1-basic-tools/) and [Part 2](https://www.r-bloggers.com/2016/03/how-to-fit-a-copula-model-in-r-heavily-revised-part-2-fitting-the-copula/)
+- [GARCH-type models in R](https://www.msperlin.com/blog/post/2020-03-29-garch-tutorial-in-r/)
+
+## Others
+
+- [8 reasons I accepted your article](https://www.elsevier.com/connect/8-reasons-i-accepted-your-article)
+- [PhD comincs](https://phdcomics.com/comics.php)
+- [Learning Financial Data Analysis Using R](http://statisticalestimation.blogspot.com/2016/09/blog-post.html)
+- [Learning everything with R](https://www.r-bloggers.com/2015/05/learning-everything-with-r-an-r-book-list/)
