@@ -1,7 +1,8 @@
 ---
-title: "Carlos Trucíos"
+title: "Carlos Trucíos <br> <h5>Sala 206 - IMECC </h5> <br> <h5> ctrucios **at** unicamp **dot** br </h5>"
 image: "imagens/foto_ctrucios.jpeg"
 site: distill::distill_website
+description: "Sala 206 (IMECC)"
 links:
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'
     url: "https://www.linkedin.com/in/ctrucios/"
@@ -9,12 +10,10 @@ links:
     url: "https://github.com/ctruciosm"
   - label: '<i class="ai ai-lattes-square" aria-hidden="true"></i> Lattes'
     url: http://lattes.cnpq.br/9315014843913122
-  - label: '<i class="fas fa-envelope"></i> Email'
-    url: "mailto:ctrucios@unicamp.br"
-  - label: '<i class="ai ai-google-scholar-square" aria-hidden="true"></i> Google Scholar'
-    url: https://scholar.google.com/citations?user=HEdXeQkAAAAJ
   - label: '<i class="ai ai-orcid-square" aria-hidden="true"></i> ORCID'
     url: https://orcid.org/0000-0001-8746-8877
+  - label: '<i class="ai ai-google-scholar-square" aria-hidden="true"></i> Google Scholar'
+    url: https://scholar.google.com/citations?user=HEdXeQkAAAAJ
   - label: '<i class="ai ai-researchgate-square" aria-hidden="true"></i> Research Gate'
     url: https://www.researchgate.net/profile/Carlos_Trucios
 output:
