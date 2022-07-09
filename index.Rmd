@@ -2,7 +2,6 @@
 title: "Carlos Trucíos <br> <h5>Sala 206 - IMECC </h5> <br> <h5> ctrucios **at** unicamp **dot** br </h5>"
 image: "imagens/foto_ctrucios.jpeg"
 site: distill::distill_website
-description: "Sala 206 (IMECC)"
 links:
   - label: '<i class="fab fa-linkedin"></i> LinkedIn'
     url: "https://www.linkedin.com/in/ctrucios/"
@@ -18,7 +17,10 @@ links:
     url: https://www.researchgate.net/profile/Carlos_Trucios
 output:
   postcards::trestles
+  
 ---
+
+
  
 ## Bio
 
