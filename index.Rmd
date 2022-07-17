@@ -1,5 +1,5 @@
 ---
-title: "Carlos Trucíos <br> <h5>Sala 206 - IMECC </h5> <br> <h5> ctrucios **at** unicamp **dot** br </h5>"
+title: "Carlos Trucíos"
 image: "imagens/foto_ctrucios.jpeg"
 site: distill::distill_website
 links:
@@ -17,23 +17,25 @@ links:
     url: https://www.researchgate.net/profile/Carlos_Trucios
 output:
   postcards::trestles
-  
 ---
 
+<center>
+**Assistant Professor** <br>
+Deparment of Statistics, <br>
+Institute of Matematics, Statistics and Scientific Computing, <br>
+University of Campinas - Brazil.
+</center>
 
- 
-## Bio
+<br>
 
-I am Assistant Professor at [University of Campinas](https://www.unicamp.br/unicamp/) ([Department of Statistics](https://www.ime.unicamp.br/)) - Brazil. My research interests are risk management, portfolio allocation, volatility forecasting, robust statistics, and statistical learning.
+- <h6> **Office:** Room 206 - IMECC </h6>
+- <h6> **E-mail:** ctrucios **at** unicamp **dot** br </h6>
 
-I received the [y-BIS Best Paper Award](https://www.ime.unicamp.br/destaques/carlos-trucios-maza-recebe-premio-asaniss-best-bis-paper-awards-2016) (2016), [IASC-ERS Young Researchers Award](https://iasc-isi.org/2019/06/27/iasc-ers-young-researchers-award-2018-at-compstat-2018/) (2018), and the [Best paper Award in the Latin American Conference for Statistical Computing](https://iasc-isi.org/2019/06/27/best-lacsc-2019-paper-award/) (2019).
-
-Before I joined University of Campinas, I worked in Brazilian companies as a Data Science Specialist, Data Science Coordinator, and Data Scientist Consultant. I also was Visiting Professor at Federal University of ABC and Assistant Professor at Federal University of Rio de Janeiro.
-
-
+<br>
+**Research Interest:** risk management, portfolio allocation, volatility forecasting, robust statistics, and statistical learning. <br>
 Currently, my goal is to apply statistical learning techniques on Business, Economics and Finance as well as develop new volatility forecasting procedures in high-dimensional and high-frequency data. 
 
-
+<br>
 
 :::: {style="display: grid; grid-template-columns: 50% 50%; grid-column-gap: 30px; line-height: 1.5rem;"}
 
