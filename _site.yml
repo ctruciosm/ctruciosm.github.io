@@ -4,9 +4,6 @@ base_url: https://ctruciosm.github.io/
 theme: theme_dark.css
 output_dir: "."
 navbar:
-  logo:
-    image: imagens/unicamp.jpg
-    href: https://www.ime.unicamp.br/
   search: false
   right:
     - text: 'Home'
