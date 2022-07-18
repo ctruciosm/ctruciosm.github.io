@@ -20,10 +20,10 @@ output:
 ---
 
 <center>
-**Assistant Professor** <br>
-Deparment of Statistics, <br>
-Institute of Matematics, Statistics and Scientific Computing, <br>
-University of Campinas - Brazil.
+<h5>**Assistant Professor** <br>
+<h6>Deparment of Statistics, <br>
+<h6>Institute of Matematics, Statistics and Scientific Computing, <br>
+<h6>University of Campinas - Brazil.</h6>
 </center>
 
 <br>
