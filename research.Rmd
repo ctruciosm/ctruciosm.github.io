@@ -79,12 +79,15 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 ::: {.panel}
 
-#### Ongoing Work {.panel-name}
+#### Ongoing {.panel-name}
 
 #### ONGOING WORK
 
 
 <ol reversed>
+
+
+<li> *Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.* [with André Oliveira and Pedro Valls] \medskip </li>
 
 
 <li> *Risk-based portfolio allocation strategies in the Brazilian stock market: from classical to machine learning approaches* [with Beatriz Galino] \medskip </li>
