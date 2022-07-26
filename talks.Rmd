@@ -7,7 +7,7 @@ output:
 
 <ol reversed>
 
-<li>  Modelando Series Temporales en Alta Dimensión. Conference at *X Encuentro Nacional de Matemáticas y Estadística*. June 1 to 3, 2022. Ibagué. (Colombia) ![](./flag-icon-css-master/flags/4x3/co.svg){ width=2.5% } </li>
+<li>  Modelando Series Temporales Financieras en Alta Dimensión. Conference at *X Encuentro Nacional de Matemáticas y Estadística*. June 1 to 3, 2022. Ibagué. (Colombia) ![](./flag-icon-css-master/flags/4x3/co.svg){ width=2.5% } </li>
 
 
 <li>  Forecasting Conditional Covariance Matrices in High-
