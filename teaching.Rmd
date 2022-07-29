@@ -19,24 +19,21 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 #### Undergraduate {.panel-name}
 
-- **2022:**
-  - Quantitative Methods for Business Administration (in Portuguese), UFRJ (PL 2022.1) - [Link](ACA124.html)
-   - Statistics for Business (in Portuguese), UFRJ (PL 2022.2) - - [Link](MAD211.html)
-- **2021:**
-  - Forecasting and Regression Models (in Portuguese), UFRJ (PL 2020.1, 2020.2, 2021.1, 2021.2) - [Link](ACA128.html)
-  - Statistics for Business (in Portuguese), UFRJ (PL 2020.2, 2021.1, 2021.2)
-- **2020:**
-  - Introduction to Probability and Statistics (in Portuguese), UFABC
-- **2018:**
-  - Probability (in Portuguese), EESP-FGV  (T.A.)
-- **2015:**
-  - Statistics for experimentalist (in Portuguese), UNICAMP (T.A.)
-  - Elementar Statistics (in Portuguese), UNICAMP (T.A.)
-* **2012:**
-  - Statistics for experimentalist (in Portuguese), UNICAMP (T.A.)
-  - Introduction to probability models (in Portuguese), UNICAMP (T.A.)
-- **2010:**
-  - Statistical Computing (in Spanish), UNMSM (T.A.)
+- **UNICAMP**
+  - Multivariate Statistical Analysis (2022/2).
+  - Statistics for Experimentalist (2022/2).
+- **UFRJ**
+  - [Quantitative Methods for Business Administration](ACA124.html) (2022/1).
+  - [Statistics for Business](MAD211.html) (2020/2, 2021/1, 2021/2, 2022/1).
+  - [Forecasting and Regression Models](ACA128.html) (2020/1, 2020/2, 2021/2, 2021/2).
+- **UFABC**
+  - Introduction to Probability and Statistics (2020/1).
+- **T.A**
+  - Probability, EESP-FGV (2018/1).
+  - Statistics for experimentalist, UNICAMP (2015/2, 2012/2).
+  - Elementar Statistics, UNICAMP (2012/2)
+  - Introduction to probability models, UNICAMP (2012/1).
+  - Statistical Computing, UNMSM (2010/1).
 
 :::
 

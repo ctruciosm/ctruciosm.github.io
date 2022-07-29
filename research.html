@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Carlos Trucíos: Research</title>
@@ -452,7 +454,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -765,10 +767,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1600,7 +1598,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1611,6 +1618,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1710,6 +1742,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1732,7 +1766,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2427,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <link href="site_libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
   <script src="site_libs/panelset-0.2.6/panelset.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
@@ -2478,11 +2512,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="MAD211.html">MAD211</a>
-<a href="ACA124.html">ACA124</a>
-<a href="ACA228.html">ACA228</a>
-<a href="CIA.html">CIA</a>
-<a href="BDAQ.html">BDAQ</a>
+<a href="ME731.html">ME731</a>
+<a href="ME414.html">ME414</a>
+<a href="BDAQ.html">CAREFS</a>
 </div>
 </div>
 <a>
@@ -2505,9 +2537,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p><strong>Research Interest:</strong> Bootstrap procedures for dependent data; general dynamic factor models; high dimensional data; risk measures and portfolio allocation; robust procedures in time series; statistical learning for business, economics and finance.</p>
+<p><strong>Research Interest:</strong> Bootstrap procedures for
+dependent data; general dynamic factor models; high dimensional data;
+risk measures and portfolio allocation; robust procedures in time
+series; statistical learning for business, economics and finance.</p>
 <div class="layout-chunk" data-layout="l-page">
-<p><style>.panelset{--panel-tab-foreground: honeydew;--panel-tab-background: #0F2E3D;}</style></p>
+<style>.panelset{--panel-tab-foreground: honeydew;--panel-tab-background: #0F2E3D;}</style>
 </div>
 <div class="panelset">
 <div class="panel">
@@ -2515,53 +2550,107 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h4 id="peer-reviewed-publications">PEER-REVIEWED PUBLICATIONS</h4>
 <ol reversed>
 <li>
-<em>Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach.</em> <strong>Accepted: Journal of Business and Economic Statistics</strong> (2021) [with João Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos] 
+<em>Forecasting Conditional Covariance Matrices in High-Dimensional Time
+Series: a General Dynamic Factor Approach.</em> <strong>Accepted:
+Journal of Business and Economic Statistics</strong> (2021) [with João
+Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos]
 </li>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563"><em>Forecasting Value-at-Risk and Expected Shortfall in Large Portfolios: a General Dynamic Factor Model Approach</em></a>. <strong>Econometrics and Statistics</strong> (2021). [with Marc Hallin] <a href="https://github.com/ctruciosm/GDFM-CHF-VaRES"><code>CODES</code></a>
-</li>
-<p></p>
-<li>
-<a href="https://www.sciencedirect.com/science/article/pii/S0169207020301540"><em>Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting</em></a>. <strong>International Journal of Forecasting</strong> (2020). [with João Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]
-</li>
-<p></p>
-<li>
-<a href="https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20"><em>Value-at-Risk and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine Copula–based Approach</em></a>. <strong>Applied Economics</strong> (2020). [with Aviral Tiwari and Faisal Alqahtani] <a href="https://github.com/ctruciosm/CryptoCopVaRES"><code>CODES</code></a>
-</li>
-<p></p>
-<li>
-<a href="https://www.mdpi.com/2225-1146/7/2/19"><em>Covariance prediction in large portfolio allocation</em></a>. <strong>Econometrics</strong> (2019). [with Mauticio Zevallos, Luiz Hotta and André P. Santos]
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563"><em>Forecasting
+Value-at-Risk and Expected Shortfall in Large Portfolios: a General
+Dynamic Factor Model Approach</em></a>. <strong>Econometrics and
+Statistics</strong> (2021). [with Marc Hallin] <a
+href="https://github.com/ctruciosm/GDFM-CHF-VaRES"><code>CODES</code></a>
 </li>
 <p></p>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S0927539819300386"><em>On the robustness of the principal volatility components</em></a>. <strong>Journal of Empirical Finance</strong> (2019). [with Luiz Hotta and Pedro Valls] <a href="https://github.com/ctruciosm/Robpvc"><code>R PACKAGE</code></a>
+<a
+href="https://www.sciencedirect.com/science/article/pii/S0169207020301540"><em>Robustness
+and the general dynamic factor model with infinite-dimensional space:
+identification, estimation, and forecasting</em></a>.
+<strong>International Journal of Forecasting</strong> (2020). [with João
+Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]
 </li>
 <p></p>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S0169207019300184"><em>Forecasting Bitcoin risk measures: A robust approach</em></a>. <strong>International Journal of Forecasting</strong> (2019). <a href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
+<a
+href="https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20"><em>Value-at-Risk
+and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine
+Copula–based Approach</em></a>. <strong>Applied Economics</strong>
+(2020). [with Aviral Tiwari and Faisal Alqahtani] <a
+href="https://github.com/ctruciosm/CryptoCopVaRES"><code>CODES</code></a>
 </li>
 <p></p>
 <li>
-<a href="https://link.springer.com/chapter/10.1007/978-3-319-94015-1_8"><em>Inference in (M)GARCH Models in the Presence of Additive Outliers: Specification, Estimation and Prediction</em></a>. In Lavor, C. and Neto, F. A. M. G., editors, Advances in Mathematics and Applications. <strong>Springer</strong>. (2018). [with Luiz Hotta]
+<a href="https://www.mdpi.com/2225-1146/7/2/19"><em>Covariance
+prediction in large portfolio allocation</em></a>.
+<strong>Econometrics</strong> (2019). [with Mauticio Zevallos, Luiz
+Hotta and André P. Santos]
 </li>
 <p></p>
 <li>
-<a href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2018.1462811?journalCode=gscs20"><em>Robust Bootstrap Densities for Dynamic Conditional Correlations: Implications for Portfolio Selection and Value-at-Risk</em></a>. <strong>Journal of Statistical Computing and Simulation</strong> (2018). [with Luiz Hotta and Esther Ruiz]
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0927539819300386"><em>On
+the robustness of the principal volatility components</em></a>.
+<strong>Journal of Empirical Finance</strong> (2019). [with Luiz Hotta
+and Pedro Valls] <a
+href="https://github.com/ctruciosm/Robpvc"><code>R PACKAGE</code></a>
 </li>
 <p></p>
 <li>
-<a href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1359601?journalCode=gscs20"><em>Robust bootstrap forecast densities for GARCH returns and volatilities</em></a>. <strong>Journal of Statistical Computing and Simulation</strong> (2017). [with Luiz Hotta and Esther Ruiz] <a href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S0169207019300184"><em>Forecasting
+Bitcoin risk measures: A robust approach</em></a>. <strong>International
+Journal of Forecasting</strong> (2019). <a
+href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
 </li>
 <p></p>
 <li>
-<a href="https://www.sciencedirect.com/science/article/abs/pii/S03784754150013303"><em>Bootstrap prediction in univariate volatility models with leverage effect</em></a>. <strong>Mathematics and Computers in Simulation</strong> (2016). [with Luiz Hotta]
+<a
+href="https://link.springer.com/chapter/10.1007/978-3-319-94015-1_8"><em>Inference
+in (M)GARCH Models in the Presence of Additive Outliers: Specification,
+Estimation and Prediction</em></a>. In Lavor, C. and Neto, F. A. M. G.,
+editors, Advances in Mathematics and Applications.
+<strong>Springer</strong>. (2018). [with Luiz Hotta]
+</li>
+<p></p>
+<li>
+<a
+href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2018.1462811?journalCode=gscs20"><em>Robust
+Bootstrap Densities for Dynamic Conditional Correlations: Implications
+for Portfolio Selection and Value-at-Risk</em></a>. <strong>Journal of
+Statistical Computing and Simulation</strong> (2018). [with Luiz Hotta
+and Esther Ruiz]
+</li>
+<p></p>
+<li>
+<a
+href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1359601?journalCode=gscs20"><em>Robust
+bootstrap forecast densities for GARCH returns and
+volatilities</em></a>. <strong>Journal of Statistical Computing and
+Simulation</strong> (2017). [with Luiz Hotta and Esther Ruiz] <a
+href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
+</li>
+<p></p>
+<li>
+<a
+href="https://www.sciencedirect.com/science/article/abs/pii/S03784754150013303"><em>Bootstrap
+prediction in univariate volatility models with leverage
+effect</em></a>. <strong>Mathematics and Computers in
+Simulation</strong> (2016). [with Luiz Hotta]
 </li>
 <p></p>
 </ol>
 <h5 id="other-publications">OTHER PUBLICATIONS</h5>
 <ol reversed>
 <li>
-<a href="https://140.82.11.112/index.php/ECIPERU/article/view/336/324"><em>Factors that influence in the academic performance of the students of the Faculty of Mathematical sciences of the Universidad Nacional Mayor de San Marcos</em></a>. <strong>ECI PERU</strong> (2009). [with Estela Ponce Aruneri]
+<a
+href="https://140.82.11.112/index.php/ECIPERU/article/view/336/324"><em>Factors
+that influence in the academic performance of the students of the
+Faculty of Mathematical sciences of the Universidad Nacional Mayor de
+San Marcos</em></a>. <strong>ECI PERU</strong> (2009). [with Estela
+Ponce Aruneri]
 </li>
 </ol>
 </div>
@@ -2570,7 +2659,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h4 id="working-papers-1">WORKING PAPERS</h4>
 <ol reversed>
 <li>
-<em>A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.</em> <strong>Submitted</strong> (2022) [with James W. Taylor] 
+<em>A Comparison of Methods for Forecasting Value-at-Risk and Expected
+Shortfall of Cryptocurrencies.</em> <strong>R&amp;R</strong> (2022)
+[with James W. Taylor]
 </li>
 </ol>
 </div>
@@ -2579,27 +2670,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h4 id="ongoing-work">ONGOING WORK</h4>
 <ol reversed>
 <li>
-<em>Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.</em> [with André Oliveira and Pedro Valls] 
+<em>Does really resampling portfolios improve out-of-sample performance?
+evidence from the Brazilian market.</em> [with André Oliveira and Pedro
+Valls]
 </li>
 <li>
-<em>Risk-based portfolio allocation strategies in the Brazilian stock market: from classical to machine learning approaches</em> [with Beatriz Galino] 
+<em>Risk-based portfolio allocation strategies in the Brazilian stock
+market: from classical to machine learning approaches</em> [with Beatriz
+Galino]
 </li>
 <li>
-<em>Forecasting risk measures in Brazilian stocks</em> [with Guilherme Batista] 
+<em>Forecasting risk measures in Brazilian stocks</em> [with Guilherme
+Batista]
 </li>
 <li>
-<em>Estimating Value-at-Risk and Expected Shortfall in emerging markets: An empirical comparison of volatility models</em> [with Pinar Kaya Soylu] 
+<em>Estimating Value-at-Risk and Expected Shortfall in emerging markets:
+An empirical comparison of volatility models</em> [with Pinar Kaya
+Soylu]
 </li>
 <li>
-<em>Cryptocurrency portfolio allocation using time-varying covariance matrix</em> [with Anderson Motta] 
+<em>Cryptocurrency portfolio allocation using time-varying covariance
+matrix</em> [with Anderson Motta]
 </li>
 <li>
-<em>A review on multivariate Markov-switching (M)GARCH models</em> [with Luiz Hotta, Pedro Valls and Mauricio Zevallos] 
+<em>A review on multivariate Markov-switching (M)GARCH models</em> [with
+Luiz Hotta, Pedro Valls and Mauricio Zevallos]
 </li>
 </ol>
 </div>
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2649,8 +2750,18 @@ darkmodeToggle.addEventListener('click', switchTheme)
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Website created using <a href="https://www.rstudio.com"><strong>Rstudio</strong></a> and the R packages <a href="https://rstudio.github.io/distill/"><strong>distill</strong></a>, <a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a href="https://github.com/seankross/postcards"><strong>postcards</strong></a>, <a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a> and <a href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
-<p>Content licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+<p>Website created using <a
+href="https://www.rstudio.com"><strong>Rstudio</strong></a> and the R
+packages <a
+href="https://rstudio.github.io/distill/"><strong>distill</strong></a>,
+<a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a
+href="https://github.com/seankross/postcards"><strong>postcards</strong></a>,
+<a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a>
+and <a
+href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
+<p>Content licensed under the <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a>.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

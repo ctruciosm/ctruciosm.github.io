@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Carlos Trucíos: Grupo de Pesquisa BDAQ</title>
@@ -452,7 +454,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -765,10 +767,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1600,7 +1598,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1611,6 +1618,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1710,6 +1742,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1732,7 +1766,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2427,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
   <meta name="description" content="Grupo de Pesquisa BDAQ: Big Data e Análise Quantitativa"/>
   <meta name="github-repo" content="ctruciosm.github.io/BDAQ"/>
@@ -2487,11 +2521,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="MAD211.html">MAD211</a>
-<a href="ACA124.html">ACA124</a>
-<a href="ACA228.html">ACA228</a>
-<a href="CIA.html">CIA</a>
-<a href="BDAQ.html">BDAQ</a>
+<a href="ME731.html">ME731</a>
+<a href="ME414.html">ME414</a>
+<a href="BDAQ.html">CAREFS</a>
 </div>
 </div>
 <a>
@@ -2518,11 +2550,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </div>
 <blockquote>
-<p>Esta mensagem foi enviada aos alunos da FACC/UFRJ através do SIGA na quinta-feira 25 de novembro do 2021.</p>
+<p>Esta mensagem foi enviada aos alunos da FACC/UFRJ através do SIGA na
+quinta-feira 25 de novembro do 2021.</p>
 </blockquote>
 <p><br></p>
 <p>Prezados(as) Alunos(as) da FACC:</p>
-<p>O grupo de pesquisa em <a href="http://dgp.cnpq.br/dgp/espelhogrupo/764775">Big Data e Análise Quantitativa (BDAQ)</a> formado pelos professores do Departamento de Administração Boris Asrilhant, Carlos Trucíos, Cristina Pimenta, Laura Valencia e Marcelo Castañeda busca alunos(as) interessados(as) em desenvolver pesquisa em temas relacionados com métodos quantitativos e análise de dados.</p>
+<p>O grupo de pesquisa em <a
+href="http://dgp.cnpq.br/dgp/espelhogrupo/764775">Big Data e Análise
+Quantitativa (BDAQ)</a> formado pelos professores do Departamento de
+Administração Boris Asrilhant, Carlos Trucíos, Cristina Pimenta, Laura
+Valencia e Marcelo Castañeda busca alunos(as) interessados(as) em
+desenvolver pesquisa em temas relacionados com métodos quantitativos e
+análise de dados.</p>
 <p>Os atuais temas de interesse do grupo de pesquisa são:</p>
 <ul>
 <li>Mineração de texto</li>
@@ -2531,20 +2570,37 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>Precificação de derivativos</li>
 <li>Política nas plataformas digitais</li>
 </ul>
-<p>Outros temas poderão ser incorporados, inclusive por sugestão dos(as) alunos(as) participantes.</p>
+<p>Outros temas poderão ser incorporados, inclusive por sugestão dos(as)
+alunos(as) participantes.</p>
 <p>Os(as) alunos(as) interessados(a) deverão, pelo menos:</p>
 <ul>
-<li>ter sido aprovado(a) na disciplina Estatística para Administração - MAD211 (ou equivalente);</li>
+<li>ter sido aprovado(a) na disciplina Estatística para Administração -
+MAD211 (ou equivalente);</li>
 <li>ter alguma familiaridade com métodos quantitativos;</li>
-<li>conhecer ou interesse em aprender alguma linguagem de programação;</li>
-<li>ter responsabilidade e comprometimento no desenvolvimento da pesquisa; e</li>
-<li>ter disponibilidade de, pelo menos, 4 horas semanais para reuniões e dedicação à pesquisa.</li>
+<li>conhecer ou interesse em aprender alguma linguagem de
+programação;</li>
+<li>ter responsabilidade e comprometimento no desenvolvimento da
+pesquisa; e</li>
+<li>ter disponibilidade de, pelo menos, 4 horas semanais para reuniões e
+dedicação à pesquisa.</li>
 </ul>
-<p>Para os(as) alunos(as) participantes será oferecido um curso introdutório à linguagem R.</p>
-<p>Até o momento não temos como oferecer bolsas, mas assim que os editais das agências de fomento sejam abertos, serão solicitadas bolsas de iniciação científica para, caso as bolsas sejam concedidas, serem alocadas aos(as) alunos(as) participantes segundo critérios objetivos para a indicação do(a) bolsista(a).</p>
-<p>Caso tenha interesse em participar, preencha até o dia <strong>10/12/2021</strong> o <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHwoU-lW6AyKsOyaAiIZy2VaENV0kM7dJIh0aWUg7D12NAbA/viewform?usp=sf_link">seguinte formulário</a>, a fim de marcarmos um primeiro encontro entre os dias 15 e 17 de dezembro deste ano.</p>
-<p>Dúvidas podem ser encaminhadas para <a href="mailto:carlos.trucios@facc.ufrj.br" class="email">carlos.trucios@facc.ufrj.br</a>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Para os(as) alunos(as) participantes será oferecido um curso
+introdutório à linguagem R.</p>
+<p>Até o momento não temos como oferecer bolsas, mas assim que os
+editais das agências de fomento sejam abertos, serão solicitadas bolsas
+de iniciação científica para, caso as bolsas sejam concedidas, serem
+alocadas aos(as) alunos(as) participantes segundo critérios objetivos
+para a indicação do(a) bolsista(a).</p>
+<p>Caso tenha interesse em participar, preencha até o dia
+<strong>10/12/2021</strong> o <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSeHwoU-lW6AyKsOyaAiIZy2VaENV0kM7dJIh0aWUg7D12NAbA/viewform?usp=sf_link">seguinte
+formulário</a>, a fim de marcarmos um primeiro encontro entre os dias 15
+e 17 de dezembro deste ano.</p>
+<p>Dúvidas podem ser encaminhadas para <a
+href="mailto:carlos.trucios@facc.ufrj.br"
+class="email">carlos.trucios@facc.ufrj.br</a>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2594,8 +2650,18 @@ darkmodeToggle.addEventListener('click', switchTheme)
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Website created using <a href="https://www.rstudio.com"><strong>Rstudio</strong></a> and the R packages <a href="https://rstudio.github.io/distill/"><strong>distill</strong></a>, <a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a href="https://github.com/seankross/postcards"><strong>postcards</strong></a>, <a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a> and <a href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
-<p>Content licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+<p>Website created using <a
+href="https://www.rstudio.com"><strong>Rstudio</strong></a> and the R
+packages <a
+href="https://rstudio.github.io/distill/"><strong>distill</strong></a>,
+<a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a
+href="https://github.com/seankross/postcards"><strong>postcards</strong></a>,
+<a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a>
+and <a
+href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
+<p>Content licensed under the <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a>.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 

@@ -24,15 +24,11 @@ navbar:
       href: links.html
     - text: 2022.2
       menu:
-        - text: MAD211
-          href: MAD211.html
-        - text: ACA124
-          href: ACA124.html
-        - text: ACA228
-          href: ACA228.html 
-        - text: CIA
-          href: CIA.html
-        - text: BDAQ
+        - text: ME731
+          href: ME731.html
+        - text: ME414
+          href: ME414.html
+        - text: CAREFS
           href: BDAQ.html
     - icon: fas fa-adjust
 output: 
