@@ -12,8 +12,6 @@ output:
 
 ## 2022.2
 
-`r emo::ji("construction")`  **Página em construção** `r emo::ji("construction")` 
-
 </center>
 
 ### Datas Importantes

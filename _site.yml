@@ -25,7 +25,7 @@ navbar:
     - text: 2022.2
       menu:
         - text: ME731
-          href: ME731.html
+          href: ME_731.html
         - text: ME414
           href: ME414.html
         - text: CAREFS
