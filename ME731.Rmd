@@ -42,36 +42,36 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 |:-----:|:-------------------------------|--------|
 | 15-08-2022     | Apresentação + EDA  | 01 | 
 | 17-08-2022     | Vetores Aleatórios   | 02 | 
-| 22-08-2022     | Distribuição Normal Multivariada I  | 03 | 
-| 24-08-2022     | Distribuição Normal Multivariada II  | 04 | 
-| 29-08-2022     | Distribuição Normal Multivariada III  | 05 | 
-| 31-08-2022     | MANOVA I  | 06 | 
-| 05-09-2022     | MANOVA II  | 07 | 
-| 12-09-2022     | MANOVA III  | 08 | 
-| 14-09-2022     | ACP I  | 09 | 
-| 19-09-2022     | ACP II   | 10 | 
-| 21-09-2022     | ACP III  | 11 | 
-| 26-09-2022     | AF I  | 12 | 
-| 28-09-2022     | AF II   | 13 | 
-| 03-10-2022     | AF III   | 14 | 
-| 05-10-2022     | AF IV  | 15 | 
+| 22-08-2022     | Apresentação do Trabalho 1  | 03 | 
+| 24-08-2022     | Distribuição Normal Multivariada I  | 04 | 
+| 29-08-2022     | Distribuição Normal Multivariada II  | 05 | 
+| 31-08-2022     | Distribuição Normal Multivariada III  | 06 | 
+| 05-09-2022     | MANOVA I  | 07 | 
+| 12-09-2022     | MANOVA II  | 08 | 
+| 14-09-2022     | MANOVA III   | 09 | 
+| 19-09-2022     | Componentes Principais I   | 10 | 
+| 21-09-2022     | Componentes Principais II  | 11 | 
+| 26-09-2022     | Componentes Principais III  | 12 | 
+| 28-09-2022     | Análise Fatorial I   | 13 | 
+| 03-10-2022     | Análise Fatorial II   | 14 | 
+| 05-10-2022     | Análise Fatorial III  | 15 | 
 | 10-10-2022     | $P_1$   | 16 |
-| 17-10-2022     | AC I  | 17 | 
-| 19-10-2022     | AC II  | 18 | 
-| 24-10-2022     | ACC I  | 19 | 
-| 26-10-2022     | ACC II  | 20 | 
-| 31-10-2022     | ACC III   | 21 | 
-| 07-11-2022     | AD I  | 22 | 
-| 09-11-2022     | AD II   | 23 | 
-| 14-11-2022     | AD III | 24 | 
-| 16-11-2022     | TBA   | 25 | 
-| 21-11-2022     | TBA  | 26 | 
-| 23-11-2022     | TBA  | 27 | 
-| 28-11-2022     | Apresentação de Trabalhos   | 28 | 
+| 17-10-2022     | Análise de correspondência I  | 17 | 
+| 19-10-2022     | Análise de correspondência II  | 18 | 
+| 24-10-2022     | Análise de correspondência III  | 19 | 
+| 26-10-2022     | Correlação Canônica I  | 20 | 
+| 31-10-2022     | Correlação Canônica II   | 21 | 
+| 07-11-2022     | Correlação Canônica III  | 22 | 
+| 09-11-2022     | Análise Discriminante I   | 23 | 
+| 14-11-2022     | Análise Discriminante II | 24 | 
+| 16-11-2022     | Análise Discriminante III   | 25 | 
+| 21-11-2022     | Tópicos adicionais  | 26 | 
+| 23-11-2022     | Tópicos adicionais  | 27 | 
+| 28-11-2022     | Tópicos adicionais   | 28 | 
 | 30-11-2022     | Apresentação de Trabalhos   | 29 | 
-| 05-12-2022     |  | 30 | 
+| 05-12-2022     | Apresentação de Trabalhos | 30 | 
 | 07-12-2022     | $P_2$   | 31 | 
-| 19-12-2022     | Exame  |  | 
+| 19-12-2022     | Exame  | 32 | 
 
 <center>
 
