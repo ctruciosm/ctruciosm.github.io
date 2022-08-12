@@ -17,7 +17,7 @@ output:
 ### Datas Importantes
 
 - $P_1$: 10/10/2022
-- $P_2$: 07/12/2022
+- $P_2$: 05/12/2022
 - Trabalho Final: 28/11/2022 e 30/11/2022
 - Exame: 19/12/2022
 
@@ -65,11 +65,10 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 16-11-2022     | Análise Discriminante III   | 25 | 
 | 21-11-2022     | Tópicos adicionais  | 26 | 
 | 23-11-2022     | Tópicos adicionais  | 27 | 
-| 28-11-2022     | Tópicos adicionais   | 28 | 
+| 28-11-2022     | Apresentação de Trabalhos  | 28 | 
 | 30-11-2022     | Apresentação de Trabalhos   | 29 | 
-| 05-12-2022     | Apresentação de Trabalhos | 30 | 
-| 07-12-2022     | $P_2$   | 31 | 
-| 19-12-2022     | Exame  | 32 | 
+| 05-12-2022     | $P_2$  | 30 | 
+| 19-12-2022     | Exame  | 31 | 
 
 <center>
 
