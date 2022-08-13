@@ -17,8 +17,8 @@ output:
 ### Datas Importantes
 
 - $P_1$: 10/10/2022
-- $P_2$: 05/12/2022
-- Trabalho Final: 28/11/2022 e 30/11/2022
+- $P_2$: 30/11/2022
+- Trabalho Final: 21/11/2022 e 23/11/2022
 - Exame: 19/12/2022
 
 </br>
@@ -38,7 +38,7 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 
 | Data  | Tópico                         | Aula |
 |:-----:|:-------------------------------|--------|
-| 15-08-2022     | Apresentação + EDA  | 01 | 
+| 15-08-2022     | [Apresentação + EDA](https://ctruciosm.github.io/ME731/Aula_01)  | 01 | 
 | 17-08-2022     | Vetores Aleatórios   | 02 | 
 | 22-08-2022     | Apresentação do Trabalho 1  | 03 | 
 | 24-08-2022     | Distribuição Normal Multivariada I  | 04 | 
@@ -63,12 +63,10 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 09-11-2022     | Análise Discriminante I   | 23 | 
 | 14-11-2022     | Análise Discriminante II | 24 | 
 | 16-11-2022     | Análise Discriminante III   | 25 | 
-| 21-11-2022     | Tópicos adicionais  | 26 | 
-| 23-11-2022     | Tópicos adicionais  | 27 | 
-| 28-11-2022     | Apresentação de Trabalhos  | 28 | 
-| 30-11-2022     | Apresentação de Trabalhos   | 29 | 
-| 05-12-2022     | $P_2$  | 30 | 
-| 19-12-2022     | Exame  | 31 | 
+| 21-11-2022     | Apresentação de Trabalhos  | 26 | 
+| 23-11-2022     | Apresentação de Trabalhos  | 27 | 
+| 30-11-2022     | $P_2$   | 29 | 
+| 19-12-2022     | Exame  | 30 | 
 
 <center>
 
