@@ -1,0 +1,41 @@
+---
+title: "ME414"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Estatística para Experimentalistas (Turma A)
+
+## 2022.2
+
+</center>
+
+### Datas Importantes
+
+- $P_1$: 03/10/2022
+- $P_2$: 30/11/2022
+- Exame: 19/12/2022
+
+</br>
+
+### Informações 
+
+- `r emo::ji("pencil")` Plano de desenvolvimento.
+- `r emo::ji("teacher")` [Moodle.](https://moodle.ggte.unicamp.br/course/view.php?id=14838)
+- `r emo::ji("calendar")` Segundas e quintas feiras das 21:00 às 23:00 no PB16.
+- Slides e demais informações em [me414-unicamp.github.io/](me414-unicamp.github.io/).
+
+
+<center>
+
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
+
+</center>
+
+
+
+---- 

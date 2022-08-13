@@ -27,7 +27,7 @@ output:
 
 - `r emo::ji("pencil")` Plano de Ensino
 - `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: f54eaol)](https://classroom.google.com/c/NTM3ODYxMzYyMTIz?cjc=f54eaol)
-- `r emo::ji("calendar")` Segundas e Quartas das 16:00 às 18:00 no CB15
+- `r emo::ji("calendar")` Segundas e quartas das 16:00 às 18:00 no CB15
 - PED: Fernando Henrique Sousa Barreto <f234963@dac.unicamp.br>
 
 
