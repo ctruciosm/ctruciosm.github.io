@@ -16,10 +16,11 @@ output:
 
 ### Datas Importantes
 
-- $P_1$: 10/10/2022
-- $P_2$: 30/11/2022
-- Trabalho Final: 21/11/2022 e 23/11/2022
-- Exame: 19/12/2022
+
+- **10/10:** Prova 1.
+- **21 a 23/11:** Trabalho final.
+- **30/11:** Prova 2.
+- **19/12:** Exame Final.
 
 </br>
 
