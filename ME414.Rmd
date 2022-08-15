@@ -29,7 +29,7 @@ output:
 - `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME414A_Ementa_2022S2.pdf).
 - `r emo::ji("teacher")` [Moodle.](https://moodle.ggte.unicamp.br/course/view.php?id=14838)
 - `r emo::ji("calendar")` Segundas e quintas feiras das 21:00 às 23:00 no PB16.
-- Slides e demais informações em [me414-unicamp.github.io/](me414-unicamp.github.io/).
+- Slides e demais informações em [https://me414-unicamp.github.io/](https://me414-unicamp.github.io/).
 
 
 <center>
