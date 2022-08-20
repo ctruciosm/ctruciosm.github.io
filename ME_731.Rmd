@@ -46,7 +46,7 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 24-08-2022     | [Distribuição Normal Multivariada I](slides/Aula_04.pdf)  | 04 | 
 | 29-08-2022     | [Distribuição Normal Multivariada II](slides/Aula_05.pdf)  | 05 | 
 | 31-08-2022     | [Distribuição Normal Multivariada III](slides/Aula_06.pdf)  | 06 | 
-| 05-09-2022     | MANOVA I  | 07 | 
+| 05-09-2022     | [MANOVA I](slides/Aula_07.pdf)  | 07 | 
 | 12-09-2022     | MANOVA II  | 08 | 
 | 14-09-2022     | MANOVA III   | 09 | 
 | 19-09-2022     | Componentes Principais I   | 10 | 
