@@ -56,8 +56,8 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 03-10-2022     | [Análise Fatorial II](slides/Aula_14.pdf)    | [14](https://github.com/ctruciosm/BasicStats/blob/main/AF.ipynb) | 
 | 05-10-2022     | Exercícios de Revisão  | 15 | 
 | 10-10-2022     | $P_1$   | 16 |
-| 17-10-2022     | [Análise de correspondência I](slides/Aula_15.pdf)  | 17 | 
-| 19-10-2022     | Análise de correspondência II  | 18 | 
+| 17-10-2022     | [Análise de correspondência I](slides/Aula_17.pdf)  | 17 | 
+| 19-10-2022     | [Análise de correspondência II](slides/AC.nb.html)  | 18 | 
 | 24-10-2022     | Análise de correspondência III  | 19 | 
 | 26-10-2022     | Correlação Canônica I  | 20 | 
 | 31-10-2022     | Correlação Canônica II   | 21 | 
