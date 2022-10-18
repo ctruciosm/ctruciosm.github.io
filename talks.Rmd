@@ -7,6 +7,11 @@ output:
 
 <ol reversed>
 
+<li>  Academia, mercado e _otras cositas mas_!. Palestra at *Semana da Estatística - UNICAMP*. October 20, 2022. Campinas. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+
+
+<li>  Risk Measures in Cryptocurrency Markets. Invited Session at *IV Congresso Brasileiro de Jovens Pesquisadores em Matemática Pura, Aplicada e Estatística (CBJME-IV)*. October 5 to 7, 2022. João Pessoa. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+
 <li>  A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies. Seminar at *Catholic University of Brasilia*. September 9, 2022. Brasilia. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
 
 <li>  Modelando Series Temporales Financieras en Alta Dimensión. Conference at *X Encuentro Nacional de Matemáticas y Estadística*. June 1 to 3, 2022. Ibagué. (Colombia) ![](./flag-icon-css-master/flags/4x3/co.svg){ width=2.5% } </li>
