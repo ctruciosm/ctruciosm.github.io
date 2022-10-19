@@ -69,6 +69,7 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 23-11-2022     | Apresentação de Trabalhos  | 27 | 
 | 30-11-2022     | $P_2$   | 29 | 
 | 19-12-2022     | Exame  | 30 | 
+| 25-12-2022     | Feliz Natal! `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`  |  | 
 
 <center>
 
