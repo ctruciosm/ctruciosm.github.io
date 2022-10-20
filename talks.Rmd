@@ -7,7 +7,7 @@ output:
 
 <ol reversed>
 
-<li>  Academia, mercado e _otras cositas mas_!. Palestra at *Semana da Estatística - UNICAMP*. October 20, 2022. Campinas. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+<li>  [Academia, mercado e _otras cositas mas_](https://ctruciosm.github.io/23SEMEST/SEMEST#/title-slide). Palestra at *23º Semana da Estatística da UNICAMP*. October 20, 2022. Campinas. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
 
 
 <li>  Risk Measures in Cryptocurrency Markets. Invited Session at *IV Congresso Brasileiro de Jovens Pesquisadores em Matemática Pura, Aplicada e Estatística (CBJME-IV)*. October 5 to 7, 2022. João Pessoa. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
