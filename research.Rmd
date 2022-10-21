@@ -25,6 +25,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.* **Accepted: Journal of Forecasting** (2022) [with James W. Taylor] \medskip </li>
+
+
 <li> *Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach.* **Accepted: Journal of Business and Economic Statistics** (2021) [with João Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
 
 
@@ -69,8 +72,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.* **R&R** (2022) [with James W. Taylor] \medskip </li>
-
+<li> *Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.* [with André Oliveira and Pedro Valls] \medskip </li>
 
 
 </ol>
@@ -85,9 +87,6 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 
 <ol reversed>
-
-
-<li> *Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.* [with André Oliveira and Pedro Valls] \medskip </li>
 
 
 <li> *Risk-based portfolio allocation strategies in the Brazilian stock market: from classical to machine learning approaches* [with Beatriz Galino] \medskip </li>
