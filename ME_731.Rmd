@@ -58,17 +58,16 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 10-10-2022     | $P_1$   | 16 |
 | 17-10-2022     | Gabarito da $P_1$ | 17 | 
 | 19-10-2022     | [Análise de correspondência I](slides/Aula_17.pdf)  | 18 | 
-| 24-10-2022     | [Análise de correspondência II](slides/Aula_18.pdf)  | 19 | 
-| 26-10-2022     | [Correlação Canônica I](slides/Aula_19.pdf)  | 20 | 
-| 31-10-2022     | [Correlação Canônica II](slides/Aula_20.pdf)   | [21](slides/AC.nb.html) | 
-| 07-11-2022     | Correlação Canônica III  | 22 | 
-| 09-11-2022     | Análise Discriminante I   | 23 | 
-| 14-11-2022     | Análise Discriminante II | 24 | 
-| 16-11-2022     | Análise Discriminante III   | 25 | 
-| 21-11-2022     | Apresentação de Trabalhos  | 26 | 
-| 23-11-2022     | Apresentação de Trabalhos  | 27 | 
-| 30-11-2022     | $P_2$   | 29 | 
-| 19-12-2022     | Exame  | 30 | 
+| 26-10-2022     | [Análise de correspondência II](slides/Aula_18.pdf)  | [19](slides/AC.nb.html) | 
+| 31-10-2022     | [Correlação Canônica I](slides/Aula_19.pdf)  | 20 | 
+| 07-10-2022     | [Correlação Canônica II](slides/Aula_20.pdf)   | [21](slides/CC.nb.html) | 
+| 09-11-2022     | Análise Discriminante I   | 22 | 
+| 14-11-2022     | Análise Discriminante II | 23 | 
+| 16-11-2022     | KNN  | 24 | 
+| 21-11-2022     | Apresentação de Trabalhos  | 25 | 
+| 23-11-2022     | Apresentação de Trabalhos  | 26 | 
+| 30-11-2022     | $P_2$   | 27 | 
+| 19-12-2022     | Exame  | 28 | 
 | 25-12-2022     | Feliz Natal! `r emo::ji("christmas")` `r emo::ji("Christmas")` `r emo::ji("christmas")`  |  | 
 
 <center>
