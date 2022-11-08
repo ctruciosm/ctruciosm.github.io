@@ -61,8 +61,8 @@ O cronograma dos tópicos a serem abordados na discplina está definido embaixo 
 | 26-10-2022     | [Análise de correspondência II](slides/Aula_18.pdf)  | [19](slides/AC.nb.html) | 
 | 31-10-2022     | [Correlação Canônica I](slides/Aula_19.pdf)  | 20 | 
 | 07-10-2022     | [Correlação Canônica II](slides/Aula_20.pdf)   | [21](slides/CC.nb.html) | 
-| 09-11-2022     | [Análise Discriminante I](slides/Aula_21.pdf)   | 22 | 
-| 14-11-2022     | Análise Discriminante II | 23 | 
+| 09-11-2022     | [Análise Discriminante I](slides/Aula_21.pdf)   | [22](slides/AD.nb.html) | 
+| 14-11-2022     | Ponto facultativo | 23 | 
 | 16-11-2022     | KNN  | 24 | 
 | 21-11-2022     | Apresentação de Trabalhos  | 25 | 
 | 23-11-2022     | Apresentação de Trabalhos  | 26 | 
