@@ -72,7 +72,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.* [with André Oliveira and Pedro Valls] \medskip </li>
+<li> *Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.* [with André Oliveira and Pedro Valls] Submitted _Research in International Business and Finance_ \medskip </li>
 
 
 </ol>
