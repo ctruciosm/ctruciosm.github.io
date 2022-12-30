@@ -22,12 +22,10 @@ navbar:
       href: statblog.html
     - text: 'Links'
       href: links.html
-    - text: 2022.2
+    - text: 2023.1
       menu:
-        - text: ME731
-          href: ME_731.html
-        - text: ME414
-          href: ME414.html
+        - text: ME607
+          href: ME607.html
         - text: CAREFS
           href:
     - icon: fas fa-adjust
@@ -41,5 +39,4 @@ collections:
     categories: TRUE
     categories_metadata: TRUE
     authors_metadata: TRUE
-    disqus: statistical-data-science
     share: [facebook, twitter, linkedin]

@@ -1,0 +1,99 @@
+---
+title: "ME607"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Séries Temporais
+
+## 2023.1
+
+`r emo::ji("construction")` Página em construção `r emo::ji("construction")`
+
+</center>
+
+### Referência Bibliográficas
+
+#### Principais
+
+- Hyndman, R.J., \& Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. [Link](https://otexts.com/fpp3/)
+- Wei, W. (2005). Time Series Analysis: Univariate and Multivariate Methods, 2ed, Pearson
+
+#### Complementares
+
+
+- Huang, C., \& Petukhina, A. (2022). Applied Time Series Analysis and Forecasting with Python. Springer Nature. [Link](https://link.springer.com/book/10.1007/978-3-031-13584-2)
+- Morettin, P.A, \& Toloi, C.M.C. (2006). Análise de Séries Temporais, 2ed, Blucher.
+- Shumway, R. H., & Stoffer, D. S. (2019). Time series: a data analysis approach using R. Chapman and Hall/CRC.
+
+### Datas Importantes
+
+
+- **10/10:** Prova 1.
+- **21 a 23/11:** Trabalho final.
+- **30/11:** Prova 2.
+- **19/12:** Exame Final.
+
+</br>
+
+### Informações 
+
+- `r emo::ji("pencil")` [Plano de desenvolvimento]()
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem:  )]()
+- `r emo::ji("calendar")` Terças (PB18) e Quintas (CB06) das 14:00 às 16:00.
+
+
+
+### **Cronograma**
+
+O cronograma em elaboração. No título do tópico encontra-se o link para os slides.
+
+
+| Data  | Tópico                         | Aula |
+|:-----:|:-------------------------------|--------|
+| 15-08-2022     | Introdução e Conceitos básicos | 01 | 
+| 17-08-2022     | Análise Exploratória de Dados  | 02 | 
+| 22-08-2022     | Análise Exploratória de Dados  | 03 | 
+| 24-08-2022     | Modelos NAIVE | 04 | 
+| 29-08-2022     | Modelos de Regressão | 05 | 
+| 31-08-2022     | Modelos de Regressão | 06 | 
+| 05-09-2022     | Suavização Exponencial  | 07 | 
+| 12-09-2022     | Modelos AR | 08 | 
+| 14-09-2022     | Modelos AR   | 09 | 
+| 19-09-2022     | Modelos MA  | 10 | 
+| 21-09-2022     | Modelos MA | 11 | 
+| 26-09-2022     | Modelos ARMA | 12 | 
+| 28-09-2022     | Modelos ARIMA  | 13 | 
+| 03-10-2022     | Modelos ARIMA    | 14 | 
+| 05-10-2022     | $P_1$ | 15 | 
+| 10-10-2022     | Modelos SARIMA | 16 |
+| 17-10-2022     | Modelos SARIMA | 17 | 
+| 19-10-2022     | Seleção de Modelos | 18 | 
+| 26-10-2022     | Avaliação de Modelos  | 19 | 
+| 31-10-2022     | Modelos (S)ARIMAX   | 20 | 
+| 07-10-2022     | Modelos (S)ARIMAX   | 21 | 
+| 09-11-2022     | Modelos de Regressão Dinâmica  | 22 | 
+| 14-11-2022     | Modelos de Regressão Dinâmica | 23 | 
+| 16-11-2022     | Modelos de Regressão Dinâmica | 24 | 
+| 21-11-2022     | Modelos Hierárquicos | 25 | 
+| 23-11-2022     | Modelos Hierárquicos  | 26 | 
+| 30-11-2022     | Modelos Hierárquicos  | 27 | 
+| 19-12-2022     | Modelos de Volatilidade | 28 | 
+| 25-12-2022     | Modelos de Volatilidade| 29 | 
+| 25-12-2022     | $P_2$ | 30 | 
+| 25-12-2022     | Apresentação de trabalhos | 31 | 
+| 25-12-2022     | Apresentação de trabalhos | 32 | 
+
+<center>
+
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
+
+</center>
+
+
+
+---- 

@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,11 +74,11 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,54 +86,74 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
+
   <!--radix_placeholder_meta_tags-->
-<title>Carlos Trucíos: Criando relatorios no Rstudio</title>
+<title>Carlos Trucíos: Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning</title>
 
-<meta property="description" itemprop="description" content="Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."/>
+<meta property="description" itemprop="description" content="Minhas impressões do livro &quot;Practical Time Series Analysis--Prediction with Statistics and Machine Learning&quot; da Aileen Nielsen"/>
 
-<link rel="canonical" href="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"/>
+<link rel="canonical" href="https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/"/>
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-07-27"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-07-27"/>
+<meta property="article:published" itemprop="datePublished" content="2022-12-30"/>
+<meta property="article:created" itemprop="dateCreated" content="2022-12-30"/>
 <meta name="article:author" content="Carlos Trucíos"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Carlos Trucíos: Criando relatorios no Rstudio"/>
+<meta property="og:title" content="Carlos Trucíos: Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."/>
-<meta property="og:url" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"/>
-<meta property="og:image" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/rmarkdown.png"/>
-<meta property="og:image:width" content="400"/>
-<meta property="og:image:height" content="257"/>
+<meta property="og:description" content="Minhas impressões do livro &quot;Practical Time Series Analysis--Prediction with Statistics and Machine Learning&quot; da Aileen Nielsen"/>
+<meta property="og:url" content="https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/"/>
+<meta property="og:image" content="https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/ptsa.jpg"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Carlos Trucíos"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:title" content="Carlos Trucíos: Criando relatorios no Rstudio"/>
-<meta property="twitter:description" content="Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."/>
-<meta property="twitter:url" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"/>
-<meta property="twitter:image" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/rmarkdown.png"/>
-<meta property="twitter:image:width" content="400"/>
-<meta property="twitter:image:height" content="257"/>
+<meta property="twitter:title" content="Carlos Trucíos: Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"/>
+<meta property="twitter:description" content="Minhas impressões do livro &quot;Practical Time Series Analysis--Prediction with Statistics and Machine Learning&quot; da Aileen Nielsen"/>
+<meta property="twitter:url" content="https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/"/>
+<meta property="twitter:image" content="https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/ptsa.jpg"/>
 
 <!--  https://scholar.google.com/intl/en/scholar/inclusion.html#indexing -->
-<meta name="citation_title" content="Carlos Trucíos: Criando relatorios no Rstudio"/>
-<meta name="citation_fulltext_html_url" content="https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"/>
-<meta name="citation_online_date" content="2021/07/27"/>
-<meta name="citation_publication_date" content="2021/07/27"/>
+<meta name="citation_title" content="Carlos Trucíos: Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"/>
+<meta name="citation_fulltext_html_url" content="https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/"/>
+<meta name="citation_online_date" content="2022/12/30"/>
+<meta name="citation_publication_date" content="2022/12/30"/>
 <meta name="citation_author" content="Carlos Trucíos"/>
 <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Practical time series analysis: Prediction with statistics and machine learning;citation_publication_date=2019;citation_publisher=O’Reilly Media;citation_author=Aileen Nielsen"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Criando relatorios no Rstudio"]},{"type":"character","attributes":{},"value":["Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio."]},{"type":"character","attributes":{},"value":["Rstudio","Rmarkdown","Latex","Relatorios","rstats"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Carlos Trucíos"]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io"]},{"type":"character","attributes":{},"value":["0000-0001-8746-8877"]}]}]},{"type":"character","attributes":{},"value":["07-27-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/"]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","bibliography","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"]},{"type":"character","attributes":{},"value":["Minhas impressões do livro \"Practical Time Series Analysis--Prediction with Statistics and Machine Learning\" da Aileen Nielsen"]},{"type":"character","attributes":{},"value":["Book Review","R","rstats","Python"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Carlos Trucíos"]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io"]},{"type":"character","attributes":{},"value":["0000-0001-8746-8877"]}]}]},{"type":"character","attributes":{},"value":["12-30-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["statblog.bib"]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/"]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["criando-relatorios-no-rstudio_files/anchor-4.2.2/anchor.min.js","criando-relatorios-no-rstudio_files/bowser-1.9.3/bowser.min.js","criando-relatorios-no-rstudio_files/distill-2.2.21/template.v2.js","criando-relatorios-no-rstudio_files/header-attrs-2.9/header-attrs.js","criando-relatorios-no-rstudio_files/jquery-1.11.3/jquery.min.js","criando-relatorios-no-rstudio_files/popper-2.6.0/popper.min.js","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy-bundle.umd.min.js","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy-light-border.css","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy.css","criando-relatorios-no-rstudio_files/tippy-6.2.7/tippy.umd.min.js","criando-relatorios-no-rstudio_files/webcomponents-2.0.0/webcomponents.js","rmarkdown.png","youtube.png"]}
+  {"type":"character","attributes":{},"value":["book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/anchor-4.2.2/anchor.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/bowser-1.9.3/bowser.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/distill-2.2.21/template.v2.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/header-attrs-2.14/header-attrs.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.min.map","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/popper-2.6.0/popper.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy-bundle.umd.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy-light-border.css","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy.css","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy.umd.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/webcomponents-2.0.0/webcomponents.js","ptsa.jpg","statblog.bib"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2485,8 +2506,8 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.9/header-attrs.js"></script>
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2509,7 +2530,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Criando relatorios no Rstudio","description":"Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio.","authors":[{"author":"Carlos Trucíos","authorURL":"https://ctruciosm.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0001-8746-8877"}],"publishedDate":"2021-07-27T00:00:00.000-05:00","citationText":"Trucíos, 2021"}
+{"title":"Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning","description":"Minhas impressões do livro \"Practical Time Series Analysis--Prediction with Statistics and Machine Learning\" da Aileen Nielsen","authors":[{"author":"Carlos Trucíos","authorURL":"https://ctruciosm.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0001-8746-8877"}],"publishedDate":"2022-12-30T00:00:00.000-05:00","citationText":"Trucíos, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2551,23 +2572,25 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Criando relatorios no Rstudio</h1>
+<h1>Book Review: Practical Time Series Analysis–Prediction with Statistics and Machine Learning</h1>
 <!--radix_placeholder_categories-->
 <div class="dt-tags">
-  <a href="../../statblog.html#category:Rstudio" class="dt-tag">Rstudio</a>
-  <a href="../../statblog.html#category:Rmarkdown" class="dt-tag">Rmarkdown</a>
-  <a href="../../statblog.html#category:Latex" class="dt-tag">Latex</a>
-  <a href="../../statblog.html#category:Relatorios" class="dt-tag">Relatorios</a>
+  <a href="../../statblog.html#category:Book_Review" class="dt-tag">Book Review</a>
+  <a href="../../statblog.html#category:R" class="dt-tag">R</a>
   <a href="../../statblog.html#category:rstats" class="dt-tag">rstats</a>
+  <a href="../../statblog.html#category:Python" class="dt-tag">Python</a>
 </div>
 <!--/radix_placeholder_categories-->
-<p>Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R). Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio.</p>
+<p><p>Minhas impressões do livro “Practical Time Series
+Analysis–Prediction with Statistics and Machine Learning” da Aileen
+Nielsen</p></p>
 </div>
 
 <div class="d-byline">
-  Carlos Trucíos <a href="https://ctruciosm.github.io" class="uri">https://ctruciosm.github.io</a> 
+  Carlos Trucíos <a href="https://ctruciosm.github.io"
+class="uri">https://ctruciosm.github.io</a> 
   
-<br/>07-27-2021
+<br/>12-30-2022
 </div>
 
 <div class="d-article">
@@ -2575,42 +2598,124 @@ d-appendix d-footnote-list a.footnote-backlink {
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#introdução">Introdução</a></li>
-<li><a href="#configuração">Configuração</a></li>
-<li><a href="#primeiros-passos">Primeiros passos</a></li>
+<li><a href="#overview-do-livro"
+id="toc-overview-do-livro"><em>Overview</em> do livro</a></li>
+<li><a href="#comentários-gerais"
+id="toc-comentários-gerais">Comentários gerais</a>
+<ul>
+<li><a href="#prós" id="toc-prós">Prós</a></li>
+<li><a href="#contras" id="toc-contras">Contras</a></li>
+</ul></li>
+<li><a href="#conclusão" id="toc-conclusão">Conclusão</a></li>
 </ul>
 </nav>
 </div>
+<h3 id="overview-do-livro"><em>Overview</em> do livro</h3>
+<center>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="rmarkdown.png" width="200" /></p>
+<p><img src="ptsa.jpg" width="45%" /></p>
 </div>
-<h3 id="introdução">Introdução</h3>
-<p>Escrever relatórios e artigos científicos são tarefas que fazem parte da vida de todo pesquisador. Alguns preferem utilizar word, que é um editor de texto amplamente conhecido. Já outros, como eu, preferem utilizar que nos permite escrever fórmulas matemáticas de forma fácil e elegante.</p>
-<p>Contudo, essas duas opções não são as únicas no mercado. Se você gostar do R/Rstudio, quer utilizar um formato elegante, quer a flexibilidade de trocar entre pdf e word facilmente e ainda quer facilitar sua vida editando tabelas e gráficos… você <strong>precisa utilizar o Rmarkdown!</strong> 🕺.</p>
-<h3 id="configuração">Configuração</h3>
-<p>Para poder fazer os relatórios, precisa de configurar o Rstudio primeiro. Se nunca fez isto antes, <a href="https://ctruciosm.github.io/posts/2021-05-01-configurando-rstudio-para-usar-o-rmarkdown/">leia este post aqui</a></p>
-<h3 id="primeiros-passos">Primeiros passos</h3>
-<p>Uma vez configurado o Rstudio, assista este video onde explico passo a passo como fazer os relatórios (basta fazer clic na imagem).</p>
-<p><a href="https://youtu.be/Yed1beLAQtM" title="Escrevendo relatórios no Rstudio"><img src="youtube.png" alt="Escrevendo relatórios no Rstudio" /></a></p>
-<p>Como pode ver, a forma de escrever é muito fácil e simples, basta escrever da mesma forma que escrevemos em qulquer editor de texto e incluir alguns pequenos detalhes para aquelas coisas que são um pouco mais complexas.</p>
-<p>Recomendo que imprima e tenha sempre por perto o seguinte <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">Cheat Sheet</a>, que é um resumo das coisas básicas que precisa saber para fazer seus relatórios. Se precisar de coisas mais avançadas, tem esse outro <a href="https://www.maths.usyd.edu.au/u/UG/SM/STAT3022/r/current/Misc/rmarkdown-cheatsheet1.pdf">Cheat Sheet</a> que pode lhe ajudar. Para uma guia completa do Rmarkdown, entre <a href="https://rmarkdown.rstudio.com/docs/">aqui</a>.</p>
-<blockquote>
-<p>Em um próximo post explicarei algumas outras coisas (incluir código, figuras, tabelas, etc).</p>
-</blockquote>
-<p><strong>Happy Coding!</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+</center>
+<p>No 2023.1 ministraterei <strong>Séries Temporais</strong> para os
+alunos de <em>graduação em Estatística do IMECC/UNICAMP</em>. Assim,
+pensando em como preparar um material atualizado e atraente para os
+alunos, resolvi ler algumas referências bibliográficas diferentes às que
+já estou acostumado, referências não tão tradicionais, começando por
+<span class="citation" data-cites="nielsen2019practical">Nielsen (<a
+href="#ref-nielsen2019practical"
+role="doc-biblioref">2019</a>)</span>.</p>
+<p>Escolhi começar com <span class="citation"
+data-cites="nielsen2019practical">Nielsen (<a
+href="#ref-nielsen2019practical" role="doc-biblioref">2019</a>)</span>
+por ser um livro moderno, popular entre analistas e cientistas de dados,
+ter uma versão em português e disponibilizar os códigos do proprio livro
+<a
+href="https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython">neste
+repositório</a>.</p>
+<h3 id="comentários-gerais">Comentários gerais</h3>
+<p>O livro tem 17 capítulos, a leitura é fácil e rápida (a versão em
+portugues tem alguns paragrafos confussos, mas pode ser coisa da
+tradução). Embora a tabela de conteudo do livro seja bem abrangente, em
+geral eu não gostei muito do livro, mas tem alguns pontos positivos
+interessante que descrevo a seguir.</p>
+<h4 id="prós">Prós</h4>
+<ul>
+<li>O livro fornece os códigos em um <a
+href="https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython">repositório
+público</a>, o que torna o aprendizado mais fácil.</li>
+<li>Todos os capítulos tem referências para leituras mais avançadas de
+forma que o leitor pode se aprofundar o quanto quiser em cada um dos
+tópicos.</li>
+<li>A autora utiliza ambos <code>R</code> e <code>Python</code>,
+tornamdo-se em uma alternativa interessante para todo tipo de
+usuário.</li>
+<li>O capítulo 1 é um dos meus favoritos, você fica bem motivado e com
+vontade de ler os outros capítulos do livro, bem como aprender mais de
+séries temporais.</li>
+<li>O capítulo 10 aborda redes neurais, um tópico pouco abordado por
+livros mais clássicos (embora a teoria que suporte o uso de redes
+neurais em séries temporais seja bem insipiente ainda), vale a pena a
+leitura.</li>
+<li>O capítulo 11 discute como avaliar a performance do modelo. Embora
+seja apresentado de forma introdutoria, achei interessante dedicar um
+capítulo para isso. Além do mais, o leitor interessado pode se
+aprofundar mais no assunto lendo outras fontes e mesmo se não quiser se
+aprofundar terá uma noção de como avaliar os modelos.</li>
+</ul>
+<h4 id="contras">Contras</h4>
+<ul>
+<li>Embora o livro tenha um conteudo aparentemente bem abrangente, ele
+não aprofunda nos temas o suficiente (principalmente na parte de
+modelagem) como para termos um conhecimento básico em séries
+temporais.</li>
+<li>Ao terminar o livro, você não terá uma bagagem suficiente para poder
+escolher corretamente qual modelo utilzar (mas sabera como rodar os
+modelos em R e/ou Python).</li>
+<li>O livro investe muito tempo na preparação dos dados (sendo algumas
+coisas obvias até) e pouco tempo na parte de modelagem (apenas 4
+capítulos e os temas são abordados de forma bastante introdutória).</li>
+<li>Alguns capítulos dão detalhe demais acerca dos códigos, detalhes que
+apenas lendo o próprio código são fáceis de entender.</li>
+<li>O livro mistura conceitos básicos com conceitos mais avançados
+(cadeia de Markov, volatilidade, etc) mas não tenho certeza se alguém
+iniciante sabera entender os conceitos mais avançados (mesmo que a
+autora explique brevemente os novos conceitos).</li>
+<li>Não todos os exemplos estão em ambas as linguagens, algumas vezes é
+utilizado apenas <code>R</code> e outras apenas
+<code>Python</code>.</li>
+</ul>
+<h3 id="conclusão">Conclusão</h3>
+<p>Eu fui atrás do livro pensando incluir ele na bibliografia da minha
+disciplina, mas após ter lido ele todo não o incluirei. O livro não
+aborda os temas com a profundidade necessária (pelo menos não para
+alunos de estatística) mas é uma fonte interessante para ver código.</p>
+<p>Acho que o livro pode ser util para um leitor com conhecimento básico
+que queria lembrar alguns conceitos e ter uma noção dos avanços em
+<em>Machine Learning</em>, <em>Deep Learning</em> e pre-processamento de
+dados. Por outro lado, um usuário intermediário ou avançado achara o
+livro repetitivo.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-nielsen2019practical" class="csl-entry"
+role="doc-biblioentry">
+Nielsen, Aileen. 2019. <em>Practical Time Series Analysis: Prediction
+with Statistics and Machine Learning</em>. O’Reilly Media.
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <div class="article-footer">
   <p class="social_footer">
     <span class="article-sharing">
       Share: &nbsp;
-      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fctruciosm.github.io%2Fposts%2F2021-07-27-criando-relatorios-no-rstudio%2F" aria-label="share on facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=https%3A%2F%2Fctruciosm.github.io%2Fposts%2F2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning%2F" aria-label="share on facebook">
         <i class="fab fa-facebook" aria-hidden="true"></i>
       </a>
-      <a href="https://twitter.com/share?text=Criando%20relatorios%20no%20Rstudio&amp;url=https%3A%2F%2Fctruciosm.github.io%2Fposts%2F2021-07-27-criando-relatorios-no-rstudio%2F" aria-label="share on twitter">
+      <a href="https://twitter.com/share?text=Book%20Review%3A%20Practical%20Time%20Series%20Analysis--Prediction%20with%20Statistics%20and%20Machine%20Learning&amp;url=https%3A%2F%2Fctruciosm.github.io%2Fposts%2F2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning%2F" aria-label="share on twitter">
         <i class="fab fa-twitter" aria-hidden="true"></i>
       </a>
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fctruciosm.github.io%2Fposts%2F2021-07-27-criando-relatorios-no-rstudio%2F&amp;title=Criando%20relatorios%20no%20Rstudio" aria-label="share on linkedin">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fctruciosm.github.io%2Fposts%2F2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning%2F&amp;title=Book%20Review%3A%20Practical%20Time%20Series%20Analysis--Prediction%20with%20Statistics%20and%20Machine%20Learning" aria-label="share on linkedin">
         <i class="fab fa-linkedin" aria-hidden="true"></i>
       </a>
     </span>
@@ -2661,15 +2766,17 @@ darkmodeToggle.addEventListener('click', switchTheme)
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">
+  <h3 id="references">References</h3>
+  <div id="references-listing"></div>
   <h3 id="citation">Citation</h3>
   <p>For attribution, please cite this work as</p>
-  <pre class="citation-appendix short">Trucíos (2021, July 27). Carlos Trucíos: Criando relatorios no Rstudio. Retrieved from https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/</pre>
+  <pre class="citation-appendix short">Trucíos (2022, Dec. 30). Carlos Trucíos: Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning. Retrieved from https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/</pre>
   <p>BibTeX citation</p>
-  <pre class="citation-appendix long">@misc{trucíos2021criando,
+  <pre class="citation-appendix long">@misc{trucíos2022book,
   author = {Trucíos, Carlos},
-  title = {Carlos Trucíos: Criando relatorios no Rstudio},
-  url = {https://ctruciosm.github.io/posts/2021-07-27-criando-relatorios-no-rstudio/},
-  year = {2021}
+  title = {Carlos Trucíos: Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning},
+  url = {https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/},
+  year = {2022}
 }</pre>
 </div>
 <!--/radix_placeholder_appendices-->

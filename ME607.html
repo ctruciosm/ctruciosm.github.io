@@ -88,26 +88,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Carlos Trucíos: Statistical Data Science</title>
+  <title>Carlos Trucíos: ME607</title>
 
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Carlos Trucíos: Statistical Data Science"/>
+  <meta property="og:title" content="Carlos Trucíos: ME607"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Carlos Trucíos"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Carlos Trucíos: Statistical Data Science"/>
+  <meta property="twitter:title" content="Carlos Trucíos: ME607"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["Statistical Data Science"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["ME607"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["fig_width","toc_float"]}},"value":[{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2479,12 +2479,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Statistical Data Science","authors":[]}
+{"title":"ME607","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2524,476 +2524,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Statistical Data Science">Statistical Data Science</h1>
-<a href="posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Book Review","R","rstats","Python"]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 30, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/ptsa.jpg"/>
-</div>
-<div class="description">
-<h2>Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning</h2>
-<div class="dt-tags">
-<div class="dt-tag">Book Review</div>
-<div class="dt-tag">R</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">Python</div>
-</div>
-<p>Minhas impressões do livro "Practical Time Series Analysis--Prediction with Statistics and Machine Learning" da Aileen Nielsen</p>
-</div>
-</a>
-<a href="posts/2022-03-14-book-review-text-mining-with-r/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Book Review","R","rstats","Text Mining","NLP"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 14, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2022-03-14-book-review-text-mining-with-r/tmwR.png"/>
-</div>
-<div class="description">
-<h2>Book Review: Text Mining with R</h2>
-<div class="dt-tags">
-<div class="dt-tag">Book Review</div>
-<div class="dt-tag">R</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">Text Mining</div>
-<div class="dt-tag">NLP</div>
-</div>
-<p>Minhas impressões do livro "Text Mining with R: a tidy approach" da Julia Silge and David Robinson.</p>
-</div>
-</a>
-<a href="posts/2021-12-01-r-como-importar-dados-do-excel/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["R","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 1, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-12-01-r-como-importar-dados-do-excel/ascsv001.png"/>
-</div>
-<div class="description">
-<h2>R: como importar dados do Excel?</h2>
-<div class="dt-tags">
-<div class="dt-tag">R</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>No R é muito comum importar dados em formato .txt ou .csv. Contudo, muitas vezes estamos interessados em importar arquivos salvos em excel (.xls ou .xlsx). Neste post, apresento duas formas de ler dados vindos do Excel.</p>
-</div>
-</a>
-<a href="posts/2021-07-27-criando-relatorios-no-rstudio/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Rstudio","Rmarkdown","Latex","Relatorios","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 27, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-27-criando-relatorios-no-rstudio/rmarkdown.png"/>
-</div>
-<div class="description">
-<h2>Criando relatorios no Rstudio</h2>
-<div class="dt-tags">
-<div class="dt-tag">Rstudio</div>
-<div class="dt-tag">Rmarkdown</div>
-<div class="dt-tag">Latex</div>
-<div class="dt-tag">Relatorios</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Escrever relatórios científicos pode ser um trabalho tedioso, mas existem formas que deixam o trabalho um pouco mais prazeroso. Uma delas é o Rmarkdown, que nos ajuda a escrever relatórios de forma fácil e com uma apresentação mais profissional (além de permitir incluir código, figuras e tabelas diretamente do R).  Neste post explicarei os primeiros passos para fazer relatórios com o Rstudio.</p>
-</div>
-</a>
-<a href="posts/2021-07-24-utilizando-o-r-para-ler-tabelas-em-pdf/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Rstudio","Git","GitHub","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 24, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/2021-07-24-utilizando-o-r-para-ler-tabelas-em-pdf/pexels-artem-podrez-6779714.jpg"/>
-</div>
-<div class="description">
-<h2>Utilizando o R para ler tabelas em PDF</h2>
-<div class="dt-tags">
-<div class="dt-tag">Rstudio</div>
-<div class="dt-tag">Git</div>
-<div class="dt-tag">GitHub</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>É possível trazer para o R dados/tabelas vindos de um arquivo em PDF?  Neste post eu compartilho minha experiência com o pacote `tabulizer`, que nos ajudará a extrair tabelas em PDF e importá-las como _datasets_ no R.</p>
-</div>
-</a>
-<a href="posts/2021-06-18-criar-um-novo-projetorepo-no-rstudiogithub/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Rstudio","Git","GitHub","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-06-18-criar-um-novo-projetorepo-no-rstudiogithub/im/original.png"/>
-</div>
-<div class="description">
-<h2>Criar um novo projeto/repo no Rstudio/GitHub</h2>
-<div class="dt-tags">
-<div class="dt-tag">Rstudio</div>
-<div class="dt-tag">Git</div>
-<div class="dt-tag">GitHub</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Passo a passo para criar um novo projeto no Rstudio e vinculá-lo ao GitHub.</p>
-</div>
-</a>
-<a href="posts/2021-06-12-git-github-e-rstudio/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Rstudio","rstats","Git","GitHub"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 12, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-06-12-git-github-e-rstudio/im/001.png"/>
-</div>
-<div class="description">
-<h2>Git, GitHub e Rstudio</h2>
-<div class="dt-tags">
-<div class="dt-tag">Rstudio</div>
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">Git</div>
-<div class="dt-tag">GitHub</div>
-</div>
-<p>Tutorial de como configurar o Git/GitHub no Rstudio.</p>
-</div>
-</a>
-<a href="posts/2021-05-01-configurando-rstudio-para-usar-o-rmarkdown/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Rstudio","Rmarkdown","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 1, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-05-01-configurando-rstudio-para-usar-o-rmarkdown/im/001.png"/>
-</div>
-<div class="description">
-<h2>Configurando Rstudio para usar o Rmarkdown</h2>
-<div class="dt-tags">
-<div class="dt-tag">Rstudio</div>
-<div class="dt-tag">Rmarkdown</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Passo a passo de como configurar o Rstudio para fazer relatórios e apresentações utlizando o Rmarkdown.</p>
-</div>
-</a>
-<a href="posts/2021-04-01-minimos-quadrados-ordinarios/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Linear Regression","Proof"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 1, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-04-01-minimos-quadrados-ordinarios/derivando-o-estimador-de-mqo_files/figure-html5/MQO1-1.png"/>
-</div>
-<div class="description">
-<h2>Mínimos Quadrados Ordinários</h2>
-<div class="dt-tags">
-<div class="dt-tag">Linear Regression</div>
-<div class="dt-tag">Proof</div>
-</div>
-<p>Quando trabalhamos com modelos de regressão é necessário estimar os parâmetros do modelo. Um dos métodos de estimação mais conhecidos é o estimador de mínimos quadrados ordinários (ou MQO para os amigos). Em este post discutiremos a necessidade de estimar os parâmetros, entendermos a intuição por trás do método e derivaremos, passo a passo, o estimador MQO no modelo de regressão linear simples.</p>
-</div>
-</a>
-<a href="posts/2021-03-14-book-review-r-for-data-science/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Book Review","R","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 14, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-03-14-book-review-r-for-data-science/cover.png"/>
-</div>
-<div class="description">
-<h2>Book Review: R for Data Science</h2>
-<div class="dt-tags">
-<div class="dt-tag">Book Review</div>
-<div class="dt-tag">R</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Minhas impressões do livro R for data science: import, tidy, transform, visualize, and model data do Hadley Wickham e Garrett Grolemund.</p>
-</div>
-</a>
-<a href="posts/2021-02-28-teorema-de-gauss-markov/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Linear Regression","Proof"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 28, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Teorema de Gauss-Markov</h2>
-<div class="dt-tags">
-<div class="dt-tag">Linear Regression</div>
-<div class="dt-tag">Proof</div>
-</div>
-<p>Uma das propriedades mais interessentes dos estimadores MQO é fornecida pelo Teorema de Gauss-Markov. Neste post discutimos a importância, significado e fornecemos uma demostração passo a passo do Teorema.</p>
-</div>
-</a>
-<a href="posts/2021-02-25-intro-regressao-linear/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["Linear Regression","R","Python","rstats"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 25, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Carlos Trucíos</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2021-02-25-intro-regressao-linear/uma-introduo-regresso-linear_files/figure-html5/unnamed-chunk-1-1.png"/>
-</div>
-<div class="description">
-<h2>Intro à Regressão Linear</h2>
-<div class="dt-tags">
-<div class="dt-tag">Linear Regression</div>
-<div class="dt-tag">R</div>
-<div class="dt-tag">Python</div>
-<div class="dt-tag">rstats</div>
-</div>
-<p>Uma breve introdução à Análise de Regressão Linear: interpretação e implementação no R (e no Python).</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:Articles">Articles</a>
-<span class="category-count">(12)</span>
-</li>
-<li>
-<a href="#category:Book_Review">Book Review</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:Git">Git</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:GitHub">GitHub</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:Latex">Latex</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:Linear_Regression">Linear Regression</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:NLP">NLP</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:Proof">Proof</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:Python">Python</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:R">R</a>
-<span class="category-count">(5)</span>
-</li>
-<li>
-<a href="#category:Relatorios">Relatorios</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:Rmarkdown">Rmarkdown</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:rstats">rstats</a>
-<span class="category-count">(10)</span>
-</li>
-<li>
-<a href="#category:Rstudio">Rstudio</a>
-<span class="category-count">(5)</span>
-</li>
-<li>
-<a href="#category:Text_Mining">Text Mining</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>Statistical Data Science</h1>
+<h1>ME607</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -3001,6 +2534,228 @@ function init_posts_list() {
 
 
 <div class="d-article">
+<center>
+<h1 id="séries-temporais">Séries Temporais</h1>
+<h2 id="section">2023.1</h2>
+<p>🚧 Página em construção 🚧</p>
+</center>
+<h3 id="referência-bibliográficas">Referência Bibliográficas</h3>
+<h4 id="principais">Principais</h4>
+<ul>
+<li>Hyndman, R.J., &amp; Athanasopoulos, G. (2021) Forecasting:
+principles and practice, 3rd edition, OTexts: Melbourne, Australia. <a
+href="https://otexts.com/fpp3/">Link</a></li>
+<li>Wei, W. (2005). Time Series Analysis: Univariate and Multivariate
+Methods, 2ed, Pearson</li>
+</ul>
+<h4 id="complementares">Complementares</h4>
+<ul>
+<li>Huang, C., &amp; Petukhina, A. (2022). Applied Time Series Analysis
+and Forecasting with Python. Springer Nature. <a
+href="https://link.springer.com/book/10.1007/978-3-031-13584-2">Link</a></li>
+<li>Morettin, P.A, &amp; Toloi, C.M.C. (2006). Análise de Séries
+Temporais, 2ed, Blucher.</li>
+<li>Shumway, R. H., &amp; Stoffer, D. S. (2019). Time series: a data
+analysis approach using R. Chapman and Hall/CRC.</li>
+</ul>
+<h3 id="datas-importantes">Datas Importantes</h3>
+<ul>
+<li><strong>10/10:</strong> Prova 1.</li>
+<li><strong>21 a 23/11:</strong> Trabalho final.</li>
+<li><strong>30/11:</strong> Prova 2.</li>
+<li><strong>19/12:</strong> Exame Final.</li>
+</ul>
+<p></br></p>
+<h3 id="informações">Informações</h3>
+<ul>
+<li>📝 <a href="">Plano de desenvolvimento</a></li>
+<li>👨‍🏫 <a href="">Google Classroom (Código da Turma caso precisarem:
+)</a></li>
+<li>📆 Terças (PB18) e Quintas (CB06) das 14:00 às 16:00.</li>
+</ul>
+<h3 id="cronograma"><strong>Cronograma</strong></h3>
+<p>O cronograma em elaboração. No título do tópico encontra-se o link
+para os slides.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Data</th>
+<th style="text-align: left;">Tópico</th>
+<th>Aula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">15-08-2022</td>
+<td style="text-align: left;">Introdução e Conceitos básicos</td>
+<td>01</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">17-08-2022</td>
+<td style="text-align: left;">Análise Exploratória de Dados</td>
+<td>02</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">22-08-2022</td>
+<td style="text-align: left;">Análise Exploratória de Dados</td>
+<td>03</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">24-08-2022</td>
+<td style="text-align: left;">Modelos NAIVE</td>
+<td>04</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">29-08-2022</td>
+<td style="text-align: left;">Modelos de Regressão</td>
+<td>05</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">31-08-2022</td>
+<td style="text-align: left;">Modelos de Regressão</td>
+<td>06</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">05-09-2022</td>
+<td style="text-align: left;">Suavização Exponencial</td>
+<td>07</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">12-09-2022</td>
+<td style="text-align: left;">Modelos AR</td>
+<td>08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">14-09-2022</td>
+<td style="text-align: left;">Modelos AR</td>
+<td>09</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">19-09-2022</td>
+<td style="text-align: left;">Modelos MA</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">21-09-2022</td>
+<td style="text-align: left;">Modelos MA</td>
+<td>11</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">26-09-2022</td>
+<td style="text-align: left;">Modelos ARMA</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">28-09-2022</td>
+<td style="text-align: left;">Modelos ARIMA</td>
+<td>13</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">03-10-2022</td>
+<td style="text-align: left;">Modelos ARIMA</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">05-10-2022</td>
+<td style="text-align: left;"><span
+class="math inline">\(P_1\)</span></td>
+<td>15</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10-10-2022</td>
+<td style="text-align: left;">Modelos SARIMA</td>
+<td>16</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">17-10-2022</td>
+<td style="text-align: left;">Modelos SARIMA</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">19-10-2022</td>
+<td style="text-align: left;">Seleção de Modelos</td>
+<td>18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">26-10-2022</td>
+<td style="text-align: left;">Avaliação de Modelos</td>
+<td>19</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">31-10-2022</td>
+<td style="text-align: left;">Modelos (S)ARIMAX</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">07-10-2022</td>
+<td style="text-align: left;">Modelos (S)ARIMAX</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">09-11-2022</td>
+<td style="text-align: left;">Modelos de Regressão Dinâmica</td>
+<td>22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">14-11-2022</td>
+<td style="text-align: left;">Modelos de Regressão Dinâmica</td>
+<td>23</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">16-11-2022</td>
+<td style="text-align: left;">Modelos de Regressão Dinâmica</td>
+<td>24</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">21-11-2022</td>
+<td style="text-align: left;">Modelos Hierárquicos</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">23-11-2022</td>
+<td style="text-align: left;">Modelos Hierárquicos</td>
+<td>26</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">30-11-2022</td>
+<td style="text-align: left;">Modelos Hierárquicos</td>
+<td>27</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">19-12-2022</td>
+<td style="text-align: left;">Modelos de Volatilidade</td>
+<td>28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">25-12-2022</td>
+<td style="text-align: left;">Modelos de Volatilidade</td>
+<td>29</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">25-12-2022</td>
+<td style="text-align: left;"><span
+class="math inline">\(P_2\)</span></td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">25-12-2022</td>
+<td style="text-align: left;">Apresentação de trabalhos</td>
+<td>31</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">25-12-2022</td>
+<td style="text-align: left;">Apresentação de trabalhos</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<center>
+<blockquote>
+<p>A vida universitária pode ter altos e baixos, se precisar conversar
+com alguém, seja o assunto que for, pode contar comigo.</p>
+</blockquote>
+</center>
+<hr />
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -3010,6 +2765,15 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <script>

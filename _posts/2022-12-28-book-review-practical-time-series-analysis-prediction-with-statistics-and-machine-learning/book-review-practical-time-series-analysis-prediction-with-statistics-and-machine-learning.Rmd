@@ -1,0 +1,73 @@
+---
+title: "Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"
+description: |
+  Minhas impressões do livro "Practical Time Series Analysis--Prediction with Statistics and Machine Learning" da Aileen Nielsen
+categories:
+  - Book Review
+  - R 
+  - rstats
+  - Python
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 12-30-2022
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    self_contained: false
+bibliography: statblog.bib
+---
+
+### _Overview_ do livro
+
+<center>
+```{r echo = FALSE, out.width = "45%"}
+knitr::include_graphics("ptsa.jpg")
+```
+</center>
+
+No 2023.1 ministraterei **Séries Temporais** para os alunos de _graduação em Estatística do IMECC/UNICAMP_. Assim, pensando em como preparar um material atualizado e atraente para os alunos, resolvi ler algumas referências bibliográficas diferentes às que já estou acostumado, referências não tão tradicionais, começando por @nielsen2019practical.
+
+
+Escolhi começar com @nielsen2019practical por ser um livro moderno, popular entre analistas e cientistas de dados, ter uma versão em português e disponibilizar os códigos do proprio livro [neste repositório](https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython). 
+
+
+### Comentários gerais
+
+O livro tem 17 capítulos, a leitura é fácil e rápida (a versão em portugues tem alguns paragrafos confussos, mas pode ser coisa da tradução). Embora a tabela de conteudo do livro seja bem abrangente, em geral eu não gostei muito do livro, mas tem alguns pontos positivos  interessante que descrevo a seguir.
+
+#### Prós
+
+- O livro fornece os códigos em um [repositório público](https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython), o que torna o aprendizado mais fácil.
+- Todos os capítulos tem referências para leituras mais avançadas de forma que o leitor pode se aprofundar o quanto quiser em cada um dos tópicos.
+- A autora utiliza ambos `R` e `Python`, tornamdo-se em uma alternativa interessante para todo tipo de usuário.
+- O capítulo 1 é um dos meus favoritos, você fica bem motivado e com vontade de ler os outros capítulos do livro, bem como aprender mais de séries temporais. 
+- O capítulo 10 aborda redes neurais, um tópico pouco abordado por livros mais clássicos (embora a teoria que suporte o uso de redes neurais em séries temporais seja bem insipiente ainda), vale a pena a leitura.
+- O capítulo 11 discute como avaliar a performance do modelo. Embora seja apresentado de forma introdutoria, achei interessante dedicar um capítulo para isso. Além do mais, o leitor interessado pode se aprofundar mais no assunto lendo outras fontes e mesmo se não quiser se aprofundar terá uma noção de como avaliar os modelos.
+
+#### Contras
+
+- Embora o livro tenha um conteudo aparentemente bem abrangente, ele não aprofunda nos temas o suficiente (principalmente na parte de modelagem) como para termos um conhecimento básico em séries temporais. 
+- Ao terminar o livro, você não terá uma bagagem suficiente para poder escolher corretamente qual modelo utilzar (mas sabera como rodar os modelos em R e/ou Python).
+- O livro investe muito tempo na preparação dos dados (sendo algumas coisas obvias até) e pouco tempo na parte de modelagem (apenas 4 capítulos e os temas são abordados de forma bastante introdutória).
+- Alguns capítulos dão detalhe demais acerca dos códigos, detalhes que apenas lendo o próprio código são fáceis de entender.
+- O livro mistura conceitos básicos com conceitos mais avançados (cadeia de Markov, volatilidade, etc) mas não tenho certeza se alguém iniciante sabera entender os conceitos mais avançados (mesmo que a autora explique brevemente os novos conceitos).
+- Não todos os exemplos estão em ambas as linguagens, algumas vezes é utilizado apenas `R` e outras apenas `Python`.
+
+### Conclusão
+
+Eu fui atrás do livro pensando incluir ele na bibliografia da minha disciplina, mas após ter lido ele todo não o incluirei. O livro não aborda os temas com a profundidade necessária (pelo menos não para alunos de estatística) mas é uma fonte interessante para ver código.
+
+Acho que o livro pode ser util para um leitor com conhecimento básico que queria lembrar alguns conceitos e ter uma noção dos avanços em _Machine Learning_, _Deep Learning_ e pre-processamento de dados. Por outro lado, um usuário intermediário ou avançado achara o livro repetitivo.
+
+Caso queira saber mais acerca do curso que ministrarei, pode ver a informação [aqui](ME607.html)
+
+
+
+
+
+
+
+

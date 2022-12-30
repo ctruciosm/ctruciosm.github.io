@@ -86,378 +86,64 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Carlos Trucíos: MAD211</title>
+  <title>Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning</title>
+
+  <meta property="description" itemprop="description" content="Minhas impressões do livro &quot;Practical Time Series Analysis--Prediction with Statistics and Machine Learning&quot; da Aileen Nielsen"/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-12-30"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-12-30"/>
+  <meta name="article:author" content="Carlos Trucíos"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Carlos Trucíos: MAD211"/>
+  <meta property="og:title" content="Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Minhas impressões do livro &quot;Practical Time Series Analysis--Prediction with Statistics and Machine Learning&quot; da Aileen Nielsen"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Carlos Trucíos"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Carlos Trucíos: MAD211"/>
+  <meta property="twitter:title" content="Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"/>
+  <meta property="twitter:description" content="Minhas impressões do livro &quot;Practical Time Series Analysis--Prediction with Statistics and Machine Learning&quot; da Aileen Nielsen"/>
 
   <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=Practical time series analysis: Prediction with statistics and machine learning;citation_publication_date=2019;citation_publisher=O’Reilly Media;citation_author=Aileen Nielsen"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","output"]}},"value":[{"type":"character","attributes":{},"value":["MAD211"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["fig_width","toc_float"]}},"value":[{"type":"integer","attributes":{},"value":[1]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","output","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning"]},{"type":"character","attributes":{},"value":["Minhas impressões do livro \"Practical Time Series Analysis--Prediction with Statistics and Machine Learning\" da Aileen Nielsen\n"]},{"type":"character","attributes":{},"value":["Book Review","R","rstats","Python"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Carlos Trucíos"]},{"type":"character","attributes":{},"value":["https://ctruciosm.github.io"]},{"type":"character","attributes":{},"value":["0000-0001-8746-8877"]}]}]},{"type":"character","attributes":{},"value":["12-30-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[4]},{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["statblog.bib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
-  <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/anchor-4.2.2/anchor.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/bowser-1.9.3/bowser.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/distill-2.2.21/template.v2.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/header-attrs-2.14/header-attrs.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.min.map","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/popper-2.6.0/popper.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy-bundle.umd.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy-light-border.css","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy.css","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy.umd.min.js","book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/webcomponents-2.0.0/webcomponents.js","ptsa.jpg","statblog.bib"]}
   </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1804,676 +1490,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </script>
 
-  <style type="text/css">
-  /* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-
-
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #000000;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    sans-serif;
-    --mono-font:       monospace;
-    --body-font:       sans-serif;
-    --navbar-font:     sans-serif;  /* websites + blogs only */
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       18px;
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-  </style>
-  <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=IBM+Plex+Mono&family=IBM+Plex+Sans&family=IBM+Plex+Serif:ital,wght@1,600&family=Lato&display=swap');
-
-  /* Nord */
-  /*
-   * Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
-   * Copyright (c) 2016-present Sven Greb <development@svengreb.de>
-   *
-   * Project:    Nord
-   * Version:    0.2.0
-   * Repository: https://github.com/arcticicestudio/nord
-   * License:    MIT
-   * References:
-   *   https://www.w3.org/TR/css-variables
-   *   https://www.w3.org/TR/selectors/#root-pseudo
-   *   https://drafts.csswg.org/css-variables
-   *   https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables
-   *   http://warpspire.com/kss
-   *   https://github.com/kss-node/kss-node
-   */
-
-
-  :root {
-    /*
-    Base component color of "Polar Night".
-    Used for texts, backgrounds, carets and structuring characters like curly- and square brackets.
-    */
-    --nord0: #2e3440;
-    /*
-    Lighter shade color of the base component color.
-    Used as a lighter background color for UI elements like status bars.
-    */
-    --nord1: #3b4252;
-    /*
-    Lighter shade color of the base component color.
-    Used as line highlighting in the editor.
-    In the UI scope it may be used as selection- and highlight color.
-    */
-    --nord2: #434c5e;
-    /*
-    Lighter shade color of the base component color.
-    Used for comments, invisibles, indent- and wrap guide marker.
-    In the UI scope used as pseudoclass color for disabled elements.
-    */
-    --nord3: #4c566a;
-    /*
-    Base component color of "Snow Storm".
-    Main color for text, variables, constants and attributes.
-    In the UI scope used as semi-light background depending on the theme shading design.
-    */
-    --nord4: #d8dee9;
-    /*
-    Lighter shade color of the base component color.
-    Used as a lighter background color for UI elements like status bars.
-    Used as semi-light background depending on the theme shading design.
-    */
-    --nord5: #e5e9f0;
-    /*
-    Lighter shade color of the base component color.
-    Used for punctuations, carets and structuring characters like curly- and square brackets.
-    In the UI scope used as background, selection- and highlight color depending on the theme shading design.
-    */
-    --nord6: #eceff4;
-    /*
-    Bluish core color.
-    Used for classes, types and documentation tags.
-    */
-    --nord7: #8fbcbb;
-    /*
-    Bluish core accent color.
-    Represents the accent color of the color palette.
-    Main color for primary UI elements and methods/functions.
-    Can be used for
-      - Markup quotes
-      - Markup link URLs
-    */
-    --nord8: #88c0d0;
-    /*
-    Bluish core color.
-    Used for language-specific syntactic/reserved support characters and keywords, operators, tags, units and
-    punctuations like (semi)colons,commas and braces.
-    */
-    --nord9: #81a1c1;
-    /*
-    Bluish core color.
-    Used for markup doctypes, import/include/require statements, pre-processor statements and at-rules (`@`).
-    */
-    --nord10: #5e81ac;
-    /*
-    Colorful component color.
-    Used for errors, git/diff deletion and linter marker.
-    */
-    --nord11: #bf616a;
-    /*
-    Colorful component color.
-    Used for annotations.
-    */
-    --nord12: #d08770;
-    /*
-    Colorful component color.
-    Used for escape characters, regular expressions and markup entities.
-    In the UI scope used for warnings and git/diff renamings.
-    */
-    --nord13: #ebcb8b;
-    /*
-    Colorful component color.
-    Main color for strings and attribute values.
-    In the UI scope used for git/diff additions and success visualizations.
-    */
-    --nord14: #a3be8c;
-    /*
-    Colorful component color.
-    Used for numbers.
-    */
-    --nord15: #b48ead;
-  }
-
-
-  /* Theme */
-  :root {
-    --primary: #000000; /*#388e00; */
-  }
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #000000;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      var(--nord0);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    'IBM Plex Sans', sans-serif;
-    --mono-font:       'IBM Plex Mono', monospace;
-    --body-font:       'IBM Plex Sans', sans-serif;
-    --navbar-font:     'IBM Plex Sans', serif; /* websites + blogs only */
-  }
-
-  /*-- Main section --*/
-  d-article,
-  d-appendix,
-  body {
-    background-color: var(--nord5); /* var(--nord5); */
-    color: var(--nord0);
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       18px;
-    --text-color:       rgba(0, 0, 0, 0.8);
-    --text-size:        17px;
-    --hover-color:      var(--node03);
-    --bkgd-color:       rgba(210, 210, 210, 0.6); 
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(0, 0, 0, 0.6);
-    --text-size:        15px;
-    --hover-color:      var(--primary);
-    --bkgd-color:       rgba(210, 210, 210, 0.8);
-  }
-
-
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-
-
-
-  /* Code Folding by Thomas Mock https://themockup.blog/about.html */
-  details {
-    background-color: hsla(60, 7%, 80%, 0.2);
-    cursor: pointer;
-    color: #2d2d2d;
-    margin-bottom:1vh;
-    padding: 1em;
-    border: none;
-    text-align: left;
-    outline: none;
-  }
-
-
-  .active, details:hover {
-    transition: max-height 0.2s ease-out;
-  }
-
-  details {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    border-radius: 4px;
-  }
-
-  details.active {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  summary::-webkit-details-marker {
-    display: none
-  }
-
-  summary::after {
-    float: right;
-    font-family: "Font Awesome 5 Free";
-    content: "\f0fe";
-  }
-
-  details[open] summary::after {
-    float: right;
-    font-family: "Font Awesome 5 Free";
-    content: "\f146";
-  }
-
-  details h4 {
-    margin: 0;
-    color: #2d2d2d !important;
-    line-height: inherit;
-  }
-
-
-  .btn-outline-dark {
-      background-color: var(--nord4); /* #aaaaaa; */
-      color: var(--nord0);/*#fff; */
-      border: 5px;
-  }
-
-  .btn-outline-dark:hover {
-      background-color: #dddddd;
-      color: #000000;
-  }
-
-
-  /* Scrollbar */
-  /* Works on Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary);  var(--nord1);
-  }
-
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 12px;
-  }
-
-
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--nord1);
-    border-radius: 12px;
-    border: 1px solid var(--nord5);
-  }
-
-  /* Listing Pages */
-  .posts-list .post-preview {
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Darkmode */
-  .darkmode {
-    --title-color:     var(--nord5);
-    --header-color:    var(--nord5);
-    --body-color:      var(--nord5);
-    --aside-color:     var(--nord5);
-    --fig-cap-color:   var(--nord5);
-    background-color: var(--nord0);
-    color: var(--nord5);
-  }
-
-  .darkmode d-article,
-  .darkmode d-appendix,
-  .darkmode body {
-    background-color: var(--nord0);
-    color: var(--nord5);
-  }
-
-  .darkmode d-title {
-    color: var(--nord5);
-  }
-
-  .darkmode d-article blockquote {
-    color: var(--nord5);
-  }
-
-  .darkmode d-byline {
-    --heading-color:  var(--nord5);
-    --body-color:     var(--nord5);
-  }
-
-  .darkmode d-appendix {
-    border-color: var(--nord4);
-    --heading-color:   var(--nord5);
-    --text-color:      var(--nord5);
-  }
-
-  .darkmode d-appendix a {
-    color: var(--nord5);
-  }
-
-  .darkmode .distill-site-header {
-    --text-color: var(--nord5);
-    --bkgd-color: var(--nord1);
-  }
-
-  .darkmode .distill-site-footer {
-    --text-color: var(--nord5);
-    --bkgd-color: var(--nord1);
-  }
-
-
-  .darkmode d-article div.sourceCode,
-  .darkmode code {
-    background-color: var(--nord1);
-  }
-
-  .darkmode d-article pre {
-    color: var(--nord4);
-  }
-
-  .darkmode code span {
-    color: var(--nord6);
-  }
-
-  .darkmode a {
-    border-color: var(--nord5);
-  }
-
-  .darkmode .posts-list .post-preview {
-    border-color: var(--nord5);
-  }
-
-  .darkmode a:hover {
-    border-color: var(--primary);
-  }
-
-  .darkmode .categories li > * {
-    color: var(--nord5);
-  }
-
-  .darkmode .posts-list .dt-tags .dt-tag,
-  .darkmode .dt-tags .dt-tag {
-    color: var(--nord5);
-    border-color: var(--nord5);
-  }
-
-  .darkmode d-article .sourceCode {
-    background-color: var(--nord1);
-  }
-
-  .darkmode details {
-    color: var(--nord4);
-  }
-
-  .darkmode .algolia-autocomplete,
-  .darkmode .algolia-autocomplete .aa-input,
-  .darkmode .algolia-autocomplete .aa-dropdown-menu,
-  .darkmode .algolia-autocomplete div .search-item,
-  .darkmode .algolia-autocomplete .aa-hint {
-    background-color: var(--nord1);
-    color: var(--nord5);
-  }
-
-  .darkmode .social_footer {
-    color: var(--nord5);
-  }
-
-  .darkmode #fs-frm input:focus,
-  .darkmode #fs-frm [type="submit"]:hover,
-  .darkmode #fs-frm [type="submit"] input:focus,
-  .darkmode #fs-frm select:focus,
-  .darkmode #fs-frm textarea:focus {
-    background-color: var(--nord2);
-  }
-
-  .darkmode #fs-frm input,
-  .darkmode #fs-frm select,
-  .darkmode #fs-frm textarea,
-  .darkmode #fs-frm #card-element {
-    border: 1px solid var(--nord1);
-    background-color: var(--nord1);
-  }
-
-
-  .darkmode div.datatables,
-  .darkmode table.dataTable.stripe tbody tr.odd, .darkmode table.dataTable.display tbody tr.odd,
-  .darkmode table.dataTable tbody tr,
-  .darkmode input,
-  .darkmode .dataTables_wrapper .dataTables_length,
-  .darkmode .dataTables_wrapper .dataTables_filter,
-  .darkmode .dataTables_wrapper .dataTables_info,
-  .darkmode .dataTables_wrapper .dataTables_processing,
-  .darkmode .dataTables_wrapper .dataTables_paginate {
-    color: var(--nord4);
-    background-color: var(--nord1);
-  }</style>
-  <style type="text/css">
-  /* base style */
-
-  /* FONT FAMILIES */
-
-  :root {
-    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  }
-
-  body,
-  .posts-list .post-preview p,
-  .posts-list .description p {
-    font-family: var(--body-font), var(--body-default);
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .posts-list .post-preview h2,
-  .posts-list .description h2 {
-    font-family: var(--heading-font), var(--heading-default);
-  }
-
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-family: var(--mono-font), var(--mono-default);
-  }
-
-
-  /*-- TITLE --*/
-  d-title h1,
-  .posts-list > h1 {
-    color: var(--title-color, black);
-  }
-
-  d-title h1 {
-    font-size: var(--title-size, 50px);
-  }
-
-  /*-- HEADERS --*/
-  d-article h1,
-  d-article h2,
-  d-article h3,
-  d-article h4,
-  d-article h5,
-  d-article h6 {
-    color: var(--header-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- BODY --*/
-  d-article > p,  /* only text inside of <p> tags */
-  d-article > ul, /* lists */
-  d-article > ol {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-    font-size: var(--body-size, 1.06rem);
-  }
-
-
-  /*-- CODE --*/
-  d-article div.sourceCode code,
-  d-article pre code {
-    font-size: var(--code-size, 14px);
-  }
-
-  /*-- ASIDE --*/
-  d-article aside {
-    font-size: var(--aside-size, 12px);
-    color: var(--aside-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- FIGURE CAPTIONS --*/
-  figure .caption,
-  figure figcaption,
-  .figure .caption {
-    font-size: var(--fig-cap-size, 13px);
-    color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- METADATA --*/
-  d-byline h3 {
-    font-size: var(--heading-size, 0.6rem);
-    color: var(--heading-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-byline {
-    font-size: var(--body-size, 0.8rem);
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  d-byline a,
-  d-article d-byline a {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- TABLE OF CONTENTS --*/
-  .d-contents nav h3 {
-    font-size: var(--heading-size, 18px);
-  }
-
-  .d-contents nav a {
-    font-size: var(--contents-size, 13px);
-  }
-
-  /*-- APPENDIX --*/
-  d-appendix h3 {
-    font-size: var(--heading-size, 15px);
-    color: var(--heading-color, rgba(0, 0, 0, 0.65));
-  }
-
-  d-appendix {
-    font-size: var(--text-size, 0.8em);
-    color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-appendix d-footnote-list a.footnote-backlink {
-    color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  .distill-site-header .title {
-    font-size: var(--title-size, 18px);
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .distill-site-header a,
-  .nav-dropdown .nav-dropbtn {
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    font-size: var(--text-size, 15px);
-  }
-
-  .distill-site-header a:hover,
-  .nav-dropdown:hover .nav-dropbtn {
-    color: var(--hover-color, white);
-  }
-
-  .distill-site-header {
-    font-size: var(--text-size, 15px);
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer {
-    font-size: var(--text-size, 15px);
-    color: var(--text-color, rgba(255, 255, 255, 0.8));
-    background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer a:hover {
-    color: var(--hover-color, white);
-  }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/header-attrs-2.14/header-attrs.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/popper-2.6.0/popper.min.js"></script>
+  <link href="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-
   <!--/radix_placeholder_site_in_header-->
 
 
@@ -2484,316 +1512,148 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"MAD211","authors":[]}
+{"title":"Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning","description":"Minhas impressões do livro \"Practical Time Series Analysis--Prediction with Statistics and Machine Learning\" da Aileen Nielsen","authors":[{"author":"Carlos Trucíos","authorURL":"https://ctruciosm.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0001-8746-8877"}],"publishedDate":"2022-12-30T00:00:00.000-05:00","citationText":"Trucíos, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a href="index.html" class="title">Carlos Trucíos</a>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="research.html">Research</a>
-<a href="teaching.html">Teaching</a>
-<a href="talks.html">Talks</a>
-<a href="software.html">Software</a>
-<a href="awards.html">Awards</a>
-<a href="statblog.html">Blog</a>
-<a href="links.html">Links</a>
-<div class="nav-dropdown">
-<button class="nav-dropbtn">
-2023.1
- 
-<span class="down-arrow">&#x25BE;</span>
-</button>
-<div class="nav-dropdown-content">
-<a href="ME607.html">ME607</a>
-<span class="nav-dropdown-header">CAREFS</span>
-</div>
-</div>
-<a>
-<i class="fas fa-adjust" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>MAD211</h1>
+<h1>Book Review: Practical Time Series Analysis–Prediction with Statistics and Machine Learning</h1>
 <!--radix_placeholder_categories-->
+<div class="dt-tags">
+<div class="dt-tag">Book Review</div>
+<div class="dt-tag">R</div>
+<div class="dt-tag">rstats</div>
+<div class="dt-tag">Python</div>
+</div>
 <!--/radix_placeholder_categories-->
-
+<p><p>Minhas impressões do livro “Practical Time Series
+Analysis–Prediction with Statistics and Machine Learning” da Aileen
+Nielsen</p></p>
 </div>
 
+<div class="d-byline">
+  Carlos Trucíos <a href="https://ctruciosm.github.io"
+class="uri">https://ctruciosm.github.io</a> 
+  
+<br/>12-30-2022
+</div>
 
 <div class="d-article">
-<center>
-<h1 id="estatística-para-administração">Estatística para
-Administração</h1>
-<h2 id="section">2022.2</h2>
-</center>
-<p>As datas das provas já estão definidas. Programe-se com
-antecedência.</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
 <ul>
-<li><span class="math inline">\(P_1\)</span>:
-<strong>26-05-2022</strong></li>
-<li><span class="math inline">\(P_2\)</span>:
-<strong>14-07-2022</strong></li>
-<li>Exame: <strong>26-07-2022</strong></li>
-</ul>
-<p></br></p>
-<p>📝 <a href="2021-2/Plano_MAD211_2022_1.pdf">Plano de Ensino</a></p>
-<p>⏯ <a
-href="https://www.youtube.com/playlist?list=PLrqJCLOY0EkDc3zIhA0-Lk-M12FnReWwa">YouTube
-Channel</a></p>
-<p>👨‍🏫 <a
-href="https://classroom.google.com/c/NDI5NTM4Njk3ODg1?cjc=bc2jc5v">Google
-Classroom</a> (Código da Turma caso precisarem: bc2jc5v)</p>
-<p></br></p>
-<p><strong>Horários</strong></p>
-<p>📆 Terças e Quintas das 16:40 às 18:20 (T3) na sala
-<strong>MOD35</strong></p>
-<h3 id="material-e-aulas"><strong>Material e Aulas</strong></h3>
+<li><a href="#overview-do-livro"
+id="toc-overview-do-livro"><em>Overview</em> do livro</a></li>
+<li><a href="#comentários-gerais"
+id="toc-comentários-gerais">Comentários gerais</a>
 <ul>
-<li><a href="http://leg.ufpr.br/Rpira/Rpira.pdf">Livro de R em
-português</a></li>
-<li><a href="https://r4ds.had.co.nz">Livro Online: R for Data
-Science</a></li>
+<li><a href="#prós" id="toc-prós">Prós</a></li>
+<li><a href="#contras" id="toc-contras">Contras</a></li>
+</ul></li>
+<li><a href="#conclusão" id="toc-conclusão">Conclusão</a></li>
 </ul>
-<h3 id="cronograma"><strong>Cronograma</strong></h3>
-<p>O cronograma dos tópicos a serem abordados na discplina está definido
-embaixo (pequenas alterações poderão ser feitas). No título do tópico
-encontra-se o link do video das turmas anteriores (que não
-necessáriamente será o mesmo mas serve de ajuda para poderem estudar),
-bem como slides e adicionais das turmas anteriores.</p>
-<table>
-<colgroup>
-<col style="width: 13%" />
-<col style="width: 47%" />
-<col style="width: 15%" />
-<col style="width: 23%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Data</th>
-<th style="text-align: left;">Tópico</th>
-<th>Slides</th>
-<th>Adicional</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">12-04-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/Kw9vC_yU4qU">Introdução</a></td>
-<td><a href="2021-2/MAD211_Aula01.pdf">Link</a></td>
-<td><a href="https://youtu.be/5SMJsKamuSQ">Link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">14-04-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/W45bVRU6gF0">Est. Descritiva</a></td>
-<td><a href="2021-2/MAD211_Aula03.pdf">Link</a></td>
-<td><a href="https://youtu.be/s-pcmRTyZFk">Link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">19-04-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=rDfQ28ZVFiA&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=5">Estatística
-Descritiva: Medidas Resumo</a></td>
-<td><a href="2021-2/MAD211_Aula05.pdf">Link</a></td>
-<td><a
-href="https://www.youtube.com/watch?v=KjjDLw0o_Rg&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=6">Link</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">26-04-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/92r6xprL1D4">Análise Combinatória</a></td>
-<td><a href="2021-2/MAD211_Aula07.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">28-04-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/92r6xprL1D4">Análise Combinatória</a></td>
-<td><a href="2021-2/MAD211_Aula07.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">03-05-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=PWtN_tLdrQ8&amp;list=PLrqJCLOY0EkDsfP4n9UD91-Gh1cMjceRP&amp;index=8">Introdução
-à Probabilidade</a></td>
-<td><a href="2021-2/MAD211_Aula08.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">05-05-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/r_1xJvrlAkI">Probabilidade Condicional</a></td>
-<td><a href="2021-2/MAD211_Aula09.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">10-05-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/XWofjlFzilQ">Distribuições Discretas</a></td>
-<td><a href="2021-2/MAD211_Aula10.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">12-05-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/izrsmOQQzY0">Distribuições Continuas</a></td>
-<td><a href="2021-2/MAD211_Aula11.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">17-05-2022</td>
-<td style="text-align: left;">Dist. Discretas e Continuas</td>
-<td></td>
-<td><a
-href="https://www.youtube.com/watch?v=2B4lkkOiIj0&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=11">Link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">19-05-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=bfnpRb7V8yc&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=13">Amostragem</a></td>
-<td><a href="2021-2/MAD211_Aula12.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">24-05-2022</td>
-<td style="text-align: left;">Exercícios de revisão</td>
-<td></td>
-<td><a href="https://youtu.be/BJMeehoOmak">Link</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">26-05-2022</td>
-<td style="text-align: left;"><span
-class="math inline">\(P_1\)</span></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">31-05-2022</td>
-<td style="text-align: left;">Gabarito da <span
-class="math inline">\(P_1\)</span></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">02-06-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=8fxiP6UqVr4&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=14">Intervalos
-de Confiança</a></td>
-<td><a href="2021-2/MAD211_Aula13.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">07-06-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=8fxiP6UqVr4&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=14">Intervalos
-de Confiança</a></td>
-<td><a href="2021-2/MAD211_Aula13.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">09-06-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/M5yMl3kRn08">Teste de Hipóteses: média
-populacional</a></td>
-<td><a href="2021-2/MAD211_Aula14.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">14-06-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=WQS8DGZBtYU&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=16">Teste
-de Hipóteses: comparação de médias</a></td>
-<td><a href="2021-2/MAD211_Aula15.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">21-06-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/Aii3Quo7VJ8">Teste de Hipóteses: comparação de
-médias II</a></td>
-<td><a href="2021-2/MAD211_Aula15.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">23-06-2022</td>
-<td style="text-align: left;">Exercícios</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">28-06-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/OcXd0FBy790">Teste de Hipóteses: ANOVA</a></td>
-<td><a href="2021-2/MAD211_Aula16.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">30-06-2022</td>
-<td style="text-align: left;"><a
-href="https://youtu.be/OcXd0FBy790">Teste de Hipóteses: ANOVA</a></td>
-<td><a href="2021-2/MAD211_Aula16.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">05-07-2022</td>
-<td style="text-align: left;"><a
-href="https://www.youtube.com/watch?v=cC9fQRjFicg&amp;list=PLrqJCLOY0EkCcJCy9qRHgygfH_Dy14bho&amp;index=20">Teste
-de Hipóteses: Comparação de proporções</a></td>
-<td><a href="2021-2/MAD211_Aula17.pdf">Link</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">07-07-2022</td>
-<td style="text-align: left;">Exercícios</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">12-07-2022</td>
-<td style="text-align: left;">Revisão</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">14-07-2022</td>
-<td style="text-align: left;"><span
-class="math inline">\(P_2\)</span></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">26-07-2022</td>
-<td style="text-align: left;">Exame de recuperação</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+</nav>
+</div>
+<h3 id="overview-do-livro"><em>Overview</em> do livro</h3>
 <center>
-<blockquote>
-<p>Nesse tempo de pandemia sei que as coisas não estão fáceis. Se
-precisar conversar com alguém, seja o assunto que for, pode contar
-comigo.</p>
-</blockquote>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="ptsa.jpg" width="45%" /></p>
+</div>
 </center>
-<hr />
+<p>No 2023.1 ministraterei <strong>Séries Temporais</strong> para os
+alunos de <em>graduação em Estatística do IMECC/UNICAMP</em>. Assim,
+pensando em como preparar um material atualizado e atraente para os
+alunos, resolvi ler algumas referências bibliográficas diferentes às que
+já estou acostumado, referências não tão tradicionais, começando por
+<span class="citation" data-cites="nielsen2019practical">Nielsen (<a
+href="#ref-nielsen2019practical"
+role="doc-biblioref">2019</a>)</span>.</p>
+<p>Escolhi começar com <span class="citation"
+data-cites="nielsen2019practical">Nielsen (<a
+href="#ref-nielsen2019practical" role="doc-biblioref">2019</a>)</span>
+por ser um livro moderno, popular entre analistas e cientistas de dados,
+ter uma versão em português e disponibilizar os códigos do proprio livro
+<a
+href="https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython">neste
+repositório</a>.</p>
+<h3 id="comentários-gerais">Comentários gerais</h3>
+<p>O livro tem 17 capítulos, a leitura é fácil e rápida (a versão em
+portugues tem alguns paragrafos confussos, mas pode ser coisa da
+tradução). Embora a tabela de conteudo do livro seja bem abrangente, em
+geral eu não gostei muito do livro, mas tem alguns pontos positivos
+interessante que descrevo a seguir.</p>
+<h4 id="prós">Prós</h4>
+<ul>
+<li>O livro fornece os códigos em um <a
+href="https://github.com/AileenNielsen/TimeSeriesAnalysisWithPython">repositório
+público</a>, o que torna o aprendizado mais fácil.</li>
+<li>Todos os capítulos tem referências para leituras mais avançadas de
+forma que o leitor pode se aprofundar o quanto quiser em cada um dos
+tópicos.</li>
+<li>A autora utiliza ambos <code>R</code> e <code>Python</code>,
+tornamdo-se em uma alternativa interessante para todo tipo de
+usuário.</li>
+<li>O capítulo 1 é um dos meus favoritos, você fica bem motivado e com
+vontade de ler os outros capítulos do livro, bem como aprender mais de
+séries temporais.</li>
+<li>O capítulo 10 aborda redes neurais, um tópico pouco abordado por
+livros mais clássicos (embora a teoria que suporte o uso de redes
+neurais em séries temporais seja bem insipiente ainda), vale a pena a
+leitura.</li>
+<li>O capítulo 11 discute como avaliar a performance do modelo. Embora
+seja apresentado de forma introdutoria, achei interessante dedicar um
+capítulo para isso. Além do mais, o leitor interessado pode se
+aprofundar mais no assunto lendo outras fontes e mesmo se não quiser se
+aprofundar terá uma noção de como avaliar os modelos.</li>
+</ul>
+<h4 id="contras">Contras</h4>
+<ul>
+<li>Embora o livro tenha um conteudo aparentemente bem abrangente, ele
+não aprofunda nos temas o suficiente (principalmente na parte de
+modelagem) como para termos um conhecimento básico em séries
+temporais.</li>
+<li>Ao terminar o livro, você não terá uma bagagem suficiente para poder
+escolher corretamente qual modelo utilzar (mas sabera como rodar os
+modelos em R e/ou Python).</li>
+<li>O livro investe muito tempo na preparação dos dados (sendo algumas
+coisas obvias até) e pouco tempo na parte de modelagem (apenas 4
+capítulos e os temas são abordados de forma bastante introdutória).</li>
+<li>Alguns capítulos dão detalhe demais acerca dos códigos, detalhes que
+apenas lendo o próprio código são fáceis de entender.</li>
+<li>O livro mistura conceitos básicos com conceitos mais avançados
+(cadeia de Markov, volatilidade, etc) mas não tenho certeza se alguém
+iniciante sabera entender os conceitos mais avançados (mesmo que a
+autora explique brevemente os novos conceitos).</li>
+<li>Não todos os exemplos estão em ambas as linguagens, algumas vezes é
+utilizado apenas <code>R</code> e outras apenas
+<code>Python</code>.</li>
+</ul>
+<h3 id="conclusão">Conclusão</h3>
+<p>Eu fui atrás do livro pensando incluir ele na bibliografia da minha
+disciplina, mas após ter lido ele todo não o incluirei. O livro não
+aborda os temas com a profundidade necessária (pelo menos não para
+alunos de estatística) mas é uma fonte interessante para ver código.</p>
+<p>Acho que o livro pode ser util para um leitor com conhecimento básico
+que queria lembrar alguns conceitos e ter uma noção dos avanços em
+<em>Machine Learning</em>, <em>Deep Learning</em> e pre-processamento de
+dados. Por outro lado, um usuário intermediário ou avançado achara o
+livro repetitivo.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-nielsen2019practical" class="csl-entry"
+role="doc-biblioentry">
+Nielsen, Aileen. 2019. <em>Practical Time Series Analysis: Prediction
+with Statistics and Machine Learning</em>. O’Reilly Media.
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2801,72 +1661,17 @@ class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"><
 <div class="d-appendix">
 </div>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 
 <!--radix_placeholder_site_after_body-->
-<script>
-const darkmodeToggle = document.getElementsByClassName("fas fa-adjust")[0];
-let theme = localStorage.getItem("theme");
-
-if (!theme) {
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches ) {
-    theme = "dark";
-  } else {
-    theme = "light";
-  }
-}
-setTheme();
-
-function switchTheme() {
-  if (theme === "light") {
-    theme = "dark";
-  } else {
-    theme = "light";
-  }
-  localStorage.setItem("theme", theme);
-  setTheme();
-  console.log(theme);
-}
-
-function setTheme() {
-  if (theme === "dark") {
-    document.body.classList.add('darkmode');
-  } else {
-    document.body.classList.remove('darkmode');
-  }
-}
-
-darkmodeToggle.addEventListener('click', switchTheme)
-</script>
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="references">References</h3>
+<div id="references-listing"></div>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
-<div class="distill-site-nav distill-site-footer">
-<p>Website created using <a
-href="https://www.rstudio.com"><strong>Rstudio</strong></a> and the R
-packages <a
-href="https://rstudio.github.io/distill/"><strong>distill</strong></a>,
-<a href="https://github.com/hadley/emo"><strong>emo</strong></a>, <a
-href="https://github.com/seankross/postcards"><strong>postcards</strong></a>,
-<a href="https://rmarkdown.rstudio.com"><strong>Rmarkdown</strong></a>
-and <a
-href="https://github.com/gadenbuie/xaringanExtra"><strong>xaringanExtra</strong></a>.</p>
-<p>Content licensed under the <a
-href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
-4.0</a>.</p>
-</div>
 <!--/radix_placeholder_navigation_after_body-->
-
 
 </body>
 
