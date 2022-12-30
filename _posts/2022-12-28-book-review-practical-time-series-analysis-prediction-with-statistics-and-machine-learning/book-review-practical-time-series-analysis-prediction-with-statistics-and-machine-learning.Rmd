@@ -62,7 +62,7 @@ Eu fui atrás do livro pensando incluir ele na bibliografia da minha disciplina,
 
 Acho que o livro pode ser util para um leitor com conhecimento básico que queria lembrar alguns conceitos e ter uma noção dos avanços em _Machine Learning_, _Deep Learning_ e pre-processamento de dados. Por outro lado, um usuário intermediário ou avançado achara o livro repetitivo.
 
-Caso queira saber mais acerca do curso que ministrarei, pode ver a informação [aqui](ME607.html)
+Caso queira saber mais acerca do curso que ministrarei, pode ver a informação [aqui](https://ctruciosm.github.io/ME607.html).
 
 
 
