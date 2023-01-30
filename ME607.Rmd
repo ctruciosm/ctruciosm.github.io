@@ -20,8 +20,10 @@ output:
 
 #### Principais
 
+- Brockwell, P.J & Davis, R.A. (2016). Introduction to Time Series and Forecasting, 3rd editions, Springer. [Link](https://link.springer.com/book/10.1007/978-3-319-29854-2)
 - Hyndman, R.J., \& Athanasopoulos, G. (2021) Forecasting: principles and practice, 3rd edition, OTexts: Melbourne, Australia. [Link](https://otexts.com/fpp3/)
 - Wei, W. (2005). Time Series Analysis: Univariate and Multivariate Methods, 2ed, Pearson
+
 
 #### Complementares
 
@@ -52,14 +54,14 @@ O cronograma em elaboração. No título do tópico encontra-se o link para os s
 | Data  | Tópico                         | Aula |
 |:-----:|:-------------------------------|--------|
 | 02-03-2023    | [Introdução e Conceitos básicos](https://ctruciosm.github.io/ME607-unicamp/Aula01.html) | 01 | 
-| 17-08-2022     | [Análise Exploratória de Dados I](https://ctruciosm.github.io/ME607-unicamp/Aula02.html) | 02 | 
-| 22-08-2022     | Análise Exploratória de Dados  | 03 | 
-| 24-08-2022     | Modelos NAIVE | 04 | 
-| 29-08-2022     | Modelos de Regressão | 05 | 
-| 31-08-2022     | Modelos de Regressão | 06 | 
-| 05-09-2022     | Suavização Exponencial  | 07 | 
-| 12-09-2022     | Modelos AR | 08 | 
-| 14-09-2022     | Modelos AR   | 09 | 
+| 07-03-2023     | [Análise Exploratória de Dados](https://ctruciosm.github.io/ME607-unicamp/Aula02.html) | 02 | 
+| 09-03-2023     | [Decomposição](https://ctruciosm.github.io/ME607-unicamp/Aula03.html)   | 03 | 
+| 14-03-2023     | Modelos NAIVE | 04 | 
+| 16-03-2023     | Modelos de Regressão | 05 | 
+| 21-03-2023     | Modelos de Regressão | 06 | 
+| 23-03-2023     | Suavização Exponencial  | 07 | 
+| 28-03-2023     | Modelos AR | 08 | 
+| 30-03-2023     | Modelos AR   | 09 | 
 | 19-09-2022     | Modelos MA  | 10 | 
 | 21-09-2022     | Modelos MA | 11 | 
 | 26-09-2022     | Modelos ARMA | 12 | 
