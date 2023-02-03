@@ -20,7 +20,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 #### Undergraduate {.panel-name}
 
 - **UNICAMP**
-  - Multivariate Statistical Analysis (2022/2).
+  - [Multivariate Statistical Analysis](ME_731.html) (2022/2).
   - Statistics for Experimentalist (2022/2).
 - **UFRJ**
   - [Quantitative Methods for Business Administration](ACA124.html) (2022/1).
