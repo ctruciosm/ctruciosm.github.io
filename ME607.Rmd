@@ -53,38 +53,39 @@ O cronograma em elaboração. No título do tópico encontra-se o link para os s
 
 | Data  | Tópico                         | Aula |
 |:-----:|:-------------------------------|--------|
-| 02-03-2023    | [Introdução e Conceitos básicos](https://ctruciosm.github.io/ME607-unicamp/Aula01.html) | 01 | 
-| 07-03-2023     | [Análise Exploratória de Dados](https://ctruciosm.github.io/ME607-unicamp/Aula02.html) | 02 | 
+| 02-03-2023    | [Introdução e conceitos básicos](https://ctruciosm.github.io/ME607-unicamp/Aula01.html) | 01 | 
+| 07-03-2023     | [Análise exploratória de dados](https://ctruciosm.github.io/ME607-unicamp/Aula02.html) | 02 | 
 | 09-03-2023     | [Decomposição](https://ctruciosm.github.io/ME607-unicamp/Aula03.html)   | 03 | 
-| 14-03-2023     | Modelos NAIVE | 04 | 
+| 14-03-2023     | [Modelos básicos + Avaliação de modelos](https://ctruciosm.github.io/ME607-unicamp/Aula04.html) | 04 | 
 | 16-03-2023     | Modelos de Regressão | 05 | 
 | 21-03-2023     | Modelos de Regressão | 06 | 
 | 23-03-2023     | Suavização Exponencial  | 07 | 
 | 28-03-2023     | Modelos AR | 08 | 
 | 30-03-2023     | Modelos AR   | 09 | 
-| 19-09-2022     | Modelos MA  | 10 | 
-| 21-09-2022     | Modelos MA | 11 | 
-| 26-09-2022     | Modelos ARMA | 12 | 
-| 28-09-2022     | Modelos ARIMA  | 13 | 
-| 03-10-2022     | Modelos ARIMA    | 14 | 
-| 05-10-2022     | $P_1$ | 15 | 
-| 10-10-2022     | Modelos SARIMA | 16 |
-| 17-10-2022     | Modelos SARIMA | 17 | 
-| 19-10-2022     | Seleção de Modelos | 18 | 
-| 26-10-2022     | Avaliação de Modelos  | 19 | 
-| 31-10-2022     | Modelos (S)ARIMAX   | 20 | 
-| 07-10-2022     | Modelos (S)ARIMAX   | 21 | 
-| 09-11-2022     | Modelos de Regressão Dinâmica  | 22 | 
-| 14-11-2022     | Modelos de Regressão Dinâmica | 23 | 
-| 16-11-2022     | Modelos de Regressão Dinâmica | 24 | 
-| 21-11-2022     | Modelos Hierárquicos | 25 | 
-| 23-11-2022     | Modelos Hierárquicos  | 26 | 
-| 30-11-2022     | Modelos Hierárquicos  | 27 | 
-| 19-12-2022     | Modelos de Volatilidade | 28 | 
-| 25-12-2022     | Modelos de Volatilidade| 29 | 
-| 25-12-2022     | $P_2$ | 30 | 
-| 25-12-2022     | Apresentação de trabalhos | 31 | 
-| 25-12-2022     | Apresentação de trabalhos | 32 | 
+| 04-04-2023     | Não teremos aula   | | 
+| 06-04-2023     | Modelos MA  | 10 | 
+| 11-04-2023     | Modelos MA | 11 | 
+| 13-04-2023     | Modelos ARMA | 12 | 
+| 18-04-2023     | Modelos ARIMA  | 13 | 
+| 20-04-2023     | Modelos ARIMA    | 14 | 
+| 25-04-2023     | $P_1$ | 15 | 
+| 27-04-2023     | Revisão $P_1$ | 16 |
+| 02-05-2023     | Modelos SARIMA | 17 | 
+| 04-05-2023     | Modelos SARIMA | 18 | 
+| 09-05-2023     | Seleção de Modelos | 19 | 
+| 11-05-2023     | Modelos (S)ARIMAX   | 20 | 
+| 16-05-2023     | Modelos (S)ARIMAX   | 21 | 
+| 18-05-2023     | Modelos de Regressão Dinâmica  | 22 | 
+| 23-05-2023     | Modelos de Regressão Dinâmica | 23 | 
+| 25-05-2023     | Modelos de Regressão Dinâmica | 24 | 
+| 30-05-2023     | Modelos Hierárquicos | 25 | 
+| 01-06-2023     | Modelos Hierárquicos  | 26 | 
+| 06-06-2023     | Modelos Hierárquicos  | 27 | 
+| 13-06-2023     | Modelos de Volatilidade | 28 | 
+| 15-06-2023     | Modelos de Volatilidade| 29 | 
+| 20-06-2023     | $P_2$ | 30 | 
+| 22-06-2023     | Apresentação de trabalhos | 31 | 
+| 27-06-2023     | Apresentação de trabalhos | 32 | 
 
 <center>
 
