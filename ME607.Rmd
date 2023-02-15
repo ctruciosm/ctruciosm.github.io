@@ -60,8 +60,8 @@ O cronograma em elaboração. No título do tópico encontra-se o link para os s
 | 09-03-2023     | [Decomposição](https://ctruciosm.github.io/ME607-unicamp/Aula03.html)   | 03 | 
 | 14-03-2023     | [Modelos básicos + Avaliação de modelos](https://ctruciosm.github.io/ME607-unicamp/Aula04.html) | 04 | 
 | 16-03-2023     | [Modelos de Regressão](https://ctruciosm.github.io/ME607-unicamp/Aula05.html) | 05 | 
-| 21-03-2023     | Modelos de Regressão | 06 | 
-| 23-03-2023     | Suavização Exponencial  | 07 | 
+| 21-03-2023     | [Modelos de Regressão II](https://ctruciosm.github.io/ME607-unicamp/Aula06.html) | 06 | 
+| 23-03-2023     | [Suavização Exponencial](https://ctruciosm.github.io/ME607-unicamp/Aula07.html)  | 07 | 
 | 28-03-2023     | Modelos AR | 08 | 
 | 30-03-2023     | Modelos AR   | 09 | 
 | 04-04-2023     | Não teremos aula   | - | 
