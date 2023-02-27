@@ -12,9 +12,24 @@ output:
 
 ## 2023.1
 
-`r emo::ji("construction")` Página em construção `r emo::ji("construction")`
 
 </center>
+
+### Informações 
+
+- `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME607A_Ementa_2023S1.pdf)
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: 7wk4s5h)](https://classroom.google.com/c/NTgyMTk0MzMyMDE2?cjc=7wk4s5h)
+- `r emo::ji("calendar")` Terças e quintas-feiras das 14:00 às 16:00 no CB06.
+
+### Datas Importantes
+
+- $P_1:$ 25-04-2023.
+- $P_2:$ 20-06-2023.
+ 
+
+</br>
+
+
 
 ### Referência Bibliográficas
 
@@ -32,25 +47,12 @@ output:
 - Morettin, P.A, \& Toloi, C.M.C. (2006). Análise de Séries Temporais, 2ed, Blucher.
 - Shumway, R. H., & Stoffer, D. S. (2019). Time series: a data analysis approach using R. Chapman and Hall/CRC.
 
-### Datas Importantes
-
-- $P_1:$ 25-04-2023.
-- $P_2:$ 20-06-2023.
- 
-
-</br>
-
-### Informações 
-
-- `r emo::ji("pencil")` [Plano de desenvolvimento]()
-- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem:  )]()
-- `r emo::ji("calendar")` Terças (PB18) e Quintas (CB06) das 14:00 às 16:00.
 
 
 
 ### **Cronograma**
 
-O cronograma em elaboração. No título do tópico encontra-se o link para os slides.
+No título do tópico encontra-se o link para os slides.
 
 
 | Data  | Tópico                         | Aula |
