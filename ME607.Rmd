@@ -19,7 +19,8 @@ output:
 
 - `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME607A_Ementa_2023S1.pdf)
 - `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: 7wk4s5h)](https://classroom.google.com/c/NTgyMTk0MzMyMDE2?cjc=7wk4s5h)
-- `r emo::ji("calendar")` Terças e quintas-feiras das 14:00 às 16:00 no CB06.
+- `r emo::ji("calendar")` Terças e quintas-feiras das 14:00 às 16:00 no CB07.
+- Monitoria PED: quartas-féiras na sala 124 (IMECC) das 13:00 às 14:00.
 
 ### Datas Importantes
 
