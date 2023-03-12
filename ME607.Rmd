@@ -20,7 +20,9 @@ output:
 - `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME607A_Ementa_2023S1.pdf)
 - `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: 7wk4s5h)](https://classroom.google.com/c/NTgyMTk0MzMyMDE2?cjc=7wk4s5h)
 - `r emo::ji("calendar")` Terças e quintas-feiras das 14:00 às 16:00 no CB07.
-- Monitoria PED: quartas-féiras na sala 124 (IMECC) das 13:00 às 14:00.
+- Monitorias: 
+  *   PED: quartas-féiras na sala 124 (IMECC) das 13:00 às 14:00.
+  *   PAD: a definir
 
 ### Datas Importantes
 
@@ -66,28 +68,28 @@ No título do tópico encontra-se o link para os slides.
 | 21-03-2023     | [Modelos de Regressão II](https://ctruciosm.github.io/ME607-unicamp/Aula06.html) | 06 | 
 | 23-03-2023     | [Suavização Exponencial](https://ctruciosm.github.io/ME607-unicamp/Aula07.html)  | 07 | 
 | 28-03-2023     | [Modelos AR](https://ctruciosm.shinyapps.io/Aula08/#/title-slide) | 08 | 
-| 30-03-2023     | Modelos AR II   | 09 | 
+| 30-03-2023     | [Modelos AR II](https://ctruciosm.github.io/ME607-unicamp/Aula09.html)   | 09 | 
 | 04-04-2023     | Não teremos aula   | - | 
-| 06-04-2023     | Modelos MA  | 10 | 
+| 06-04-2023     | [Modelos AR](https://ctruciosm.github.io/ME607-unicamp/Aula10.html)  | 10 | 
 | 11-04-2023     | Modelos MA | 11 | 
-| 13-04-2023     | Modelos ARMA | 12 | 
-| 18-04-2023     | Modelos ARIMA  | 13 | 
-| 20-04-2023     | Modelos ARIMA    | 14 | 
+| 13-04-2023     | Modelos MA | 12 | 
+| 18-04-2023     | Modelos ARMA  | 13 | 
+| 20-04-2023     | Modelos ARMA    | 14 | 
 | 25-04-2023     | $P_1$ | 15 | 
 | 27-04-2023     | Revisão $P_1$ | 16 |
-| 02-05-2023     | Modelos SARIMA | 17 | 
+| 02-05-2023     | Modelos ARIMA | 17 | 
 | 04-05-2023     | Modelos SARIMA | 18 | 
 | 09-05-2023     | Seleção de Modelos | 19 | 
 | 11-05-2023     | Modelos (S)ARIMAX   | 20 | 
 | 16-05-2023     | Modelos (S)ARIMAX   | 21 | 
-| 18-05-2023     | Modelos de Regressão Dinâmica*  | 22 | 
-| 23-05-2023     | Modelos de Regressão Dinâmica* | 23 | 
-| 25-05-2023     | Modelos de Regressão Dinâmica* | 24 | 
-| 30-05-2023     | Modelos Hierárquicos*  | 25 | 
+| 18-05-2023     | Modelos de Volatilidade*  | 22 | 
+| 23-05-2023     | Modelos de Volatilidade* | 23 | 
+| 25-05-2023     | Modelos de Volatilidade* | 24 | 
+| 30-05-2023     | Modelos de Volatilidade*  | 25 | 
 | 01-06-2023     | Modelos Hierárquicos*  | 26 | 
 | 06-06-2023     | Modelos Hierárquicos*  | 27 | 
-| 13-06-2023     | Modelos de Volatilidade* | 28 | 
-| 15-06-2023     | Modelos de Volatilidade* | 29 | 
+| 13-06-2023     | Modelos de Regressão Dinâmica* | 28 | 
+| 15-06-2023     | Modelos de Regressão Dinâmica* | 29 | 
 | 20-06-2023     | $P_2$ | 30 | 
 | 22-06-2023     | Apresentação de trabalhos | 31 | 
 | 27-06-2023     | Apresentação de trabalhos | 32 | 
