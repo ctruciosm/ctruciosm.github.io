@@ -27,7 +27,7 @@ navbar:
         - text: ME607
           href: ME607.html
         - text: CAREFS
-          href: www.ime.unicamp.br/carefs/
+          href: 'http://www.ime.unicamp.br/carefs/'
     - icon: fas fa-adjust
 output: 
   distill::distill_article:
