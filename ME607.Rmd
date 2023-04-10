@@ -73,7 +73,7 @@ No título do tópico encontra-se o link para os slides.
 | 06-04-2023     | Não teremos aula (Estarei no [LACSC2023](https://congreso-lacsc2023.pucp.edu.pe/about/welcome))  | - | 
 | 11-04-2023     | [Modelos AR III](https://ctruciosm.github.io/ME607-unicamp/Aula10.html)  | 10 | 
 | 13-04-2023     | [Modelos MA](https://ctruciosm.shinyapps.io/Aula11/#/title-slide) | 11 | 
-| 18-04-2023     | Modelos ARMA  | 12 | 
+| 18-04-2023     | [Modelos ARMA I](https://ctruciosm.github.io/ME607-unicamp/Aula12.html)  | 12 | 
 | 20-04-2023     | Modelos ARMA    | 13 | 
 | 25-04-2023     | $P_1$ | 14 | 
 | 27-04-2023     | Revisão $P_1$ | 15 |
