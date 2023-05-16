@@ -80,8 +80,8 @@ No título do tópico encontra-se o link para os slides.
 | 02-05-2023     | Modelos ARIMA | 16 | 
 | 04-05-2023     | Modelos SARIMA | 17 | 
 | 09-05-2023     | Seleção de Modelos | 18 | 
-| 11-05-2023     | Modelos (S)ARIMAX   | 19 | 
-| 16-05-2023     | Modelos (S)ARIMAX   | 20 | 
+| 11-05-2023     | [Modelos (S)ARIMAX](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/SARIMAX.ipynb)   | 19 | 
+| 16-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/IntroARCH.ipynb)   | 20 | 
 | 18-05-2023     | Modelos de Volatilidade*  | 21 | 
 | 23-05-2023     | Modelos de Volatilidade* | 22 | 
 | 25-05-2023     | Modelos de Volatilidade* | 23 | 
