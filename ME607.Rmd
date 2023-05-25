@@ -84,7 +84,7 @@ No título do tópico encontra-se o link para os slides.
 | 16-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/IntroARCH.ipynb)   | 20 | 
 | 18-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/GARCH.ipynb)  | 21 | 
 | 23-05-2023     | Modelos de Volatilidade* | 22 | 
-| 25-05-2023     | Modelos de Volatilidade* | 23 | 
+| 25-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/VaRES.ipynb) | 23 | 
 | 30-05-2023     | Modelos de Volatilidade*  | 24 | 
 | 01-06-2023     | Modelos Hierárquicos*  | 25 | 
 | 06-06-2023     | Modelos Hierárquicos*  | 26 | 
