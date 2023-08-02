@@ -10,26 +10,50 @@ output:
 
 # Estatística para Experimentalistas
 
-## 2022.2
+## 2023.2
 
 </center>
 
 ### Datas Importantes
 
 
-- **29/09:** Prova 1.
-- **01/12:** Prova 2.
-- **19/12:** Exame Final.
+- **28/09:** Prova 1.
+- **28/11:** Prova 2.
+- **12/12:** Exame Final.
 
 
 </br>
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME414A_Ementa_2022S2.pdf).
-- `r emo::ji("teacher")` [Moodle.](https://moodle.ggte.unicamp.br/course/view.php?id=14838)
-- `r emo::ji("calendar")` Segundas e quintas feiras das 21:00 às 23:00 no PB16.
-- Slides e demais informações em [https://me414-unicamp.github.io/](https://me414-unicamp.github.io/).
+- `r emo::ji("pencil")` [Plano de desenvolvimento]().
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: r5fka6h)](https://classroom.google.com/c/NjE2NDAwNDIwMTEw)
+- `r emo::ji("calendar")` Terças e quintas-feiras das 8h às 10h no CB01
+
+
+
+### Referência Bibliográficas
+
+- Anderson, D. R; Sweeney, D. J.; e Williams, T. A. (2008). Estatística Aplicada à Administração e Economia. 2 edição. Cengage Learning
+- [Ross, S. M. (2010). Introductory Statistics](http://www.sciencedirect.com/science/book/9780123743886)
+- [Diez, D. M.; Barr, C. D.; Çetinkaya-Rundel, M. (2015).  OpenIntro Statistics](https://drive.google.com/file/d/0B-DHaDEbiOGkY1FCdEJFNGV1Ym8/view)
+- Bussab, W.O. e Morettin, P.A. (2017). Estatística Básica. 9a edição.
+- Magalhães, M.N. e de Lima, A.C.P. (2001). Noções de Probabilidade e Estatística. IME-USP.
+
+
+
+
+### **Cronograma**
+
+
+
+| Aula  | Tópico                 | Slides | Adicional  |
+|:-----:|:-----------------------|--------|------------|
+| 01    | [Introdução](https://youtu.be/Kw9vC_yU4qU)  | [Link]() | [Link](https://youtu.be/5SMJsKamuSQ)
+| 02    | [Est. Descritiva](https://youtu.be/W45bVRU6gF0) | [Link]() | [Link](https://youtu.be/s-pcmRTyZFk)
+
+
+<center>
 
 
 <center>

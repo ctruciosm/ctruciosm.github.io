@@ -1,0 +1,78 @@
+---
+title: "ME715"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Econometria
+
+## 2023.2
+
+**ATENÇÃO: as aulas começarão no dia 8 de agosto**
+
+</center>
+
+
+
+As datas das provas e apresentação do trabalho já estão definidas. Programe-se com antecedência. 
+
+- $P_1$: **28/09**
+- $P_2$: **28/11**  
+- Exame: **12/12**  
+
+
+
+</br>
+
+### Informações 
+
+
+- `r emo::ji("pencil")` [Plano de Ensino]() 
+- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NjE2NDA0MDE3MTM4)  (Código da Turma caso precisarem: rex4bvn)
+- `r emo::ji("calendar")` Terças e quintas-feiras das 10h às 12h no PB02
+
+</br>
+
+### Referência Bibliográficas
+
+
+#### Básica
+
+- Wooldridge, J. (2023). Introduçao a Econometria: Uma abordagem econometrica. 7ed. Cengage Lerning.
+- Heiss, F. (2020). Using R for Introductory Econometrics. 2ed.
+- Heiss, F., \& Brunner, D. (2022). Using Python for Introductory Econometrics.
+- Heiss, F., \& Brunner, D. (2023). Using Julia for Introductory Econometrics.
+
+#### Complementar
+
+- Greene, W. H. (2003). Econometric Analysis. Pearson Education.
+- Johnston, J., & DiNardo, J. (1997). Econometric Methods. Mc Graw Hill, 4ed
+- [Hanck, C., Arnold, M., Gerber, A., and Schmelzer, M. (2023). Introduction to Econometrics with R (Online book)](https://www.econometrics-with-r.org/)
+-  Hill, R. C., Griffiths, W. E., & Judge, G. G. (2010). Econometria. Saraiva, 3ed
+-  Stock, J. H., & Watson, M. W. (2020). Introduction to Econometrics. Pearson, 4ed (Global)
+
+
+### **Cronograma**
+
+
+| Aula  | Assunto                |
+|:-----:|:-----------------------|
+| 01     | Introdução  |
+| 02     | Revisão RLM  |
+
+
+
+
+<center>
+
+> Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for,  pode contar comigo. 
+
+</center>
+
+
+
+---- 
