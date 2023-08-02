@@ -22,10 +22,12 @@ navbar:
       href: statblog.html
     - text: 'Links'
       href: links.html
-    - text: 2023.1
+    - text: 2023.2
       menu:
-        - text: ME607
-          href: ME607.html
+        - text: ME414
+          href: ME414.html
+        - text: ME715
+          href: ME715.html
         - text: CAREFS
           href: 'http://www.ime.unicamp.br/carefs/'
     - icon: fas fa-adjust
