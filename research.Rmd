@@ -72,7 +72,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Does really resampling portfolios improve out-of-sample performance? evidence from the Brazilian market.* [with André Oliveira and Pedro Valls] Submitted _Research in International Business and Finance_ \medskip </li>
+<li> *Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis..* [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] Submitted _Brazilian Review of Finance_ \medskip </li>
+
+<li> *Does portfolio resampling really improve out-of-sample performance? Evidence from the Brazilian and US marketst.* [with André Oliveira and Pedro Valls] Submitted _Journal of Banking and Finance_ \medskip </li>
 
 
 </ol>
@@ -89,16 +91,10 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 <ol reversed>
 
 
-<li> *Risk-based portfolio allocation strategies in the Brazilian stock market: from classical to machine learning approaches* [with Beatriz Galino] \medskip </li>
+<li> *Forecasting VaR and ES through Markov Switching GARCH Models.* [with Luiz K. Hotta, Mauricio Zevallos and Pedro Valls] \medskip </li>
 
-<li> *Forecasting risk measures in Brazilian stocks* [with Guilherme Batista] \medskip </li>
+<li> *A note about calibration tests for VaR and ES.* [with Luiz K. Hotta and Mauricio Zevallos] \medskip </li>
 
-
-<li> *Estimating Value-at-Risk and Expected Shortfall in emerging markets: An empirical comparison of volatility models* [with Pinar Kaya Soylu] \medskip </li>
-
-<li> *Cryptocurrency portfolio allocation using time-varying covariance matrix* [with Anderson Motta] \medskip </li>
-
-<li> *A review on multivariate Markov-switching (M)GARCH models* [with Luiz Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
 
 </ol>
 
