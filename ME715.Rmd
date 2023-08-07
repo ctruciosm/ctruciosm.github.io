@@ -59,10 +59,10 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 ### **Cronograma**
 
 
-| Aula  | Assunto                |
-|:-----:|:-----------------------|
-| 01     | Introdução  |
-| 02     | Revisão RLM  |
+| Aula  | Assunto                | Link |
+|:-----:|:-----------------------|:----:|
+| 01     | Introdução  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula01.html#/title-slide) |
+| 02     | Revisão RLM  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula02.html#/title-slide)
 
 
 

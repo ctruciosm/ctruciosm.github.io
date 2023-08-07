@@ -49,8 +49,10 @@ output:
 
 | Aula  | Tópico                 | Slides | Adicional  |
 |:-----:|:-----------------------|--------|------------|
-| 01    | [Introdução](https://youtu.be/Kw9vC_yU4qU)  | [Link]() | [Link](https://youtu.be/5SMJsKamuSQ)
-| 02    | [Est. Descritiva](https://youtu.be/W45bVRU6gF0) | [Link]() | [Link](https://youtu.be/s-pcmRTyZFk)
+| 01    | Introdução  | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula01.pdf) | 
+| 02    | Est. Descritiva | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula02.pdf) | 
+| 03    | Lab R |  | 
+| 04    | Est. Descritiva | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf) | 
 
 
 <center>
