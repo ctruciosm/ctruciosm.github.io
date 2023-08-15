@@ -51,7 +51,7 @@ output:
 |:-----:|:-----------------------|--------|------------|
 | 01    | Introdução  | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula01.pdf) | 
 | 02    | Est. Descritiva | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula02.pdf) | 
-| 03    | Lab R |  | 
+| 03    | Lab R | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_LabR_01.ipynb) | 
 | 04    | Est. Descritiva | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf) | 
 
 
