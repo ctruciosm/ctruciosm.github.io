@@ -66,6 +66,9 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 03     | Revisão RLM  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula02.html#/title-slide)
 |04      | Lab 02 |     |
 | 05     | Revisão RLM II  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula03.html#/title-slide)
+|06      | Lab 03 |     |
+| 07     | Revisão RLM III  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide)
+|08      | Lab 04 |     |
 
 
 
