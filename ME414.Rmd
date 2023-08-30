@@ -56,6 +56,7 @@ output:
 | 05 | Lab R | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/LabR02_ME414.ipynb) |
 | 06 | Análise Combinatoria | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula06.pdf)
 | 07 | Probabilidade | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula07.pdf)
+| 08 | Probabilidade Condicional | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula08.pdf)
 
 
 <center>

@@ -69,8 +69,12 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 |06      | Lab 03 |     |
 | 07     | Revisão RLM III  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide)
 |08      | Lab 04 |     |
-| 09     | Variáveis irrelevantes / omitidas  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula05.html#/title-slide)
-
+| 09     | Variáveis irrelevantes, omitidas e multicolinearidad | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula05.html#/title-slide)
+|10      | Lab 05 |     |
+| 11     | Erros autocorrelacionais | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula06.html#/title-slide)
+|12      | Lab 06 |     |
+| 13     | Minimos Quadrados Generalizados | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula07.html#/title-slide)
+|14      | Lab 07 |     |
 
 
 
