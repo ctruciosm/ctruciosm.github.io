@@ -57,6 +57,8 @@ output:
 | 06 | Análise Combinatoria | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula06.pdf)
 | 07 | Probabilidade | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula07.pdf)
 | 08 | Probabilidade Condicional | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula08.pdf)
+| 09 | Exercícios | 
+| 10 | Distribuições Discretas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula09.pdf)
 
 
 <center>
