@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2468,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <link href="site_libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
   <script src="site_libs/panelset-0.2.6/panelset.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
@@ -2537,10 +2544,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
 <div class="d-article">
-<p><strong>Research Interest:</strong> Bootstrap procedures for
-dependent data; general dynamic factor models; high dimensional data;
-risk measures and portfolio allocation; robust procedures in time
-series; statistical learning for business, economics and finance.</p>
+<p><strong>Research Interest:</strong> Bootstrap procedures for dependent data; general dynamic factor models; high dimensional data; risk measures and portfolio allocation; robust procedures in time series; statistical learning for business, economics and finance.</p>
 <div class="layout-chunk" data-layout="l-page">
 <style>.panelset{--panel-tab-foreground: honeydew;--panel-tab-background: #0F2E3D;}</style>
 </div>
@@ -2550,123 +2554,59 @@ series; statistical learning for business, economics and finance.</p>
 <h4 id="peer-reviewed-publications">PEER-REVIEWED PUBLICATIONS</h4>
 <ol reversed>
 <li>
-<em>Using hierarchical risk parity in the Brazilian market: An
-out-of-sample analysis.</em> Accepted <em>Brazilian Review of
-Finance</em> (2023) [with Felipe Reis, Anderson Sobreira and Boris
-Asrilhant] <a
-href="https://github.com/felipereis150/BrazilianHRP"><code>CODES</code></a>
+<em>Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.</em> Accepted <em>Brazilian Review of Finance</em> (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] <a href="https://github.com/felipereis150/BrazilianHRP"><code>CODES</code></a>
 </li>
 <li>
-<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/for.2929"><em>A
-Comparison of Methods for Forecasting Value-at-Risk and Expected
-Shortfall of Cryptocurrencies.</em></a> <strong>Journal of
-Forecasting</strong> (2023) [with James W. Taylor] <a
-href="https://github.com/ctruciosm/CryptoForeComb"><code>CODES</code></a>
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/for.2929"><em>A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.</em></a> <strong>Journal of Forecasting</strong> (2023) [with James W. Taylor] <a href="https://github.com/ctruciosm/CryptoForeComb"><code>CODES</code></a>
 </li>
 <li>
-<a
-href="https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1996380?journalCode=ubes20"><em>Forecasting
-Conditional Covariance Matrices in High-Dimensional Time Series: a
-General Dynamic Factor Approach.</em></a> <strong>Journal of Business
-and Economic Statistics</strong> (2023) [with João Mazzeu, Marc Hallin,
-Luiz Hotta, Pedro Valls and Mauricio Zevallos]
+<a href="https://www.tandfonline.com/doi/abs/10.1080/07350015.2021.1996380?journalCode=ubes20"><em>Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach.</em></a> <strong>Journal of Business and Economic Statistics</strong> (2023) [with João Mazzeu, Marc Hallin, Luiz Hotta, Pedro Valls and Mauricio Zevallos]
 </li>
 <li>
-<a
-href="https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563"><em>Forecasting
-Value-at-Risk and Expected Shortfall in Large Portfolios: a General
-Dynamic Factor Model Approach</em></a>. <strong>Econometrics and
-Statistics</strong> (2021). [with Marc Hallin] <a
-href="https://github.com/ctruciosm/GDFM-CHF-VaRES"><code>CODES</code></a>
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563"><em>Forecasting Value-at-Risk and Expected Shortfall in Large Portfolios: a General Dynamic Factor Model Approach</em></a>. <strong>Econometrics and Statistics</strong> (2021). [with Marc Hallin] <a href="https://github.com/ctruciosm/GDFM-CHF-VaRES"><code>CODES</code></a>
 </li>
 <p></p>
 <li>
-<a
-href="https://www.sciencedirect.com/science/article/pii/S0169207020301540"><em>Robustness
-and the general dynamic factor model with infinite-dimensional space:
-identification, estimation, and forecasting</em></a>.
-<strong>International Journal of Forecasting</strong> (2020). [with João
-Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]
+<a href="https://www.sciencedirect.com/science/article/pii/S0169207020301540"><em>Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting</em></a>. <strong>International Journal of Forecasting</strong> (2020). [with João Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]
 </li>
 <p></p>
 <li>
-<a
-href="https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20"><em>Value-at-Risk
-and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine
-Copula–based Approach</em></a>. <strong>Applied Economics</strong>
-(2020). [with Aviral Tiwari and Faisal Alqahtani] <a
-href="https://github.com/ctruciosm/CryptoCopVaRES"><code>CODES</code></a>
+<a href="https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20"><em>Value-at-Risk and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine Copula–based Approach</em></a>. <strong>Applied Economics</strong> (2020). [with Aviral Tiwari and Faisal Alqahtani] <a href="https://github.com/ctruciosm/CryptoCopVaRES"><code>CODES</code></a>
 </li>
 <p></p>
 <li>
-<a href="https://www.mdpi.com/2225-1146/7/2/19"><em>Covariance
-prediction in large portfolio allocation</em></a>.
-<strong>Econometrics</strong> (2019). [with Mauticio Zevallos, Luiz
-Hotta and André P. Santos]
+<a href="https://www.mdpi.com/2225-1146/7/2/19"><em>Covariance prediction in large portfolio allocation</em></a>. <strong>Econometrics</strong> (2019). [with Mauticio Zevallos, Luiz Hotta and André P. Santos]
 </li>
 <p></p>
 <li>
-<a
-href="https://www.sciencedirect.com/science/article/abs/pii/S0927539819300386"><em>On
-the robustness of the principal volatility components</em></a>.
-<strong>Journal of Empirical Finance</strong> (2019). [with Luiz Hotta
-and Pedro Valls] <a
-href="https://github.com/ctruciosm/Robpvc"><code>R PACKAGE</code></a>
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0927539819300386"><em>On the robustness of the principal volatility components</em></a>. <strong>Journal of Empirical Finance</strong> (2019). [with Luiz Hotta and Pedro Valls] <a href="https://github.com/ctruciosm/Robpvc"><code>R PACKAGE</code></a>
 </li>
 <p></p>
 <li>
-<a
-href="https://www.sciencedirect.com/science/article/abs/pii/S0169207019300184"><em>Forecasting
-Bitcoin risk measures: A robust approach</em></a>. <strong>International
-Journal of Forecasting</strong> (2019). <a
-href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0169207019300184"><em>Forecasting Bitcoin risk measures: A robust approach</em></a>. <strong>International Journal of Forecasting</strong> (2019). <a href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
 </li>
 <p></p>
 <li>
-<a
-href="https://link.springer.com/chapter/10.1007/978-3-319-94015-1_8"><em>Inference
-in (M)GARCH Models in the Presence of Additive Outliers: Specification,
-Estimation and Prediction</em></a>. In Lavor, C. and Neto, F. A. M. G.,
-editors, Advances in Mathematics and Applications.
-<strong>Springer</strong>. (2018). [with Luiz Hotta]
+<a href="https://link.springer.com/chapter/10.1007/978-3-319-94015-1_8"><em>Inference in (M)GARCH Models in the Presence of Additive Outliers: Specification, Estimation and Prediction</em></a>. In Lavor, C. and Neto, F. A. M. G., editors, Advances in Mathematics and Applications. <strong>Springer</strong>. (2018). [with Luiz Hotta]
 </li>
 <p></p>
 <li>
-<a
-href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2018.1462811?journalCode=gscs20"><em>Robust
-Bootstrap Densities for Dynamic Conditional Correlations: Implications
-for Portfolio Selection and Value-at-Risk</em></a>. <strong>Journal of
-Statistical Computing and Simulation</strong> (2018). [with Luiz Hotta
-and Esther Ruiz]
+<a href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2018.1462811?journalCode=gscs20"><em>Robust Bootstrap Densities for Dynamic Conditional Correlations: Implications for Portfolio Selection and Value-at-Risk</em></a>. <strong>Journal of Statistical Computing and Simulation</strong> (2018). [with Luiz Hotta and Esther Ruiz]
 </li>
 <p></p>
 <li>
-<a
-href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1359601?journalCode=gscs20"><em>Robust
-bootstrap forecast densities for GARCH returns and
-volatilities</em></a>. <strong>Journal of Statistical Computing and
-Simulation</strong> (2017). [with Luiz Hotta and Esther Ruiz] <a
-href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
+<a href="https://www.tandfonline.com/doi/abs/10.1080/00949655.2017.1359601?journalCode=gscs20"><em>Robust bootstrap forecast densities for GARCH returns and volatilities</em></a>. <strong>Journal of Statistical Computing and Simulation</strong> (2017). [with Luiz Hotta and Esther Ruiz] <a href="https://cran.r-project.org/package=RobGARCHBoot"><code>R PACKAGE</code></a>
 </li>
 <p></p>
 <li>
-<a
-href="https://www.sciencedirect.com/science/article/abs/pii/S03784754150013303"><em>Bootstrap
-prediction in univariate volatility models with leverage
-effect</em></a>. <strong>Mathematics and Computers in
-Simulation</strong> (2016). [with Luiz Hotta]
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S03784754150013303"><em>Bootstrap prediction in univariate volatility models with leverage effect</em></a>. <strong>Mathematics and Computers in Simulation</strong> (2016). [with Luiz Hotta]
 </li>
 <p></p>
 </ol>
 <h5 id="other-publications">OTHER PUBLICATIONS</h5>
 <ol reversed>
 <li>
-<a
-href="https://140.82.11.112/index.php/ECIPERU/article/view/336/324"><em>Factors
-that influence in the academic performance of the students of the
-Faculty of Mathematical sciences of the Universidad Nacional Mayor de
-San Marcos</em></a>. <strong>ECI PERU</strong> (2009). [with Estela
-Ponce Aruneri]
+<a href="https://140.82.11.112/index.php/ECIPERU/article/view/336/324"><em>Factors that influence in the academic performance of the students of the Faculty of Mathematical sciences of the Universidad Nacional Mayor de San Marcos</em></a>. <strong>ECI PERU</strong> (2009). [with Estela Ponce Aruneri]
 </li>
 </ol>
 </div>
@@ -2675,9 +2615,7 @@ Ponce Aruneri]
 <h4 id="working-papers-1">WORKING PAPERS</h4>
 <ol reversed>
 <li>
-<em>Does portfolio resampling really improve out-of-sample performance?
-Evidence from the Brazilian and US marketst.</em> [with André Oliveira
-and Pedro Valls] Submitted <em>Journal of Banking and Finance</em>
+<em>Does portfolio resampling really improve out-of-sample performance? Evidence from the Brazilian and US marketst.</em> [with André Oliveira and Pedro Valls] Submitted <em>Journal of Banking and Finance</em>
 </li>
 </ol>
 </div>
@@ -2686,18 +2624,15 @@ and Pedro Valls] Submitted <em>Journal of Banking and Finance</em>
 <h4 id="ongoing-work">ONGOING WORK</h4>
 <ol reversed>
 <li>
-<em>Forecasting VaR and ES through Markov Switching GARCH Models.</em>
-[with Luiz K. Hotta, Mauricio Zevallos and Pedro Valls]
+<em>Forecasting VaR and ES through Markov Switching GARCH Models.</em> [with Luiz K. Hotta, Mauricio Zevallos and Pedro Valls]
 </li>
 <li>
-<em>A note about calibration tests for VaR and ES.</em> [with Luiz K.
-Hotta and Mauricio Zevallos]
+<em>A note about calibration tests for VaR and ES.</em> [with Luiz K. Hotta and Mauricio Zevallos]
 </li>
 </ol>
 </div>
 </div>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

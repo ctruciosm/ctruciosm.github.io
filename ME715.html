@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2468,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2540,13 +2547,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h2 id="section">2023.2</h2>
 <p><strong>ATENÇÃO: as aulas começarão no dia 8 de agosto</strong></p>
 </center>
-<p>As datas das provas e apresentação do trabalho já estão definidas.
-Programe-se com antecedência.</p>
+<p>As datas das provas e apresentação do trabalho já estão definidas. Programe-se com antecedência.</p>
 <ul>
-<li><span class="math inline">\(P_1\)</span>:
-<strong>28/09</strong></li>
-<li><span class="math inline">\(P_2\)</span>:
-<strong>28/11</strong><br />
+<li><span class="math inline">\(P_1\)</span>: <strong>28/09</strong></li>
+<li><span class="math inline">\(P_2\)</span>: <strong>28/11</strong><br />
 </li>
 <li>Exame: <strong>12/12</strong></li>
 </ul>
@@ -2554,34 +2558,25 @@ Programe-se com antecedência.</p>
 <h3 id="informações">Informações</h3>
 <ul>
 <li>📝 <a href="">Plano de Ensino</a></li>
-<li>👩‍🏫 <a href="https://classroom.google.com/c/NjE2NDA0MDE3MTM4">Google
-Classroom</a> (Código da Turma caso precisarem: rex4bvn)</li>
+<li>👨‍🏫 <a href="https://classroom.google.com/c/NjE2NDA0MDE3MTM4">Google Classroom</a> (Código da Turma caso precisarem: rex4bvn)</li>
 <li>📆 Terças e quintas-feiras das 10h às 12h no PB02</li>
 </ul>
 <p></br></p>
 <h3 id="referência-bibliográficas">Referência Bibliográficas</h3>
 <h4 id="básica">Básica</h4>
 <ul>
-<li>Wooldridge, J. (2023). Introduçao a Econometria: Uma abordagem
-econometrica. 7ed. Cengage Lerning.</li>
+<li>Wooldridge, J. (2023). Introduçao a Econometria: Uma abordagem econometrica. 7ed. Cengage Lerning.</li>
 <li>Heiss, F. (2020). Using R for Introductory Econometrics. 2ed.</li>
-<li>Heiss, F., &amp; Brunner, D. (2022). Using Python for Introductory
-Econometrics.</li>
-<li>Heiss, F., &amp; Brunner, D. (2023). Using Julia for Introductory
-Econometrics.</li>
+<li>Heiss, F., &amp; Brunner, D. (2022). Using Python for Introductory Econometrics.</li>
+<li>Heiss, F., &amp; Brunner, D. (2023). Using Julia for Introductory Econometrics.</li>
 </ul>
 <h4 id="complementar">Complementar</h4>
 <ul>
 <li>Greene, W. H. (2003). Econometric Analysis. Pearson Education.</li>
-<li>Johnston, J., &amp; DiNardo, J. (1997). Econometric Methods. Mc Graw
-Hill, 4ed</li>
-<li><a href="https://www.econometrics-with-r.org/">Hanck, C., Arnold,
-M., Gerber, A., and Schmelzer, M. (2023). Introduction to Econometrics
-with R (Online book)</a></li>
-<li>Hill, R. C., Griffiths, W. E., &amp; Judge, G. G. (2010).
-Econometria. Saraiva, 3ed</li>
-<li>Stock, J. H., &amp; Watson, M. W. (2020). Introduction to
-Econometrics. Pearson, 4ed (Global)</li>
+<li>Johnston, J., &amp; DiNardo, J. (1997). Econometric Methods. Mc Graw Hill, 4ed</li>
+<li><a href="https://www.econometrics-with-r.org/">Hanck, C., Arnold, M., Gerber, A., and Schmelzer, M. (2023). Introduction to Econometrics with R (Online book)</a></li>
+<li>Hill, R. C., Griffiths, W. E., &amp; Judge, G. G. (2010). Econometria. Saraiva, 3ed</li>
+<li>Stock, J. H., &amp; Watson, M. W. (2020). Introduction to Econometrics. Pearson, 4ed (Global)</li>
 </ul>
 <h3 id="cronograma"><strong>Cronograma</strong></h3>
 <table>
@@ -2601,8 +2596,7 @@ Econometrics. Pearson, 4ed (Global)</li>
 <tr class="odd">
 <td style="text-align: center;">01</td>
 <td style="text-align: left;">Introdução</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula01.html#/title-slide">Link</a></td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula01.html#/title-slide">Link</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">02</td>
@@ -2612,8 +2606,7 @@ href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula01.html#/title-slide">
 <tr class="odd">
 <td style="text-align: center;">03</td>
 <td style="text-align: left;">Revisão RLM</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula02.html#/title-slide">Link</a></td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula02.html#/title-slide">Link</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">04</td>
@@ -2623,8 +2616,7 @@ href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula02.html#/title-slide">
 <tr class="odd">
 <td style="text-align: center;">05</td>
 <td style="text-align: left;">Revisão RLM II</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula03.html#/title-slide">Link</a></td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula03.html#/title-slide">Link</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">06</td>
@@ -2634,8 +2626,7 @@ href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula03.html#/title-slide">
 <tr class="odd">
 <td style="text-align: center;">07</td>
 <td style="text-align: left;">Revisão RLM III</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide">Link</a></td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide">Link</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">08</td>
@@ -2644,17 +2635,13 @@ href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide">
 </tr>
 <tr class="odd">
 <td style="text-align: center;">09</td>
-<td style="text-align: left;">Variáveis irrelevantes, omitidas e
-multicolinearidad</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula05.html#/title-slide">Link</a></td>
+<td style="text-align: left;">Variáveis irrelevantes, omitidas e multicolinearidad</td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula05.html#/title-slide">Link</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">10</td>
-<td style="text-align: left;">Heterocedasticidade e erros
-autocorrelacionais</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula06.html#/title-slide">Link</a></td>
+<td style="text-align: left;">Heterocedasticidade e erros autocorrelacionais</td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula06.html#/title-slide">Link</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">11</td>
@@ -2664,8 +2651,7 @@ href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula06.html#/title-slide">
 <tr class="even">
 <td style="text-align: center;">12</td>
 <td style="text-align: left;">Minimos Quadrados Generalizados</td>
-<td style="text-align: center;"><a
-href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula07.html#/title-slide">Link</a></td>
+<td style="text-align: center;"><a href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula07.html#/title-slide">Link</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">13</td>
@@ -2676,14 +2662,11 @@ href="https://ctruciosm.github.io/ME715-unicamp/ME715_Aula07.html#/title-slide">
 </table>
 <center>
 <blockquote>
-<p>Nesse tempo de pandemia sei que as coisas não estão fáceis. Se
-precisar conversar com alguém, seja o assunto que for, pode contar
-comigo.</p>
+<p>Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for, pode contar comigo.</p>
 </blockquote>
 </center>
 <hr />
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

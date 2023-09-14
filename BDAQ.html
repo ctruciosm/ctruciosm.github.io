@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2468,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
   <meta name="description" content="Grupo de Pesquisa BDAQ: Big Data e Análise Quantitativa"/>
   <meta name="github-repo" content="ctruciosm.github.io/BDAQ"/>
@@ -2550,18 +2557,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </div>
 <blockquote>
-<p>Esta mensagem foi enviada aos alunos da FACC/UFRJ através do SIGA na
-quinta-feira 25 de novembro do 2021.</p>
+<p>Esta mensagem foi enviada aos alunos da FACC/UFRJ através do SIGA na quinta-feira 25 de novembro do 2021.</p>
 </blockquote>
 <p><br></p>
 <p>Prezados(as) Alunos(as) da FACC:</p>
-<p>O grupo de pesquisa em <a
-href="http://dgp.cnpq.br/dgp/espelhogrupo/764775">Big Data e Análise
-Quantitativa (BDAQ)</a> formado pelos professores do Departamento de
-Administração Boris Asrilhant, Carlos Trucíos, Cristina Pimenta, Laura
-Valencia e Marcelo Castañeda busca alunos(as) interessados(as) em
-desenvolver pesquisa em temas relacionados com métodos quantitativos e
-análise de dados.</p>
+<p>O grupo de pesquisa em <a href="http://dgp.cnpq.br/dgp/espelhogrupo/764775">Big Data e Análise Quantitativa (BDAQ)</a> formado pelos professores do Departamento de Administração Boris Asrilhant, Carlos Trucíos, Cristina Pimenta, Laura Valencia e Marcelo Castañeda busca alunos(as) interessados(as) em desenvolver pesquisa em temas relacionados com métodos quantitativos e análise de dados.</p>
 <p>Os atuais temas de interesse do grupo de pesquisa são:</p>
 <ul>
 <li>Mineração de texto</li>
@@ -2570,37 +2570,20 @@ análise de dados.</p>
 <li>Precificação de derivativos</li>
 <li>Política nas plataformas digitais</li>
 </ul>
-<p>Outros temas poderão ser incorporados, inclusive por sugestão dos(as)
-alunos(as) participantes.</p>
+<p>Outros temas poderão ser incorporados, inclusive por sugestão dos(as) alunos(as) participantes.</p>
 <p>Os(as) alunos(as) interessados(a) deverão, pelo menos:</p>
 <ul>
-<li>ter sido aprovado(a) na disciplina Estatística para Administração -
-MAD211 (ou equivalente);</li>
+<li>ter sido aprovado(a) na disciplina Estatística para Administração - MAD211 (ou equivalente);</li>
 <li>ter alguma familiaridade com métodos quantitativos;</li>
-<li>conhecer ou interesse em aprender alguma linguagem de
-programação;</li>
-<li>ter responsabilidade e comprometimento no desenvolvimento da
-pesquisa; e</li>
-<li>ter disponibilidade de, pelo menos, 4 horas semanais para reuniões e
-dedicação à pesquisa.</li>
+<li>conhecer ou interesse em aprender alguma linguagem de programação;</li>
+<li>ter responsabilidade e comprometimento no desenvolvimento da pesquisa; e</li>
+<li>ter disponibilidade de, pelo menos, 4 horas semanais para reuniões e dedicação à pesquisa.</li>
 </ul>
-<p>Para os(as) alunos(as) participantes será oferecido um curso
-introdutório à linguagem R.</p>
-<p>Até o momento não temos como oferecer bolsas, mas assim que os
-editais das agências de fomento sejam abertos, serão solicitadas bolsas
-de iniciação científica para, caso as bolsas sejam concedidas, serem
-alocadas aos(as) alunos(as) participantes segundo critérios objetivos
-para a indicação do(a) bolsista(a).</p>
-<p>Caso tenha interesse em participar, preencha até o dia
-<strong>10/12/2021</strong> o <a
-href="https://docs.google.com/forms/d/e/1FAIpQLSeHwoU-lW6AyKsOyaAiIZy2VaENV0kM7dJIh0aWUg7D12NAbA/viewform?usp=sf_link">seguinte
-formulário</a>, a fim de marcarmos um primeiro encontro entre os dias 15
-e 17 de dezembro deste ano.</p>
-<p>Dúvidas podem ser encaminhadas para <a
-href="mailto:carlos.trucios@facc.ufrj.br"
-class="email">carlos.trucios@facc.ufrj.br</a>.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Para os(as) alunos(as) participantes será oferecido um curso introdutório à linguagem R.</p>
+<p>Até o momento não temos como oferecer bolsas, mas assim que os editais das agências de fomento sejam abertos, serão solicitadas bolsas de iniciação científica para, caso as bolsas sejam concedidas, serem alocadas aos(as) alunos(as) participantes segundo critérios objetivos para a indicação do(a) bolsista(a).</p>
+<p>Caso tenha interesse em participar, preencha até o dia <strong>10/12/2021</strong> o <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHwoU-lW6AyKsOyaAiIZy2VaENV0kM7dJIh0aWUg7D12NAbA/viewform?usp=sf_link">seguinte formulário</a>, a fim de marcarmos um primeiro encontro entre os dias 15 e 17 de dezembro deste ano.</p>
+<p>Dúvidas podem ser encaminhadas para <a href="mailto:carlos.trucios@facc.ufrj.br" class="email">carlos.trucios@facc.ufrj.br</a>.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

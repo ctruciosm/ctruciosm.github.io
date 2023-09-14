@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2468,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
   <meta name="description" content="CIA (Causal Inference and Analytics) é um grupo de estudos para aluno(a)s da FACC/UFRJ interessados em métodos quantitativos e análise de dados. Discutimos tópicos relacionados com o Software R, Statistical/Machine Learnig, Econometria, Marketing Analytics, People Analytics, Python, Inferência Causal, Finanças Quantitativas, e temas relacionados."/>
   <meta name="github-repo" content="ctruciosm.github.io/CIA"/>
@@ -2565,63 +2572,35 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="layout-chunk" data-layout="l-page">
 
 </div>
-<p>Bem-vindo(a)s ao grupo de estudos <strong>CIA</strong>. O grupo foi
-fundado ao final do 2020.1 (remoto), após finalizar minha primeira turma
-como professor de <em>modelos de regressão e previsão</em> na
-FACC/UFRJ.</p>
-<p>A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em
-métodos quantitativos e análise de dados para estudarmos tópicos
-relacionados com o Software <a href="https://www.r-project.org">R</a>,
-Statistical/Machine Learnig, Econometria, <em>Marketing Analytics</em>,
-<em>People Analytics</em>, Python, Inferência Causal, etc… <em>i.e.</em>
-com Métodos Quantitativos. O interesse do grupo é entender como os
-diversos métodos funcionam e como eles são aplicados em diversas
-áreas.</p>
+<p>Bem-vindo(a)s ao grupo de estudos <strong>CIA</strong>. O grupo foi fundado ao final do 2020.1 (remoto), após finalizar minha primeira turma como professor de <em>modelos de regressão e previsão</em> na FACC/UFRJ.</p>
+<p>A ideia do grupo é reunir aluno(a)s da FACC/UFRJ interessados em métodos quantitativos e análise de dados para estudarmos tópicos relacionados com o Software <a href="https://www.r-project.org">R</a>, Statistical/Machine Learnig, Econometria, <em>Marketing Analytics</em>, <em>People Analytics</em>, Python, Inferência Causal, etc… <em>i.e.</em> com Métodos Quantitativos. O interesse do grupo é entender como os diversos métodos funcionam e como eles são aplicados em diversas áreas.</p>
 <blockquote>
-<p>📝 Para participar, preencha o seguinte <a
-href="https://forms.gle/1Np4NEGbDKMSb9WN9"><strong>formulário</strong></a>.
-📝</p>
+<p>📝 Para participar, preencha o seguinte <a href="https://forms.gle/1Np4NEGbDKMSb9WN9"><strong>formulário</strong></a>. 📝</p>
 </blockquote>
 </center>
 <h3 id="quando-e-onde"><em>Quando e onde?</em></h3>
 <ul>
-<li>📆 Sextas-feiras (a cada quinze dias) das 17hrs às 18hrs (ver
-cronograma).</li>
+<li>📆 Sextas-feiras (a cada quinze dias) das 17hrs às 18hrs (ver cronograma).</li>
 <li>💻 As reuniões acontecem via <strong>Google Meets</strong>.</li>
-<li>🔑 O link das reuniões será enviado por email unicamente aos
-participantes.</li>
+<li>🔑 O link das reuniões será enviado por email unicamente aos participantes.</li>
 </ul>
 <h3 id="quem-pode-participar"><em>Quem pode participar?</em></h3>
 <ul>
-<li>👩‍🎓 Qualquer aluno(a) da FACC/UFRJ<a href="#fn1" class="footnote-ref"
-id="fnref1" role="doc-noteref"><sup>1</sup></a> com desejo de aprender e
-ensinar.</li>
+<li>👨‍🎓 Qualquer aluno(a) da FACC/UFRJ<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> com desejo de aprender e ensinar.</li>
 </ul>
 <h3 id="como-funciona-o-grupo"><em>Como funciona o grupo?</em></h3>
 <ul>
-<li>O grupo é colaborativo e participativo, ou seja, todos os
-integrantes podem (e devem) falar de algum assunto.</li>
-<li>Os tópicos são relacionados com métodos quantitativos (estatística,
-econometria, <em>machine learning</em>, finanças quantitativas,
-etc).</li>
-<li>Os tópicos selecionados serão ministrados por mim ou pelos próprios
-participantes tendo estes últimos minha ajuda.</li>
-<li>Até final do ano, estudaremos o livro <a
-href="https://www.statlearning.com">An Introduction to Statistical
-Learning: with Applications in R</a></li>
+<li>O grupo é colaborativo e participativo, ou seja, todos os integrantes podem (e devem) falar de algum assunto.</li>
+<li>Os tópicos são relacionados com métodos quantitativos (estatística, econometria, <em>machine learning</em>, finanças quantitativas, etc).</li>
+<li>Os tópicos selecionados serão ministrados por mim ou pelos próprios participantes tendo estes últimos minha ajuda.</li>
+<li>Até final do ano, estudaremos o livro <a href="https://www.statlearning.com">An Introduction to Statistical Learning: with Applications in R</a></li>
 </ul>
 <h3 id="livros-estudados"><em>Livros Estudados</em></h3>
 <ul>
-<li>[<strong>Finalizado</strong>] Wickham, H., &amp; Grolemund, G.
-(2016). R for data science: import, tidy, transform, visualize, and
-model data. ” O’Reilly Media, Inc.”.</li>
-<li>[<strong>Em andamento</strong>] James, G., Witten, D., Hastie, T.,
-&amp; Tibshirani, R. (2013). An Introduction to Statistical Learning:
-with Application in R. New York: Springer.</li>
+<li>[<strong>Finalizado</strong>] Wickham, H., &amp; Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”.</li>
+<li>[<strong>Em andamento</strong>] James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2013). An Introduction to Statistical Learning: with Application in R. New York: Springer.</li>
 </ul>
-<h3 id="cronograma"><strong>Cronograma</strong><a href="#fn2"
-class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></h3>
+<h3 id="cronograma"><strong>Cronograma</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></h3>
 <div class="panelset">
 <section id="section" class="panel-name panel">
 <h4 class="panel-name">2022</h4>
@@ -2720,9 +2699,7 @@ role="doc-noteref"><sup>2</sup></a></h3>
 </tr>
 <tr class="even">
 <td style="text-align: center;">04</td>
-<td style="text-align: left;">Importação de dados e criação da ABT<a
-href="#fn3" class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></td>
+<td style="text-align: left;">Importação de dados e criação da ABT<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
 <td style="text-align: center;">23/04/2021</td>
 </tr>
 <tr class="odd">
@@ -2737,105 +2714,77 @@ role="doc-noteref"><sup>3</sup></a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
-<td style="text-align: left;"><strong>Fim do Crash Course do
-R</strong></td>
+<td style="text-align: left;"><strong>Fim do Crash Course do R</strong></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">07</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_01">Machine/Statistical
-Learning: Introdução (ISLR Chapter 1 e 2)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_01">Machine/Statistical Learning: Introdução (ISLR Chapter 1 e 2)</a></td>
 <td style="text-align: center;">21/05/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">08</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_02">KNN (ISLR Chapter
-2)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_02">KNN (ISLR Chapter 2)</a></td>
 <td style="text-align: center;">11/06/2021</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">09</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_03">Linear Regression (ISLR
-Chapter 3)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_03">Linear Regression (ISLR Chapter 3)</a></td>
 <td style="text-align: center;">18/06/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
-<td style="text-align: left;"><strong>Fim do Período
-2020.2</strong></td>
+<td style="text-align: left;"><strong>Fim do Período 2020.2</strong></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">10</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_04">Classification Part I (ISLR
-Chapter 4)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_04">Classification Part I (ISLR Chapter 4)</a></td>
 <td style="text-align: center;">02/07/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">11</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_05">Classification Part II
-(ISLR Chapter 4)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_05">Classification Part II (ISLR Chapter 4)</a></td>
 <td style="text-align: center;">16/07/2021</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">12</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_06">Resampling Part I (ISLR
-Chapter 5)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_06">Resampling Part I (ISLR Chapter 5)</a></td>
 <td style="text-align: center;">30/07/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">13</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_07">Resampling Part II (ISLR
-Chapter 5)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_07">Resampling Part II (ISLR Chapter 5)</a></td>
 <td style="text-align: center;">13/08/2021</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">14</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_08">Model Selection (ISLR
-Chapter 6)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_08">Model Selection (ISLR Chapter 6)</a></td>
 <td style="text-align: center;">27/08/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">15</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_09">Regularization (ISLR
-Chapter 6)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_09">Regularization (ISLR Chapter 6)</a></td>
 <td style="text-align: center;">10/09/2021</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">16</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_10">Tree-Based Methods Part I
-(ISLR Chapter 8)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_10">Tree-Based Methods Part I (ISLR Chapter 8)</a></td>
 <td style="text-align: center;">08/10/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">17</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_11">Tree-Based Methods Part II
-(ISLR Chapter 8)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_11">Tree-Based Methods Part II (ISLR Chapter 8)</a></td>
 <td style="text-align: center;">05/11/2021</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">18</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_12">Support Vector Machines
-(ISLR Chapter 9)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_12">Support Vector Machines (ISLR Chapter 9)</a></td>
 <td style="text-align: center;">19/11/2021</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">19</td>
-<td style="text-align: left;"><a
-href="http://ctruciosm.github.io/ISL/ISL_13">Principal Component
-Analysis (ISLR Chapter 10)</a></td>
+<td style="text-align: left;"><a href="http://ctruciosm.github.io/ISL/ISL_13">Principal Component Analysis (ISLR Chapter 10)</a></td>
 <td style="text-align: center;">03/12/2021</td>
 </tr>
 <tr class="even">
@@ -2848,23 +2797,14 @@ Analysis (ISLR Chapter 10)</a></td>
 </section>
 </div>
 <h4 id="nota">Nota</h4>
-<p>Meus colegas e eu nos esforçamos para levar ensino de qualidade mesmo
-nos tempos de pandemía e de forma remota. Se você tiver aulas no mesmo
-dia e horário das nossas reuniões, participe das suas aulas, teremos
-outras oportunidades para você participar do grupo.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<section id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
+<p>Meus colegas e eu nos esforçamos para levar ensino de qualidade mesmo nos tempos de pandemía e de forma remota. Se você tiver aulas no mesmo dia e horário das nossas reuniões, participe das suas aulas, teremos outras oportunidades para você participar do grupo.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Sempre e quando não tenha aula nos dias/horarios das
-reuniões.<a href="#fnref1" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Tópicos e datas podem mudar<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>ABT: Analytical Base Table<a href="#fnref3"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Sempre e quando não tenha aula nos dias/horarios das reuniões.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Tópicos e datas podem mudar<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>ABT: Analytical Base Table<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 <!--radix_placeholder_article_footer-->

@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2468,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2536,28 +2543,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <center>
-<h1 id="métodos-quantitativos-em-administração">Métodos Quantitativos em
-Administração</h1>
+<h1 id="métodos-quantitativos-em-administração">Métodos Quantitativos em Administração</h1>
 <h2 id="section">2022.1</h2>
 </center>
-<p>As datas das provas já estão definidas. Programe-se com
-antecedência.</p>
+<p>As datas das provas já estão definidas. Programe-se com antecedência.</p>
 <ul>
-<li><span class="math inline">\(P_1\)</span>:
-<strong>26-05-2022</strong></li>
-<li><span class="math inline">\(P_2\)</span>:
-<strong>14-07-2022</strong></li>
+<li><span class="math inline">\(P_1\)</span>: <strong>26-05-2022</strong></li>
+<li><span class="math inline">\(P_2\)</span>: <strong>14-07-2022</strong></li>
 <li>Exame: <strong>26-07-2022</strong></li>
 </ul>
 <p></br></p>
 <p>📝 <a href="2021-2/Plano_ACA124_2022-1.pdf">Plano de Ensino</a></p>
-<p>👩‍🏫 <a
-href="https://classroom.google.com/c/NDk0NDgyODA3MjM0?cjc=uf66a3o">Google
-Classroom</a> (Código da Turma caso precisarem: uf66a3o)</p>
+<p>👩‍🏫 <a href="https://classroom.google.com/c/NDk0NDgyODA3MjM0?cjc=uf66a3o">Google Classroom</a> (Código da Turma caso precisarem: uf66a3o)</p>
 <p></br></p>
 <p><strong>Horários</strong></p>
-<p>📆 Terças e Quintas das 14:50 às 16:30 (T2) na sala
-<strong>BINGO6</strong></p>
+<p>📆 Terças e Quintas das 14:50 às 16:30 (T2) na sala <strong>BINGO6</strong></p>
 <h3 id="cronograma"><strong>Cronograma</strong></h3>
 <table>
 <thead>
@@ -2617,8 +2617,7 @@ Classroom</a> (Código da Turma caso precisarem: uf66a3o)</p>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">26-05-2022</td>
-<td style="text-align: left;"><span
-class="math inline">\(P_1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P_1\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">31-05-2022</td>
@@ -2630,18 +2629,15 @@ class="math inline">\(P_1\)</span></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">07-06-2022</td>
-<td style="text-align: left;">Outros algoritmos para programação
-linear</td>
+<td style="text-align: left;">Outros algoritmos para programação linear</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">09-06-2022</td>
-<td style="text-align: left;">Problemas de Transporte e da
-Designação</td>
+<td style="text-align: left;">Problemas de Transporte e da Designação</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">14-06-2022</td>
-<td style="text-align: left;">Problemas de Transporte e da
-Designação</td>
+<td style="text-align: left;">Problemas de Transporte e da Designação</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">21-06-2022</td>
@@ -2673,8 +2669,7 @@ Designação</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">14-07-2022</td>
-<td style="text-align: left;"><span
-class="math inline">\(P_2\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P_2\)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">26-07-2022</td>
@@ -2684,14 +2679,11 @@ class="math inline">\(P_2\)</span></td>
 </table>
 <center>
 <blockquote>
-<p>Nesse tempo de pandemia sei que as coisas não estão fáceis. Se
-precisar conversar com alguém, seja o assunto que for, pode contar
-comigo.</p>
+<p>Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for, pode contar comigo.</p>
 </blockquote>
 </center>
 <hr />
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

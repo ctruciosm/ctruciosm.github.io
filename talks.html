@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1598,15 +1599,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2468,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2537,240 +2544,114 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <ol reversed>
 <li>
-<a
-href="https://ctruciosm.github.io/23SEMEST/SEMEST#/title-slide">Academia,
-mercado e <em>otras cositas mas</em></a>. Palestra at <em>23º Semana da
-Estatística da UNICAMP</em>. October 20, 2022. Campinas. (Brazil) <img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+<a href="https://ctruciosm.github.io/23SEMEST/SEMEST#/title-slide">Academia, mercado e <em>otras cositas mas</em></a>. Palestra at <em>23º Semana da Estatística da UNICAMP</em>. October 20, 2022. Campinas. (Brazil) <img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Risk Measures in Cryptocurrency Markets. Invited Session at <em>IV
-Congresso Brasileiro de Jovens Pesquisadores em Matemática Pura,
-Aplicada e Estatística (CBJME-IV)</em>. October 5 to 7, 2022. João
-Pessoa. (Brazil) <img src="flag-icon-css-master/flags/4x3/br.svg"
-style="width:2.5%" />
+Risk Measures in Cryptocurrency Markets. Invited Session at <em>IV Congresso Brasileiro de Jovens Pesquisadores em Matemática Pura, Aplicada e Estatística (CBJME-IV)</em>. October 5 to 7, 2022. João Pessoa. (Brazil) <img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-A Comparison of Methods for Forecasting Value-at-Risk and Expected
-Shortfall of Cryptocurrencies. Seminar at <em>Catholic University of
-Brasilia</em>. September 9, 2022. Brasilia. (Brazil) <img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies. Seminar at <em>Catholic University of Brasilia</em>. September 9, 2022. Brasilia. (Brazil) <img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Modelando Series Temporales Financieras en Alta Dimensión. Conference at
-<em>X Encuentro Nacional de Matemáticas y Estadística</em>. June 1 to 3,
-2022. Ibagué. (Colombia) <img
-src="flag-icon-css-master/flags/4x3/co.svg" style="width:2.5%" />
+Modelando Series Temporales Financieras en Alta Dimensión. Conference at <em>X Encuentro Nacional de Matemáticas y Estadística</em>. June 1 to 3, 2022. Ibagué. (Colombia) <img src="flag-icon-css-master/flags/4x3/co.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Conditional Covariance Matrices in High- Dimentional Time
-Series: Implications for Portfolio Allocation. Conference at
-<em>International Summer School on Applied Mathematics ‘Oscar Valverde
-Ayala’</em>. January 18 to 20, 2022. Online version. (Peru) <img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Forecasting Conditional Covariance Matrices in High-
+Dimentional Time Series: Implications for Portfolio
+Allocation. Conference at <em>International Summer School on Applied Mathematics ‘Oscar Valverde Ayala’</em>. January 18 to 20, 2022. Online version. (Peru) <img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Conditional Covariance Matrices in High-Dimensional Time
-Series: a General Dynamic Factor Approach. Conference at <em>5to
-Congreso Internacional Multidisciplinario de Matemática</em>. November 3
-to 5, 2021. Online version. (Peru) <img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach. Conference at <em>5to Congreso Internacional Multidisciplinario de Matemática</em>. November 3 to 5, 2021. Online version. (Peru) <img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A
-general dynamic factor approach. Oral presentation at <em>41st
-International Symposium on Forecasting</em>. June 27 to 30, 2021. Online
-version. (Brazil) <img src="flag-icon-css-master/flags/4x3/br.svg"
-style="width:2.5%" />
+Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A general dynamic factor approach. Oral presentation at <em>41st International Symposium on Forecasting</em>. June 27 to 30, 2021. Online version. (Brazil) <img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A
-general dynamic factor approach. Oral presentation at <em>V Latin
-American Conference for Statistical Computing - LACSC2021</em>. April 19
-to 21, 2021. Online version. (Mexico) <img
-src="flag-icon-css-master/flags/4x3/mx.svg" style="width:2.5%" />
+Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A general dynamic factor approach. Oral presentation at <em>V Latin American Conference for Statistical Computing - LACSC2021</em>. April 19 to 21, 2021. Online version. (Mexico) <img src="flag-icon-css-master/flags/4x3/mx.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A
-general dynamic factor approach. <em>Seminar at the Department of
-Statistics - PUCP</em>. March 30, 2021. Lima (Peru).<img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Forecasting Value-at-Risk and Expected Shortfall in large portfolios: A general dynamic factor approach. <em>Seminar at the Department of Statistics - PUCP</em>. March 30, 2021. Lima (Peru).<img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting risk measures in cryptocurrency data. Conference at <em>4to
-Congreso Internacional Multidisciplinario de Matemática</em>. November 4
-to 6, 2020. Online version. (Peru) <img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Forecasting risk measures in cryptocurrency data. Conference at <em>4to Congreso Internacional Multidisciplinario de Matemática</em>. November 4 to 6, 2020. Online version. (Peru) <img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Robustness and the general dynamic factor model with
-infinite-dimensional space: identification, estimation, and forecasting.
-Prerecorded talk at <em>International Symposium on Forecasting
-(ISF2020)</em>. October 26 to 28, 2020. Online version. (Brazil).<img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting. Prerecorded talk at <em>International Symposium on Forecasting (ISF2020)</em>. October 26 to 28, 2020. Online version. (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Conditional Covariance Matrices in High-Dimensional Time
-Series: a General Dynamic Factor Approach. Prerecorded talk at
-<em>Bernoulli-IMS One World Symposium 2020</em>. August 24 to 28, 2020.
-Online version.
+Forecasting Conditional Covariance Matrices in High-Dimensional Time Series: a General Dynamic Factor Approach. Prerecorded talk at <em>Bernoulli-IMS One World Symposium 2020</em>. August 24 to 28, 2020. Online version.
 </li>
 <li>
-Estatística aplicada ao mercado financeiro. talk at <em>Semana de
-desenvolvimento profissional - Universidade Federal de Mato Grosso do
-Sul</em>. August 17 to 21, 2020. Online version. (Brazil).<img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+Estatística aplicada ao mercado financeiro. talk at <em>Semana de desenvolvimento profissional - Universidade Federal de Mato Grosso do Sul</em>. August 17 to 21, 2020. Online version. (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-A general dynamic factor approach to forecast conditional covariance
-matrices in high- dimensional data. Oral presentation at <em>4th Latin
-American Conference for Statistical Computing - LACSC2019</em>. May 28
-to 31, 2019. Guayaquil (Ecuador).<img
-src="flag-icon-css-master/flags/4x3/ec.svg" style="width:2.5%" />
+A general dynamic factor approach to forecast conditional covariance matrices in high- dimensional data. Oral presentation at <em>4th Latin American Conference for Statistical Computing - LACSC2019</em>. May 28 to 31, 2019. Guayaquil (Ecuador).<img src="flag-icon-css-master/flags/4x3/ec.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting conditional covariance matrices in high-dimensional data
-using the general dynamic factor model. Oral presentation at <em>12th
-International Conference on Computational and Financial Econometrics -
-CFE2018</em>. December 14 to 16, 2018, Pisa (Italy).<img
-src="flag-icon-css-master/flags/4x3/it.svg" style="width:2.5%" />
+Forecasting conditional covariance matrices in high-dimensional data using the general dynamic factor model. Oral presentation at <em>12th International Conference on Computational and Financial Econometrics - CFE2018</em>. December 14 to 16, 2018, Pisa (Italy).<img src="flag-icon-css-master/flags/4x3/it.svg" style="width:2.5%" />
 </li>
 <li>
-Principal volatility components: A robust approach. <em>ECARES
-seminar</em>. October 26, 2018. Brussels (Belgium).<img
-src="flag-icon-css-master/flags/4x3/be.svg" style="width:2.5%" />
+Principal volatility components: A robust approach. <em>ECARES seminar</em>. October 26, 2018. Brussels (Belgium).<img src="flag-icon-css-master/flags/4x3/be.svg" style="width:2.5%" />
 </li>
 <li>
-Robust principal volatility components. Oral presentation at <em>23rd
-International Conference on Computational Statistics -COMPSTAT
-2018</em>. August 28 to 31, 2018, Iasi (Romania).<img
-src="flag-icon-css-master/flags/4x3/ro.svg" style="width:2.5%" />
+Robust principal volatility components. Oral presentation at <em>23rd International Conference on Computational Statistics -COMPSTAT 2018</em>. August 28 to 31, 2018, Iasi (Romania).<img src="flag-icon-css-master/flags/4x3/ro.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting large dimensional (co)volatilities in the presence of
-outliers. Conference at <em>I Simposio de Matemática Pura y
-Aplicada</em>, December 20 to 22, 2017. Arequipa (Peru) <img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Forecasting large dimensional (co)volatilities in the presence of outliers. Conference at <em>I Simposio de Matemática Pura y Aplicada</em>, December 20 to 22, 2017. Arequipa (Peru) <img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting large conditional covariance matrix in the presence of
-additive outliers. Seminar at <em>Universidad Nacional Mayor de San
-Marcos</em>. December 18, 2017, Lima (Peru).<img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Forecasting large conditional covariance matrix in the presence of additive outliers. Seminar at <em>Universidad Nacional Mayor de San Marcos</em>. December 18, 2017, Lima (Peru).<img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting conditional covariance matrix via principal volatility
-components in the presence of additive outliers. Oral presentation at
-<em>Symposium on big data in finance, retail and commerce: Statistical
-and computational challenges</em>, November 2 and 3, 2017. Lisbon
-(Portugal).<img src="flag-icon-css-master/flags/4x3/pt.svg"
-style="width:2.5%" />
+Forecasting conditional covariance matrix via principal volatility components in the presence of additive outliers. Oral presentation at <em>Symposium on big data in finance, retail and commerce: Statistical and computational challenges</em>, November 2 and 3, 2017. Lisbon (Portugal).<img src="flag-icon-css-master/flags/4x3/pt.svg" style="width:2.5%" />
 </li>
 <li>
-On the robustness of the principal volatility components. Oral
-presentation at <em>Congreso Interamericano de Estadística</em>,.
-October 17 to 20, 2017. Rosário (Argentina).<img
-src="flag-icon-css-master/flags/4x3/ar.svg" style="width:2.5%" />
+On the robustness of the principal volatility components. Oral presentation at <em>Congreso Interamericano de Estadística</em>,. October 17 to 20, 2017. Rosário (Argentina).<img src="flag-icon-css-master/flags/4x3/ar.svg" style="width:2.5%" />
 </li>
 <li>
-Modeling and predicting volatility for high-dimension financial data.
-Seminar <em>Descoberta de Preços e Modelagem e Previsão de Modelos com
-Alta Dimensão, EESP-FGV</em>. March 24, 2017. São Paulo (Brazil).<img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+Modeling and predicting volatility for high-dimension financial data. Seminar <em>Descoberta de Preços e Modelagem e Previsão de Modelos com Alta Dimensão, EESP-FGV</em>. March 24, 2017. São Paulo (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Nuevas herramientas para e enseñanza de metodologías cuantitativas de
-análisis de datos. Conference at <em>Primer Congreso Internacional de
-Metodologías Cuantitativas en Educación</em>. November 18 to 19, 2016,
-Valparaíso (Chile).<img src="flag-icon-css-master/flags/4x3/cl.svg"
-style="width:2.5%" />
+Nuevas herramientas para e enseñanza de metodologías cuantitativas de análisis de datos. Conference at <em>Primer Congreso Internacional de Metodologías Cuantitativas en Educación</em>. November 18 to 19, 2016, Valparaíso (Chile).<img src="flag-icon-css-master/flags/4x3/cl.svg" style="width:2.5%" />
 </li>
 <li>
-Measuring the effect of uncertainty in the forecast of the conditional
-covariance matrix in portfolio selection and risk measures. Oral
-presentation at <em>22º SINAPE – Simpósio Nacional de Probabilidade e
-Estatística</em>. July 24 to 29, 2016, Porto Alegre (Brazil).<img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+Measuring the effect of uncertainty in the forecast of the conditional covariance matrix in portfolio selection and risk measures. Oral presentation at <em>22º SINAPE – Simpósio Nacional de Probabilidade e Estatística</em>. July 24 to 29, 2016, Porto Alegre (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting densities of returns, volatilities, correlations and VaR in
-cDCC models using bootstrap procedures in the presence of outliers. Oral
-presentation at <em>36th International Symposium on Forecasting</em>.
-June 19 to 22, 2016, Santander (Spain).<img
-src="flag-icon-css-master/flags/4x3/es.svg" style="width:2.5%" />
+Forecasting densities of returns, volatilities, correlations and VaR in cDCC models using bootstrap procedures in the presence of outliers. Oral presentation at <em>36th International Symposium on Forecasting</em>. June 19 to 22, 2016, Santander (Spain).<img src="flag-icon-css-master/flags/4x3/es.svg" style="width:2.5%" />
 </li>
 <li>
-Measuring the Effect of Uncertainty in the Estimation of the Conditional
-Covariance Matrix in Portfolio Selection and Risk Measures. Oral
-presentation at <em>International Symposium on Business and Industrial
-Statistics – ISBIS 2016 Meeting</em>. June 08 to 10, 2016, Barcelona
-(Spain).<img src="flag-icon-css-master/flags/4x3/es.svg"
-style="width:2.5%" />
+Measuring the Effect of Uncertainty in the Estimation of the Conditional Covariance Matrix in Portfolio Selection and Risk Measures. Oral presentation at <em>International Symposium on Business and Industrial Statistics – ISBIS 2016 Meeting</em>. June 08 to 10, 2016, Barcelona (Spain).<img src="flag-icon-css-master/flags/4x3/es.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting densities of returns, volatilities and correlations in DCC
-model in presence of additive outliers. Oral presentation at <em>16th
-Time Series and Econometrics School – ESTE</em>. August 05 to 07, 2015,
-Campos do Jordão, SP (Brazil).<img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+Forecasting densities of returns, volatilities and correlations in DCC model in presence of additive outliers. Oral presentation at <em>16th Time Series and Econometrics School – ESTE</em>. August 05 to 07, 2015, Campos do Jordão, SP (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Robust bootstrap forecast densities for GARCH models: returns,
-volatilities and Value-at-Risk. Poster plus presentation at <em>60th
-World Statistics Congress – ISI2015</em>. July 26 to 31, 2015. Rio de
-Janeiro (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg"
-style="width:2.5%" />
+Robust bootstrap forecast densities for GARCH models: returns, volatilities and Value-at-Risk. Poster plus presentation at <em>60th World Statistics Congress – ISI2015</em>. July 26 to 31, 2015. Rio de Janeiro (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Forecasting Returns, Volatilities and Risk Measures in GARCH Models: A
-robust bootstrap procedure. Oral presentation at <em>35th International
-Symposium on Forecasting</em>. June 21 to 24, 2015. Riverside, Ca.
-(USA).<img src="flag-icon-css-master/flags/4x3/us.svg"
-style="width:2.5%" />
+Forecasting Returns, Volatilities and Risk Measures in GARCH Models: A robust bootstrap procedure. Oral presentation at <em>35th International Symposium on Forecasting</em>. June 21 to 24, 2015. Riverside, Ca. (USA).<img src="flag-icon-css-master/flags/4x3/us.svg" style="width:2.5%" />
 </li>
 <li>
-Robust bootstrap prediction intervals for returns and volatilities in
-GARCH models. Oral presentation at <em>III Jornada Internacional de
-Probabilidad y Estadística</em>. August 13 to 15, 2014. Lima (Perú).<img
-src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
+Robust bootstrap prediction intervals for returns and volatilities in GARCH models. Oral presentation at <em>III Jornada Internacional de Probabilidad y Estadística</em>. August 13 to 15, 2014. Lima (Perú).<img src="flag-icon-css-master/flags/4x3/pe.svg" style="width:2.5%" />
 </li>
 <li>
-Volatility and return bootstrap prediction intervals in GARCH models in
-the presence of outliers. Oral presentation at <em>34th International
-Symposium on Forecasting</em>. 29 June – 2 July, 2014. Rotterdam
-(Netherlands).<img src="flag-icon-css-master/flags/4x3/nl.svg"
-style="width:2.5%" />
+Volatility and return bootstrap prediction intervals in GARCH models in the presence of outliers. Oral presentation at <em>34th International Symposium on Forecasting</em>. 29 June – 2 July, 2014. Rotterdam (Netherlands).<img src="flag-icon-css-master/flags/4x3/nl.svg" style="width:2.5%" />
 </li>
 <li>
-Intervalos de previsão bootstrap em modelos de volatilidade
-multivariados DCC-GARCH. Oral presentation at <em>VIII “Encontro
-Científico dos Pós-Graduandos do IMECC</em>. October 15-18, 2013.
-Campinas, SP (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg"
-style="width:2.5%" />
+Intervalos de previsão bootstrap em modelos de volatilidade multivariados DCC-GARCH. Oral presentation at <em>VIII “Encontro Científico dos Pós-Graduandos do IMECC</em>. October 15-18, 2013. Campinas, SP (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Bootstrap prediction in DCC-GARCH multivariate volatility model with
-normal distribution. Poster presented at <em>15th Brazilian Time Series
-and Econometrics School</em>. August 11-14, 2013. Teresópolis, RJ
-(Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg"
-style="width:2.5%" />
+Bootstrap prediction in DCC-GARCH multivariate volatility model with normal distribution. Poster presented at <em>15th Brazilian Time Series and Econometrics School</em>. August 11-14, 2013. Teresópolis, RJ (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Bootstrap prediction in univariate volatility models with leverage
-effect.Poster presented at <em>Sixth Brazilian Conference on Statistical
-Modelling in Insurance and Finance</em>. March 24-28, 2013. Maresias, SP
-(Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg"
-style="width:2.5%" />
+Bootstrap prediction in univariate volatility models with leverage effect.Poster presented at <em>Sixth Brazilian Conference on Statistical Modelling in Insurance and Finance</em>. March 24-28, 2013. Maresias, SP (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 <li>
-Intervalos de previsão bootstrap em modelos GARCH com efeito de
-alavancagem. Poster presented at <em>20th SINAPE</em>. July 30 – August
-03, 2012. João Pessoa, PB (Brazil).<img
-src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
+Intervalos de previsão bootstrap em modelos GARCH com efeito de alavancagem. Poster presented at <em>20th SINAPE</em>. July 30 – August 03, 2012. João Pessoa, PB (Brazil).<img src="flag-icon-css-master/flags/4x3/br.svg" style="width:2.5%" />
 </li>
 </ol>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
