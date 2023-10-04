@@ -526,7 +526,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1599,21 +1598,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2468,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2543,7 +2536,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <center>
-<h1 id="métodos-em-análise-multivariada">Métodos em Análise Multivariada</h1>
+<h1 id="métodos-em-análise-multivariada">Métodos em Análise
+Multivariada</h1>
 <h2 id="section">2022.2</h2>
 </center>
 <h3 id="datas-importantes">Datas Importantes</h3>
@@ -2556,14 +2550,22 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p></br></p>
 <h3 id="informações">Informações</h3>
 <ul>
-<li>📝 <a href="https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME731_Ementa_2022S2.pdf">Plano de desenvolvimento</a></li>
-<li>👩‍🏫 <a href="https://classroom.google.com/c/NTM3ODYxMzYyMTIz?cjc=f54eaol">Google Classroom (Código da Turma caso precisarem: f54eaol)</a></li>
+<li>📝 <a
+href="https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME731_Ementa_2022S2.pdf">Plano
+de desenvolvimento</a></li>
+<li>👨‍🏫 <a
+href="https://classroom.google.com/c/NTM3ODYxMzYyMTIz?cjc=f54eaol">Google
+Classroom (Código da Turma caso precisarem: f54eaol)</a></li>
 <li>📆 Segundas e quartas das 16:00 às 18:00 no CB15</li>
-<li>PED: Fernando Henrique Sousa Barreto <a href="mailto:f234963@dac.unicamp.br" class="email">f234963@dac.unicamp.br</a></li>
+<li>PED: Fernando Henrique Sousa Barreto <a
+href="mailto:f234963@dac.unicamp.br"
+class="email">f234963@dac.unicamp.br</a></li>
 <li>Monitoria: Quartas-feiras 13hrs na sala 125 do IMECC</li>
 </ul>
 <h3 id="cronograma"><strong>Cronograma</strong></h3>
-<p>O cronograma dos tópicos a serem abordados na discplina está definido embaixo (pequenas alterações poderão ser feitas). No título do tópico encontra-se o link para os slides.</p>
+<p>O cronograma dos tópicos a serem abordados na discplina está definido
+embaixo (pequenas alterações poderão ser feitas). No título do tópico
+encontra-se o link para os slides.</p>
 <table>
 <colgroup>
 <col style="width: 14%" />
@@ -2580,12 +2582,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">15-08-2022</td>
-<td style="text-align: left;"><a href="https://ctruciosm.github.io/ME731/Aula_01">Apresentação + EDA</a></td>
+<td style="text-align: left;"><a
+href="https://ctruciosm.github.io/ME731/Aula_01">Apresentação +
+EDA</a></td>
 <td>01</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">17-08-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_02.pdf">Vetores Aleatórios</a></td>
+<td style="text-align: left;"><a href="slides/Aula_02.pdf">Vetores
+Aleatórios</a></td>
 <td>02</td>
 </tr>
 <tr class="odd">
@@ -2595,58 +2600,70 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="even">
 <td style="text-align: center;">24-08-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_04.pdf">Distribuição Normal Multivariada I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_04.pdf">Distribuição
+Normal Multivariada I</a></td>
 <td>04</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">29-08-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_05.pdf">Distribuição Normal Multivariada II</a></td>
+<td style="text-align: left;"><a href="slides/Aula_05.pdf">Distribuição
+Normal Multivariada II</a></td>
 <td>05</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">31-08-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_06.pdf">Distribuição Normal Multivariada III</a></td>
+<td style="text-align: left;"><a href="slides/Aula_06.pdf">Distribuição
+Normal Multivariada III</a></td>
 <td>06</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">05-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_07.pdf">MANOVA I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_07.pdf">MANOVA
+I</a></td>
 <td>07</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">12-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_08.pdf">MANOVA II</a></td>
+<td style="text-align: left;"><a href="slides/Aula_08.pdf">MANOVA
+II</a></td>
 <td>08</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">14-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_09.pdf">MANOVA III</a></td>
+<td style="text-align: left;"><a href="slides/Aula_09.pdf">MANOVA
+III</a></td>
 <td>09</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">19-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_10.pdf">Componentes Principais I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_10.pdf">Componentes
+Principais I</a></td>
 <td>10</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">21-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_11.pdf">Componentes Principais II</a></td>
+<td style="text-align: left;"><a href="slides/Aula_11.pdf">Componentes
+Principais II</a></td>
 <td>11</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">26-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_12.pdf">Componentes Principais III</a></td>
+<td style="text-align: left;"><a href="slides/Aula_12.pdf">Componentes
+Principais III</a></td>
 <td>12</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">28-09-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_13.pdf">Análise Fatorial I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_13.pdf">Análise
+Fatorial I</a></td>
 <td>13</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">03-10-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_14.pdf">Análise Fatorial II</a></td>
-<td><a href="https://github.com/ctruciosm/BasicStats/blob/main/AF.ipynb">14</a></td>
+<td style="text-align: left;"><a href="slides/Aula_14.pdf">Análise
+Fatorial II</a></td>
+<td><a
+href="https://github.com/ctruciosm/BasicStats/blob/main/AF.ipynb">14</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">05-10-2022</td>
@@ -2655,37 +2672,44 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="even">
 <td style="text-align: center;">10-10-2022</td>
-<td style="text-align: left;"><span class="math inline">\(P_1\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(P_1\)</span></td>
 <td>16</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">17-10-2022</td>
-<td style="text-align: left;">Gabarito da <span class="math inline">\(P_1\)</span></td>
+<td style="text-align: left;">Gabarito da <span
+class="math inline">\(P_1\)</span></td>
 <td>17</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">19-10-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_17.pdf">Análise de correspondência I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_17.pdf">Análise de
+correspondência I</a></td>
 <td>18</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">26-10-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_18.pdf">Análise de correspondência II</a></td>
+<td style="text-align: left;"><a href="slides/Aula_18.pdf">Análise de
+correspondência II</a></td>
 <td><a href="slides/AC.nb.html">19</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">31-10-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_19.pdf">Correlação Canônica I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_19.pdf">Correlação
+Canônica I</a></td>
 <td>20</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">07-10-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_20.pdf">Correlação Canônica II</a></td>
+<td style="text-align: left;"><a href="slides/Aula_20.pdf">Correlação
+Canônica II</a></td>
 <td><a href="slides/CC.nb.html">21</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">09-11-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_21.pdf">Análise Discriminante I</a></td>
+<td style="text-align: left;"><a href="slides/Aula_21.pdf">Análise
+Discriminante I</a></td>
 <td><a href="slides/AD.nb.html">22</a></td>
 </tr>
 <tr class="odd">
@@ -2695,7 +2719,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="even">
 <td style="text-align: center;">16-11-2022</td>
-<td style="text-align: left;"><a href="slides/Aula_Knn_Nov.pdf">KNN</a></td>
+<td style="text-align: left;"><a
+href="slides/Aula_Knn_Nov.pdf">KNN</a></td>
 <td>24</td>
 </tr>
 <tr class="odd">
@@ -2710,7 +2735,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="odd">
 <td style="text-align: center;">30-11-2022</td>
-<td style="text-align: left;"><span class="math inline">\(P_2\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(P_2\)</span></td>
 <td>27</td>
 </tr>
 <tr class="even">
@@ -2720,18 +2746,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="odd">
 <td style="text-align: center;">25-12-2022</td>
-<td style="text-align: left;">Feliz Natal! 🎅 🤶 🎅</td>
+<td style="text-align: left;">Feliz Natal! 🎅 🤶 🎁</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <center>
 <blockquote>
-<p>A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo.</p>
+<p>A vida universitária pode ter altos e baixos, se precisar conversar
+com alguém, seja o assunto que for, pode contar comigo.</p>
 </blockquote>
 </center>
 <hr />
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

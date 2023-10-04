@@ -60,6 +60,17 @@ output:
 | 09 | Exercícios | 
 | 10 | Distribuições Discretas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula09.pdf)
 | 11 | Distribuições Continuas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula10.pdf)
+| 12 | Solução da lista de exercícios | 
+| 13 | Exercícios de revisão I | 
+| 14 | Exercícios de revisão II | 
+| 15 | $P_1$ | 
+| 16 | Revisão da Prova / Paralisação |
+| 17 | Pontos extras P1 |
+| 18 | Amostragem |
+| 19 | Testinho | 19/10/2023
+
+
+
 
 
 <center>
