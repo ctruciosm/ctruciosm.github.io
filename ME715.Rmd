@@ -79,12 +79,18 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 16     | Revisão $P_1$ |
 | 17     | Problemas adicionais de especificação | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula08.html#/title-slide)
 | 18     | Lab 07 | 
-| 19     | Variáveis Instrumentais |
+| 19     | Variáveis Instrumentais | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula09.html#/title-slide)
 | 20     | Lab 08 |
 | 21     | Equações Simultâneas |
 | 22     | Lab 09 |
 | 23     | Cointegração * |
 | 24     | Lab 10  |
+| 25     | MQO agrupados* |
+| 26     | Lab 11 |
+| 27     | Estimação de efeitos fixos e aleatórios* |
+| 28     | Lab 12 |
+| 29     | Diff in Diff* |
+| 30     | $P_2$
 
 
 
