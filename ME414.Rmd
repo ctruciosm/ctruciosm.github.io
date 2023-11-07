@@ -69,6 +69,9 @@ output:
 | 18 | Amostragem | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula11.pdf) | 
 | 19 | Intervalos de Confiança | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula12.pdf) |
 | 20 | Testinho | 31/10/2023 |
+| 21 | Teste de Hipóteses 1 | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula13.pdf)|
+
+
 
 
 
