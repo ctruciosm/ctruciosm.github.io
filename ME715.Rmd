@@ -83,9 +83,9 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 20     | Lab 08 |
 | 21     | Modelos SUR | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula10.html#/title-slide)
 | 22     | Lab 09 |
-| 23     | Equações simultâneas |
+| 23     | Equações simultâneas | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula11.html#/title-slide)
 | 24     | Lab 10  |
-| 35     | $P_2$
+| 25     | $P_2$
 
 
 
