@@ -7,7 +7,33 @@ output:
 
 <ol reversed>
 
-<li>  [Academia, mercado e _otras cositas mas_](https://ctruciosm.github.io/23SEMEST/SEMEST#/title-slide). Palestra at *23º Semana da Estatística da UNICAMP*. October 20, 2022. Campinas. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+<li>  Forecasting risk measures in high-dimensional portfolios. Invited talk at *17th International Conference on Computational and Financial Econometrics*. December 17-18, 2023. Berlin, Germany. ![](./flag-icon-css-master/flags/4x3/de.svg){ width=2.5% } </li>
+
+
+<li>  Forecasting conditional covariance matrices in high-dimensional time series via general dynamic factor models: portfolio allocation and risk measures. Seminar at *Albert-Ludwigs-Universität Freiburg*. December 14, 2023. Freiburg, Germany. ![](./flag-icon-css-master/flags/4x3/de.svg){ width=2.5% } </li>
+
+
+<li>  Forecasting risk measures in high dimensional portfolios. Seminar at *Universidad Nacional Mayor de San Marcos*. December 5, 2023. Online, Peru. ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
+
+<li>  Does portfolio resampling really improve out-of-sample performance? Evidence from the Brazilian and US markets. Keynote speaker at *Ciclo de Conferencias Internacionales por el día del Estadístico Peruano: Estadística e Investigación*. December 4-8, 2023. Online, Peru. ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
+
+
+<li>  Forecasting conditional covariance matrices in high-dimensional time series via general dynamic factor models: portfolio allocation and risk measures. Seminar at *Universidade Estadual de Campinas*. December 1, 2023. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+
+
+<li>  Forecasting conditional covariance matrices in high-dimensional time series via general dynamic factor models: portfolio allocation and risk measures. Seminar at *Instituto Tecnológico Autónomo de México*. November 17, 2023. Online, Mexico. ![](./flag-icon-css-master/flags/4x3/mx.svg){ width=2.5% } </li>
+
+
+<li>  Forecasting Value-at-Risk and Expected Shortfall in large portfolios. Invited  talk at *20th Time Series and Econometrics Meeting*. July 30 - August 2, 2023. Florianopolis, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+
+
+<li>  High-Dimensional Financial Time Series. Invited talk at *64th ISI World Statistics Congress*. July 16-20, 2023. Ottawa, Canada. ![](./flag-icon-css-master/flags/4x3/ca.svg){ width=2.5% } </li>
+
+
+<li> Forecasting risk measures in high-dimensional portfolios with additive outliers. Invited talk at *7th Latin American Conference on Statistical Computing*. April 3-5, 2023. Lima, Peru. ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% } </li>
+
+
+<li>  [Academia, mercado e _otras cositas mas_](https://ctruciosm.github.io/23SEMEST/SEMEST#/title-slide). Palestra at *23º Semana da Estatística da UNICAMP*. October 20, 2022. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
 
 
 <li>  Risk Measures in Cryptocurrency Markets. Invited Session at *IV Congresso Brasileiro de Jovens Pesquisadores em Matemática Pura, Aplicada e Estatística (CBJME-IV)*. October 5 to 7, 2022. João Pessoa. (Brazil) ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
@@ -41,12 +67,12 @@ Allocation. Conference at *International Summer School on Applied Mathematics 'O
 
 <li> A general dynamic factor approach to forecast conditional covariance matrices in high- dimensional data. Oral presentation at *4th Latin American Conference for Statistical Computing - LACSC2019*. May 28 to 31, 2019. Guayaquil (Ecuador).![](./flag-icon-css-master/flags/4x3/ec.svg){ width=2.5% }  </li>
 
-<li> Forecasting conditional covariance matrices in high-dimensional data using the general dynamic factor model. Oral presentation at *12th International Conference on Computational and Financial Econometrics - CFE2018*. December 14 to 16, 2018, Pisa (Italy).![](./flag-icon-css-master/flags/4x3/it.svg){ width=2.5% }  </li>
+<li> Forecasting conditional covariance matrices in high-dimensional data using the general dynamic factor model. Oral presentation at *12th International Conference on Computational and Financial Econometrics - CFE2018*. December 14 to 16, 2018, Pisa, Italy.![](./flag-icon-css-master/flags/4x3/it.svg){ width=2.5% }  </li>
 
-<li> Principal volatility components: A robust approach. *ECARES seminar*. October 26, 2018. Brussels (Belgium).![](./flag-icon-css-master/flags/4x3/be.svg){ width=2.5% }  </li>
+<li> Principal volatility components: A robust approach. Seminar at *ECARES - Université libre de Bruxelles*. October 26, 2018. Brussels, Belgium.![](./flag-icon-css-master/flags/4x3/be.svg){ width=2.5% }  </li>
 
 
-<li> Robust principal volatility components. Oral presentation at *23rd International Conference on Computational Statistics -COMPSTAT 2018*. August 28 to 31, 2018, Iasi (Romania).![](./flag-icon-css-master/flags/4x3/ro.svg){ width=2.5% }  </li>
+<li> Robust principal volatility components. Oral presentation at *23rd International Conference on Computational Statistics -COMPSTAT 2018*. August 28 to 31, 2018. Iasi, Romania.![](./flag-icon-css-master/flags/4x3/ro.svg){ width=2.5% }  </li>
 
 <li> Forecasting large dimensional (co)volatilities in the presence of outliers. Conference at *I Simposio de Matemática Pura y Aplicada*, December 20 to 22, 2017. Arequipa (Peru) ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% }  </li>
 
