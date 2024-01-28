@@ -25,7 +25,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.*  Accepted _Brazilian Review of Finance_ (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] [`CODES`](https://github.com/felipereis150/BrazilianHRP) \medskip </li> 
+<li> *Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.*  Accepted **Brazilian Review of Finance** (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] [`CODES`](https://github.com/felipereis150/BrazilianHRP) \medskip </li> 
 
 
 <li> [*A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.*](https://onlinelibrary.wiley.com/doi/abs/10.1002/for.2929) **Journal of Forecasting** (2023) [with James W. Taylor] [`CODES`](https://github.com/ctruciosm/CryptoForeComb) \medskip </li>
@@ -75,8 +75,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *A note about calibration tests for VaR and ES.* [with Luiz K. Hotta and Mauricio Zevallos] \medskip </li>
 
-<li> *Does portfolio resampling really improve out-of-sample performance? Evidence from the Brazilian and US marketst.* [with André Oliveira and Pedro Valls] Submitted _Journal of Banking and Finance_ \medskip </li>
+<li> *Does portfolio resampling really improve out-of-sample performance? Evidence from the Brazilian and US marketst.* [with André Oliveira and Pedro Valls]  \medskip </li>
 
 
 </ol>
@@ -93,9 +94,10 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 <ol reversed>
 
 
-<li> *Forecasting VaR and ES through Markov Switching GARCH Models.* [with Luiz K. Hotta, Mauricio Zevallos and Pedro Valls] \medskip </li>
+<li> *Forecasting VaR and ES through Markov Switching GARCH Models: Does the specification matter?* [with Luiz K. Hotta, Mauricio Zevallos and Pedro Valls] \medskip </li>
 
-<li> *A note about calibration tests for VaR and ES.* [with Luiz K. Hotta and Mauricio Zevallos] \medskip </li>
+<li> *Shrinking the covariance matrix: an exhaustive comparison.* [with Isabella Nascimento Peres da Silva] \medskip </li>
+
 
 
 </ol>

@@ -33,7 +33,7 @@ output:
 
 <br>
 **Research Interest:** risk management, portfolio allocation, volatility forecasting, robust statistics, and statistical learning. <br>
-Currently, my goal is to apply statistical learning techniques on Business, Economics and Finance as well as develop new volatility forecasting procedures in high-dimensional and high-frequency data. 
+Currently, my goal is to apply statistical learning techniques on Economics and Finance as well as develop new volatility forecasting procedures in high-dimensional and high-frequency data. 
 
 <br>
 

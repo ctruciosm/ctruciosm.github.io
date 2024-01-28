@@ -1,0 +1,74 @@
+---
+title: "Do GRU até a UNICAMP"
+description: |
+  Um passo a passo de como chegar do aeroporto de Cumbica, em Guarulhos (GRU) até a Universidade Estadual de Campinas (UNICAMP) em Campinas.
+categories:
+  - UNICAMP
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 01-28-2024
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    self_contained: false
+---
+
+
+# Chegando no aeroporto
+
+Ao chegar no aeroporto de Guarulhos (GRU) você chegara no Terminal 2 ou no Terminal 3. Viagens nacionais chegam no Terminal 2 enquanto que viagens internacionais chegam, geralmente^[Algumas viagens internacionais ainda chegam no Terminal 2], no Terminal 3.
+
+É possível se deslocar de um terminal para outro por dentro do aeroporto (7 min a pé), mas também existem ônibus do proprio aeroporto que fazem esse percurso e são gratuitos.
+
+
+# Do aeroporto até Campinas
+
+Existem várias formas de chegar até Campinas, aqui explico algumas delas:
+
+1. No Terminal 2 tem um ônibus da Lira, que vai direto para a Rodoviária de Campinas. Para comprar online basta entrar no site da [Lira](https://www.lirabus.com.br/) e colocar:
+    *   Origem: Aeroporto de Cumbica.
+    *   Destino: Campinas.
+
+Existe também um guiché no próprio Terminal 2 (do lado de fora). Pergunte aos seguranças onde que fica o guiché do Lira. Quando comprar suas passagem, não esqueça perguntar onde que pega o ônibus.
+
+
+2. No Terminal 2 ou 3, pegue um Uber até o Terminal Rodoviário Tiete (Rodoviária de São Paulo) e de lá, pegue um ônibus até a Rodoviária de Campinas. Se você fora o campus de Limeira, pode pegar um ônibus, também da Lira, com destino Limeira.
+
+3. Pegue o [ônibus do próprio aeroporto (aquele que é gratuito)](https://www.gru.com.br/pt/passageiro/como-chegar-sair/traslado-interno) que vá até o Terminal 1, daí pegue o [trêm até a estação Luz](https://www.cptm.sp.gov.br/sua-viagem/Pages/Aeroporto.aspx) e na estação Luz mude para o metro linha azul com destino à estação Portuguesa-Tiete (que é no Terminal Rodoviário Tiete), não precisa comprar outra passagem, basta fazer baldeação. Esta é a opção mais barata, mas não recomendo para quem vem com mala. 
+
+Se for pegar o trêm, fique atento aos horários, pois o trêm passa de hora em hora. Para os interessados, [tem esse video aqui que mostra como ir do aeroporto de Guarulhos até o centro de são Paulo](https://www.youtube.com/watch?v=8AxyuXXuXY8).
+
+
+> **Observação:** o trêm expresso aeroporto (que vai do GRU até a estação Luz) vá até o Terminal Rodoviário Barra funda, mas este terminal não é o Terminal Tiete, são dois terminais diferentes.
+
+
+# De Campinas até a UNICAMP
+
+Chegando da rodoviária de Campinas, tem duas formas de chegar até a UNICAMP:
+  1. Uber (ou algum outro transporte por aplicativo): Taxis em Campinas são bem mais caros do que transporte por aplicativo, então se tiver internet, um Uber pode ser a melhor opção. Já se não tiver internet, na saida da Rodoviária (no andar de cima) tem vários taxis esperando.
+  2. Ônibus: pode pegar o 332 que vá até o Hospital das Clinicas (dentro da Universidade) e daí andar ou pegar um Uber até seu destino. Pode pegar também o 331 que vá até o Terminal de Barão Geraldo (Distrito onde fica a UNICAMP).
+
+> **Observação:** Para pegar ônibus em Campinas, precisará primeiro criar seu cadastro para poder utilizar seu [bilhete Único](https://www.transurc.com.br/o-bilhete-unico/passe-comum/) no celular e também precisará colocar crédito no bilhete Único. Isto apenas é possível se tiver CPF.
+
+
+# Preços
+
+Os valores aqui são aproximados e em Real:
+
+
+| Serviço                                      | Valor          |
+|:---------------------------------------------|:---------------|
+| Uber: Aeroporto >>> Rodoviária Tiete         | R. \$70-\$80   |
+| Ônibus: Aeroporto >>> Rodoviária de Campinas |  R. \$ 47.75   |
+| Ônibus: Rod. Tiete >>> Rod. de Campinas      |  R. \$ 45   |
+| Uber: Rodoviária de Campinas >>> UNICAMP     | R. \$35 - \$50 |
+| Trem: Terminal 1 >>> Rod. Tiete              | R. \$5         |
+
+
+Lembre-se que o Uber tem preço dinâmico, então, dependendo do horário qu você chegar pode pegar bem mais. Eu já paguei R.\$60, mas também já tive que pagar R.\$150 um dia que cheguei de madrugada.
+
+A passagem de trêm você compra na mesma estação e só precisa comprar uma passagem, o preço é aprox. 5 reais (mas não sei exatamente o valor).
+ 

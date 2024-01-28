@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/2024-01-28-como-chegar-do-aeroporto-de-guarulhos-at-a-unicamp/",
+    "title": "Do GRU até a UNICAMP",
+    "description": "Um passo a passo de como chegar do aeroporto de Cumbica, em Guarulhos (GRU) até a Universidade Estadual de Campinas (UNICAMP) em Campinas.",
+    "author": [
+      {
+        "name": "Carlos Trucíos",
+        "url": "https://ctruciosm.github.io"
+      }
+    ],
+    "date": "2024-01-28",
+    "categories": [
+      "UNICAMP"
+    ],
+    "contents": "\n\nContents\nChegando no aeroporto\nDo aeroporto até Campinas\nDe Campinas até a UNICAMP\nPreços\n\nChegando no aeroporto\nAo chegar no aeroporto de Guarulhos (GRU) você chegara no Terminal 2\nou no Terminal 3. Viagens nacionais chegam no Terminal 2 enquanto que\nviagens internacionais chegam, geralmente1, no\nTerminal 3.\nÉ possível se deslocar de um terminal para outro por dentro do\naeroporto (7 min a pé), mas também existem ônibus do proprio aeroporto\nque fazem esse percurso e são gratuitos.\nDo aeroporto até Campinas\nExistem várias formas de chegar até Campinas, aqui explico algumas\ndelas:\nNo Terminal 2 tem um ônibus da Lira, que vai direto para a\nRodoviária de Campinas. Para comprar online basta entrar no site da Lira e colocar:\nOrigem: Aeroporto de Cumbica.\nDestino: Campinas.\n\nExiste também um guiché no próprio Terminal 2 (do lado de fora).\nPergunte aos seguranças onde que fica o guiché do Lira. Quando comprar\nsuas passagem, não esqueça perguntar onde que pega o ônibus.\nNo Terminal 2 ou 3, pegue um Uber até o Terminal Rodoviário Tiete\n(Rodoviária de São Paulo) e de lá, pegue um ônibus até a Rodoviária de\nCampinas. Se você fora o campus de Limeira, pode pegar um ônibus, também\nda Lira, com destino Limeira.\nPegue o ônibus\ndo próprio aeroporto (aquele que é gratuito) que vá até o Terminal\n1, daí pegue o trêm\naté a estação Luz e na estação Luz mude para o metro linha azul com\ndestino à estação Portuguesa-Tiete (que é no Terminal Rodoviário Tiete),\nnão precisa comprar outra passagem, basta fazer baldeação. Esta é a\nopção mais barata, mas não recomendo para quem vem com mala.\nSe for pegar o trêm, fique atento aos horários, pois o trêm passa de\nhora em hora. Para os interessados, tem esse video aqui\nque mostra como ir do aeroporto de Guarulhos até o centro de são\nPaulo.\n\nObservação: o trêm expresso aeroporto (que vai do\nGRU até a estação Luz) vá até o Terminal Rodoviário Barra funda, mas\neste terminal não é o Terminal Tiete, são dois terminais diferentes.\n\nDe Campinas até a UNICAMP\nChegando da rodoviária de Campinas, tem duas formas de chegar até a\nUNICAMP: 1. Uber (ou algum outro transporte por aplicativo): Taxis em\nCampinas são bem mais caros do que transporte por aplicativo, então se\ntiver internet, um Uber pode ser a melhor opção. Já se não tiver\ninternet, na saida da Rodoviária (no andar de cima) tem vários taxis\nesperando. 2. Ônibus: pode pegar o 332 que vá até o Hospital das\nClinicas (dentro da Universidade) e daí andar ou pegar um Uber até seu\ndestino. Pode pegar também o 331 que vá até o Terminal de Barão Geraldo\n(Distrito onde fica a UNICAMP).\n\nObservação: Para pegar ônibus em Campinas, precisará\nprimeiro criar seu cadastro para poder utilizar seu bilhete\nÚnico no celular e também precisará colocar crédito no bilhete\nÚnico. Isto apenas é possível se tiver CPF.\n\nPreços\nOs valores aqui são aproximados e em Real:\nServiço\nValor\nUber: Aeroporto >>> Rodoviária\nTiete\nR. $70-$80\nÔnibus: Aeroporto >>> Rodoviária\nde Campinas\nR. $ 47.75\nÔnibus: Rod. Tiete >>> Rod. de\nCampinas\nR. $ 45\nUber: Rodoviária de Campinas >>>\nUNICAMP\nR. $35 - $50\nTrem: Terminal 1 >>> Rod.\nTiete\nR. $5\nLembre-se que o Uber tem preço dinâmico, então, dependendo do horário\nqu você chegar pode pegar bem mais. Eu já paguei R.$60, mas também já\ntive que pagar R.$150 um dia que cheguei de madrugada.\nA passagem de trêm você compra na mesma estação e só precisa comprar\numa passagem, o preço é aprox. 5 reais (mas não sei exatamente o\nvalor).\n\nAlgumas viagens internacionais ainda chegam no Terminal\n2↩︎\n",
+    "preview": {},
+    "last_modified": "2024-01-28T13:50:06-03:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/",
     "title": "Book Review: Practical Time Series Analysis--Prediction with Statistics and Machine Learning",
     "description": "Minhas impressões do livro \"Practical Time Series Analysis--Prediction with Statistics and Machine Learning\" da Aileen Nielsen",
