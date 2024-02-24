@@ -62,7 +62,7 @@ No título do tópico encontra-se o link para os slides.
 | 07-03-2024   | [Neyman](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula03) | 03 | 
 | 12-03-2024   | [Estratificação](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula04) | 04 | 
 | 14-03-2024   | [Rerandomização](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05) | 05 | 
-| 19-03-2024   |  | 06 | 
+| 19-03-2024   | [RMPE](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06) | 06 | 
 | 21-03-2024   |  | 07 | 
 | 26-03-2024   |  | 08 | 
 | 28-03-2024   |  | 09 | 
