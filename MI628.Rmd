@@ -60,13 +60,13 @@ No título do tópico encontra-se o link para os slides.
 | 29-02-2024   | [Introdução](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula01) | 01 | 
 | 05-03-2024   | [Resultados Potenciais e FRT](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula02)  | 02 | 
 | 07-03-2024   | [Neyman](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula03) | 03 | 
-| 12-03-2024   | [Estratificação](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula04) | 04 | 
-| 14-03-2024   | [Rerandomização](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05) | 05 | 
-| 19-03-2024   | [RMPE](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06) | 06 | 
-| 21-03-2024   |  | 07 | 
-| 26-03-2024   |  | 08 | 
-| 28-03-2024   |  | 09 | 
-| 02-04-2024   |  | 10 | 
+| 12-03-2024   |  Lista 1 | 04 | 
+| 14-03-2024   | [Estratificação](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula04) | 05 | 
+| 19-03-2024   | [Rerandomização](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05) | 06 | 
+| 21-03-2024   |[RMPE](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06)  | 07 | 
+| 26-03-2024   | [Experimentos Randomizados](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula07) | 08 | 
+| 28-03-2024   | [Estudos observacionais](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08) | 09 | 
+| 02-04-2024   | [Propensity Score](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09) | 10 | 
 | 04-04-2024   |  | 11 | 
 | 09-04-2024   |  | 12 | 
 | 11-04-2024   |  | 13 | 
