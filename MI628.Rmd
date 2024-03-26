@@ -63,35 +63,34 @@ No título do tópico encontra-se o link para os slides.
 | 12-03-2024   |  Lista 1 | 04 | 
 | 14-03-2024   | [Estratificação](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula04) | 05 | 
 | 19-03-2024   | [Rerandomização](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05) | 06 | 
-| 21-03-2024   |[RMPE](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06)  | 07 | 
-| 26-03-2024   | [Experimentos Randomizados](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula07) | 08 | 
-| 28-03-2024   | [Estudos observacionais](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08) | 09 | 
-| 02-04-2024   | [Propensity Score](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09) | 10 | 
-| 04-04-2024   |  | 11 | 
-| 09-04-2024   |  | 12 | 
-| 11-04-2024   |  | 13 | 
-| 16-04-2024   |  | 14 | 
-| 18-04-2024   |  | 15 | 
-| 23-04-2024   |  | 16 | 
-| 25-04-2024   | $P_1$ | 17 | 
-| 30-04-2024   |  | 18 | 
-| 02-05-2024   |  | 19 | 
-| 07-05-2024   |  | 20 | 
-| 09-05-2024   |  | 21 | 
-| 14-05-2024   |  | 22 | 
-| 16-05-2024   |  | 23 | 
-| 21-05-2024   |  | 24 | 
-| 23-05-2024   |  | 25 | 
-| 28-05-2024   |  | 26 | 
-| 04-06-2024   |  | 27 | 
-| 06-06-2024   |  | 28 | 
-| 11-06-2024   |  | 29 | 
-| 13-06-2024   |  | 30 | 
-| 18-06-2024   |  | 31 | 
-| 20-06-2024   | $P_2$ | 32 | 
-| 25-06-2024   | Seminários | 33 | 
-| 27-06-2024   | Seminários | 34 | 
-| 09-07-2024   | Exame | 35 | 
+| 21-03-2024   | Lista 2 | 07 | 
+| 26-03-2024   | [RMPE](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06) | 08 | 
+| 02-04-2024   | [Experimentos Randomizados](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula07)  | 09 | 
+| 04-04-2024   | [Estudos observacionais](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08) | 10 | 
+| 09-04-2024   | Lista 3 | 11 | 
+| 11-04-2024   | [Propensity Score](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09)  | 11 | 
+| 16-04-2024   |  | 12 | 
+| 18-04-2024   |  | 13 | 
+| 23-04-2024   |  | 14 | 
+| 25-04-2024   | $P_1$ | 16 | 
+| 30-04-2024   |  | 17 | 
+| 02-05-2024   |  | 18 | 
+| 07-05-2024   |  | 19 | 
+| 09-05-2024   |  | 20 | 
+| 14-05-2024   |  | 21 | 
+| 16-05-2024   |  | 22 | 
+| 21-05-2024   |  | 23 | 
+| 23-05-2024   |  | 24 | 
+| 28-05-2024   |  | 25 | 
+| 04-06-2024   |  | 26 | 
+| 06-06-2024   |  | 27 | 
+| 11-06-2024   |  | 28 | 
+| 13-06-2024   |  | 29 | 
+| 18-06-2024   |  | 30 | 
+| 20-06-2024   | $P_2$ | 31 | 
+| 25-06-2024   | Seminários | 32 | 
+| 27-06-2024   | Seminários | 33 | 
+| 09-07-2024   | Exame | 34 | 
 
 <center>
 
