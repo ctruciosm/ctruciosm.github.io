@@ -68,29 +68,28 @@ No título do tópico encontra-se o link para os slides.
 | 02-04-2024   | [Experimentos Randomizados](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula07)  | 09 | 
 | 04-04-2024   | Lista 4 | 10 | 
 | 09-04-2024   | Lista 3 | 11 | 
-| 11-04-2024   | [Estudos observacionais](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08)  | 11 | 
-| 16-04-2024   | [Propensity Score](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09) | 12 | 
-| 18-04-2024   | [DR](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula10) | 13 | 
-| 23-04-2024   | Estudo em grupo pre-prova | 14 | 
+| 11-04-2024   | [Estudos observacionais](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08)  | 12 | 
+| 16-04-2024   | [Propensity Score](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09) | 13 | 
+| 18-04-2024   | [DR](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula10) | 14 | 
+| 23-04-2024   | Estudo em grupo pre-prova | 15 | 
 | 25-04-2024   | $P_1$ | 16 | 
 | 30-04-2024   |[$\tau_T$](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula11) | 17 | 
 | 02-05-2024   |[Propensity Score em Regressão](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula12)  | 18 | 
-| 07-05-2024   | [Matching](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula13) | 19 | 
-| 09-05-2024   |  | 20 | 
-| 14-05-2024   |  | 21 | 
-| 16-05-2024   |  | 22 | 
-| 21-05-2024   |  | 23 | 
-| 23-05-2024   |  | 24 | 
-| 28-05-2024   |  | 25 | 
-| 04-06-2024   |  | 26 | 
-| 06-06-2024   |  | 27 | 
-| 11-06-2024   |  | 28 | 
-| 13-06-2024   |  | 29 | 
-| 18-06-2024   |  | 30 | 
-| 20-06-2024   | $P_2$ | 31 | 
-| 25-06-2024   | Seminários | 32 | 
-| 27-06-2024   | Seminários | 33 | 
-| 09-07-2024   | Exame | 34 | 
+| 02-05-2024   |[Propensity Score em Regressão](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula12)  | 19 | 
+| 07-05-2024   | ENCPOS  |  | 
+| 09-05-2024   | ENCPOS | | 
+| 21-05-2024   | [Matching](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula13) | 21 | 
+| 23-05-2024   | [Ignorabilidade](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula14) | 22 | 
+| 28-05-2024   | [Valor-E](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula15) | 23 | 
+| 04-06-2024   |[Sensibilidad](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula16)  | 24 | 
+| 06-06-2024   |[Rosenbaum-Style p-value](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula17)   | 25 | 
+| 11-06-2024   | [Sobreposição](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula18)  | 26 | 
+| 13-06-2024   | [VI](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula19)  | 27 | 
+| 18-06-2024   | [VI](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula20)  | 28 | 
+| 20-06-2024   | [VI](https://ctruciosm.github.io/MI628-unicamp/MI628_Aula21)  | 29 | 
+| 25-06-2024   | Seminários | 30 | 
+| 27-06-2024   | Seminários | 31 | 
+| 09-07-2024   | Exame | 32 | 
 
 <center>
 
