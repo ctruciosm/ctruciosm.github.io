@@ -25,6 +25,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *A note about calibration tests for VaR and ES.* To appear in Time Series and Wavelets: A Festschrift in Honor of Pedro A. Morettin, Springer (2024) [with Luiz Hotta and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/BacktestingVaRES) \medskip </li> 
+
+
 <li> *Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.*  Accepted **Brazilian Review of Finance** (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] [`CODES`](https://github.com/felipereis150/BrazilianHRP) \medskip </li> 
 
 
