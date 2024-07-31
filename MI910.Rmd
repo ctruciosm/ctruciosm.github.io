@@ -1,0 +1,67 @@
+---
+title: "MI910"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Seminários de Probabilidade e Estatística
+
+## 2024.2
+
+</center>
+
+
+### Intruções
+
+
+Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google class, um relatório do seminário (máximo duas páginas). Ademais, deverá ler todas as referencia bibliográficas indicadas e enviar um relatório acerca do seu conteúdo.
+
+
+
+### Informações 
+
+- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzAxMjU1MDc0Mzc0?cjc=2t7uwg7)  (Código da Turma caso precisarem: 2t7uwg7)
+- `r emo::ji("calendar")` Sextas-ferias 10 horas na sala IM32*
+
+</br>
+
+### Referência Bibliográficas
+
+1. [How to communicate your research more effectively.](https://www.springernature.com/gp/researchers/the-source/blog/blogposts-communicating-research/how-to-be-a-better-research-communicator/17486026)
+2. [5 Tips on Communicating Your Research Effectively.](https://gsrc.ucr.edu/blog/2022/11/30/5-tips-communicating-your-research-effectively)
+3. [Tips for communicating about your research with non-scientists](https://www.nia.nih.gov/research/blog/2022/11/tips-communicating-about-your-research-non-scientists)
+4. [Effective communication skills: communicating scientific research](https://advanceonline.cam.ac.uk/blog/effective-communication-skills-communicating-scientific-research)
+5. [Guide 7: Communicating research findings](https://hseresearch.ie/wp-content/uploads/2021/12/Guide-no-7-Communicating-your-research.pdf)
+6. [Communicating Research Findings](https://link.springer.com/chapter/10.1007/978-3-030-79956-4_7)
+
+
+
+### **Cronograma**
+
+
+| Seminário PPGE  |  Palestrante             |
+|:---------------:|:------------------------:|
+| 16-08           | Alex Sousa (IMECC)       | 
+| 30-08           | Ricardo Ehlers (USP)     | 
+| 20-09           | Felipe Fernandes (IMECC) | 
+| 27-09           | Florencia Leonardi (USP) | 
+| 11-10           | Alvaro Burbano (IMECC)   | 
+| 25-10           | Cristian Coletti (UFABC) |
+| 08-11           | Larissa Matos (IMECC)    |
+| 29-11           | TBA   |
+
+
+
+
+<center>
+
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
+
+</center>
+
+
+---- 

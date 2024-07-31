@@ -10,9 +10,8 @@ output:
 
 # Econometria
 
-## 2023.2
+## 2024.2
 
-**ATENÇÃO: as aulas começarão no dia 8 de agosto**
 
 </center>
 
@@ -20,9 +19,9 @@ output:
 
 As datas das provas e apresentação do trabalho já estão definidas. Programe-se com antecedência. 
 
-- $P_1$: **28/09**
+- $P_1$: **01/10**
 - $P_2$: **28/11**  
-- Exame: **12/12**  
+- Exame: **10/12**  
 
 
 
@@ -32,7 +31,7 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 
 
 - `r emo::ji("pencil")` [Plano de Ensino]() 
-- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NjE2NDA0MDE3MTM4)  (Código da Turma caso precisarem: rex4bvn)
+- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzAxMjU1MDYyNzUy?cjc=whzw3lb)  (Código da Turma caso precisarem: whzw3lb)
 - `r emo::ji("calendar")` Terças e quintas-feiras das 10h às 12h no PB02
 
 </br>
@@ -62,40 +61,44 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | Aula  | Assunto                | Link |
 |:-----:|:-----------------------|:----:|
 | 01     | Introdução  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula01.html#/title-slide) |
-|02      | Lab 01 |     |
+| 02     | Lab 01 |     |
 | 03     | Revisão RLM  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula02.html#/title-slide)
-|04      | Lab 02 |     |
-| 05     | Revisão RLM II  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula03.html#/title-slide)
-|06      | Lab 03 |     |
-| 07     | Revisão RLM III  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide)
-|08      | Lab 04 |     |
-| 09     | Variáveis irrelevantes, omitidas e multicolinearidad | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula05.html#/title-slide)
-| 10     | Heterocedasticidade e erros autocorrelacionais | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula06.html#/title-slide)
-|11      | Lab 05 |     |
-| 12     | Minimos Quadrados Generalizados | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula07.html#/title-slide)
-|13      | Lab 06 |     |
-|14      | $P_1$ |     |
-| 15     | Revisão $P_1$ / Paralisação |
+| 04     | Revisão RLM II  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula03.html#/title-slide)|    
+| 05     | Lab 02 |     |
+| 06     | Revisão RLM III  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula04.html#/title-slide)
+| 07     | Variáveis irrelevantes, omitidas e multicolinearidad | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula05.html#/title-slide)
+| 08     | Lab 03 |     |
+| 09     | Heterocedasticidade e erros autocorrelacionais | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula06.html#/title-slide)
+| 10     | Minimos Quadrados Generalizados | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula07.html#/title-slide)
+| 11     | Lab 04 |     |
+| 12     | Problemas adicionais de especificação | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula08.html#/title-slide)
+| 13     | Lab 05 |     |
+| 14     | Exercicios |     |
+| 15     | $P_1  |
 | 16     | Revisão $P_1$ |
-| 17     | Problemas adicionais de especificação | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula08.html#/title-slide)
-| 18     | Lab 07 | 
-| 19     | Variáveis Instrumentais | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula09.html#/title-slide)
-| 20     | Lab 08 |
-| 21     | Modelos SUR | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula10.html#/title-slide)
-| 22     | Lab 09 |
-| 23     | Equações simultâneas | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula11.html#/title-slide)
-| 24     | Lab 10  |
-| 25     | $P_2$
+| 17     | Variáveis Instrumentais | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula09.html#/title-slide)
+| 18     | Modelos SUR | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula10.html#/title-slide)
+| 19     | Lab 06 |     |
+| 20     | Equações simultâneas | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula11.html#/title-slide)
+| 21     |  | 
+| 22     |  | 
+| 23     |  | 
+| 24     |  | 
+| 25     |  | 
+| 26     |  | 
+| 27     |  | 
+| 28     |  | 
+| 29     |  | 
+| 30     | $P_2$
 
 
 
 
 <center>
 
-> Nesse tempo de pandemia sei que as coisas não estão fáceis. Se precisar conversar com alguém, seja o assunto que for,  pode contar comigo. 
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
 
 </center>
-
 
 
 ---- 

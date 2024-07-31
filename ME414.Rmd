@@ -1,5 +1,5 @@
 ---
-title: "ME414A"
+title: "ME414C"
 output:
   distill::distill_article: 
     fig_width: 1
@@ -10,16 +10,16 @@ output:
 
 # Estatística para Experimentalistas
 
-## 2023.2
+## 2024.2
 
 </center>
 
 ### Datas Importantes
 
 
-- **28/09:** Prova 1.
+- **01/10:** Prova 1.
 - **28/11:** Prova 2.
-- **12/12:** Exame Final.
+- **10/12:** Exame.
 
 
 </br>
@@ -27,8 +27,8 @@ output:
 ### Informações 
 
 - `r emo::ji("pencil")` [Plano de desenvolvimento]().
-- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: r5fka6h)](https://classroom.google.com/c/NjE2NDAwNDIwMTEw)
-- `r emo::ji("calendar")` Terças e quintas-feiras das 8h às 10h no CB01
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: womjcsu)](https://classroom.google.com/c/NjkxNjUxNjYwNDMy?cjc=womjcsu)
+- `r emo::ji("calendar")` Terças e quintas-feiras das 8h às 10h no CB03
 
 
 

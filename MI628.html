@@ -21,7 +21,7 @@
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -455,8 +455,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -526,6 +526,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -566,9 +567,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     display: none !important;
   }
 
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
+    border-top: none;
   }
 
   d-appendix {
@@ -663,6 +676,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
   }
 
   d-article pre {
@@ -1424,6 +1442,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // create d-title
     $('.d-title').changeElementType('d-title');
 
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
@@ -1501,8 +1525,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('.distill-force-highlighting-css').parent().remove();
 
     // remove empty line numbers inserted by pandoc when using a
-    // custom syntax highlighting theme
-    $('code.sourceCode a:empty').remove();
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
 
     // load distill framework
     load_distill_framework();
@@ -1528,12 +1553,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
         if (orcid_id) {
           var a = $('<a></a>');
           a.attr('href', 'https://orcid.org/' + orcid_id);
           var img = $('<img></img>');
           img.addClass('orcid-id');
-          img.attr('alt', 'ORCID ID');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
           img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
           a.append(img);
           $(this).append(a);
@@ -1598,15 +1624,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2461,7 +2493,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2505,12 +2537,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="links.html">Links</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
-2024.1
+2024.2
  
 <span class="down-arrow">&#x25BE;</span>
 </button>
 <div class="nav-dropdown-content">
-<a href="MI628.html">MI628/ME920</a>
+<a href="ME414.html">ME414</a>
+<a href="ME715.html">ME715</a>
+<a href="MI910.html">MI910</a>
 <a href="http://www.ime.unicamp.br/carefs/">CAREFS</a>
 </div>
 </div>
@@ -2527,6 +2561,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-title">
 <h1>MI628 / ME920</h1>
+
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 
@@ -2536,14 +2571,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-article">
 <center>
 <h1 id="mi628-inferência-causal">MI628: Inferência Causal</h1>
-<h1 id="me920-introdução-à-inferência-causal">ME920: Introdução à
-Inferência Causal</h1>
+<h1 id="me920-introdução-à-inferência-causal">ME920: Introdução à Inferência Causal</h1>
 <h2 id="section">2024.1</h2>
 </center>
 <h3 id="informações">Informações</h3>
 <ul>
 <li>📝 <a href="">Plano de desenvolvimento</a></li>
-<li>👨‍🏫 <a href="">Google Classroom</a></li>
+<li>👩‍🏫 <a href="">Google Classroom</a></li>
 <li>📆 Terças e quintas-feiras das 10:00 às 12:00 no PB02.</li>
 </ul>
 <h3 id="datas-importantes">Datas Importantes</h3>
@@ -2557,20 +2591,14 @@ Inferência Causal</h1>
 <h3 id="referência-bibliográficas">Referência Bibliográficas</h3>
 <h4 id="livro-texto">Livro texto</h4>
 <ul>
-<li>Ding, P. (2024). A First Course in Causal Inference, Chapman and
-Hall/CRC. <a href="https://arxiv.org/abs/2305.18793">Link</a></li>
+<li>Ding, P. (2024). A First Course in Causal Inference, Chapman and Hall/CRC. <a href="https://arxiv.org/abs/2305.18793">Link</a></li>
 </ul>
 <h4 id="complementares">Complementares</h4>
 <ul>
-<li>Hernán, M.A., &amp; Robins, J. M. (2020). Causal Inference: What If.
-Boca Raton: Chapman &amp; Hall/CRC <a
-href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/01/hernanrobins_WhatIf_2jan24.pdf">Link</a></li>
-<li>Cunningham, S. (2021). Causal Inference: The mixtape. Yale
-University Press <a href="https://mixtape.scunning.com/">Link</a></li>
-<li>Pearl, J., Glymour, M., &amp; Jewell, N. P. (2016). Causal Inference
-in Statistics: A primer. John Wiley &amp; Sons.</li>
-<li>Pearl, J. (2009). Causality: Models, reasoning and inference.
-Cambridge, UK: Cambridge University Press.</li>
+<li>Hernán, M.A., &amp; Robins, J. M. (2020). Causal Inference: What If. Boca Raton: Chapman &amp; Hall/CRC <a href="https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/01/hernanrobins_WhatIf_2jan24.pdf">Link</a></li>
+<li>Cunningham, S. (2021). Causal Inference: The mixtape. Yale University Press <a href="https://mixtape.scunning.com/">Link</a></li>
+<li>Pearl, J., Glymour, M., &amp; Jewell, N. P. (2016). Causal Inference in Statistics: A primer. John Wiley &amp; Sons.</li>
+<li>Pearl, J. (2009). Causality: Models, reasoning and inference. Cambridge, UK: Cambridge University Press.</li>
 </ul>
 <h3 id="cronograma"><strong>Cronograma</strong></h3>
 <p>No título do tópico encontra-se o link para os slides.</p>
@@ -2590,21 +2618,17 @@ Cambridge, UK: Cambridge University Press.</li>
 <tbody>
 <tr class="odd">
 <td style="text-align: center;">29-02-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula01">Introdução</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula01">Introdução</a></td>
 <td>01</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">05-03-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula02">Resultados
-Potenciais e FRT</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula02">Resultados Potenciais e FRT</a></td>
 <td>02</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">07-03-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula03">Neyman</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula03">Neyman</a></td>
 <td>03</td>
 </tr>
 <tr class="even">
@@ -2614,14 +2638,12 @@ href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula03">Neyman</a></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">14-03-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula04">Estratificação</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula04">Estratificação</a></td>
 <td>05</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">19-03-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05">Rerandomização</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05">Rerandomização</a></td>
 <td>06</td>
 </tr>
 <tr class="odd">
@@ -2631,15 +2653,12 @@ href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula05">Rerandomização</
 </tr>
 <tr class="even">
 <td style="text-align: center;">26-03-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06">RMPE</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula06">RMPE</a></td>
 <td>08</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">02-04-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula07">Experimentos
-Randomizados</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula07">Experimentos Randomizados</a></td>
 <td>09</td>
 </tr>
 <tr class="even">
@@ -2654,22 +2673,17 @@ Randomizados</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">11-04-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08">Estudos
-observacionais</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula08">Estudos observacionais</a></td>
 <td>12</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">16-04-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09">Propensity
-Score</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula09">Propensity Score</a></td>
 <td>13</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">18-04-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula10">DR</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula10">DR</a></td>
 <td>14</td>
 </tr>
 <tr class="odd">
@@ -2679,29 +2693,22 @@ href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula10">DR</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">25-04-2024</td>
-<td style="text-align: left;"><span
-class="math inline">\(P_1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(P_1\)</span></td>
 <td>16</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">30-04-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula11"><span
-class="math inline">\(\tau_T\)</span></a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula11"><span class="math inline">\(\tau_T\)</span></a></td>
 <td>17</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">02-05-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula12">Propensity
-Score em Regressão</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula12">Propensity Score em Regressão</a></td>
 <td>18</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">02-05-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula12">Propensity
-Score em Regressão</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula12">Propensity Score em Regressão</a></td>
 <td>19</td>
 </tr>
 <tr class="even">
@@ -2716,57 +2723,47 @@ Score em Regressão</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">21-05-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula13">Matching</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula13">Matching</a></td>
 <td>21</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">23-05-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula14">Ignorabilidade</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula14">Ignorabilidade</a></td>
 <td>22</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">28-05-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula15">Valor-E</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula15">Valor-E</a></td>
 <td>23</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">04-06-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula16">Sensibilidad</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula16">Sensibilidad</a></td>
 <td>24</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">06-06-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula17">Rosenbaum-Style
-p-value</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula17">Rosenbaum-Style p-value</a></td>
 <td>25</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">11-06-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula18">Sobreposição</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula18">Sobreposição</a></td>
 <td>26</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">13-06-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula19">VI</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula19">VI</a></td>
 <td>27</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">18-06-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula20">VI</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula20">VI</a></td>
 <td>28</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">20-06-2024</td>
-<td style="text-align: left;"><a
-href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula21">VI</a></td>
+<td style="text-align: left;"><a href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula21">VI</a></td>
 <td>29</td>
 </tr>
 <tr class="odd">
@@ -2788,13 +2785,11 @@ href="https://ctruciosm.github.io/MI628-unicamp/MI628_Aula21">VI</a></td>
 </table>
 <center>
 <blockquote>
-<p>A vida universitária pode ter altos e baixos, se precisar conversar
-com alguém, seja o assunto que for, pode contar comigo.</p>
+<p>A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo.</p>
 </blockquote>
 </center>
 <hr />
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
