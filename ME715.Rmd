@@ -30,7 +30,7 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 ### Informações 
 
 
-- `r emo::ji("pencil")` [Plano de Ensino]() 
+- `r emo::ji("pencil")` [Plano de desenvolvimento (PDD)](https://github.com/ctruciosm/ME715-unicamp/blob/master/ME715A_Ementa_2024S2.pdf) 
 - `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzAxMjU1MDYyNzUy?cjc=whzw3lb)  (Código da Turma caso precisarem: whzw3lb)
 - `r emo::ji("calendar")` Terças e quintas-feiras das 10h às 12h no PB02
 

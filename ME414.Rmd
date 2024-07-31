@@ -26,7 +26,7 @@ output:
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento]().
+- `r emo::ji("pencil")` [Plano de desenvolvimento (PDD)](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414C_Ementa_2024S2.pdf).
 - `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: womjcsu)](https://classroom.google.com/c/NjkxNjUxNjYwNDMy?cjc=womjcsu)
 - `r emo::ji("calendar")` Terças e quintas-feiras das 8h às 10h no CB03
 
