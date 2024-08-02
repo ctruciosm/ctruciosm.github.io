@@ -18,14 +18,14 @@ output:
 ### Intruções
 
 
-Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google class, um relatório do seminário (máximo duas páginas). Ademais, deverá ler todas as referencia bibliográficas indicadas e enviar um relatório acerca do seu conteúdo.
+Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google class, um relatório do seminário (máximo duas páginas). Ademais, deverá ler todas as referencia bibliográficas indicadas e enviar um relatório acerca do seu conteúdo. Todas as atividades são **obrigatórias**
 
 
 
 ### Informações 
 
 - `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzAxMjU1MDc0Mzc0?cjc=2t7uwg7)  (Código da Turma caso precisarem: 2t7uwg7)
-- `r emo::ji("calendar")` Sextas-ferias 10 horas na sala IM32*
+- `r emo::ji("calendar")` Sextas-ferias 10 horas na sala IMECC 322
 
 </br>
 
@@ -55,6 +55,7 @@ Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google cla
 | 29-11           | TBA   |
 
 
+**Alunos(as) com frequência menor a 75% dos seminários estará automaticamente reprovado(a).**
 
 
 <center>
