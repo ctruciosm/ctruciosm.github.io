@@ -7,6 +7,11 @@ output:
 
 <ol reversed>
 
+
+<li>  [A new proposal to forecast high-dimensional conditional covariance matrices via general dynamic factor models](ctrucios_SINAPE2024.pdf). 25 Simpósio Brasileiro de Probabilidade e Estatística (SINAPE2024). Fortaleza,  Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
+
+
+
 <li>  Forecasting risk measures in high-dimensional portfolios. Invited talk at *17th International Conference on Computational and Financial Econometrics*. December 17-18, 2023. Berlin, Germany. ![](./flag-icon-css-master/flags/4x3/de.svg){ width=2.5% } </li>
 
 
