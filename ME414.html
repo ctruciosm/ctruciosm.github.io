@@ -526,7 +526,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1599,21 +1598,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2468,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2544,7 +2537,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <center>
-<h1 id="estatística-para-experimentalistas">Estatística para Experimentalistas</h1>
+<h1 id="estatística-para-experimentalistas">Estatística para
+Experimentalistas</h1>
 <h2 id="section">2024.2</h2>
 </center>
 <h3 id="datas-importantes">Datas Importantes</h3>
@@ -2556,17 +2550,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p></br></p>
 <h3 id="informações">Informações</h3>
 <ul>
-<li>📝 <a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414C_Ementa_2024S2.pdf">Plano de desenvolvimento (PDD)</a>.</li>
-<li>👨‍🏫 <a href="https://classroom.google.com/c/NjkxNjUxNjYwNDMy?cjc=womjcsu">Google Classroom (Código da Turma caso precisarem: womjcsu)</a></li>
+<li>📝 <a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414C_Ementa_2024S2.pdf">Plano
+de desenvolvimento (PDD)</a>.</li>
+<li>👨‍🏫 <a
+href="https://classroom.google.com/c/NjkxNjUxNjYwNDMy?cjc=womjcsu">Google
+Classroom (Código da Turma caso precisarem: womjcsu)</a></li>
 <li>📆 Terças e quintas-feiras das 8h às 10h no CB03</li>
 </ul>
 <h3 id="referência-bibliográficas">Referência Bibliográficas</h3>
 <ul>
-<li>Anderson, D. R; Sweeney, D. J.; e Williams, T. A. (2008). Estatística Aplicada à Administração e Economia. 2 edição. Cengage Learning</li>
-<li><a href="http://www.sciencedirect.com/science/book/9780123743886">Ross, S. M. (2010). Introductory Statistics</a></li>
-<li><a href="https://drive.google.com/file/d/0B-DHaDEbiOGkY1FCdEJFNGV1Ym8/view">Diez, D. M.; Barr, C. D.; Çetinkaya-Rundel, M. (2015). OpenIntro Statistics</a></li>
-<li>Bussab, W.O. e Morettin, P.A. (2017). Estatística Básica. 9a edição.</li>
-<li>Magalhães, M.N. e de Lima, A.C.P. (2001). Noções de Probabilidade e Estatística. IME-USP.</li>
+<li>Anderson, D. R; Sweeney, D. J.; e Williams, T. A. (2008).
+Estatística Aplicada à Administração e Economia. 2 edição. Cengage
+Learning</li>
+<li><a
+href="http://www.sciencedirect.com/science/book/9780123743886">Ross, S.
+M. (2010). Introductory Statistics</a></li>
+<li><a
+href="https://drive.google.com/file/d/0B-DHaDEbiOGkY1FCdEJFNGV1Ym8/view">Diez,
+D. M.; Barr, C. D.; Çetinkaya-Rundel, M. (2015). OpenIntro
+Statistics</a></li>
+<li>Bussab, W.O. e Morettin, P.A. (2017). Estatística Básica. 9a
+edição.</li>
+<li>Magalhães, M.N. e de Lima, A.C.P. (2001). Noções de Probabilidade e
+Estatística. IME-USP.</li>
 </ul>
 <h3 id="cronograma"><strong>Cronograma</strong></h3>
 <table>
@@ -2588,49 +2595,57 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tr class="odd">
 <td style="text-align: center;">01</td>
 <td style="text-align: left;">Introdução</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula01.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula01.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">02</td>
 <td style="text-align: left;">Est. Descritiva</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula02.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula02.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">03</td>
 <td style="text-align: left;">Lab R</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_LabR_01.ipynb">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_LabR_01.ipynb">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">04</td>
 <td style="text-align: left;">Est. Descritiva</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">05</td>
 <td style="text-align: left;">Lab R</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/LabR02_ME414.ipynb">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/LabR02_ME414.ipynb">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">06</td>
 <td style="text-align: left;">Análise Combinatoria</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula06.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula06.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">07</td>
 <td style="text-align: left;">Probabilidade</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula07.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula07.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">08</td>
 <td style="text-align: left;">Probabilidade Condicional</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula08.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula08.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -2642,13 +2657,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tr class="even">
 <td style="text-align: center;">10</td>
 <td style="text-align: left;">Distribuições Discretas</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula09.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula09.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">11</td>
 <td style="text-align: left;">Distribuições Continuas</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula10.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula10.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -2671,7 +2688,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 <tr class="odd">
 <td style="text-align: center;">15</td>
-<td style="text-align: left;"><span class="math inline">\(P_1\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(P_1\)</span></td>
 <td></td>
 <td></td>
 </tr>
@@ -2690,13 +2708,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tr class="even">
 <td style="text-align: center;">18</td>
 <td style="text-align: left;">Amostragem</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula11.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula11.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">19</td>
 <td style="text-align: left;">Intervalos de Confiança</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula12.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula12.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -2708,25 +2728,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tr class="odd">
 <td style="text-align: center;">21</td>
 <td style="text-align: left;">Teste de Hipóteses 1</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula13.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula13.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">22</td>
 <td style="text-align: left;">Teste de Hipóteses 2</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula14.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula14.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">23</td>
 <td style="text-align: left;">Teste de Hipóteses 2</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula14.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula14.pdf">Link</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">24</td>
 <td style="text-align: left;">Teste de Hipóteses 3</td>
-<td><a href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula15.pdf">Link</a></td>
+<td><a
+href="https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula15.pdf">Link</a></td>
 <td></td>
 </tr>
 </tbody>
@@ -2734,11 +2758,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <center>
 <center>
 <blockquote>
-<p>A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo.</p>
+<p>A vida universitária pode ter altos e baixos, se precisar conversar
+com alguém, seja o assunto que for, pode contar comigo.</p>
 </blockquote>
 </center>
 <hr />
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

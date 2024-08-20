@@ -526,7 +526,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
-    font-size: 100%;
   }
 
   .html-widget {
@@ -1599,21 +1598,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        const citeChild = $(this).children()[0]
-        // Do not process if @xyz has been used without escaping and without bibliography activated
-        // https://github.com/rstudio/distill/issues/466
-        if (citeChild === undefined) return true
-
-        if (citeChild.nodeName == "D-FOOTNOTE") {
-          var fn = citeChild
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          // Could use CSS.escape too here, we insure backward compatibility in navigator
-          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2468,7 +2461,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2544,25 +2537,42 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <div class="d-article">
 <h2 id="brazilian-funding">Brazilian funding</h2>
-<p>Here, a list of Brazilian funding agencies that support/supported me and/or my students:</p>
+<p>Here, a list of Brazilian funding agencies that support/supported me
+and/or my students:</p>
 <ul>
-<li><a href="https://fapesp.br/">São Paulo Research Foundation (FAPESP)</a></li>
-<li><a href="https://www.faperj.br/">Rio de Janeiro Research Foundation (FAPERJ)</a></li>
-<li><a href="https://www.gov.br/capes/pt-br">Coordination for the Improvement of Higher Education Personnel (CAPES)</a></li>
+<li><a href="https://fapesp.br/">São Paulo Research Foundation
+(FAPESP)</a></li>
+<li><a href="https://www.faperj.br/">Rio de Janeiro Research Foundation
+(FAPERJ)</a></li>
+<li><a href="https://www.gov.br/capes/pt-br">Coordination for the
+Improvement of Higher Education Personnel (CAPES)</a></li>
 </ul>
 <h2 id="tutorials">Tutorials</h2>
 <ul>
-<li>Copulas in R: <a href="https://www.r-bloggers.com/2016/03/how-to-fit-a-copula-model-in-r-heavily-revised-part-1-basic-tools/">Part 1</a> and <a href="https://www.r-bloggers.com/2016/03/how-to-fit-a-copula-model-in-r-heavily-revised-part-2-fitting-the-copula/">Part 2</a></li>
-<li><a href="https://www.msperlin.com/blog/post/2020-03-29-garch-tutorial-in-r/">GARCH-type models in R</a></li>
+<li>Copulas in R: <a
+href="https://www.r-bloggers.com/2016/03/how-to-fit-a-copula-model-in-r-heavily-revised-part-1-basic-tools/">Part
+1</a> and <a
+href="https://www.r-bloggers.com/2016/03/how-to-fit-a-copula-model-in-r-heavily-revised-part-2-fitting-the-copula/">Part
+2</a></li>
+<li><a
+href="https://www.msperlin.com/blog/post/2020-03-29-garch-tutorial-in-r/">GARCH-type
+models in R</a></li>
 </ul>
 <h2 id="others">Others</h2>
 <ul>
-<li><a href="https://www.elsevier.com/connect/8-reasons-i-accepted-your-article">8 reasons I accepted your article</a></li>
+<li><a
+href="https://www.elsevier.com/connect/8-reasons-i-accepted-your-article">8
+reasons I accepted your article</a></li>
 <li><a href="https://phdcomics.com/comics.php">PhD comincs</a></li>
-<li><a href="http://statisticalestimation.blogspot.com/2016/09/blog-post.html">Learning Financial Data Analysis Using R</a></li>
-<li><a href="https://www.r-bloggers.com/2015/05/learning-everything-with-r-an-r-book-list/">Learning everything with R</a></li>
+<li><a
+href="http://statisticalestimation.blogspot.com/2016/09/blog-post.html">Learning
+Financial Data Analysis Using R</a></li>
+<li><a
+href="https://www.r-bloggers.com/2015/05/learning-everything-with-r-an-r-book-list/">Learning
+everything with R</a></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -25,10 +25,13 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *Portfolio resampling in the Brazilian stock market: Can it outperforms Markowitz optimization?.* **Brazilian Review of Finance** (2024) [with André Oliveira and Pedro Valls] [`CODES`](https://github.com/ctruciosm/ResamplingBRPortfolios/blob/master/README.md) \medskip </li> 
+
+
 <li> *A note about calibration tests for VaR and ES.* To appear in Time Series and Wavelets: A Festschrift in Honor of Pedro A. Morettin, Springer (2024) [with Luiz Hotta and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/BacktestingVaRES) \medskip </li> 
 
 
-<li> *Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.*  Accepted **Brazilian Review of Finance** (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] [`CODES`](https://github.com/felipereis150/BrazilianHRP) \medskip </li> 
+<li> [*Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.*](https://periodicos.fgv.br/rbfin/article/view/89848)  **Brazilian Review of Finance** (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] [`CODES`](https://github.com/felipereis150/BrazilianHRP) \medskip </li> 
 
 
 <li> [*A Comparison of Methods for Forecasting Value-at-Risk and Expected Shortfall of Cryptocurrencies.*](https://onlinelibrary.wiley.com/doi/abs/10.1002/for.2929) **Journal of Forecasting** (2023) [with James W. Taylor] [`CODES`](https://github.com/ctruciosm/CryptoForeComb) \medskip </li>
