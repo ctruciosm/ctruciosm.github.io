@@ -54,16 +54,16 @@ output:
 | 03    | Lab R | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_LabR_01.ipynb) | 
 | 04    | Est. Descritiva | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf) | 
 | 05 | Lab R | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/LabR02_ME414.ipynb) |
-| 06 | Análise Combinatoria | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula06.pdf)
-| 07 | Probabilidade | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula07.pdf)
-| 08 | Probabilidade Condicional | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula08.pdf)
-| 09 | Exercícios | 
-| 10 | Distribuições Discretas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula09.pdf)
-| 11 | Distribuições Continuas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula10.pdf)
-| 12 | Solução da lista de exercícios | 
-| 13 | Exercícios de revisão I | 
-| 14 | Exercícios de revisão II | 
-| 15 | $P_1$ | 
+| 06 | Bônus | [Link](https://ctruciosm.github.io/ACA-228/LabR_04#1) |
+| 07 | Análise Combinatoria | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula06.pdf)
+| 08 | Probabilidade | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula07.pdf)
+| 09 | Probabilidade Condicional | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula08.pdf)
+| 10 | Exercícios | 
+| 11 | Distribuições Discretas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula09.pdf)
+| 12 | Distribuições Continuas | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula10.pdf)
+| 13 | Solução da lista de exercícios | 
+| 14 | Exercícios de revisão I | 
+| 15 | $P_1$  | 
 | 16 | Revisão da Prova / Paralisação |
 | 17 | Pontos extras P1 |
 | 18 | Amostragem | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula11.pdf) | 
