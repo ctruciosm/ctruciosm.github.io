@@ -81,9 +81,9 @@ As datas das provas e apresentação do trabalho já estão definidas. Programe-
 | 19     | Equações simultâneas | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula11.html#/title-slide)
 | 20     | Dados tranversais agrupados |  [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula12.html#/title-slide)
 | 21     | Dados em painel | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula13_JD.html#/title-slide)
-| 22     | GMM  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_GMM.html#/title-slide)
-| 23     | MQNL | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_MQNL.html#/title-slide)
-| 24     | Bootstrap | | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Bootstrap.html#/title-slide)
+| 22     | GMM  | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula_GMM.html#/title-slide)
+| 23     | MQNL | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula_MQNL.html#/title-slide)
+| 24     | Bootstrap | | [Link](https://ctruciosm.github.io/ME715-unicamp/ME715_Aula_Bootstrap.html#/title-slide)
 | 25     | Seminário 1| 
 | 26     | Seminário 2  | 
 | 27     | Seminário 3  | 
