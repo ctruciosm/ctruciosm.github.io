@@ -25,10 +25,10 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Portfolio resampling in the Brazilian stock market: Can it outperforms Markowitz optimization?.* **Brazilian Review of Finance** (2024) [with André Oliveira and Pedro Valls] [`CODES`](https://github.com/ctruciosm/ResamplingBRPortfolios/blob/master/README.md) \medskip </li> 
+<li> [*A note about calibration tests for VaR and ES.*](https://link.springer.com/chapter/10.1007/978-3-031-66398-7_4) In Time Series and Wavelets Analysis: A Festschrift in Honor of Pedro A. Morettin, Springer (2024) [with Luiz Hotta and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/BacktestingVaRES) \medskip </li> 
 
 
-<li> *A note about calibration tests for VaR and ES.* To appear in Time Series and Wavelets: A Festschrift in Honor of Pedro A. Morettin, Springer (2024) [with Luiz Hotta and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/BacktestingVaRES) \medskip </li> 
+<li> [*Portfolio resampling in the Brazilian stock market: Can it outperforms Markowitz optimization?.*](https://periodicos.fgv.br/rbfin/article/view/91552) **Brazilian Review of Finance** (2024) [with André Oliveira and Pedro Valls] [`CODES`](https://github.com/ctruciosm/ResamplingBRPortfolios/blob/master/README.md) \medskip </li> 
 
 
 <li> [*Using hierarchical risk parity in the Brazilian market: An out-of-sample analysis.*](https://periodicos.fgv.br/rbfin/article/view/89848)  **Brazilian Review of Finance** (2023) [with Felipe Reis, Anderson Sobreira and Boris Asrilhant] [`CODES`](https://github.com/felipereis150/BrazilianHRP) \medskip </li> 
@@ -81,9 +81,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *A note about calibration tests for VaR and ES.* [with Luiz K. Hotta and Mauricio Zevallos] \medskip </li>
+<li> *Forecasting Bitcoin and Ethereum Risk Measures through Markov Switching GARCH Models: Does the Specification Matter?.* [with Luiz K. Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
 
-<li> *Does portfolio resampling really improve out-of-sample performance? Evidence from the Brazilian and US marketst.* [with André Oliveira and Pedro Valls]  \medskip </li>
+<li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.* [with João H. G. Mazzeu]  \medskip </li>
 
 
 </ol>
@@ -99,8 +99,6 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-
-<li> *Forecasting VaR and ES through Markov Switching GARCH Models: Does the specification matter?* [with Luiz K. Hotta, Mauricio Zevallos and Pedro Valls] \medskip </li>
 
 <li> *Shrinking the covariance matrix: an exhaustive comparison.* [with Isabella Nascimento Peres da Silva] \medskip </li>
 
