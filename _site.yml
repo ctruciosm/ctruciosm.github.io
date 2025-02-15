@@ -22,16 +22,16 @@ navbar:
       href: statblog.html
     - text: 'Links'
       href: links.html
-    - text: 2024.2
+    - text: 2025.1
       menu:
-        - text: ME414
-          href: ME414.html
-        - text: ME715
-          href: ME715.html
-        - text: MI910
-          href: MI910.html
+        - text: ME607
+          href: ME607.html
+        - text: MI908
+          href: MI908.html
         - text: CAREFS
           href: 'http://www.ime.unicamp.br/carefs/'
+        - text: Julia
+          href: 'http://www.ime.unicamp.br/~juliacps/'
     - icon: fas fa-adjust
 output: 
   distill::distill_article:

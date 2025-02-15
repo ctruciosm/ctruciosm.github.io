@@ -20,7 +20,10 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 #### Graduate {.panel-name}
 
+- [Seminários de Estatística](MI908.html) (2025/1)
+- [Seminários de Probabilidade e Estatística](MI910.html) (2024/2)
 - [Causal Inference](MI628.html) (2024/1)
+
 
 
 :::
@@ -30,10 +33,10 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 #### Undergraduate {.panel-name}
 
 - **UNICAMP**
-  - [Econometrics](ME715.html) (2023/2)
-  - [Time Series](ME607.html) (2023/1)
+  - [Econometrics](ME715.html) (2023/2, 2024/2)
+  - [Time Series](ME607.html) (2023/1, 2025/1)
   - [Multivariate Statistical Analysis](ME_731.html) (2022/2).
-  - [Statistics for Experimentalist](ME414.html) (2022/2, 2023/2).
+  - [Statistics for Experimentalist](ME414.html) (2022/2, 2023/2, 2024/2).
 - **UFRJ**
   - [Quantitative Methods for Business Administration](ACA124.html) (2022/1).
   - [Statistics for Business](MAD211.html) (2020/2, 2021/1, 2021/2, 2022/1).

@@ -10,24 +10,24 @@ output:
 
 # Séries Temporais
 
-## 2023.1
+## 2025.1
 
 
 </center>
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME607A_Ementa_2023S1.pdf)
-- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: 7wk4s5h)](https://classroom.google.com/c/NTgyMTk0MzMyMDE2?cjc=7wk4s5h)
-- `r emo::ji("calendar")` Terças e quintas-feiras das 14:00 às 16:00 no CB07.
-- Monitorias: 
-  *   PED: quartas-feiras na sala 124 (IMECC) das 13:00 às 14:00.
-  *   PAD: quintas-feiras na sala 151 (IMECC) das 18:00 às 19:00.
+- `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME607A_Ementa_2025S1.pdf)
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: )](https://classroom.google.com/c/NTgyMTk0MzMyMDE2?cjc=7wk4s5hhdhdhd)
+- `r emo::ji("calendar")` Terças (CB05) e quintas-feiras (CB06) das 14:00 às 16:00 horas.
+
 
 ### Datas Importantes
 
-- $P_1:$ 25-04-2023.
-- $P_2:$ 20-06-2023.
+- $P_1:$ 03-04-2025.
+- $P_2:$ 27-05-2025.
+- $P_3:$ 01-07-2025.
+- Apresentação de trabalhos: 26-06-2025.
  
 
 </br>
@@ -45,8 +45,9 @@ output:
 
 #### Complementares
 
-
-- Huang, C., \& Petukhina, A. (2022). Applied Time Series Analysis and Forecasting with Python. Springer Nature. [Link](https://link.springer.com/book/10.1007/978-3-031-13584-2)
+- Huang, C., \& Petukhina, A. (2022). Applied Time Series Analysis and Forecasting with Python.
+Springer Nature. [Link](https://link.springer.com/book/10.1007/978-3-031-13584-2)
+- Krispin, R. (2019). Hands-On Time Series Analysis with R: Perform time series analysis and forecasting using R. Packt Publishing Ltd.
 - Morettin, P.A, \& Toloi, C.M.C. (2006). Análise de Séries Temporais, 2ed, Blucher.
 - Shumway, R. H., & Stoffer, D. S. (2019). Time series: a data analysis approach using R. Chapman and Hall/CRC.
 
@@ -60,40 +61,39 @@ No título do tópico encontra-se o link para os slides.
 
 | Data  | Tópico                         | Aula |
 |:-----:|:-------------------------------|--------|
-| 02-03-2023    | [Introdução e conceitos básicos](https://ctruciosm.github.io/ME607-unicamp/Aula01.html) | 01 | 
-| 07-03-2023     | [Análise exploratória de dados](https://ctruciosm.github.io/ME607-unicamp/Aula02.html) | 02 | 
-| 09-03-2023     | [Decomposição](https://ctruciosm.github.io/ME607-unicamp/Aula03.html)   | 03 | 
-| 14-03-2023     | [Modelos básicos + Avaliação de modelos](https://ctruciosm.github.io/ME607-unicamp/Aula04.html) | 04 | 
-| 16-03-2023     | [Modelos de Regressão](https://ctruciosm.github.io/ME607-unicamp/Aula05.html) | 05 | 
-| 21-03-2023     | [Modelos de Regressão II](https://ctruciosm.github.io/ME607-unicamp/Aula06.html) | 06 | 
-| 23-03-2023     | [Suavização Exponencial](https://ctruciosm.github.io/ME607-unicamp/Aula07.html)  | 07 | 
-| 28-03-2023     | [Modelos AR](https://ctruciosm.shinyapps.io/Aula08/#/title-slide) | 08 | 
-| 30-03-2023     | [Modelos AR II](https://ctruciosm.github.io/ME607-unicamp/Aula09.html)   | 09 | 
-| 04-04-2023     | Não teremos aula (Estarei no [LACSC2023](https://congreso-lacsc2023.pucp.edu.pe/about/welcome))   | - | 
-| 06-04-2023     | Não teremos aula (Estarei no [LACSC2023](https://congreso-lacsc2023.pucp.edu.pe/about/welcome))  | - | 
-| 11-04-2023     | [Modelos AR III](https://ctruciosm.github.io/ME607-unicamp/Aula10.html)  | 10 | 
-| 13-04-2023     | [Modelos MA](https://ctruciosm.shinyapps.io/Aula11/#/title-slide) | [11]((https://ctruciosm.github.io/ME607-unicamp/Aula11.html)) | 
-| 18-04-2023     | [Modelos ARMA I](https://ctruciosm.github.io/ME607-unicamp/Aula12.html)  | 12 | 
-| 20-04-2023     | Modelos ARMA    | 13 | 
-| 25-04-2023     | $P_1$ | 14 | 
-| 27-04-2023     | Revisão $P_1$ | 15 |
-| 02-05-2023     | Modelos ARIMA | 16 | 
-| 04-05-2023     | Modelos SARIMA | 17 | 
-| 09-05-2023     | Seleção de Modelos | 18 | 
-| 11-05-2023     | [Modelos (S)ARIMAX](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/SARIMAX.ipynb)   | 19 | 
-| 16-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/IntroARCH.ipynb)   | 20 | 
-| 18-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/GARCH.ipynb)  | 21 | 
-| 23-05-2023     | Modelos de Volatilidade* | 22 | 
-| 25-05-2023     | [Modelos de Volatilidade*](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/VaRES.ipynb) | 23 | 
-| 30-05-2023     | [Modelos Hierárquicos*](datasets/STH.nb.html)  | 24 | 
-| 01-06-2023     | -                      | 25 | 
-| 06-06-2023     | -                      | 26 | 
-| 13-06-2023     | Licença Paternidade    | 27 | 
-| 15-06-2023     | Licença Paternidade    | 28 | 
-| 20-06-2023     | $P_2$ | 29 | 
-| 22-06-2023     | Apresentação de trabalhos | 30 | 
-| 27-06-2023     | Apresentação de trabalhos | 31 | 
-
+| 25-02 | [Introdução e conceitos básicos](https://ctruciosm.github.io/ME607-unicamp/Aula01.html) | 01 | 
+| 27-02 | [Análise exploratória de dados](https://ctruciosm.github.io/ME607-unicamp/Aula02.html) | 02 | 
+| 06-03 | [Decomposição](https://ctruciosm.github.io/ME607-unicamp/Aula03.html)   | 03 | 
+| 11-03 | [Sazonalidade](https://ctruciosm.github.io/ME607-unicamp/Aula03b.html)   | 04 | 
+| 13-03 | [Modelos básicos + Avaliação de modelos](https://ctruciosm.github.io/ME607-unicamp/Aula04.html) | 05 | 
+| 18-03 | [Modelos de Regressão I](https://ctruciosm.github.io/ME607-unicamp/Aula05.html) | 06 | 
+| 20-03 | [Modelos de Regressão II](https://ctruciosm.github.io/ME607-unicamp/Aula06.html) | 07 | 
+| 25-03 | [Suavização Exponencial](https://ctruciosm.github.io/ME607-unicamp/Aula07.html)  | 08 |
+| 27-03 | Apresentação de trabalhos V1 | 09 |
+| 01-04 | [Modelos AR I](https://ctruciosm.shinyapps.io/Aula08/#/title-slide) | 10 | 
+| 03-04 | $P_1$ | 11 | 
+| 08-04 | [Modelos AR II](https://ctruciosm.github.io/ME607-unicamp/Aula09.html)   | 12 | 
+| 10-04 | [Modelos AR III](https://ctruciosm.github.io/ME607-unicamp/Aula10.html)  | 13 | 
+| 15-04 | [Modelos MA I](https://ctruciosm.shinyapps.io/Aula11/#/title-slide) | 14 |
+| 17-04 | [Modelos MA II](https://ctruciosm.github.io/ME607-unicamp/Aula11.html) | 15 |
+| 21/04--30/04 | São Paulo School of Advanced Science in High-DImensional Modeling | |
+| 06-05 | [Modelos ARMA](https://ctruciosm.github.io/ME607-unicamp/Aula12.html)  | 16 | 
+| 08-05 | [Modelos ARIMA](https://ctruciosm.github.io/ME607-unicamp/Arima.html)  | 17 | 
+| 13-05 | [Modelos SARIMA](https://ctruciosm.github.io/ME607-unicamp/Sarima.html)  | 18 | 
+| 15-05 | Apresentação de trabalhos V2 | 19 |
+| 20-05 | Avaliação de curso |  | 
+| 22-05 | [Seleção de Modelos](https://ctruciosm.github.io/ME607-unicamp/Selecao.html) | 20 | 
+| 27-05 | $P_2$ | 21 | 
+| 29-05 | Revisão $P_2$ | 22 |
+| 03-06 | [Modelos (S)ARIMAX](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/SARIMAX.ipynb)   | 23 | 
+| 05-06  | [Modelos de Volatilidade I](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/IntroARCH.ipynb)   | 24 | 
+| 10-06 | [Modelos de Volatilidade II](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/GARCH.ipynb)  | 25 | 
+| 12-06 | [Modelos de Volatilidade III](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/LeverageGARCH.ipynb)  | 26 | 
+| 17-06 | [Medias de Risco](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/datasets/VaRES.ipynb) | 27 | 
+| 24-06 | [Modelos Hierárquicos](datasets/STH.nb.html)  | 28 | 
+| 26-06 | Apresentação de trabalhos V3 (Final) | 29 |
+| 01-07 | $P_3$ | 30 | 
+| 15-07 | Exame | 31 | 
 <center>
 
 > A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 

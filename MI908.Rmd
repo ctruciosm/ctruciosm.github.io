@@ -1,0 +1,68 @@
+---
+title: "MI908"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Seminários de Estatística
+
+## 2025.1
+
+</center>
+
+
+### Intruções
+
+
+Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google class, um relatório do seminário (máximo duas páginas). Ademais, deverá ler todas as referencia bibliográficas indicadas e enviar um relatório acerca do conteúdo de cada leitura. Todas as atividades são **obrigatórias** e as datas de entrega já estão definidas no Google Class.
+
+
+
+### Informações 
+
+- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzAxMjU1MDc0Mzc0?cjc=2t7uwg787687)  (Código da Turma caso precisarem: )
+- `r emo::ji("calendar")` Sextas-ferias 10 horas na sala IMECC 323
+
+</br>
+
+### Referência Bibliográficas
+
+1. [How to communicate your research more effectively.](https://www.springernature.com/gp/researchers/the-source/blog/blogposts-communicating-research/how-to-be-a-better-research-communicator/17486026)
+2. [5 Tips on Communicating Your Research Effectively.](https://gsrc.ucr.edu/blog/2022/11/30/5-tips-communicating-your-research-effectively)
+3. [Tips for communicating about your research with non-scientists](https://www.nia.nih.gov/research/blog/2022/11/tips-communicating-about-your-research-non-scientists)
+4. [Effective communication skills: communicating scientific research](https://advanceonline.cam.ac.uk/blog/effective-communication-skills-communicating-scientific-research)
+5. [Guide 7: Communicating research findings](https://hseresearch.ie/wp-content/uploads/2021/12/Guide-no-7-Communicating-your-research.pdf)
+6. [Communicating Research Findings](https://link.springer.com/chapter/10.1007/978-3-030-79956-4_7)
+
+
+
+### **Cronograma**
+
+
+| Seminário PPGE  |  Palestrante             |
+|:---------------:|:------------------------:|
+| 14-03           | Pedro Morettin (USP)     | 
+| 28-03           | João Florindo (UNICAMP)  | 
+| 02-04           | Sat Gupta (UNC, USA) | 
+| 25-04           | Mariela Machado (UNICAMP) | 
+| 09-05           | TBA   | 
+| 30-05           | Henrique Leme (Dcide) |
+| 27-06           | Mario de Castro (USP)    |
+| 11-07           | TBA  |
+
+
+**Alunos(as) deverão participar (e enviar os resumos) de, pelo menos, seis seminários. Caso contrário, estará automaticamente reprovado(a).** 
+
+
+<center>
+
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
+
+</center>
+
+
+---- 

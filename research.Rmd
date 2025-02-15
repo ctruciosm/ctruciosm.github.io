@@ -81,9 +81,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Forecasting Bitcoin and Ethereum Risk Measures through Markov Switching GARCH Models: Does the Specification Matter?.* [with Luiz K. Hotta, Pedro Valls and Mauricio Zevallos] \medskip </li>
+<li> *Forecasting Bitcoin and Ethereum Risk Measures through Markov Switching GARCH Models: Does the Specification Matter?.* [with Luiz K. Hotta, Pedro Valls and Mauricio Zevallos] Submitted \medskip </li>
 
-<li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.* [with João H. G. Mazzeu]  \medskip </li>
+<li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*  Submitted  \medskip </li>
 
 
 </ol>
@@ -99,8 +99,11 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *The Kingston of GAS/DCS models for forecasting volatility: an empirical and simulation-based out-of-sample comparison* [Felipe Marques] \medskip </li>
 
 <li> *Shrinking the covariance matrix: an exhaustive comparison.* [with Isabella Nascimento Peres da Silva] \medskip </li>
+
+<li> *Revisiting Fama-French in the Brazilian stock market: a machine learning approach* [Natalia Therezinha Negri] \medskip </li>
 
 
 
