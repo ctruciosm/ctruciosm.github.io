@@ -1,0 +1,76 @@
+---
+title: "Book Review: Hands-On Time Series Analysis with R"
+description: |
+  Minhas impressões do livro "Hands-On Time Series Analysis with R" do Rami Krispin.
+categories:
+  - Book Review
+  - R 
+  - rstats
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 02-17-2025
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 4
+    self_contained: false
+---
+
+### _Overview_ do livro
+
+<center>
+```{r echo = FALSE, out.width = "45%"}
+knitr::include_graphics("hotsawr.png")
+```
+</center>
+
+No 2025.1 ministrarei **Séries Temporais** para os alunos da _graduação em Estatística do IMECC/UNICAMP_ de novo. É a segunda vez que ministrarei a disciplina e, tentando trazer um novo olhar para ela, resolvi ler um livro mais _mão na massa_.
+
+
+O autor do livro é bastante ativo no linkedIn, o que me motivou a ler o livro que, por sinal, é editado pela [Packt](https://www.packtpub.com/en-br), uma editora que tem vários livros do estilo _mão na massa_. 
+
+
+### Comentários gerais
+
+
+O livro conta com 12 capítulos curtos, o que facilita bastante o acompanhamento da leitura. Além disso, os códigos fornecidos ao longo do conteúdo, juntamente com os comentários nas análises exploratórias, são extremamente úteis e valiosos para quem trabalha com séries temporais no cotidiano.
+
+Ao contrário da [revisão de outro livro prático que fiz há algum tempo](https://ctruciosm.github.io/posts/2022-12-28-book-review-practical-time-series-analysis-prediction-with-statistics-and-machine-learning/), gostei muito mais da leitura de `Hands-On Time Series Analysis with R` do @krispin2019. Embora o livro apresente alguns pequenos erros de digitação, eles são facilmente identificáveis e não comprometem nem a leitura nem a compreensão dos conceitos abordados.
+
+
+#### Prós
+
+
+- O livro disponibiliza os códigos em um [repositório público](https://github.com/PacktPublishing/Hands-On-Time-Series-Analysis-with-R), o que facilita ainda mais o aprendizado prático.
+- Está repleto de comentários valiosos, que refletem a experiência de quem realmente trabalha na área e sabe utilizar o `R` de maneira eficaz.
+- Os capítulos são curtos e objetivos, o que facilita terminar a leitura sem interromper o fluxo, perfeito para concluir "antes de dormir".
+- O autor aborda temas abrangentes que, com exceção do último capítulo, estão alinhados com a ementa de um curso de séries temporais de nível graduação.
+- Uma das boas surpresas do livro é a introdução ao pacote `h2o`, uma excelente ferramenta para trabalhar com aprendizado de máquina, além de exemplos práticos de como aplicá-lo a séries temporais.
+- Os primeiros 10 capítulos são muito bons, abordando os tópicos de maneira direta e com comentários práticos que realmente agregam ao aprendizado.
+
+
+#### Contras
+
+- O livro utiliza exclusivamente códigos em R (e eu sou fã do `R`, mas reconheço que muitos "Pythonicos" podem sentir falta de exemplos em Python).
+- A diferença dos 10 primeiros capítulos, eu não gostei muito do capítulo 11 (ARIMA). Ele não é ruim, mas achei prático demais para meu gosto. Por exemplo, ele não discute o possível problema de cancelamento de raizes em modelo ARMA, um tema que eu considero importante.
+- O último capítulo, que trata de aprendizado de máquina, é mais um _case_ prático. O autor deixa claro que o objetivo não é aprofundar-se nos métodos de aprendizado de máquina, mas sim demonstrar como são aplicados em séries temporais. No entanto, senti falta de mais detalhes, especialmente porque esse é um tema pouco explorado em livros-texto sobre séries temporais.
+
+
+### Conclusão
+
+De maneira geral, gostei bastante do livro e acabei utilizando vários dos códigos e comentários presentes nele nas minhas próprias notas de aula. Inclusive, decidi incluí-lo como referência bibliográfica complementar na ementa da disciplina.
+
+
+Caso queira saber mais acerca do curso que ministrarei, pode ver a informação [aqui](https://ctruciosm.github.io/ME607.html).
+
+
+#### Bônus
+
+O Canal [Data Scientist Show](https://www.youtube.com/@TheDataScientistShow) fez uma entrevista de 1.5 horas ao Rami Krispin (autor do livro), segue o link para os interessados: [youtube.com/watch?v=eHSJA_lej4c](https://www.youtube.com/watch?v=eHSJA_lej4c). 
+
+
+
+
+

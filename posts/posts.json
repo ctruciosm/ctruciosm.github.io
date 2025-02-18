@@ -1,5 +1,28 @@
 [
   {
+    "path": "posts/2025-02-17-book-review-hands-on-time-series-analysis-with-r/",
+    "title": "Book Review: Hands-On Time Series Analysis with R",
+    "description": "Minhas impressões do livro \"Hands-On Time Series Analysis with R\" do Rami Krispin.",
+    "author": [
+      {
+        "name": "Carlos Trucíos",
+        "url": "https://ctruciosm.github.io"
+      }
+    ],
+    "date": "2025-02-17",
+    "categories": [
+      "Book Review",
+      "R",
+      "rstats"
+    ],
+    "contents": "\n\nContents\nOverview do livro\nComentários gerais\nPrós\nContras\n\nConclusão\nBônus\n\n\nOverview do livro\n\n\n\n\n\nNo 2025.1 ministrarei Séries Temporais para os alunos da graduação em Estatística do IMECC/UNICAMP de novo. É a segunda vez que ministrarei a disciplina e, tentando trazer um novo olhar para ela, resolvi ler um livro mais mão na massa.\nO autor do livro é bastante ativo no linkedIn, o que me motivou a ler o livro que, por sinal, é editado pela Packt, uma editora que tem vários livros do estilo mão na massa.\nComentários gerais\nO livro conta com 12 capítulos curtos, o que facilita bastante o acompanhamento da leitura. Além disso, os códigos fornecidos ao longo do conteúdo, juntamente com os comentários nas análises exploratórias, são extremamente úteis e valiosos para quem trabalha com séries temporais no cotidiano.\nAo contrário da revisão de outro livro prático que fiz há algum tempo, gostei muito mais da leitura de Hands-On Time Series Analysis with R do @krispin2019. Embora o livro apresente alguns pequenos erros de digitação, eles são facilmente identificáveis e não comprometem nem a leitura nem a compreensão dos conceitos abordados.\nPrós\nO livro disponibiliza os códigos em um repositório público, o que facilita ainda mais o aprendizado prático.\nEstá repleto de comentários valiosos, que refletem a experiência de quem realmente trabalha na área e sabe utilizar o R de maneira eficaz.\nOs capítulos são curtos e objetivos, o que facilita terminar a leitura sem interromper o fluxo, perfeito para concluir “antes de dormir”.\nO autor aborda temas abrangentes que, com exceção do último capítulo, estão alinhados com a ementa de um curso de séries temporais de nível graduação.\nUma das boas surpresas do livro é a introdução ao pacote h2o, uma excelente ferramenta para trabalhar com aprendizado de máquina, além de exemplos práticos de como aplicá-lo a séries temporais.\nOs primeiros 10 capítulos são muito bons, abordando os tópicos de maneira direta e com comentários práticos que realmente agregam ao aprendizado.\nContras\nO livro utiliza exclusivamente códigos em R (e eu sou fã do R, mas reconheço que muitos “Pythonicos” podem sentir falta de exemplos em Python).\nA diferença dos 10 primeiros capítulos, eu não gostei muito do capítulo 11 (ARIMA). Ele não é ruim, mas achei prático demais para meu gosto. Por exemplo, ele não discute o possível problema de cancelamento de raizes em modelo ARMA, um tema que eu considero importante.\nO último capítulo, que trata de aprendizado de máquina, é mais um case prático. O autor deixa claro que o objetivo não é aprofundar-se nos métodos de aprendizado de máquina, mas sim demonstrar como são aplicados em séries temporais. No entanto, senti falta de mais detalhes, especialmente porque esse é um tema pouco explorado em livros-texto sobre séries temporais.\nConclusão\nDe maneira geral, gostei bastante do livro e acabei utilizando vários dos códigos e comentários presentes nele nas minhas próprias notas de aula. Inclusive, decidi incluí-lo como referência bibliográfica complementar na ementa da disciplina.\nCaso queira saber mais acerca do curso que ministrarei, pode ver a informação aqui.\nBônus\nO Canal Data Scientist Show fez uma entrevista de 1.5 horas ao Rami Krispin (autor do livro), segue o link para os interessados: youtube.com/watch?v=eHSJA_lej4c.\n\n\n\n",
+    "preview": "posts/2025-02-17-book-review-hands-on-time-series-analysis-with-r/hotsawr.png",
+    "last_modified": "2025-02-18T11:15:41-03:00",
+    "input_file": "book-review-hands-on-time-series-analysis-with-r.knit.md",
+    "preview_width": 810,
+    "preview_height": 1000
+  },
+  {
     "path": "posts/2024-01-28-como-chegar-do-aeroporto-de-guarulhos-at-a-unicamp/",
     "title": "Do GRU até a UNICAMP",
     "description": "Um passo a passo de como chegar do aeroporto de Cumbica, em Guarulhos (GRU) até a Universidade Estadual de Campinas (UNICAMP) em Campinas.",
