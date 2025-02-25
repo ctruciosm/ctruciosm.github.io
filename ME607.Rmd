@@ -17,8 +17,8 @@ output:
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento](https://github.com/ctruciosm/ctruciosm.github.io/blob/master/documentos/ME607A_Ementa_2025S1.pdf)
-- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: )](https://classroom.google.com/c/NTgyMTk0MzMyMDE2?cjc=7wk4s5hhdhdhd)
+- `r emo::ji("pencil")` [Plano de desenvolvimento](documentos/2025-1_ME607A.pdf)
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: vckp5fm)](https://classroom.google.com/c/NzQ1MzM5NTg4NTI0?cjc=vckp5fm)
 - `r emo::ji("calendar")` Terças (CB05) e quintas-feiras (CB06) das 14:00 às 16:00 horas.
 
 
