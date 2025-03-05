@@ -24,8 +24,8 @@ Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google cla
 
 ### Informações 
 
-- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzAxMjU1MDc0Mzc0?cjc=2t7uwg787687)  (Código da Turma caso precisarem: )
-- `r emo::ji("calendar")` Sextas-ferias 10 horas na sala IMECC 323
+- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/NzQ1MzM4Mzk5Njc1?cjc=3esnr2m)  (Código da Turma caso precisarem: 3esnr2m)
+- `r emo::ji("calendar")` Os seminários acontecem sextas-feiras às 11 horas na sala 253 (sala de defesa de tese)
 
 </br>
 
@@ -47,7 +47,7 @@ Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google cla
 |:---------------:|:------------------------:|
 | 14-03           | Pedro Morettin (USP)     | 
 | 28-03           | João Florindo (UNICAMP)  | 
-| 02-04           | Sat Gupta (UNC, USA) | 
+| 02-04*           | Sat Gupta (UNC, USA) | 
 | 25-04           | Mariela Machado (UNICAMP) | 
 | 09-05           | TBA   | 
 | 30-05           | Henrique Leme (Dcide) |
@@ -55,6 +55,7 @@ Após cada seminário, o aluno(a) terá até 10 dias para enviar, via google cla
 | 11-07           | TBA  |
 
 
+> *: O Seminário do dia 02-04 será numa quarta feira devido à disponibilidade do palestrante do exterior. 
 
 <center>
 <h3>
