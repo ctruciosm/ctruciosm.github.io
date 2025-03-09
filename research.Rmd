@@ -25,6 +25,11 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+
+<li> [*Forecasting Bitcoin and Ethereum risk measures through MSGARCH models: Does the specification matter?.*](https://doi.org/10.12660/rbfin.v23n1.2025.92777) **Brazilian Review of Finance** (2025) [with Luiz Hotta, Pedro Valls and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/CryptoMSGARCH) \medskip </li>  \medskip </li> 
+
+
+
 <li> [*A note about calibration tests for VaR and ES.*](https://link.springer.com/chapter/10.1007/978-3-031-66398-7_4) In Time Series and Wavelets Analysis: A Festschrift in Honor of Pedro A. Morettin, Springer (2024) [with Luiz Hotta and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/BacktestingVaRES) \medskip </li> 
 
 
