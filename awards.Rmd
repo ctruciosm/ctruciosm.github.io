@@ -7,6 +7,7 @@ output:
 
 
 - **2024**
+  -   Top 25\% authors in Brazil according to RePEc (Research Papers in Economics).
   -   Elected Member of the International Statistical Institute (ISI) since November 2024.
 - **2021:** 
   -   Scholarship 5th Latin American Conference for Statistical Computing (LACSC2021).

@@ -86,8 +86,6 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Forecasting Bitcoin and Ethereum Risk Measures through Markov Switching GARCH Models: Does the Specification Matter?.* [with Luiz K. Hotta, Pedro Valls and Mauricio Zevallos] Submitted \medskip </li>
-
 <li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*  Submitted  \medskip </li>
 
 
