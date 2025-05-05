@@ -86,6 +86,8 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?* [with Felipe Marques]. Submitted  \medskip </li>
+
 <li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*  Submitted  \medskip </li>
 
 
@@ -102,7 +104,6 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *The Kingston of GAS/DCS models for forecasting volatility: an empirical and simulation-based out-of-sample comparison* [Felipe Marques] \medskip </li>
 
 <li> *Shrinking the covariance matrix: an exhaustive comparison.* [with Isabella Nascimento Peres da Silva] \medskip </li>
 
