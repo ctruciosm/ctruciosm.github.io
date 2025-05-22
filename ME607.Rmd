@@ -79,7 +79,7 @@ No título do tópico encontra-se o link para os slides.
 | 21/04--30/04 | São Paulo School of Advanced Science in High-DImensional Modeling | |
 | 06-05 | [Modelos ARMA](https://ctruciosm.github.io/ME607-unicamp/Aula12.html)  | 16 | 
 | 08-05 | [Modelos ARIMA](https://ctruciosm.github.io/ME607-unicamp/Arima.html)  | 17 | 
-| 13-05 | [Modelos SARIMA](https://ctruciosm.github.io/ME607-unicamp/Sarima.html)  | 18 | 
+| 13-05 | [Modelos SARIMA](https://ctruciosm.github.io/ME607-unicamp/SARIMA.html)  | 18 | 
 | 15-05 | Apresentação de trabalhos V2 | 19 |
 | 20-05 | Avaliação de curso |  | 
 | 22-05 | [Seleção de Modelos](https://ctruciosm.github.io/ME607-unicamp/Selecao.html) | 20 | 
