@@ -56,7 +56,27 @@ knitr::include_graphics("economatica_02.png")
 ```
 </center>
 
-3.  Selecione a opção **"Plataforma"**. Após alguns segundos (ou até um par de minutos de carregamento), a janela principal da ferramenta será aberta:
+3.  Selecione a opção **"Plataforma"** e enseguida aparecerá uma opção para fazer login. Abaixo apresento duas possíveis telas que podem aparecer quando clicar em "login"
+
+
+
+
+:::::::::::::: {.columns}
+::: {.column width="50%"}
+![Tela errada](login_errado.png)
+:::
+::: {.column width="50%"}
+![Tela certa](login_certo.png)
+:::
+::::::::::::::
+
+
+
+Se a tela que aparecer for semelhante à **"Tela errada"**, significa que o IP do computador não está liberado para uso. A **"Tela certa"** deve só pedir email e você pode colocar seu email institucional.
+
+
+
+4. Após alguns segundos (ou até um par de minutos de carregamento), a janela principal da ferramenta será aberta:
 
 <center>
 ```{r echo = FALSE, out.width = "55%"}
