@@ -1,0 +1,95 @@
+---
+title: "ME315"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# Manipulação de Banco de Dados
+
+## 2025.2
+
+
+</center>
+
+### Informações 
+
+- `r emo::ji("pencil")` [Plano de desenvolvimento](documentos/2025-1_ME607A.pdf)
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: kc6pmgkb)](https://classroom.google.com/c/NzAwMzM0MjU5NzIw)
+- `r emo::ji("calendar")` Terças (PB17) 10h-12h, Quintas (IM10) 08h-10h(A) / 10h-12h(B)
+
+
+### Datas Importantes
+
+
+- $P_1:$ 09/09/2025.
+- $P_2:$ 30/10/2025.
+- Entrega do projeto: 18/11/2025.
+- Apresentaões:18, 25 e 27 de novembro.
+- Exame:  09/12/2025 
+
+
+</br>
+
+
+
+### Referência Bibliográficas
+
+
+- Hadley Wickham, H. & Çetinkaya-Rundel, M. & Grolemund, G. (2023). R for Data Science, 2Ed. [Link](https://r4ds.hadley.nz/)
+- Vituri, G. & and Scheuch, C. (2025). Tidier Data Science with Julia. [Link](https://tidierorg.github.io/TidierBook/)
+- McKinney, W. (2023). Python for Data Analysis, 3Ed. [Link](https://wesmckinney.com/book/)
+
+
+
+### **Cronograma**
+
+
+Os links direcionam ao site [https://me315-unicamp.github.io](https://me315-unicamp.github.io), desenvolvido pelos Professores Benilton, Guilherme e Tatiana, que gentilmente me autorizaram a utilizar o material por eles elaborado.
+
+
+
+| Data  | Tópico                         | Aula |
+|:-----:|:-------------------------------|--------|
+| 05-08 | [Formatos tabulares](https://me315-unicamp.github.io/aulas/aula01.pdf) | 01 | 
+| 07-08 | [Manipulação básica de dados e importação*](https://me315-unicamp.github.io/laboratorios/lab01.html) | 02 | 
+| 12-08 | [Importação de bases de dados volumosas](https://me315-unicamp.github.io/aulas/aula02.pdf)   | 03 | 
+| 14-08 | [Importação em lote de dados volumosos*](https://me315-unicamp.github.io/laboratorios/lab02.html)   | 04 | 
+| 19-08 | [Dados relacionais](https://me315-unicamp.github.io/aulas/aula03.pdf) | 05 | 
+| 21-08 | [Dados relacionais*](https://me315-unicamp.github.io/laboratorios/lab03.html) | 06 | 
+| 26-08 | [Importação de outros formatos retangulares](https://me315-unicamp.github.io/aulas/aula04.pdf) | 07 | 
+| 28-08 | [Dados retangulares - Excel*](https://me315-unicamp.github.io/laboratorios/lab04.html)  | 08 |
+| 02-09 | [Revisão](https://me315-unicamp.github.io/aulas/aula05.pdf) | 09 |
+| 04-09 | [Laboratório Especial*](https://me315-unicamp.github.io/laboratorios/labEsp.pdf) | 10 | 
+| 09-09 | $P_1$ | 11 | 
+| 11-09 | [SQLite - Consulta de Conteúdo](https://me315-unicamp.github.io/aulas/aula06.pdf)   | 12 | 
+| 16-09 | [SQLite Parte I*](https://me315-unicamp.github.io/laboratorios/lab06.html)  | 13 | 
+| 18-09 | [SQLite - Alteração de Conteúdo](https://me315-unicamp.github.io/aulas/aula07.pdf) | 14 |
+| 23-09 | [SQLite Parte II**](https://me315-unicamp.github.io/laboratorios/lab07.html) | 15 |
+| 25-09 | [Introdução ao Polars](https://ime.unicamp.br/~benilton/polars_01.html#/title-slide)  |16 |
+| 30-09 | [SQLite Parte III*](https://me315-unicamp.github.io/laboratorios/lab08.html) | 17 | 
+| 02-10 | [Dados Relacionais com Polars](https://ime.unicamp.br/~benilton/polars_02.html#/title-slide)  | 17 | 
+| 07-10 | [Introdução ao Polars/Python*](https://me315-unicamp.github.io/laboratorios/lab_polars_01.html)  | [19](https://me315-unicamp.github.io/laboratorios/lab_polars_02.html) | 
+| 09-10 | [SQLite e Polars](https://ime.unicamp.br/~benilton/polars_03.html#/title-slide) | 20 |
+| 16-10 | [SQLite e Polars/Python*](https://me315-unicamp.github.io/laboratorios/lab_polars_03.html) | 21 | 
+| 21-10 | [Visualização de Dados](https://me315-unicamp.github.io/aulas/polars_04.html#/title-slide)| 22 | 
+| 23-10 | [Visualização de Dados*](https://me315-unicamp.github.io/laboratorios/lab_polars_04.html) | 23 |
+| 30-10 | $P_2$ | 24 |
+| 11-11 | [Julia]()  | 25 | 
+| 13-11 | [Julia]()  | 26 | 
+| 18-11 | Apresentação de Trabalhos  | 27 | 
+| 25-11 | Apresentação de Trabalhos  | 28 | 
+| 27-11 | Apresentação de trabalhos  | 29 |
+| 09-12 | Exame | 30 | 
+<center>
+
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
+
+</center>
+
+
+
+---- 
