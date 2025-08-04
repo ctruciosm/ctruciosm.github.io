@@ -17,7 +17,7 @@ output:
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento](documentos/2025-1_ME607A.pdf)
+- `r emo::ji("pencil")` [Plano de desenvolvimento](documentos/ementaME315.pdf)
 - `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: kc6pmgkb)](https://classroom.google.com/c/NzAwMzM0MjU5NzIw)
 - `r emo::ji("calendar")` Terças (PB17) 10h-12h, Quintas (IM10) 08h-10h(A) / 10h-12h(B)
 
