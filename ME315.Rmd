@@ -17,9 +17,9 @@ output:
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento](documentos/ementaME315.pdf)
-- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: kc6pmgkb)](https://classroom.google.com/c/NzAwMzM0MjU5NzIw)
-- `r emo::ji("calendar")` Terças (PB17) 10h-12h, Quintas (IM10) 08h-10h(A) / 10h-12h(B)
+- `r emo::ji("pencil")` [Plano de desenvolvimento](documentos/2025-2_ME315A.pdf)
+- `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: usgrcej3)](https://classroom.google.com/c/NzAwMzM0MjY4MzIy?cjc=usgrcej3)
+- `r emo::ji("calendar")` Terças (10h-12h) e Quintas (10h-12h) no IM10 (Lab 150 do IMECC)
 
 
 ### Datas Importantes
