@@ -26,6 +26,8 @@ navbar:
       menu:
         - text: ME315
           href: ME315.html
+        - text: ME414
+          href: ME414.html
         - text: CAREFS
           href: 'http://www.ime.unicamp.br/carefs/'
         - text: Julia
