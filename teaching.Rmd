@@ -56,6 +56,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 #### Short Courses {.panel-name}
 
+- Estadística y Machine Learning en economía y finanzas: el caso de selección de carteras. UNMSM 2025. [Slides 1](https://ctruciosm.github.io/PortfolioAllocation/PortfolioAllocation_UNMSM#/title-slide) - [Slides 2](https://ctruciosm.github.io/PortfolioAllocation/PortfolioAllocation_Shrinkage#/title-slide) - [Slides 3](https://ctruciosm.github.io/PortfolioAllocation/UNICAMP#/title-slide)
 - Julia para ciência de dados. Semana da Matemática Aplicada da UNICAMP 2025. [Slides](https://ctruciosm.github.io/JuliaCrashCourses/Intro.html#/title-slide)
 - Risk-based Portfolio Allocation Strategies. Semana da Estatística UFJF 2024, Juiz de Fora - MG- [Slides](https://ctruciosm.github.io/PortfolioAllocation/PortfolioAllocation_UFJF)
 - Risk-based Portfolio Allocation Strategies. ENCPOS2024, Campinas - SP- [Slides](https://ctruciosm.github.io/PortfolioAllocation/PortfolioAllocation)
