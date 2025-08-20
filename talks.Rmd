@@ -7,8 +7,9 @@ output:
 
 <ol reversed>
 
+<li>  [Modelado de Series de Tiempo en Entornos de Big Data: Previsión de la (Co)volatilidad con Datos de Alta Dimensión](documentos/UNALM2025.pdf). Seminar at Universidade Nacional Agraria de la Molina. Lima, Perú. ![](./flag-icon-css-master/flags/4x3/pe.svg){ width=2.5% }  </li>
 
-<li>  [A new proposal to forecast high-dimensional conditional covariance matrices via general dynamic factor models](ctrucios_SINAPE2024.pdf). 25 Simpósio Brasileiro de Probabilidade e Estatística (SINAPE2024). Fortaleza,  Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
+<li>  A new proposal to forecast high-dimensional conditional covariance matrices via general dynamic factor models. 25 Simpósio Brasileiro de Probabilidade e Estatística (SINAPE2024). Fortaleza,  Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
 
 
 

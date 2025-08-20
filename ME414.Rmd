@@ -26,7 +26,7 @@ output:
 
 ### Informações 
 
-- `r emo::ji("pencil")` [Plano de desenvolvimento (PDD)](documentos/2025-2_ME414D.pdf).
+- `r emo::ji("pencil")` [Plano de desenvolvimento (PDD)](documentos/ME414D_Ementa_2025S2.pdf).
 - `r emo::ji("teacher")` [Google Classroom  (Código da Turma caso precisarem: womjcsu)](https://classroom.google.com/c/Nzk4NzY1MDAyODcy?cjc=hovpkijl)
 - `r emo::ji("calendar")` Terças e quintas-feiras das 8h às 10h no PB16
 
