@@ -51,8 +51,8 @@ output:
 |:-----:|:-----------------------|--------|------------|
 | 01      | Introdução    | [Link](http://me414-unicamp.github.io/aulas/slides/parte01/parte01.pdf)
 | 02      | Est. Descritiva  I  | [Link](http://me414-unicamp.github.io/aulas/slides/parte02/parte02.pdf)
-| 03      | Est. Descritiva  II  | [Link](http://me414-unicamp.github.io/aulas/slides/parte03/parte03.pdf)
-| 04    | Est. Descritiva III | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf) | 
+| 03      | [Est. Descritiva  II](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula02.pdf) )  | [Link](http://me414-unicamp.github.io/aulas/slides/parte03/parte03.pdf)
+| 04    | [Est. Descritiva III](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_Aula04.pdf) | [Link](http://me414-unicamp.github.io/aulas/slides/parte04/parte04.pdf) | 
 | 05    | Lab R | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/ME414_LabR_01.ipynb) | 
 | 06    | Exercícios | [Link]() | 
 | 07 | Lab R | [Link](https://github.com/ctruciosm/ME414-unicamp/blob/main/LabR02_ME414.ipynb) |
