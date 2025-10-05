@@ -7,6 +7,10 @@ output:
 
 <ol reversed>
 
+
+<li>  [A novel approach for forecasting high-dimensional conditional covariance matrices using general dynamic factor models](documentos/ctrucios_ISIWSC2025.pdf).  Oral presentation at *65th ISI World Statistics Congress *. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
+
+
 <li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?](documentos/ctrucios_este2025.pdf).  Oral presentation at *21ª Escola de Séries Temporais e Econometria*. August 31 to September 3, 2025. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
 
 
