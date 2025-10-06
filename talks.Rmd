@@ -8,6 +8,9 @@ output:
 <ol reversed>
 
 
+<li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?](documentos/ISI-IBS_ctrucios.pdf).  Oral presentation at *65th ISI World Statistics Congress *. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
+
+
 <li>  [A novel approach for forecasting high-dimensional conditional covariance matrices using general dynamic factor models](documentos/ctrucios_ISIWSC2025.pdf).  Oral presentation at *65th ISI World Statistics Congress *. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
 
 
