@@ -8,7 +8,7 @@ output:
 <ol reversed>
 
 
-<li>  [Um passeio aleatório (ou não) pela academia e pal vida](https://ctruciosm.github.io/SEMEST/SEMEST2025#/title-slide). Palestra at *23º Semana da Estatística da UNICAMP*. October 20, 2022. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
+<li>  [Um passeio aleatório (ou não) pela academia e pela vida](https://ctruciosm.github.io/SEMEST/SEMEST2025#/title-slide). Palestra at *23º Semana da Estatística da UNICAMP*. October 20, 2022. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
 
 <li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?](documentos/ISI-IBS_ctrucios.pdf).  Oral presentation at *65th ISI World Statistics Congress *. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
 
