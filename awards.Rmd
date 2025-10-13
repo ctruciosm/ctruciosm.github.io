@@ -5,7 +5,8 @@ output:
     toc: false
 ---
 
-
+- **2025**
+  -   IBS Young Ambassador to ISI WSC 2025.
 - **2024**
   -   Top 25\% authors in Brazil according to RePEc (Research Papers in Economics).
   -   Elected Member of the International Statistical Institute (ISI) since November 2024.
