@@ -7,13 +7,15 @@ output:
 
 <ol reversed>
 
+<li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily risk measures?](documentos/ctrucios_LACSC2025.pdf).  Oral presentation at *IX Latin American Conference on Statistical Computing LACSC 2025*. November 4--7, 2025. Valparaiso, Chile. ![](./flag-icon-css-master/flags/4x3/cl.svg){ width=2.5% }  </li>
+
 
 <li>  [Um passeio aleatório (ou não) pela academia e pela vida](https://ctruciosm.github.io/SEMEST/SEMEST2025#/title-slide). Palestra at *23º Semana da Estatística da UNICAMP*. October 15, 2025. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% } </li>
 
-<li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?](documentos/ISI-IBS_ctrucios.pdf).  Oral presentation at *65th ISI World Statistics Congress *. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
+<li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?](documentos/ISI-IBS_ctrucios.pdf).  Oral presentation at *65th ISI World Statistics Congress*. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
 
 
-<li>  [A novel approach for forecasting high-dimensional conditional covariance matrices using general dynamic factor models](documentos/ctrucios_ISIWSC2025.pdf).  Oral presentation at *65th ISI World Statistics Congress *. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
+<li>  [A novel approach for forecasting high-dimensional conditional covariance matrices using general dynamic factor models](documentos/ctrucios_ISIWSC2025.pdf).  Oral presentation at *65th ISI World Statistics Congress*. October 5 --9, 2025. The Hague, Netherlands. ![](./flag-icon-css-master/flags/4x3/nl.svg){ width=2.5% }  </li>
 
 
 <li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?](documentos/ctrucios_este2025.pdf).  Oral presentation at *21ª Escola de Séries Temporais e Econometria*. August 31 to September 3, 2025. Campinas, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
