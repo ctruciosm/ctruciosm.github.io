@@ -6,6 +6,7 @@ output:
 ---
 
 - **2025**
+  -   Honorable Mention at the XXXIII UNICAMP Scientific Initiation Congress for the work entitled _Forecasting VaR and ES using hybrid methodologies: LSTM and volatility models_ (Undergraduate Student: Vinícius Rezende Bardelin; Advisor: Carlos Trucíos).
   -   IBS Young Ambassador to ISI WSC 2025.
 - **2024**
   -   Top 25\% authors in Brazil according to RePEc (Research Papers in Economics).
