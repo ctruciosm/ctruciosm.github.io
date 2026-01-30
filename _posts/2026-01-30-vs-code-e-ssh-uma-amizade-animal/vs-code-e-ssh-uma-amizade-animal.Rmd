@@ -6,11 +6,11 @@ categories:
   - VS Code
   - SSH
 author:
+  - name: Carlos Alan Vieira do Nascimento
+    url: http://lattes.cnpq.br/3741205838023196
   - name: Carlos Trucíos
     url: https://ctruciosm.github.io
     orcid_id: 0000-0001-8746-8877
-  - name: Carlos Alan Vieira do Nascimento
-    url: http://lattes.cnpq.br/3741205838023196
 date: 01-30-2026
 output:
   distill::distill_article:
