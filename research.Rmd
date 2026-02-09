@@ -26,6 +26,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 <ol reversed>
 
 
+<li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*  **Empirical Economics**  (2026+) [`CODES`](https://github.com/ctruciosm/RiskBasedComparison)  \medskip </li>
+
+
 <li> [*Forecasting Bitcoin and Ethereum risk measures through MSGARCH models: Does the specification matter?.*](https://doi.org/10.12660/rbfin.v23n1.2025.92777) **Brazilian Review of Finance** (2025) [with Luiz Hotta, Pedro Valls and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/CryptoMSGARCH) \medskip </li>  \medskip </li> 
 
 
@@ -46,9 +49,9 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 
 
-<li> [*Forecasting Value-at-Risk and Expected Shortfall in Large Portfolios: a General Dynamic Factor Model Approach*](https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563). **Econometrics and Statistics** (2021). [with Marc Hallin]  [`CODES`](https://github.com/ctruciosm/GDFM-CHF-VaRES) </li> \medskip
+<li> [*Forecasting Value-at-Risk and Expected Shortfall in Large Portfolios: a General Dynamic Factor Model Approach*](https://www.sciencedirect.com/science/article/abs/pii/S2452306221000563). **Econometrics and Statistics** (2023). [with Marc Hallin]  [`CODES`](https://github.com/ctruciosm/GDFM-CHF-VaRES) </li> \medskip
 
-<li> [*Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting*](https://www.sciencedirect.com/science/article/pii/S0169207020301540). **International Journal of Forecasting** (2020). [with João Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]  </li> \medskip
+<li> [*Robustness and the general dynamic factor model with infinite-dimensional space: identification, estimation, and forecasting*](https://www.sciencedirect.com/science/article/pii/S0169207020301540). **International Journal of Forecasting** (2021). [with João Mazzeu, Luiz Hotta, Pedro Valls and Marc Hallin]  </li> \medskip
 
 <li> [*Value-at-Risk and Expected Shortfall in Cryptocurrencies’ Portfolio: A Vine Copula–based Approach*](https://www.tandfonline.com/doi/abs/10.1080/00036846.2019.1693023?journalCode=raec20). **Applied Economics** (2020). [with Aviral Tiwari and Faisal Alqahtani] [`CODES`](https://github.com/ctruciosm/CryptoCopVaRES) </li>  \medskip
 
@@ -87,8 +90,6 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 <ol reversed>
 
 <li> *GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily volatility?* [with Felipe Marques]. Submitted  \medskip </li>
-
-<li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*  Submitted  \medskip </li>
 
 
 </ol>
