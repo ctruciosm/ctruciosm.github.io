@@ -1,0 +1,110 @@
+---
+title: "MI680"
+output:
+  distill::distill_article: 
+    fig_width: 1
+    toc_float: false  
+---
+
+<center>
+
+# MI680: Econometria Avançada
+
+## 2026.1
+
+
+</center>
+
+### Informações 
+
+- `r emo::ji("pencil")` [Plano de desenvolvimento]()
+- `r emo::ji("teacher")` [Google Classroom](https://classroom.google.com/c/ODM5NjkyMTU3NjQ0?cjc=lbvqap4j)
+- `r emo::ji("calendar")` Segundas e quartas-feiras das 14:00 às 16:00 no IM25. 
+
+
+### Software
+
+- Ao longo da disciplina, será adotada a linguagem `Julia`.
+
+
+### Avaliação
+
+- A combinar no primeiro dia de aula.
+
+
+</br>
+
+
+
+### Referência Bibliográficas
+
+#### Livro texto
+
+- Hansen, B. (2022). Econometrics. Princeton University Press.
+
+#### Complementares
+
+
+- Davidson, R., & MacKinnon, J. G. (2004). Econometric Theory and Methods. New York: Oxford University Press. [Link](http://qed.econ.queensu.ca/ETM/ETM-davidson-mackinnon-2021.pdf)
+- Davidson, R., & MacKinnon, J. G. (1993). Estimation and Inference in Econometrics. New York: Oxford University Press. [Link](http://qed.econ.queensu.ca/pub/dm-book/EIE-davidson-mackinnon-2021.pdf)
+- Hayashi, F. (2000). Econometrics. Princeton University Press: Princeton.
+
+
+
+
+
+### **Cronograma**
+
+No título do tópico encontra-se o link para os slides.
+
+
+| Data     | Tópico                                    |
+|:--------:|:------------------------------------------|
+| **Parte I:** | **Regressão**                        |
+| Aula 01  | Conceitos fundamentais                    |
+| Aula 02  | A Álgebra dos Mínimos Quadrados           |
+| Aula 03  | Regressão por Mínimos Quadrados           |
+| Aula 04  | Regressão Normal                          |
+| **Parte II:**| **Métodos Assintóticos**              |
+| Aula 05  | Ordem Estocástica                         |
+| Aula 06  | Teoria Assintótica dos Mínimos Quadrados  |
+| Aula 07  | Estimação com Restrições                  |
+| Aula 08  | Testes de Hipóteses                       |
+| Aula 09  | Métodos de Reamostragem                   |
+| **Parte III:** | **Modelos de Multiplas Equações**   |
+| Aula 10  | Regressão Multivariada                    |
+| Aula 11  | Variáveis Instrumentais                   |
+| Aula 12  | GMM                                       |
+| **Parte IV:** | **Dados Dependentes e em Painel**    |
+| Aula 13  | Séries Temporais                          |
+| Aula 14  | Séries Temporais Multivariadas            |
+| Aula 15  | Séries Temporais Não Estacionárias        |
+| Aula 16  | Dados em Painel                           |
+| Aula 17  | DiD                                       |
+| **Parte V:** | **Métodos Não Paramétricos**          |
+| Aula 18  | Regressão Não Paramétrica                 |
+| Aula 19  | Regressão por Séries                      |
+| Aula 20  | Regressão com Descontinuidade             |
+| **Parte VI:** | **Métodos Não Lineares**             |
+| Aula 21  | M-Estimadores                             |
+| Aula 22  | MQNL                                      |
+| Aula 23  | Regressão Quantílica                      |
+| Aula 24  | Escolha Binária                           |
+| Aula 25  | Escolha Múltipla                          |
+| Aula 26  | Censura e Seleção                         |
+| Aula 27  | Seleção de Modelos                        |
+| Aula 28  | Aprendizado de Máquina                    |
+
+
+
+
+
+<center>
+
+> A vida universitária pode ter altos e baixos, se precisar conversar com alguém, seja o assunto que for, pode contar comigo. 
+
+</center>
+
+
+
+---- 

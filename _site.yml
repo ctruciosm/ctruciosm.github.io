@@ -22,12 +22,10 @@ navbar:
       href: statblog.html
     - text: 'Links'
       href: links.html
-    - text: 2025.2
+    - text: 2026.1
       menu:
-        - text: ME315
-          href: ME315.html
-        - text: ME414
-          href: ME414.html
+        - text: MI680
+          href: MI680.html
         - text: CAREFS
           href: 'http://www.ime.unicamp.br/carefs/'
         - text: Julia
