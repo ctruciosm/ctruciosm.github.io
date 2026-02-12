@@ -67,9 +67,13 @@ Após um tempo rodando, veremos se nosso protótipo roda sem erro no servidor. N
 Pressione `F1` ou `fn + F1` (se estiver no Mac) e selecione a opção  
 `Remote-SSH: Add New SSH Host...` (na imagem abaixo aparece como segunda opção).
 
+
 <center>
-![Selecionar `Remote-SSH: Add New SSH Host`](001.png)
+```{r echo = FALSE, out.width = "55%"}
+knitr::include_graphics("001.png")
+```
 </center>
+
 
 
 Em seguida, aparecerá uma caixa de diálogo para inserir o endereço SSH da máquina à qual deseja se conectar.
