@@ -7,6 +7,12 @@ output:
 
 <ol reversed>
 
+
+<li>  [Forecasting Financial Risk in High-Dimensional Time Series: The General Dynamic Factor Approach](documentos/ctrucios_WPSM2026.pdf).  Oral presentation at *XI Workshop on Probabilistic and Statistical Methods (WPSM2026)*. February 25--27, 2026. São Carlos, Brazil. ![](./flag-icon-css-master/flags/4x3/br.svg){ width=2.5% }  </li>
+
+
+
+
 <li>  [GARCH, GAS, SV, and MSGARCH models: Do we really need all of them for forecasting daily risk measures?](documentos/ctrucios_LACSC2025.pdf).  Oral presentation at *IX Latin American Conference on Statistical Computing LACSC 2025*. November 4--7, 2025. Valparaiso, Chile. ![](./flag-icon-css-master/flags/4x3/cl.svg){ width=2.5% }  </li>
 
 
