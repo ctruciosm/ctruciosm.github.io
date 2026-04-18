@@ -1,0 +1,78 @@
+---
+title: "Recomendações para meus orientandos"
+description: |
+  Um guia prático de como aproveitarmos melhor e ao máximo nosso tempo trabalhando juntos.
+categories:
+  - Orientação
+author:
+  - name: Carlos Trucíos
+    url: https://ctruciosm.github.io
+    orcid_id: 0000-0001-8746-8877
+date: 04-18-2026
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    self_contained: false
+header-includes:
+- \newcommand{\argmin}{\mathop{\mathrm{argmin}}\limits}
+- \usepackage{amsmath}
+---
+
+
+
+Olá, se você está lendo isto, é porque estamos prestes a trilhar (ou já estamos trilhando) um caminho de pesquisa juntos. Para aproveitar ao máximo esse tempo no qual trabalharemos juntos, elaborei uma lista com recomendações e conselhos que espero sejam úteis
+
+
+## 1. Autonomia e Responsabilidade
+
+- **O projeto é seu:** Eu não escrevo projetos para alunos. Definiremos o tema juntos, alinhando seus interesses à minha experiência. Você escreve, eu reviso e iteramos. Nada funciona melhor do que um pesquisador motivado. Por isso, quero que você trabalhe em algo de que **você** realmente goste.
+- **Protagonismo:** O trabalho é de sua inteira responsabilidade. Eu sou o orientador, não o executor. Estarei sempre disponível para ajudar e orientar, mas não farei o trabalho por você.
+- **Tenha iniciativa:** Não espere sempre instruções. Apresente ideias, proponha caminhos e busque soluções.
+- **Gestão de Tempo:** Não deixe nada para a última hora. Imprevistos acontecem, então tenha tudo pronto bem antes do prazo.
+- **Prazos:** Os prazos também são da sua responsabilidade. Organize-se: registre datas importantes (relatórios, submissões, reuniões) e use lembretes (alarmes faltando uma semana funcionam bastante bem comigo).
+- **Revisão:** Você não é meu unico aluno(a), orientação não é minha única atividade e professor também é gente (existe vida fora da universidade). Por isso, envie textos para revisão com antecedência. Assim, terei tempo para ler com atenção e devolver o documentos com sugestões.
+- **Use anotações:** Durante nossa reuniões, anote os pontos discutidos (isso evita retrabalho e perda de informações importantes).
+
+
+## 2. Rigor Técnico e Reprodutibilidade
+
+- **Código:** Pode usar a linguagem de programação que preferir, mas saiba que se for `R` ou `Julia`, poderei lhe ajudar melhor.
+- **Versionamento:** Aprenda a utilizar Git, GitHub e mantenha seus códigos organizados. Ao submeter artigos, disponibilizaremos os códigos.
+- **Boas Práticas:** Adote boas práticas de programação (veja esses materiais para [Julia](https://github.com/JuliaDiff/BlueStyle) ou [R](https://style.tidyverse.org/syntax.html)), priorizando clareza, organização e documentação. Lembre-se: outras pessoas e o seu _futuro eu_ devem ser capazes de entender e reproduzir o seu código.
+- **Backup:** Sempre que possível, utilize _Overleaf_, _GitHub_, etc. Se não costuma usar essas ferramentas, mantenha cópias frequentes do seu trabalho (fazer um backup antes de dormir, é uma boa ideia).
+- **Um bom amigo:** O `set.seed()` é sempre um bom amigo nas nossas pesquisas. Então, sempre que apropriado, inclua ele.
+
+
+
+## 3. Comunicação e Escrita
+
+- **Idioma:** Artigos acadêmicos devem ser escritos em **inglês**. Relatórios CNPq, FAPESP e PIBIC devem ser escritos em **português**.
+- **Qualidade do Texto:** Um texto mal escrito compromete a credibilidade da pesquisa. Escreva de forma clara e auto-contida ao ponto que o leitor possa entender e implementar sua proposta.
+- **Uso de IA:** Ferramentas de IA são permitidas para auxílio, mas devem ser **declaradas explicitamente**. Elas não substituem seu pensamento crítico nem seu trabalho como pesquisador. Um bom uso da IA seria para polir o texto e corrigir a gramática.
+- **O "Descanso":** Antes de entregar uma "versão final", deixe o texto descansar por alguns dias e faça uma revisão final com "olhos frescos".
+
+
+## 4. Ética e Mentalidade de Pesquisa
+
+- **Integridade Inegociável:** Nunca ajuste resultados para que pareçam "melhores".
+- **Documentação Total:** Registre decisões metodológicas e até tentativas que falharam. Isso evita o retrabalho.
+- **Leitura Constante:** Pesquisa é leitura. Mantenha-se sempre atualizado através de literaturas referentes à área do seu projeto.
+- **Comunicação:** Saber explicar seu trabalho (em apresentações ou conversas) é tão importante quanto a execução técnica.
+
+
+## 5. Equilíbrio e Saúde
+
+- **Cuide da sua saúde mental e física**. Faça exercícios, cultive hobbies e mantenha relações fora da universidade. Um pesquisador exausto não é um pesquisador eficiente.
+
+
+<center>
+_Meu objetivo como orientador não é apenas ajudar você a concluir um trabalho, mas formar um pesquisador independente, crítico e ético._
+</center>
+
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("dicas.png")
+```
+
+> Ferramentas de IA foram utilizas para aprimoramento de texto, correção ortográfica, diagramação e criação da figura ilustrativa.

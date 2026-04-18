@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2026-04-18-para-meus-orientandos/",
+    "title": "Recomendações para meus orientandos",
+    "description": "Um guia prático de como aproveitarmos melhor e ao máximo nosso tempo trabalhando juntos.",
+    "author": [
+      {
+        "name": "Carlos Trucíos",
+        "url": "https://ctruciosm.github.io"
+      }
+    ],
+    "date": "2026-04-18",
+    "categories": [
+      "Orientação"
+    ],
+    "contents": "\n\nContents\n1. Autonomia e Responsabilidade\n2. Rigor Técnico e Reprodutibilidade\n3. Comunicação e Escrita\n4. Ética e Mentalidade de Pesquisa\n5. Equilíbrio e Saúde\n\nOlá, se você está lendo isto, é porque estamos prestes a trilhar (ou já estamos trilhando) um caminho de pesquisa juntos. Para aproveitar ao máximo esse tempo no qual trabalharemos juntos, elaborei uma lista com recomendações e conselhos que espero sejam úteis\n1. Autonomia e Responsabilidade\nO projeto é seu: Eu não escrevo projetos para alunos. Definiremos o tema juntos, alinhando seus interesses à minha experiência. Você escreve, eu reviso e iteramos. Nada funciona melhor do que um pesquisador motivado. Por isso, quero que você trabalhe em algo de que você realmente goste.\nProtagonismo: O trabalho é de sua inteira responsabilidade. Eu sou o orientador, não o executor. Estarei sempre disponível para ajudar e orientar, mas não farei o trabalho por você.\nTenha iniciativa: Não espere sempre instruções. Apresente ideias, proponha caminhos e busque soluções.\nGestão de Tempo: Não deixe nada para a última hora. Imprevistos acontecem, então tenha tudo pronto bem antes do prazo.\nPrazos: Os prazos também são da sua responsabilidade. Organize-se: registre datas importantes (relatórios, submissões, reuniões) e use lembretes (alarmes faltando uma semana funcionam bastante bem comigo).\nRevisão: Você não é meu unico aluno(a), orientação não é minha única atividade e professor também é gente (existe vida fora da universidade). Por isso, envie textos para revisão com antecedência. Assim, terei tempo para ler com atenção e devolver o documentos com sugestões.\nUse anotações: Durante nossa reuniões, anote os pontos discutidos (isso evita retrabalho e perda de informações importantes).\n2. Rigor Técnico e Reprodutibilidade\nCódigo: Pode usar a linguagem de programação que preferir, mas saiba que se for R ou Julia, poderei lhe ajudar melhor.\nVersionamento: Aprenda a utilizar Git, GitHub e mantenha seus códigos organizados. Ao submeter artigos, disponibilizaremos os códigos.\nBoas Práticas: Adote boas práticas de programação (veja esses materiais para Julia ou R), priorizando clareza, organização e documentação. Lembre-se: outras pessoas e o seu futuro eu devem ser capazes de entender e reproduzir o seu código.\nBackup: Sempre que possível, utilize Overleaf, GitHub, etc. Se não costuma usar essas ferramentas, mantenha cópias frequentes do seu trabalho (fazer um backup antes de dormir, é uma boa ideia).\nUm bom amigo: O set.seed() é sempre um bom amigo nas nossas pesquisas. Então, sempre que apropriado, inclua ele.\n3. Comunicação e Escrita\nIdioma: Artigos acadêmicos devem ser escritos em inglês. Relatórios CNPq, FAPESP e PIBIC devem ser escritos em português.\nQualidade do Texto: Um texto mal escrito compromete a credibilidade da pesquisa. Escreva de forma clara e auto-contida ao ponto que o leitor possa entender e implementar sua proposta.\nUso de IA: Ferramentas de IA são permitidas para auxílio, mas devem ser declaradas explicitamente. Elas não substituem seu pensamento crítico nem seu trabalho como pesquisador. Um bom uso da IA seria para polir o texto e corrigir a gramática.\nO “Descanso”: Antes de entregar uma “versão final”, deixe o texto descansar por alguns dias e faça uma revisão final com “olhos frescos”.\n4. Ética e Mentalidade de Pesquisa\nIntegridade Inegociável: Nunca ajuste resultados para que pareçam “melhores”.\nDocumentação Total: Registre decisões metodológicas e até tentativas que falharam. Isso evita o retrabalho.\nLeitura Constante: Pesquisa é leitura. Mantenha-se sempre atualizado através de literaturas referentes à área do seu projeto.\nComunicação: Saber explicar seu trabalho (em apresentações ou conversas) é tão importante quanto a execução técnica.\n5. Equilíbrio e Saúde\nCuide da sua saúde mental e física. Faça exercícios, cultive hobbies e mantenha relações fora da universidade. Um pesquisador exausto não é um pesquisador eficiente.\n\nMeu objetivo como orientador não é apenas ajudar você a concluir um trabalho, mas formar um pesquisador independente, crítico e ético.\n\n\n\n\n\nFerramentas de IA foram utilizas para aprimoramento de texto, correção ortográfica, diagramação e criação da figura ilustrativa.\n\n\n\n\n",
+    "preview": "posts/2026-04-18-para-meus-orientandos/dicas.png",
+    "last_modified": "2026-04-18T13:13:56-03:00",
+    "input_file": {},
+    "preview_width": 1024,
+    "preview_height": 1536
+  },
+  {
     "path": "posts/2026-01-30-vs-code-e-ssh-uma-amizade-animal/",
     "title": "VS Code e SSH: uma amizade animal",
     "description": "Como editar código localmente e rodar tudo em servidores remotos de forma simples, rápida e sem dor de cabeça com o Visual Studio Code",
