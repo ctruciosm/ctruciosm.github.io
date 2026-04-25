@@ -29,7 +29,7 @@ Olá! Se você está lendo isto, é porque:
 Independentemente do caso, espero que este material nos ajude a aproveitar ao máximo o tempo em que trabalharemos em conjunto. A seguinte lista de recomendações foi elaborada visando tornar nossa colaboração mais produtiva, organizada e enriquecedora.
 
 
-## 1. Autonomia e Responsabilidade
+### 1. Autonomia e Responsabilidade
 
 - **O projeto é seu:** Eu não escrevo projetos para alunos. Definiremos o tema juntos, alinhando seus interesses à minha experiência. Você escreve, eu reviso e iteramos. Nada funciona melhor do que um pesquisador motivado. Por isso, quero que você trabalhe em algo de que **você** realmente goste.
 - **Protagonismo:** O trabalho é de sua inteira responsabilidade. Eu sou o orientador, não o executor. Estarei sempre disponível para ajudar e orientar, mas não farei o trabalho por você.
@@ -39,7 +39,7 @@ Independentemente do caso, espero que este material nos ajude a aproveitar ao m�
 - **Revisão:** Envie textos para revisão com antecedência. Assim, terei tempo para ler com atenção e devolver o documento com sugestões (lembre-se: você não é meu único aluno(a), orientação não é minha única atividade e professor também é gente).
 
 
-## 2. Reuniões de orientação
+### 2. Reuniões de orientação
 
 - **Use anotações:** Durante nossa reuniões, anote os pontos discutidos (isso evita retrabalho e perda de informações importantes).
 - **Códigos atualizados:** Sempre leve às reuniões a versão mais atualizada dos códigos (de preferência, coloque eles sempre no GitHub). Não consigo ajudar com bugs sem acesso ao código.
@@ -47,7 +47,7 @@ Independentemente do caso, espero que este material nos ajude a aproveitar ao m�
 
 
 
-## 3. Rigor Técnico e Reprodutibilidade
+### 3. Rigor Técnico e Reprodutibilidade
 
 - **Código:** Pode usar a linguagem de programação que preferir, mas saiba que se for `R` ou `Julia`, poderei lhe ajudar melhor.
 - **Versionamento:** Aprenda a utilizar Git, GitHub e mantenha seus códigos organizados. Ao submeter artigos, disponibilizaremos os códigos.
@@ -57,7 +57,7 @@ Independentemente do caso, espero que este material nos ajude a aproveitar ao m�
 
 
 
-## 4. Comunicação e Escrita
+### 4. Comunicação e Escrita
 
 - **Idioma:** Artigos acadêmicos devem ser escritos em **inglês**. Relatórios/Propostas CNPq, FAPESP e PIBIC devem ser escritos em **português**.
 - **Qualidade do Texto:** Um texto mal escrito compromete a credibilidade da pesquisa. Escreva de forma clara e auto-contida ao ponto que o leitor possa entender e implementar sua proposta.
@@ -67,7 +67,7 @@ Independentemente do caso, espero que este material nos ajude a aproveitar ao m�
 - **O "Descanso":** Antes de entregar uma "versão final", deixe o texto descansar por alguns dias e faça uma revisão final com "olhos frescos".
 
 
-## 5. Ética e Mentalidade de Pesquisa
+### 5. Ética e Mentalidade de Pesquisa
 
 - **Integridade Inegociável:** Nunca ajuste resultados para que pareçam "melhores".
 - **IA:** Nunca, sob hipótese alguma, me envie um documento feito 100% com IA (escrever projetos, artigos e relatórios por si próprio é parte do seu processo de aprendizado). De forma semelhante, nunca me envie textos passados pela IA sem antes você ter lido e revisado com olhar crítico.
@@ -76,21 +76,21 @@ Independentemente do caso, espero que este material nos ajude a aproveitar ao m�
 - **Comunicação:** Saber explicar seu trabalho (em apresentações ou conversas) é tão importante quanto a execução técnica.
 
 
-## 6. Equilíbrio e Saúde
+### 6. Equilíbrio e Saúde
 
 - **Cuide da sua saúde mental e física**. Faça exercícios, cultive hobbies e mantenha relações fora da universidade. Um pesquisador exausto não é um pesquisador eficiente.
 - Eu estou aqui para lhe ajudar, então confie em mim (mesmo quando fez um erro _bobo_, saiba que pode me contar). Só consigo lhe ajudar se souber o que realmente aconteceu.
 
+<br>
 
-<br><br>
-<br><br>
 <center>
 _Meu objetivo como orientador não é apenas ajudar você a concluir um trabalho, mas formar um pesquisador independente, crítico e ético._
 </center>
 
+<br><br>
 
 ```{r, echo=FALSE, fig.align='center'}
-knitr::include_graphics("dicas.png")
+knitr::include_graphics("dicas2.png")
 ```
 
 > Ferramentas de IA foram utilizadas para aprimoramento de texto, correção ortográfica, diagramação e criação da figura ilustrativa.
