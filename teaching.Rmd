@@ -23,6 +23,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 - [Seminários de Estatística](MI908.html) (2025/1)
 - [Seminários de Probabilidade e Estatística](MI910.html) (2024/2)
 - [Causal Inference](MI628.html) (2024/1)
+- [Advanced Econometrics](MI680.html) (2026/1)
 
 
 
