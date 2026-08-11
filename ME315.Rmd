@@ -56,7 +56,7 @@ Além do material no cronograma, terá também abordado o material desenvolvido 
 
 | Tópico                         | Aula |
 |:-------------------------------|--------|
-| [Formatos tabulares](https://me315-unicamp.github.io/aulas/aula01.pdf) | 01 | 
+| [Formatos tabulares](documentos/Aula 01_ME315.pdf) | 01 | 
 | [Manipulação básica de dados e importação*](https://me315-unicamp.github.io/laboratorios/lab01.html) | 02 | 
 | [Importação de bases de dados volumosas](https://me315-unicamp.github.io/aulas/aula02.pdf)   | 03 | 
 | [Importação em lote de dados volumosos*](https://me315-unicamp.github.io/laboratorios/lab02.html)   | 04 | 
