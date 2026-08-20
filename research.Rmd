@@ -25,8 +25,10 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
+<li> *Changes in rainfall regime: A case study in the Piracicaba River Basin, Brazil.*  **Journal of the American Water Resources Association**  (2026+) [with Ronalton Machado, Tárcio Rocha Lopes and Sérgio Nascimento Duarte] [`CODES`](https://github.com/ctruciosm/RainfallRegime)  \medskip </li>
 
-<li> *Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*  **Empirical Economics**  (2026+) [`CODES`](https://github.com/ctruciosm/RiskBasedComparison)  \medskip </li>
+
+<li> [*Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*](https://link.springer.com/article/10.1007/s00181-026-02900-x)  **Empirical Economics**  (2026) [`CODES`](https://github.com/ctruciosm/RiskBasedComparison)  \medskip </li>
 
 
 <li> [*Forecasting Bitcoin and Ethereum risk measures through MSGARCH models: Does the specification matter?.*](https://doi.org/10.12660/rbfin.v23n1.2025.92777) **Brazilian Review of Finance** (2025) [with Luiz Hotta, Pedro Valls and Mauricio Zevallos] [`CODES`](https://github.com/ctruciosm/CryptoMSGARCH) \medskip </li>  \medskip </li> 

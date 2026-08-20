@@ -52,8 +52,6 @@ Os links direcionam ao site [https://me315-unicamp.github.io](https://me315-unic
 
 Além do material no cronograma, terá também abordado o material desenvolvido [AQUI](https://github.com/ctruciosm/SQL4Statisticians)
 
-
-
 | Tópico                         | Aula |
 |:-------------------------------|--------|
 | [Formatos tabulares](documentos/Aula 01_ME315.pdf) | 01 | 
