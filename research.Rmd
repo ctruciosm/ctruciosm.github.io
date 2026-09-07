@@ -25,7 +25,7 @@ xaringanExtra::style_panelset_tabs(foreground = "honeydew", background = "#0F2E3
 
 <ol reversed>
 
-<li> *Changes in rainfall regime: A case study in the Piracicaba River Basin, Brazil.*  **Journal of the American Water Resources Association**  (2026+) [with Ronalton Machado, Tárcio Rocha Lopes and Sérgio Nascimento Duarte] [`CODES`](https://github.com/ctruciosm/RainfallRegime)  \medskip </li>
+<li> [*Changes in rainfall regime: A case study in the Piracicaba River Basin, Brazil.*](https://onlinelibrary.wiley.com/doi/10.1111/1752-1688.70151)  **Journal of the American Water Resources Association**  (2026) [with Ronalton Machado, Tárcio Rocha Lopes and Sérgio Nascimento Duarte] [`CODES`](https://github.com/ctruciosm/RainfallRegime)  \medskip </li>
 
 
 <li> [*Hierarchical risk clustering versus traditional risk-based portfolios: an empirical out-of-sample comparison.*](https://link.springer.com/article/10.1007/s00181-026-02900-x)  **Empirical Economics**  (2026) [`CODES`](https://github.com/ctruciosm/RiskBasedComparison)  \medskip </li>
